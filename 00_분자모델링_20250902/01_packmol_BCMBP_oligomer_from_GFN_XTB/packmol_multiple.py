@@ -140,3 +140,4 @@ print("\n📊 실행 요약:")
 print(f"   ⏱️ 타임아웃: {timeout_count}개")
 print(f"   ❌ 실패:     {fail_count}개")
 print(f"   ✅ 성공:     {success_count}개 / {n_cases}개")
+
