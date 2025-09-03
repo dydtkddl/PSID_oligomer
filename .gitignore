@@ -46,7 +46,4 @@ git_push.log
 *.gz
 **/*.densi*
 *.kp*
-<<<<<<< HEAD
-DFT_2STEP/03_cp2k/Zn100/simulation.input.out
-=======
->>>>>>> eb0192de0c216222303aaaf4afaf2d17493cf85a
+*.gbw
