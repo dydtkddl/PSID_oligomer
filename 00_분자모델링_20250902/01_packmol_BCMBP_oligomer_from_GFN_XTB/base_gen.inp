@@ -1,0 +1,12 @@
+tolerance 2.0
+filetype xyz
+output case_{index}.xyz
+
+structure ./BCMBP_xtbopt.xyz
+  number 50
+  inside box -200 200 -200 200 -200 200
+end structure
+
+seed {seed}
+randominitialpoint
+
