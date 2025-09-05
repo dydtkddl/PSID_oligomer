@@ -1,8 +1,8 @@
 tolerance 2.0
-filetype mol
-output case_{index}.mol
+filetype pdb
+output case_{index}.pdb
 
-structure /home/dydtkddhkdwk/d/PSID_oligomer/00_분자모델링_20250902/01_packmol_BCMBP_oligomer_from_GFN_XTB/test03/xtbtopo.mol
+structure /home/yongsang/PSID_oligomer/00_분자모델링_20250902/01_packmol_BCMBP_oligomer_from_GFN_XTB/test03/xtbtopo.pdb
   number 20
   inside box 0 0 0 50 50 50
 end structure

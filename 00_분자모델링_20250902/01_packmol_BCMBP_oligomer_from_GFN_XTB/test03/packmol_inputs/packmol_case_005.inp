@@ -1,12 +1,12 @@
 tolerance 2.0
 filetype pdb
-output case_001.pdb
+output case_005.pdb
 
 structure /home/yongsang/PSID_oligomer/00_분자모델링_20250902/01_packmol_BCMBP_oligomer_from_GFN_XTB/test03/xtbtopo.pdb
   number 20
   inside box 0 0 0 50 50 50
 end structure
 
-seed 1001
+seed 1005
 randominitialpoint
 
