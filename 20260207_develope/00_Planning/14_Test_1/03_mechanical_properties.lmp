@@ -1,0 +1,79 @@
+# ===================================================================
+# 기계적 물성 측정 (인장 실험)
+# 목표: 응력-변형률 곡선 및 영률 계산
+# 입력: bcmbp_bulk_equilibrated.data
+# ===================================================================
+
+units           real
+atom_style      full
+boundary        p p p
+
+print "=========================================="
+print "기계적 물성 측정 (인장 실험)"
+print "목표: 응력-변형률 곡선"
+print "=========================================="
+
+# 평형 구조 로드
+read_data       bcmbp_bulk_equilibrated.data
+
+# ReaxFF 설정
+pair_style      reaxff NULL safezone 4.0 mincap 300
+pair_coeff      * * 11_CHOCl.lammps.ff C H Cl
+fix             qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
+
+neighbor        2.5 bin
+neigh_modify    every 10 delay 0 check yes
+
+timestep        0.25
+reset_timestep  0
+
+# 응력 텐서 출력
+thermo          200
+thermo_style    custom step temp press pxx pyy pzz lx ly lz vol
+
+# NPT 재평형화
+print ""
+print "=== NPT 재평형화 ==="
+fix             npt_pre all npt temp 300.0 300.0 100.0 iso 1.0 1.0 1000.0
+run             20000
+unfix           npt_pre
+
+# 변형률 및 응력 변수 정의
+variable        L0 equal lx
+variable        strain equal "(lx - v_L0)/v_L0"
+variable        stress equal "-pxx*0.0001"  # bar → GPa 변환
+
+# 인장 변형 설정
+print ""
+print "=== 인장 실험 시작 ==="
+print "변형률 속도: 0.001/ps (0.1%/ps)"
+
+# x방향 인장, y,z 방향은 자유 수축
+fix             nvt_temp all nvt temp 300.0 300.0 100.0
+fix             deform all deform 1 x erate 0.001 remap x
+
+# 응력-변형률 데이터 출력
+fix             stress_strain all print 200 "${strain} ${stress}" &
+                file stress_strain.dat screen no title "# Strain Stress(GPa)"
+
+dump            mech all custom 1000 03_mechanical.lammpstrj id type xu yu zu q
+dump_modify     mech sort id
+
+# 15% 변형까지 (37.5 ps)
+run             150000
+
+undump          mech
+unfix           stress_strain
+unfix           deform
+unfix           nvt_temp
+
+write_data      bcmbp_deformed.data
+
+print ""
+print "=========================================="
+print "✅ 기계적 물성 측정 완료!"
+print "결과 파일:"
+print "  - stress_strain.dat (응력-변형률 데이터)"
+print "  - 03_mechanical.lammpstrj (변형 과정)"
+print "분석: 초기 기울기 → 영률(Young's modulus)"
+print "=========================================="

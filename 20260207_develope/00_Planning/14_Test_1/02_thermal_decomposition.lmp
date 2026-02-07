@@ -1,0 +1,73 @@
+# ===================================================================
+# 열분해 반응 연구
+# 목표: 고온에서 화학 결합 파괴 메커니즘 분석
+# 입력: bcmbp_bulk_equilibrated.data
+# ===================================================================
+
+units           real
+atom_style      full
+boundary        p p p
+
+print "=========================================="
+print "열분해 반응 시뮬레이션"
+print "목표: C-Cl 결합 파괴 메커니즘"
+print "=========================================="
+
+# 평형 구조 로드
+read_data       bcmbp_bulk_equilibrated.data
+
+# ReaxFF 설정
+pair_style      reaxff NULL safezone 4.0 mincap 300
+pair_coeff      * * 11_CHOCl.lammps.ff C H Cl
+fix             qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
+
+neighbor        2.5 bin
+neigh_modify    every 10 delay 0 check yes
+
+timestep        0.2  # 고온 반응용 작은 타임스텝
+
+# 출력 설정
+thermo          500
+thermo_style    custom step temp press pe ke etotal
+
+# 화학 반응 분석 (ReaxFF 핵심 기능)
+fix             species all reaxff/species 100 500 500 species_thermal.out element C H Cl
+fix             bonds all reaxff/bonds 500 bonds_thermal.reax
+
+print ""
+print "=== 가열 단계 (300K → 1200K, 10 ps) ==="
+velocity        all create 300.0 123456 dist gaussian
+
+# 급속 가열
+fix             heat all nvt temp 300.0 1200.0 100.0
+dump            heat_traj all custom 500 02_heating.lammpstrj id type xu yu zu q
+dump_modify     heat_traj sort id
+
+run             50000  # 10 ps
+undump          heat_traj
+unfix           heat
+
+print ""
+print "=== 고온 반응 단계 (1200K, 50 ps) ==="
+fix             react all nvt temp 1200.0 1200.0 100.0
+
+dump            react_traj all custom 200 02_reaction.lammpstrj id type xu yu zu q
+dump_modify     react_traj sort id
+
+run             250000  # 50 ps
+
+undump          react_traj
+unfix           species
+unfix           bonds
+unfix           react
+
+write_data      bcmbp_thermal_final.data
+
+print ""
+print "=========================================="
+print "✅ 열분해 시뮬레이션 완료!"
+print "분석 파일:"
+print "  - species_thermal.out (화학종 변화)"
+print "  - bonds_thermal.reax (결합 정보)"
+print "  - 02_reaction.lammpstrj (반응 과정)"
+print "=========================================="

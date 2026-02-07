@@ -1,0 +1,91 @@
+# ===================================================================
+# 유리전이온도(Tg) 계산
+# 목표: 냉각 과정에서 밀도-온도 관계 분석
+# 입력: bcmbp_bulk_equilibrated.data
+# ===================================================================
+
+units           real
+atom_style      full
+boundary        p p p
+
+print "=========================================="
+print "유리전이온도(Tg) 계산"
+print "방법: 냉각 곡선 밀도 분석"
+print "=========================================="
+
+# 평형 구조 로드
+read_data       bcmbp_bulk_equilibrated.data
+
+# ReaxFF 설정
+pair_style      reaxff NULL safezone 4.0 mincap 300
+pair_coeff      * * 11_CHOCl.lammps.ff C H Cl
+fix             qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
+
+neighbor        2.5 bin
+neigh_modify    every 10 delay 0 check yes
+
+timestep        0.25
+thermo          1000
+thermo_style    custom step temp press vol density pe
+
+# 밀도-온도 데이터 저장
+variable        current_temp equal temp
+variable        current_density equal density
+fix             tg_data all print 1000 "${current_temp} ${current_density}" &
+                file density_temperature.dat screen no title "# Temp(K) Density(g/cm3)"
+
+# 1. 고온 용융 (600K)
+print ""
+print "=== 고온 용융 (600K, 20 ps) ==="
+velocity        all create 600.0 987654 dist gaussian
+fix             melt all npt temp 600.0 600.0 100.0 iso 1.0 1.0 1000.0
+run             80000
+unfix           melt
+
+# 2. 단계적 냉각 (600K → 200K)
+print ""
+print "=== 단계적 냉각 (600K → 200K) ==="
+
+# 냉각 온도 리스트
+variable        temp_list index 600 550 500 450 400 350 300 250 200
+variable        ntemps equal 9
+variable        itemp loop ${ntemps}
+
+label           cooling_loop
+
+    # 현재 온도 설정
+    if "${itemp} == 1" then "variable target_temp equal 600"
+    if "${itemp} == 2" then "variable target_temp equal 550"
+    if "${itemp} == 3" then "variable target_temp equal 500"
+    if "${itemp} == 4" then "variable target_temp equal 450"
+    if "${itemp} == 5" then "variable target_temp equal 400"
+    if "${itemp} == 6" then "variable target_temp equal 350"
+    if "${itemp} == 7" then "variable target_temp equal 300"
+    if "${itemp} == 8" then "variable target_temp equal 250"
+    if "${itemp} == 9" then "variable target_temp equal 200"
+    
+    print "냉각 중: ${target_temp} K"
+    
+    fix             cool_npt all npt temp ${target_temp} ${target_temp} 100.0 iso 1.0 1.0 1000.0
+    run             40000  # 각 온도에서 10 ps
+    unfix           cool_npt
+    
+    variable        current_rho equal density
+    print "  밀도: ${current_rho} g/cm³"
+
+    next            itemp
+    jump            SELF cooling_loop
+
+unfix           tg_data
+write_data      bcmbp_cooled.data
+
+print ""
+print "=========================================="
+print "✅ Tg 계산 시뮬레이션 완료!"
+print "결과 파일:"
+print "  - density_temperature.dat"
+print "분석 방법:"
+print "  1. 밀도 vs 온도 그래프 작성"
+print "  2. 기울기 변화점 → Tg"
+print "  3. 일반적으로 두 직선의 교점"
+print "=========================================="
