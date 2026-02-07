@@ -1,0 +1,9 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+3,0.0,Li - Li   | LJ params for H on heteroatom are set,6.941,oplsaa.lt,Li,3
+406,1.0,"Li - Li   | Li+ JCTC 2, 1499 (2006)",6.941,oplsaa.lt,Li,3
+1106,1.0,Li - Li   | Li+ The epsilons are,6.941,oplsaa.lt,Li,3
+348,1.0,"""Lithium Ion Li+""",6.941,oplsaa2008.lt,Li,3
+879,1.0,"""Lithium Ion (GBSA)""",6.941,oplsaa2008.lt,Li,3
+3,0.0,Li - Li   | LJ params for H on heteroatom are set,6.941,oplsaa2024.lt,Li,3
+406,1.0,"Li - Li   | Li+ JCTC 2, 1499 (2006)",6.941,oplsaa2024.lt,Li,3
+1106,1.0,Li - Li   | Li+ The epsilons are,6.941,oplsaa2024.lt,Li,3

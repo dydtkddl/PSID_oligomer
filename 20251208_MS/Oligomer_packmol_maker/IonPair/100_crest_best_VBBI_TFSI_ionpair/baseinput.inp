@@ -1,0 +1,12 @@
+tolerance 3.5
+filetype pdb
+output case_{index}.pdb
+
+structure ../crest_best_VBBI_TFSI_ionpair.pdb
+  number 100
+  inside box 0 0 0 65 65 65 
+end structure
+
+seed {seed}
+randominitialpoint
+

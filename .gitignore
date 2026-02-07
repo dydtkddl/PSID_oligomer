@@ -1,0 +1,12 @@
+# === Large simulation files ===
+20251208_MS/Oligomer_COMPASS_Files/Documents/
+*.trj
+*.mol2
+*.xtd
+*.arc
+*.xtc
+*.dcd
+*.lammpstrj
+
+# === Backup folders ===
+*_BACKUP*/

@@ -1,0 +1,48 @@
+Forcite
+-------
+Task             : Energy
+Version          : 6.0
+Build date       : Dec  8 2011
+Host             : DESKTOP-3IBJ11D
+Threads          : Scalar
+Operating system : Windows
+Task started     : Mon Oct 13 23:05:27 2025
+
+---- Energy parameters ----
+
+Forcefield                      : Universal
+Electrostatic terms:
+  Summation method              : Atom based
+  Truncation method             : Cubic spline
+  Cutoff distance               : 12.5 A
+  Spline width                  : 1 A
+  Buffer width                  : 0.5 A
+
+van der Waals terms:
+  Summation method              : Atom based
+  Truncation method             : Cubic spline
+  Cutoff distance               : 12.5 A
+  Spline width                  : 1 A
+  Buffer width                  : 0.5 A
+
+
+---- Current structure ----
+
+Total energy                    :         546.016152 kcal/mol
+
+Contributions to total energy (kcal/mol):
+  Valence energy (diag. terms)  :         179.975
+    Bond                        :          23.957
+    Angle                       :          34.859
+    Torsion                     :         120.640
+    Inversion                   :           0.520
+  Non-bond energy               :         366.041
+    van der Waals               :         366.041
+    Electrostatic               :           0.000
+
+
+
+Task terminated               : Mon Oct 13 23:05:28 2025
+Total CPU time used by Forcite: 0 seconds (0.44s)
+
+Termination status : Normal

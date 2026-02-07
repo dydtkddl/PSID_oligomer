@@ -1,0 +1,61 @@
+import os
+import warnings
+warnings.filterwarnings("ignore")
+
+# ✅ tqdm, logging 추가
+from tqdm import tqdm
+import time
+import sys
+from mace.cli.eval_configs import main as mace_eval_configs_main
+
+# ✅ 로그 함수
+def log(msg):
+    print(f"[INFO] {time.strftime('%Y-%m-%d %H:%M:%S')} | {msg}")
+
+# ✅ 디렉토리 생성
+os.makedirs("tests/mace_eval", exist_ok=True)
+
+def eval_mace(configs, model, output, batch_size=10):
+    log(f"Start evaluating: {configs}")
+    log(f"Using model: {model}")
+    log(f"Output will be saved to: {output}")
+    log(f"Batch size: {batch_size}")
+
+    # ✅ tqdm 표시
+    for _ in tqdm(range(1), desc=f"Running eval on {os.path.basename(configs)}"):
+        sys.argv = [
+            "program",
+            "--configs", configs,
+            "--model", model,
+            "--output", output,
+            "--batch_size", str(batch_size),
+        ]
+        try:
+            mace_eval_configs_main()
+        except Exception as e:
+            log(f"❌ Error during evaluation: {e}")
+            raise e
+
+    log(f"✅ Finished evaluating {configs}\n")
+
+# ✅ 경로 설정 (절대경로)
+BASE_DIR = "/data/dydtkddhkdwk/20251021_MACE_FIT"
+TRAIN_CONFIG = f"{BASE_DIR}/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_train_0.5_.extxyz"
+TEST_CONFIG = f"{BASE_DIR}/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_test_0.5_.extxyz"
+MODEL_PATH = f"{BASE_DIR}/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model"
+
+# ✅ 평가 실행
+log("==== START EVALUATION ====")
+eval_mace(
+    configs=TRAIN_CONFIG,
+    model=MODEL_PATH,
+    output="tests/mace_eval/train_eval.xyz",
+    batch_size=10
+)
+eval_mace(
+    configs=TEST_CONFIG,
+    model=MODEL_PATH,
+    output="tests/mace_eval/test_eval.xyz",
+    batch_size=10
+)
+log("==== ALL DONE ====")

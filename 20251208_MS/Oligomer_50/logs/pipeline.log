@@ -1,0 +1,54 @@
+2025-12-09 21:47:10 [INFO] md_pore_zeopp_pipeline - Logger initialized. Log file: /mnt/c/Users/PSID_PC_20/Downloads/logs/pipeline.log
+2025-12-09 21:47:10 [INFO] md_pore_zeopp_pipeline - MOL2 path   : /mnt/c/Users/PSID_PC_20/Downloads/50_NVT.mol2
+2025-12-09 21:47:10 [INFO] md_pore_zeopp_pipeline - Output root : /mnt/c/Users/PSID_PC_20/Downloads
+2025-12-09 21:47:10 [INFO] md_pore_zeopp_pipeline - Splitting multi-frame MOL2: /mnt/c/Users/PSID_PC_20/Downloads/50_NVT.mol2
+2025-12-09 21:47:10 [INFO] md_pore_zeopp_pipeline - Split into 12 frames (saved in /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2).
+2025-12-09 21:47:10 [INFO] md_pore_zeopp_pipeline - Total frames: 12
+2025-12-09 21:47:10 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00000
+2025-12-09 21:47:10 [ERROR] md_pore_zeopp_pipeline - Frame frame_00000 failed: CRYSIN section not found in /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00000.mol2
+2025-12-09 21:47:10 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00001
+2025-12-09 21:47:10 [INFO] md_pore_zeopp_pipeline - Converting MOL2 to CIF (custom parser): /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00001.mol2 -> /mnt/c/Users/PSID_PC_20/Downloads/frames_cif/frame_00001.cif
+2025-12-09 21:47:10 [INFO] md_pore_zeopp_pipeline - Running Zeo++ for frame frame_00001
+2025-12-09 21:49:50 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00002
+2025-12-09 21:49:50 [INFO] md_pore_zeopp_pipeline - Converting MOL2 to CIF (custom parser): /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00002.mol2 -> /mnt/c/Users/PSID_PC_20/Downloads/frames_cif/frame_00002.cif
+2025-12-09 21:49:50 [INFO] md_pore_zeopp_pipeline - Running Zeo++ for frame frame_00002
+2025-12-09 21:52:35 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00003
+2025-12-09 21:52:35 [INFO] md_pore_zeopp_pipeline - Converting MOL2 to CIF (custom parser): /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00003.mol2 -> /mnt/c/Users/PSID_PC_20/Downloads/frames_cif/frame_00003.cif
+2025-12-09 21:52:35 [INFO] md_pore_zeopp_pipeline - Running Zeo++ for frame frame_00003
+2025-12-09 21:55:14 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00004
+2025-12-09 21:55:14 [INFO] md_pore_zeopp_pipeline - Converting MOL2 to CIF (custom parser): /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00004.mol2 -> /mnt/c/Users/PSID_PC_20/Downloads/frames_cif/frame_00004.cif
+2025-12-09 21:55:14 [INFO] md_pore_zeopp_pipeline - Running Zeo++ for frame frame_00004
+2025-12-09 21:57:49 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00005
+2025-12-09 21:57:49 [INFO] md_pore_zeopp_pipeline - Converting MOL2 to CIF (custom parser): /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00005.mol2 -> /mnt/c/Users/PSID_PC_20/Downloads/frames_cif/frame_00005.cif
+2025-12-09 21:57:49 [INFO] md_pore_zeopp_pipeline - Running Zeo++ for frame frame_00005
+2025-12-09 22:00:24 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00006
+2025-12-09 22:00:25 [INFO] md_pore_zeopp_pipeline - Converting MOL2 to CIF (custom parser): /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00006.mol2 -> /mnt/c/Users/PSID_PC_20/Downloads/frames_cif/frame_00006.cif
+2025-12-09 22:00:25 [INFO] md_pore_zeopp_pipeline - Running Zeo++ for frame frame_00006
+2025-12-09 22:03:03 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00007
+2025-12-09 22:03:03 [INFO] md_pore_zeopp_pipeline - Converting MOL2 to CIF (custom parser): /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00007.mol2 -> /mnt/c/Users/PSID_PC_20/Downloads/frames_cif/frame_00007.cif
+2025-12-09 22:03:03 [INFO] md_pore_zeopp_pipeline - Running Zeo++ for frame frame_00007
+2025-12-09 22:05:43 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00008
+2025-12-09 22:05:43 [INFO] md_pore_zeopp_pipeline - Converting MOL2 to CIF (custom parser): /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00008.mol2 -> /mnt/c/Users/PSID_PC_20/Downloads/frames_cif/frame_00008.cif
+2025-12-09 22:05:43 [INFO] md_pore_zeopp_pipeline - Running Zeo++ for frame frame_00008
+2025-12-09 22:08:31 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00009
+2025-12-09 22:08:31 [INFO] md_pore_zeopp_pipeline - Converting MOL2 to CIF (custom parser): /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00009.mol2 -> /mnt/c/Users/PSID_PC_20/Downloads/frames_cif/frame_00009.cif
+2025-12-09 22:08:31 [INFO] md_pore_zeopp_pipeline - Running Zeo++ for frame frame_00009
+2025-12-09 22:11:09 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00010
+2025-12-09 22:11:09 [INFO] md_pore_zeopp_pipeline - Converting MOL2 to CIF (custom parser): /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00010.mol2 -> /mnt/c/Users/PSID_PC_20/Downloads/frames_cif/frame_00010.cif
+2025-12-09 22:11:09 [INFO] md_pore_zeopp_pipeline - Running Zeo++ for frame frame_00010
+2025-12-09 22:13:49 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00011
+2025-12-09 22:13:49 [INFO] md_pore_zeopp_pipeline - Converting MOL2 to CIF (custom parser): /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00011.mol2 -> /mnt/c/Users/PSID_PC_20/Downloads/frames_cif/frame_00011.cif
+2025-12-09 22:13:49 [INFO] md_pore_zeopp_pipeline - Running Zeo++ for frame frame_00011
+2025-12-09 22:16:27 [INFO] md_pore_zeopp_pipeline - Summary CSV saved: /mnt/c/Users/PSID_PC_20/Downloads/summary/pore_properties_per_frame.csv
+2025-12-09 22:16:27 [INFO] md_pore_zeopp_pipeline - Frames succeeded: 11, failed: 1
+2025-12-09 22:36:34 [INFO] md_pore_zeopp_pipeline - Logger initialized. Log file: /mnt/c/Users/PSID_PC_20/Downloads/logs/pipeline.log
+2025-12-09 22:36:34 [INFO] md_pore_zeopp_pipeline - MOL2 path   : /mnt/c/Users/PSID_PC_20/Downloads/50_NVT.mol2
+2025-12-09 22:36:34 [INFO] md_pore_zeopp_pipeline - Output root : /mnt/c/Users/PSID_PC_20/Downloads
+2025-12-09 22:36:34 [INFO] md_pore_zeopp_pipeline - Splitting multi-frame MOL2: /mnt/c/Users/PSID_PC_20/Downloads/50_NVT.mol2
+2025-12-09 22:36:35 [INFO] md_pore_zeopp_pipeline - Split into 12 frames (saved in /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2).
+2025-12-09 22:36:35 [INFO] md_pore_zeopp_pipeline - Total frames: 12
+2025-12-09 22:36:35 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00000
+2025-12-09 22:36:35 [ERROR] md_pore_zeopp_pipeline - Frame frame_00000 failed: CRYSIN section not found in /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00000.mol2
+2025-12-09 22:36:35 [INFO] md_pore_zeopp_pipeline - Processing frame frame_00001
+2025-12-09 22:36:35 [INFO] md_pore_zeopp_pipeline - Converting MOL2 to CIF (custom parser): /mnt/c/Users/PSID_PC_20/Downloads/frames_mol2/frame_00001.mol2 -> /mnt/c/Users/PSID_PC_20/Downloads/frames_cif/frame_00001.cif
+2025-12-09 22:36:35 [INFO] md_pore_zeopp_pipeline - Running Zeo++ for frame frame_00001

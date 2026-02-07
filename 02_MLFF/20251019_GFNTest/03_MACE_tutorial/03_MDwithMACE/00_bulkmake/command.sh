@@ -1,0 +1,12 @@
+python build_packmol_ionpairs_.py \
+  --tfsifiles /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/TFSI_confcross.xyz /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/TFSI_crest_conformers.xyz /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/TFSI_crest_rotamers.xyz \
+  --vbbifiles /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/VBBI_confcross.xyz /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/VBBI_crest_conformers.xyz /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/VBBI_crest_rotamers.xyz \
+  --ncases 1 \
+  --ntfsi 15 --nvbbi 15 \
+  --box 0 0 0 35 35 35 \
+  --tolerance 2.0 \
+  --outroot ./packmol_cases \
+  --packmol packmol \
+  --seed 1000 \
+  --timeout 120 \
+  --verbose

@@ -1,0 +1,12 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+18,0.0,Ar - Ar   |,39.948,oplsaa.lt,Ar,18
+103,0.0,"Ar - Ar   | Ar - Verlet & Weis,",39.948,oplsaa.lt,Ar,18
+412,2.0,Ca - Ca   | Ca++,40.078,oplsaa.lt,Ar,18
+1112,2.0,Ca - Ca   | Ca++,40.078,oplsaa.lt,Ar,18
+60,0.0,"""Argon Atom""",39.948,oplsaa2008.lt,Ar,18
+354,2.0,"""Calcium Ion Ca+2""",40.08,oplsaa2008.lt,Ar,18
+885,2.0,"""Calcium Ion (GBSA)""",40.08,oplsaa2008.lt,Ar,18
+18,0.0,Ar - Ar   |,39.948,oplsaa2024.lt,Ar,18
+103,0.0,"Ar - Ar   | Ar - Verlet & Weis,",39.948,oplsaa2024.lt,Ar,18
+412,2.0,Ca - Ca   | Ca++,40.078,oplsaa2024.lt,Ar,18
+1112,2.0,Ca - Ca   | Ca++,40.078,oplsaa2024.lt,Ar,18

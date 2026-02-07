@@ -1,0 +1,38 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+17,0.0,Cl - Cl   |,35.453,oplsaa.lt,Cl,17
+119,-0.25,Cl - Cl   | Cl Methylenechloride ClCCl = 111.8,35.453,oplsaa.lt,Cl,17
+121,-0.14,Cl - Cl   | Cl Chloroform C-Cl=1.758 ClCCl = 111.3,35.453,oplsaa.lt,Cl,17
+123,-0.062,Cl - Cl   | Cl CCl4,35.453,oplsaa.lt,Cl,17
+151,-0.2,Cl - Cl   | Cl in alkyl chlorides JPCB 16264 (2004),35.453,oplsaa.lt,Cl,17
+226,-0.12,Cl - Cl   | chloroalkene Cl (ClH-C=) - see also 398,35.453,oplsaa.lt,Cl,17
+264,-0.18,Cl - Cl   | Cl chlorobenzene,35.453,oplsaa.lt,Cl,17
+398,-0.06,Cl - Cl   | chloroalkene Cl (Cl2-C=) - tentative,35.453,oplsaa.lt,Cl,17
+401,-1.0,Cl - Cl   | Cl-,35.453,oplsaa.lt,Cl,17
+709,-0.628,"Cl - Cl   | Cl charges: JACS 117,2024 (95)",35.453,oplsaa.lt,Cl,17
+970,-0.2,Cl - Cl   | Cl in alkyl chlorides repeat of 151,35.453,oplsaa.lt,Cl,17
+981,-0.08,Cl - Cl   | Cl in acyl chloride tentative,35.453,oplsaa.lt,Cl,17
+1010,-0.25,Cl - Cl   | Cl chlorobenzene with X site,35.453,oplsaa.lt,Cl,17
+1101,-1.0,Cl - Cl   | Cl- sigmas that yield the,35.453,oplsaa.lt,Cl,17
+49,-0.062,"""Carbon Tetrachloride""",35.453,oplsaa2008.lt,Cl,17
+168,-0.12,"""Chloroalkene Cl-CH=""",35.453,oplsaa2008.lt,Cl,17
+206,-0.18,"""Chlorobenzene C-Cl""",35.453,oplsaa2008.lt,Cl,17
+341,-0.06,"""Chloroalkene Cl2-C=""",35.453,oplsaa2008.lt,Cl,17
+344,-1.0,"""Chloride Ion Cl-""",35.453,oplsaa2008.lt,Cl,17
+650,-0.628,"""Cl..CH3..Cl- Sn2 TS""",35.453,oplsaa2008.lt,Cl,17
+800,-0.2,"""Alkyl Chloride C-Cl""",35.453,oplsaa2008.lt,Cl,17
+811,-0.08,"""Acyl Chloride Cl-C=O""",35.453,oplsaa2008.lt,Cl,17
+876,-1.0,"""Chloride Ion (GBSA)""",35.453,oplsaa2008.lt,Cl,17
+17,0.0,Cl - Cl   |,35.453,oplsaa2024.lt,Cl,17
+119,-0.25,Cl - Cl   | Cl Methylenechloride ClCCl = 111.8,35.453,oplsaa2024.lt,Cl,17
+121,-0.14,Cl - Cl   | Cl Chloroform C-Cl=1.758 ClCCl = 111.3,35.453,oplsaa2024.lt,Cl,17
+123,-0.062,Cl - Cl   | Cl CCl4,35.453,oplsaa2024.lt,Cl,17
+151,-0.2,Cl - Cl   | Cl in alkyl chlorides JPCB 16264 (2004),35.453,oplsaa2024.lt,Cl,17
+226,-0.12,Cl - Cl   | chloroalkene Cl (ClH-C=) - see also 398,35.453,oplsaa2024.lt,Cl,17
+264,-0.18,Cl - Cl   | Cl chlorobenzene,35.453,oplsaa2024.lt,Cl,17
+398,-0.06,Cl - Cl   | chloroalkene Cl (Cl2-C=) - tentative,35.453,oplsaa2024.lt,Cl,17
+401,-1.0,Cl - Cl   | Cl-,35.453,oplsaa2024.lt,Cl,17
+709,-0.628,"Cl - Cl   | Cl charges: JACS 117,2024 (95)",35.453,oplsaa2024.lt,Cl,17
+970,-0.2,Cl - Cl   | Cl in alkyl chlorides repeat of 151,35.453,oplsaa2024.lt,Cl,17
+981,-0.08,Cl - Cl   | Cl in acyl chloride tentative,35.453,oplsaa2024.lt,Cl,17
+1010,-0.25,Cl - Cl   | Cl chlorobenzene with X site,35.453,oplsaa2024.lt,Cl,17
+1101,-1.0,Cl - Cl   | Cl- sigmas that yield the,35.453,oplsaa2024.lt,Cl,17

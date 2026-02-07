@@ -1,0 +1,18 @@
+{
+  "mol2_id": 2,
+  "rd_idx": 1,
+  "symbol": "C",
+  "formal_charge": 0,
+  "hybridization": "sp2",
+  "aromatic": false,
+  "degree": 2,
+  "total_h_count": 1,
+  "ring_sizes": [],
+  "functional_groups": [
+    "alkene carbon",
+    "sp2 carbon"
+  ],
+  "primary_label": "alkene carbon",
+  "environment": "aliphatic sp2",
+  "description": "sp2 carbon in C=C; planar geometry. / Trigonal-planar carbon without explicit aromaticity."
+}

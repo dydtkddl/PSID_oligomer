@@ -1,0 +1,8 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+2,0.0,He - He   | parameters for QM/MM calculations.,4.003,oplsaa.lt,He,2
+101,0.0,"He - He   | Helium - "" """,4.003,oplsaa.lt,He,2
+433,-0.98,He - LP   | LP in CH3CH2-,4.003,oplsaa.lt,He,2
+58,0.0,"""Helium Atom""",4.003,oplsaa2008.lt,He,2
+2,0.0,He - He   | parameters for QM/MM calculations.,4.003,oplsaa2024.lt,He,2
+101,0.0,"He - He   | Helium - "" """,4.003,oplsaa2024.lt,He,2
+433,-0.98,He - LP   | LP in CH3CH2-,4.003,oplsaa2024.lt,He,2

@@ -1,0 +1,32 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+🔥 Starting MACE training with config: /data/dydtkddhkdwk/20251021_MACE_FIT/config-02.yml
+2025-10-21 15:46:35.088 INFO: ===========VERIFYING SETTINGS===========
+2025-10-21 15:46:35.088 INFO: MACE version: 0.3.14
+2025-10-21 15:46:35.117 INFO: CUDA version: 11.8, CUDA device: 0
+2025-10-21 15:46:35.362 INFO: Using foundation model /data/dydtkddhkdwk/20251021_MACE_FIT/mace-off/mace_off24/MACE-OFF24_medium.model as initial checkpoint.
+2025-10-21 15:46:35.363 WARNING: Using multiheads finetuning with a foundation model that is not a Materials Project model, need to provied a path to a pretraining file with --pt_train_file.
+2025-10-21 15:46:35.363 INFO: ===========LOADING INPUT DATA===========
+2025-10-21 15:46:35.363 INFO: Using heads: ['Default']
+2025-10-21 15:46:35.363 INFO: Using the key specifications to parse data:
+2025-10-21 15:46:35.363 INFO: Default: KeySpecification(info_keys={'energy': 'energy_xtb', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'total_charge', 'polarizability': 'polarizability', 'total_spin': 'total_spin'}, arrays_keys={'forces': 'forces_xtb', 'charges': 'REF_charges'})
+2025-10-21 15:46:35.363 INFO: =============    Processing head Default     ===========
+2025-10-21 15:46:35.720 INFO: Training set 1/1 [energy: 412, stress: 0, virials: 0, dipole components: 0, head: 412, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 412, charges: 0]
+2025-10-21 15:46:35.722 INFO: Total Training set [energy: 412, stress: 0, virials: 0, dipole components: 0, head: 412, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 412, charges: 0]
+2025-10-21 15:46:35.722 INFO: No validation set provided, splitting training data instead.
+2025-10-21 15:46:35.723 INFO: Using random 10% of training set for validation with indices saved in: ./valid_indices_123.txt
+2025-10-21 15:46:35.726 INFO: Random Split Training set [energy: 371, stress: 0, virials: 0, dipole components: 0, head: 371, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 371, charges: 0]
+2025-10-21 15:46:35.726 INFO: Random Split Validation set [energy: 41, stress: 0, virials: 0, dipole components: 0, head: 41, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 41, charges: 0]
+2025-10-21 15:46:36.066 INFO: Test set 1/1 [energy: 407, stress: 0, virials: 0, dipole components: 0, head: 407, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 407, charges: 0]
+2025-10-21 15:46:36.068 INFO: Total Test set [energy: 407, stress: 0, virials: 0, dipole components: 0, head: 407, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 407, charges: 0]
+2025-10-21 15:46:36.068 INFO: Total number of configurations: train=371, valid=41, tests=[Default_Default: 407],
+2025-10-21 15:46:36.076 INFO: Atomic Numbers used: [np.int64(1), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(16)]
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251021_MACE_FIT/train_mace.py", line 19, in <module>
+    train_mace(args.config)
+  File "/data/dydtkddhkdwk/20251021_MACE_FIT/train_mace.py", line 11, in train_mace
+    mace_train_main()
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/mace/cli/run_train.py", line 77, in main
+    run(args)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/mace/cli/run_train.py", line 417, in run
+    assert head_config.E0s is not None, "Atomic energies must be provided"
+AssertionError: Atomic energies must be provided

@@ -1,0 +1,4 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+706,3.0,"Gd - Gd   | Gd+3 5, 90 (1999).",157.25,oplsaa.lt,Gd,64
+647,3.0,"""Gadolinium Ion Gd+3""",157.25,oplsaa2008.lt,Gd,64
+706,3.0,"Gd - Gd   | Gd+3 5, 90 (1999).",157.25,oplsaa2024.lt,Gd,64

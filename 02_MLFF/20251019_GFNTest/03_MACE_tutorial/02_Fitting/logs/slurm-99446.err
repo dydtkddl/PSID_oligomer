@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try02_cuequivariance_test/CUDACHECK.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'

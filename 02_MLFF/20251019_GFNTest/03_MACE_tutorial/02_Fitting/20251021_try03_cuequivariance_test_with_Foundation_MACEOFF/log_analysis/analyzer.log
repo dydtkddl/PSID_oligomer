@@ -1,0 +1,10 @@
+2025-10-21 22:45:52,011 INFO: Start MACE log analysis
+2025-10-21 22:45:52,011 INFO: log file: 20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/logs/train_99451.log
+2025-10-21 22:45:52,012 INFO: outdir:   20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/log_analysis
+2025-10-21 22:45:52,226 INFO: 선택된 TRAINING 섹션 인덱스: 0, 라인 범위: [53, 158] (총 106줄)
+2025-10-21 22:45:52,241 INFO: 파싱 완료: 총 101 레코드 (Initial 포함). 에폭 범위: -1 ~ 99
+2025-10-21 22:45:52,249 INFO: CSV 저장: 20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/log_analysis/metrics_epoch_times.csv
+2025-10-21 22:45:52,621 INFO: 메트릭 플롯 저장: 20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/log_analysis/plot_metrics.png
+2025-10-21 22:45:52,792 INFO: 시간 플롯 저장: 20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/log_analysis/plot_time.png
+2025-10-21 22:45:52,793 INFO: 최종 에폭 요약: epoch=99, loss=0.006607, RMSE_E=2.650 meV/atom, RMSE_F=22.470 meV/Å, 누적시간=1912.4 sec
+2025-10-21 22:45:52,793 INFO: 완료

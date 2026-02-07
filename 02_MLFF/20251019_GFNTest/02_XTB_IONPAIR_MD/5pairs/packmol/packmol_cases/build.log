@@ -1,0 +1,15 @@
+[2025-10-20 15:16:59] INFO: Reading multi-frame XYZ files...
+[2025-10-20 15:16:59] INFO: TFSI file TFSI_confcross.xyz: 4 frames
+[2025-10-20 15:16:59] INFO: TFSI file TFSI_crest_conformers.xyz: 12 frames
+[2025-10-20 15:16:59] INFO: TFSI file TFSI_crest_rotamers.xyz: 90 frames
+[2025-10-20 15:16:59] INFO: VBBI file VBBI_confcross.xyz: 750 frames
+[2025-10-20 15:16:59] INFO: VBBI file VBBI_crest_conformers.xyz: 175 frames
+[2025-10-20 15:16:59] INFO: VBBI file VBBI_crest_rotamers.xyz: 396 frames
+[2025-10-20 15:16:59] INFO: Total TFSI frames: 106; total VBBI frames: 1321
+[2025-10-20 15:16:59] DEBUG: Case 001: TFSI idx [99, 54, 85, 97, 12]; VBBI idx [806, 722, 128, 958, 339]
+[2025-10-20 15:16:59] DEBUG: Running in /mnt/d/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/5pairs/packmol/packmol_cases/case_001: packmol < packmol.inp
+[2025-10-20 15:16:59] INFO: [OK] case_001 completed.
+[2025-10-20 15:16:59] INFO: === Summary ===
+[2025-10-20 15:16:59] INFO: Success: 1 / 1
+[2025-10-20 15:16:59] INFO: Timeouts: 0
+[2025-10-20 15:16:59] INFO: Failed:   0

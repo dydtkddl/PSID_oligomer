@@ -1,0 +1,7 @@
+CUDA OK? True
+Torch version: 2.7.1+cu118
+CUDA available: True
+CUDA version torch was built with: 11.8
+cuEquivariance OK
+=== Job Completed ===
+Tue 21 Oct 2025 08:06:49 PM KST

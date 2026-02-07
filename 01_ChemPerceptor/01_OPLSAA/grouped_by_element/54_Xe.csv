@@ -1,0 +1,4 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+105,0.0,"Xe - Xe   | Xe - """,131.293,oplsaa.lt,Xe,54
+62,0.0,"""Xenon Atom""",131.3,oplsaa2008.lt,Xe,54
+105,0.0,"Xe - Xe   | Xe - """,131.293,oplsaa2024.lt,Xe,54

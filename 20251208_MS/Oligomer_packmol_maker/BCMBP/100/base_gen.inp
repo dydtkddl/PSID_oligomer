@@ -1,0 +1,12 @@
+tolerance 2.5
+filetype pdb
+output case_{index}.pdb
+
+structure ../pore_A.pdb
+  number 100
+  inside box 0 0 0 140 140 140
+end structure
+
+seed {seed}
+randominitialpoint
+

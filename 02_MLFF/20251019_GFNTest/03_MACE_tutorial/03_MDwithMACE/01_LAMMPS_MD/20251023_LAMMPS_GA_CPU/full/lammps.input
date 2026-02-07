@@ -1,0 +1,72 @@
+############################################################
+# LAMMPS + MACE - Ionic Liquid MD (CPU, robust & box-relax)
+############################################################
+
+units           real
+atom_style      atomic 
+boundary        p p p
+atom_modify     map yes
+
+read_data       ionpairs_full.data
+# (이미 orthogonal/0-20-20-20 박스 확인됨)
+
+# ---------- MACE ----------
+pair_style      mace no_domain_decomposition
+pair_coeff      * * ../mace_off_finetune_stagetwo_compiled.model-lammps.pt C H N O F S
+
+# ---------- Neighbor / Thermo ----------
+neighbor        2.0 bin
+neigh_modify    delay 5 every 1 check yes        # minimize 중엔 LAMMPS가 every=1,delay=0으로 자동 조정
+thermo_style    custom step temp pe ke etotal press vol density lx ly lz xy xz yz
+thermo          200
+thermo_modify   flush yes                        # 로그 즉시 플러시
+
+# ---------- Stage 0: Energy minimization (VERBOSE) ----------
+# 기존 thermo 설정을 덮어써서 minimize 동안만 매우 자주 출력
+thermo_style    custom step pe press fmax fnorm lx ly lz
+thermo          1
+thermo_modify   flush yes line one                    # 한 줄 출력 + 즉시 플러시
+
+reset_timestep  0
+min_style       cg
+min_modify      dmax 0.2 line quadratic               # 수렴 안정화
+
+# (선택) 최소화 진행을 눈으로도 보려면: 미니 덤프(최소화 동안만)
+dump            mindmp all atom 50 mini_traj.lammpstrj
+dump_modify     mindmp sort id
+
+minimize        1.0e-6 1.0e-6 2000 20000
+
+# 최소화 전용 설정/덤프 정리
+undump          mindmp
+# 이후 단계(NVT/NPT)를 위해 thermo 포맷/주기 복구
+thermo_style    custom step temp pe ke etotal press vol density lx ly lz
+thermo          200
+
+
+
+
+
+
+# ---------- Stage 1: Gentle NVT (짧게 & 안전하게) ----------
+velocity        all create 300.0 4928459 rot yes dist gaussian
+timestep        0.5                                       # 초반 안전
+fix             nvt1 all nvt temp 300.0 300.0 100.0
+run             10000                                     # 5 ps
+unfix           nvt1
+
+# ---------- Stage 2: NPT (박스 동적, 생산 전 밀도 수렴) ----------
+timestep        1.0
+# Tdamp ~ 100 fs, Pdamp은 real 유닛에서 1500~3000 fs 권장 (너무 튀면 값 키우기)
+fix             npt1 all npt temp 300.0 300.0 100.0 iso 1.0 1.0 2000.0
+run             50000                                     # 50 ps (필요시 더 연장)
+# run           100000                                    # +100 ps 등
+
+# ---------- Output ----------
+dump            trj all atom 500 traj.lammpstrj
+dump_modify     trj sort id
+restart         20000 restart.mace_il.%03d
+
+unfix           npt1
+write_data      il_equilibrated.data
+############################################################

@@ -1,0 +1,6 @@
+[2025-10-22 15:44:21] === INITIALIZING MD RUN ===
+[2025-10-22 15:44:21] [DEVICE] Using GPU: NVIDIA GeForce RTX 3090
+[2025-10-22 15:44:21] [LOAD] Reading initial structure from: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/00_bulkmake/packmol_cases/case_001/ionpairs.xyz
+[2025-10-22 15:44:21] [MODEL] Loading MACE model: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model
+[2025-10-22 15:44:26] [MD] Langevin thermostat initialized (Target Temp=1200.0K, dt=1fs)
+[2025-10-22 15:44:26] [MD] Simulation started (total_steps=2000, interval=10)

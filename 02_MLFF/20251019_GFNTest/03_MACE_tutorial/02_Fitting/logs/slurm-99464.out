@@ -1,0 +1,40 @@
+Wed 22 Oct 2025 01:04:18 AM KST
+Working Directory: /data/dydtkddhkdwk/20251021_MACE_FIT/20251022_try03_eval
+Wed Oct 22 01:04:18 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:43:00.0 Off |                  N/A |
+| 60%   22C    P8              27W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251021_MACE_FIT/20251022_try03_eval/eval.py", line 27, in <module>
+    eval_mace(
+  File "/data/dydtkddhkdwk/20251021_MACE_FIT/20251022_try03_eval/eval.py", line 18, in eval_mace
+    mace_eval_configs_main()
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/mace/cli/eval_configs.py", line 132, in main
+    run(args)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/mace/cli/eval_configs.py", line 140, in run
+    model = torch.load(f=args.model, map_location=args.device)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/torch/serialization.py", line 1319, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/torch/serialization.py", line 659, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/torch/serialization.py", line 640, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune/mace_off_finetune_stagetwo.model'
+=== Job Completed ===
+Wed 22 Oct 2025 01:04:25 AM KST

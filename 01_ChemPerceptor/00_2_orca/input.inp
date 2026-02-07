@@ -1,0 +1,10 @@
+! PBE-D4 def2-SVP def2/J TightSCF RIJCOSX Opt
+
+%maxcore 5000
+
+%pal
+nprocs 32
+end
+
+* xyz 0 1
+*

@@ -1,0 +1,40 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+
+****** PyMBAR will use 64-bit JAX! *******
+* JAX is currently set to 32-bit bitsize *
+* which is its default.                  *
+*                                        *
+* PyMBAR requires 64-bit mode and WILL   *
+* enable JAX's 64-bit mode when called.  *
+*                                        *
+* This MAY cause problems with other     *
+* Uses of JAX in the same code.          *
+******************************************
+
+[W init.cpp:767] Warning: nvfuser is no longer supported in torch script, use _jit_set_nvfuser_enabled is deprecated and a no-op (function operator())
+INFO:mace_md:Using SMFF openff_unconstrained-1.0.0.offxml
+/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/openff/toolkit/utils/rdkit_wrapper.py:938: MultipleComponentsInMoleculeWarning: RDKit Molecule passed to from_rdkit consists of more than one molecule, consider running rdkit.Chem.AllChem.GetMolFrags(rdmol, asMols=True) or splitting input SMILES at '.' to get separate molecules and pass them to from_rdkit one at a time. While this is supported for legacy reasons, OpenFF Molecule objects are not supposed to contain disconnected chemical graphs and this may result in undefined behavior later on. The OpenFF ecosystem is built to handle multiple molecules, but they should be in a Topology object, ex: top = Topology.from_molecules([mol1, mol2])
+  mol = self.from_rdkit(rdmol, allow_undefined_stereo=allow_undefined_stereo, _cls=_cls)
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/bin/mace-md", line 7, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/mace_md/cli/entrypoint.py", line 114, in main
+    system = PureSystem(
+             ^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/mace_md/hybrid_md.py", line 1028, in __init__
+    self.create_system(ml_mol=ml_mol, model_path=model_path)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/mace_md/hybrid_md.py", line 1099, in create_system
+    molecule = Molecule.from_file(ml_mol)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/openff/toolkit/topology/molecule.py", line 3887, in from_file
+    mols = toolkit.from_file(  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/openff/toolkit/utils/rdkit_wrapper.py", line 981, in from_file
+    mols.extend(
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/openff/toolkit/utils/rdkit_wrapper.py", line 938, in _process_sdf_supplier
+    mol = self.from_rdkit(rdmol, allow_undefined_stereo=allow_undefined_stereo, _cls=_cls)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/openff/toolkit/utils/rdkit_wrapper.py", line 2209, in from_rdkit
+    raise RadicalsNotSupportedError(
+openff.toolkit.utils.exceptions.RadicalsNotSupportedError: The OpenFF Toolkit does not currently support parsing molecules with S- and P-block radicals. Found 1 radical electrons on molecule O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N]S(=O)(=O)C(F)(F)F)C(F)(F)F.[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].[H]C([H])=C([H])c1c([H])c([H])c(C([H])([H])N2C([H])([H])C([H])([H])[N@+]([H])(C([H])([H])C([H])([H])C([H])([H])C([H])([H])[H])C2([H])[H])c([H])c1[H].

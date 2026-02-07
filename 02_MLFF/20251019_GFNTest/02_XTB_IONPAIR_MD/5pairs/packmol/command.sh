@@ -1,0 +1,12 @@
+python build_packmol_ionpairs.py \
+  --tfsifiles ../../TFSI_confcross.xyz ../../TFSI_crest_conformers.xyz ../../TFSI_crest_rotamers.xyz \
+  --vbbifiles ../../VBBI_confcross.xyz ../../VBBI_crest_conformers.xyz ../../VBBI_crest_rotamers.xyz \
+  --ncases 1 \
+  --ntfsi 5 --nvbbi 5 \
+  --box 0 0 0 15 15 15 \
+  --tolerance 2.0 \
+  --outroot ./packmol_cases \
+  --packmol packmol \
+  --seed 1000 \
+  --timeout 120 \
+  --verbose

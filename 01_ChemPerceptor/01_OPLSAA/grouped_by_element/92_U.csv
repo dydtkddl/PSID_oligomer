@@ -1,0 +1,4 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+436,2.5,"U  - U~   | U in UO2+ J Mol Struct 366, 55 (96)",238.029,oplsaa.lt,U,92
+378,2.5,"""Uranyl Ion UO2+""",238.029,oplsaa2008.lt,U,92
+436,2.5,"U  - U~   | U in UO2+ J Mol Struct 366, 55 (96)",238.029,oplsaa2024.lt,U,92

@@ -1,0 +1,9 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+11,0.0,Na - Na   |,22.99,oplsaa.lt,Na,11
+407,1.0,Na - Na   | Na+,22.99,oplsaa.lt,Na,11
+1107,1.0,Na - Na   | Na+ unchanged from,22.99,oplsaa.lt,Na,11
+349,1.0,"""Sodium Ion Na+""",22.99,oplsaa2008.lt,Na,11
+880,1.0,"""Sodium Ion (GBSA)""",22.99,oplsaa2008.lt,Na,11
+11,0.0,Na - Na   |,22.99,oplsaa2024.lt,Na,11
+407,1.0,Na - Na   | Na+,22.99,oplsaa2024.lt,Na,11
+1107,1.0,Na - Na   | Na+ unchanged from,22.99,oplsaa2024.lt,Na,11

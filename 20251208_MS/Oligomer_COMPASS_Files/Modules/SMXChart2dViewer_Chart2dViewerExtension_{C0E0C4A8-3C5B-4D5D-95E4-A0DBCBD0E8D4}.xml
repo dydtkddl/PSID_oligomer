@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="latin1"?>
+<EXTENSION VERSION="25.1">
+<LOGICS>
+<LOGICITEM NAME="Extents">
+	<STATE NAME="Chart2dViewerExtentsState" VERSION="25.1">
+	<PROPERTIES>
+	<PROPERTY NAME="SyncXAxes">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+</LOGICS>
+</EXTENSION>

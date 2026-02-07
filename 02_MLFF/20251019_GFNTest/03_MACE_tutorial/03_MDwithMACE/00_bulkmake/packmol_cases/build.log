@@ -1,0 +1,15 @@
+[2025-10-23 14:19:00] INFO: Reading multi-frame XYZ files...
+[2025-10-23 14:19:00] INFO: TFSI file TFSI_confcross.xyz: 4 frames
+[2025-10-23 14:19:00] INFO: TFSI file TFSI_crest_conformers.xyz: 12 frames
+[2025-10-23 14:19:00] INFO: TFSI file TFSI_crest_rotamers.xyz: 90 frames
+[2025-10-23 14:19:00] INFO: VBBI file VBBI_confcross.xyz: 750 frames
+[2025-10-23 14:19:00] INFO: VBBI file VBBI_crest_conformers.xyz: 175 frames
+[2025-10-23 14:19:00] INFO: VBBI file VBBI_crest_rotamers.xyz: 396 frames
+[2025-10-23 14:19:00] INFO: Total TFSI frames: 106; total VBBI frames: 1321
+[2025-10-23 14:19:00] DEBUG: Case 001: TFSI idx [99, 54, 85, 97, 12, 50, 45, 8, 59, 21, 68, 55, 16, 28, 30]; VBBI idx [745, 1001, 415, 750, 466, 938, 374, 83, 998, 292, 945, 851, 411, 47, 1097]
+[2025-10-23 14:19:00] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_001: packmol < packmol.inp
+[2025-10-23 14:19:00] INFO: [OK] case_001 completed.
+[2025-10-23 14:19:00] INFO: === Summary ===
+[2025-10-23 14:19:00] INFO: Success: 1 / 1
+[2025-10-23 14:19:00] INFO: Timeouts: 0
+[2025-10-23 14:19:00] INFO: Failed:   0

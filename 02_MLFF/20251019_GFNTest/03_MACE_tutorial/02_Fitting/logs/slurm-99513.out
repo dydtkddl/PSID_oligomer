@@ -1,0 +1,43 @@
+=== MACE Training Started ===
+Wed 22 Oct 2025 02:51:49 PM KST
+Working Directory: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD
+Wed Oct 22 14:51:49 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:43:00.0 Off |                  N/A |
+| 60%   23C    P8              27W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+[2025-10-22 14:51:51] === INITIALIZING ===
+[2025-10-22 14:51:51] [GPU] Using GPU: NVIDIA GeForce RTX 3090
+[2025-10-22 14:51:51] [LOAD] Loading structure: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/00_bulkmake/packmol_cases/case_001/ionpairs.xyz
+[2025-10-22 14:51:51] [MODEL] Loading MACE model: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model
+Using head Default out of ['Default']
+Default dtype float32 does not match model dtype float64, converting models to float32.
+[2025-10-22 14:51:57] [MD] Langevin thermostat set (T=1200.0K, dt=1fs)
+[2025-10-22 14:51:57] [MD] Starting simulation...
+[2025-10-22 14:53:12] [MD] Step 50, E=-52.0102 eV/atom, T=1207.1K
+[2025-10-22 14:53:12] [GPU] Memory used: 6550 MB
+[2025-10-22 14:54:17] [MD] Step 100, E=-52.0141 eV/atom, T=1165.4K
+[2025-10-22 14:54:17] [GPU] Memory used: 6550 MB
+[2025-10-22 14:55:20] [MD] Step 150, E=-52.0105 eV/atom, T=1171.8K
+[2025-10-22 14:55:20] [GPU] Memory used: 6550 MB
+[2025-10-22 14:56:22] [MD] Step 200, E=-52.0126 eV/atom, T=1153.3K
+[2025-10-22 14:56:22] [GPU] Memory used: 6550 MB
+[2025-10-22 14:56:23] [MD] FINISHED in 4.44 min -> /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md_gpu/mace01_md.xyz
+[2025-10-22 14:56:23] [DONE] All tasks completed ✅
+=== Job Completed ===
+Wed 22 Oct 2025 02:56:24 PM KST

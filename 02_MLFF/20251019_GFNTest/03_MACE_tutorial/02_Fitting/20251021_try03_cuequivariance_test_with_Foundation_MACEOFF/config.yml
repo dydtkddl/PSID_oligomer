@@ -1,0 +1,37 @@
+model: "ScaleShiftMACE"
+
+E0s:
+  1: -10.707211383396714
+  6: -48.847445262804705
+  7: -71.00681805517411
+  8: -102.57117256025786
+  9: -125.69864294466228
+  16: -85.66881795502964
+
+num_channels: 64
+max_L: 1
+r_max: 4.5
+name: "mace_off_finetune"
+
+model_dir: "/data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models"
+log_dir: "/data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models"
+checkpoints_dir: "/data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models"
+results_dir: "/data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models"
+
+train_file: "/data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_train_0.5_.extxyz"
+test_file: "/data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_test_0.5_.extxyz"
+valid_fraction: 0.1
+
+energy_key: "energy_xtb"
+forces_key: "forces_xtb"
+device: cuda
+batch_size: 10
+max_num_epochs: 100
+swa: True
+seed: 123
+
+foundation_model: "/data/dydtkddhkdwk/20251021_MACE_FIT/mace-off/mace_off24/MACE-OFF24_medium.model"
+
+
+enable_cueq: true
+

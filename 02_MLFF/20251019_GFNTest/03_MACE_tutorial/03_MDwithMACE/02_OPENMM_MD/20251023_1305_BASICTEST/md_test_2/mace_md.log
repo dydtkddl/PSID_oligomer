@@ -1,0 +1,3 @@
+2025-10-23 13:19:17.088 INFO: Using SMFF openff_unconstrained-1.0.0.offxml
+2025-10-23 13:19:17.161 INFO: Initialized topology with (32, 3) positions
+2025-10-23 13:19:17.165 WARNING: Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.

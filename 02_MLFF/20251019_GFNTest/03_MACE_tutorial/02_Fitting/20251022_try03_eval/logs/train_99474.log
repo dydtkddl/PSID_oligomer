@@ -1,0 +1,25 @@
+=====================================================
+[INFO] CUDA is available ✅ Using GPU: NVIDIA GeForce RTX 3090
+[INFO] CUDA Device Count: 1
+=====================================================
+
+[INFO] 2025-10-22 02:02:16 | ✅ START EVALUATION
+[INFO] 2025-10-22 02:02:16 | 🚀 Evaluating dataset: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_train_0.5_.extxyz
+Running eval on dataset_train_0.5_.extxyz:   0%|          | 0/1 [00:00<?, ?it/s]Running eval on dataset_train_0.5_.extxyz: 100%|██████████| 1/1 [00:34<00:00, 34.01s/it]Running eval on dataset_train_0.5_.extxyz: 100%|██████████| 1/1 [00:34<00:00, 34.01s/it]
+[INFO] 2025-10-22 02:02:50 | ✅ Done: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_train_0.5_.extxyz
+
+[INFO] 2025-10-22 02:02:50 | 🚀 Evaluating dataset: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_test_0.5_.extxyz
+Running eval on dataset_test_0.5_.extxyz:   0%|          | 0/1 [00:00<?, ?it/s]Running eval on dataset_test_0.5_.extxyz: 100%|██████████| 1/1 [00:33<00:00, 33.08s/it]Running eval on dataset_test_0.5_.extxyz: 100%|██████████| 1/1 [00:33<00:00, 33.08s/it]
+[INFO] 2025-10-22 02:03:23 | ✅ Done: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_test_0.5_.extxyz
+
+[INFO] 2025-10-22 02:03:23 | 📥 Loading evaluation results...
+[INFO] 2025-10-22 02:03:24 | 📊 Generating RMSE plots...
+[INFO] 2025-10-22 02:03:24 | 📊 Saved RMSE plot: tests/mace_eval/RMSE_TRAIN.png
+[INFO] 2025-10-22 02:03:25 | 📊 Saved RMSE plot: tests/mace_eval/RMSE_TEST.png
+[INFO] 2025-10-22 02:03:25 | ⚙️ Extracting molecular properties for vibrational analysis...
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251021_MACE_FIT/20251022_try03_eval/eval.py", line 120, in <module>
+    aa.extract_molecs(db_xtb, intra_inter=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/aseMolec/anaAtoms.py", line 170, in extract_molecs
+    at.arrays['forces_trans'] = np.concatenate(atftrn)
+ValueError: need at least one array to concatenate

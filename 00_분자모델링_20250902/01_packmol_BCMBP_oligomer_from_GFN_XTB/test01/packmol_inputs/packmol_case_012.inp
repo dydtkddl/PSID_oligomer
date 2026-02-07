@@ -1,0 +1,12 @@
+tolerance 2.0
+filetype xyz
+output case_012.xyz
+
+structure /home/yongsang/PSID_oligomer/00_분자모델링_20250902/01_packmol_BCMBP_oligomer_from_GFN_XTB/test01/BCMBP_xtbopt.xyz
+  number 25
+  inside box 0 0 0 100 100 100
+end structure
+
+seed 1012
+randominitialpoint
+

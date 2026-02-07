@@ -1,0 +1,17 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+53,0.0,I  - I~   |,126.905,oplsaa.lt,I,53
+403,-1.0,I  - I~   | I- 400-410 new OPLS:,126.905,oplsaa.lt,I,53
+732,-0.1,I  - I~   | I iodobenzene in OPLS/2020,126.905,oplsaa.lt,I,53
+1014,-0.13,I  - I~   | I iodoalkane - tentative,126.905,oplsaa.lt,I,53
+1019,-0.26,I  - I~   | I iodobenzene with X site,126.905,oplsaa.lt,I,53
+1103,-1.0,I  - I~   | I- of hydration for,126.905,oplsaa.lt,I,53
+346,-1.0,"""Iodide Ion I-""",126.905,oplsaa2008.lt,I,53
+673,-0.1,"""Iodobenzene CI""",126.905,oplsaa2008.lt,I,53
+838,-0.13,"""Alkyl Iodide C-I""",126.905,oplsaa2008.lt,I,53
+878,-1.0,"""Iodide Ion (GBSA)""",126.905,oplsaa2008.lt,I,53
+53,0.0,I  - I~   |,126.905,oplsaa2024.lt,I,53
+403,-1.0,I  - I~   | I- 400-410 new OPLS:,126.905,oplsaa2024.lt,I,53
+732,-0.1,I  - I~   | I iodobenzene in OPLS/2020,126.905,oplsaa2024.lt,I,53
+1014,-0.13,I  - I~   | I iodoalkane - tentative,126.905,oplsaa2024.lt,I,53
+1019,-0.26,I  - I~   | I iodobenzene with X site,126.905,oplsaa2024.lt,I,53
+1103,-1.0,I  - I~   | I- of hydration for,126.905,oplsaa2024.lt,I,53

@@ -1,0 +1,7 @@
+
+========== MACE MD Runtime Summary ==========
+[1] Warmup time (Init → MD start):     0:00:04
+[2] Pure MD runtime (0% → 100%):       0:04:39
+[3] Total runtime (Init → End):        0:04:43
+=============================================
+

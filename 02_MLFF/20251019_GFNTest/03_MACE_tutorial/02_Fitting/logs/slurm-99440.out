@@ -1,0 +1,54 @@
+=== MACE Training Started ===
+Tue 21 Oct 2025 07:55:36 PM KST
+Working Directory: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try02_cuequivariance_test
+Tue Oct 21 19:55:36 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:43:00.0 Off |                  N/A |
+| 60%   22C    P8              27W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+🔥 Starting MACE training with config: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try02_cuequivariance_test/config-02.yml
+2025-10-21 19:55:44.982 INFO: ===========VERIFYING SETTINGS===========
+2025-10-21 19:55:44.983 INFO: MACE version: 0.3.14
+2025-10-21 19:55:45.014 INFO: CUDA version: 11.8, CUDA device: 0
+2025-10-21 19:55:45.103 INFO: ===========LOADING INPUT DATA===========
+2025-10-21 19:55:45.103 INFO: Using heads: ['Default']
+2025-10-21 19:55:45.103 INFO: Using the key specifications to parse data:
+2025-10-21 19:55:45.103 INFO: Default: KeySpecification(info_keys={'energy': 'energy_xtb', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'total_charge', 'polarizability': 'polarizability', 'total_spin': 'total_spin'}, arrays_keys={'forces': 'forces_xtb', 'charges': 'REF_charges'})
+2025-10-21 19:55:45.103 INFO: =============    Processing head Default     ===========
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try02_cuequivariance_test/train_mace.py", line 19, in <module>
+    train_mace(args.config)
+  File "/data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try02_cuequivariance_test/train_mace.py", line 11, in train_mace
+    mace_train_main()
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/mace/cli/run_train.py", line 77, in main
+    run(args)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/mace/cli/run_train.py", line 297, in run
+    collections, atomic_energies_dict = get_dataset_from_xyz(
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/mace/tools/scripts_utils.py", line 104, in get_dataset_from_xyz
+    ae_dict, train_configs = data.load_from_xyz(
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/mace/data/utils.py", line 225, in load_from_xyz
+    atoms_list = ase.io.read(file_path, index=":")
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/ase/io/formats.py", line 787, in read
+    format = format or filetype(filename, read=isinstance(filename, str))
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/ase/io/formats.py", line 962, in filetype
+    fd = open_with_compression(filename, 'rb')
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/ase/io/formats.py", line 591, in open_with_compression
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '${WORKDIR}/dataset_train_0.5_.extxyz'
+=== Job Completed ===
+Tue 21 Oct 2025 07:55:46 PM KST

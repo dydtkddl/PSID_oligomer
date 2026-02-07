@@ -1,0 +1,4 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+697,3.0,Ac - Ac   | Ac+3 Actinide params -,227.0,oplsaa.lt,Ac,89
+638,3.0,"""Actinium Ion Ac+3""",227.0,oplsaa2008.lt,Ac,89
+697,3.0,Ac - Ac   | Ac+3 Actinide params -,227.0,oplsaa2024.lt,Ac,89

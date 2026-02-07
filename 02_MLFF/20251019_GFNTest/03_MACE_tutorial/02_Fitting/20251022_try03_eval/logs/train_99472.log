@@ -1,0 +1,21 @@
+=====================================================
+[INFO] CUDA is available ✅ Using GPU: NVIDIA GeForce RTX 3090
+[INFO] CUDA Device Count: 1
+=====================================================
+
+[INFO] 2025-10-22 01:52:16 | ✅ START EVALUATION
+[INFO] 2025-10-22 01:52:16 | 🚀 Evaluating dataset: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_train_0.5_.extxyz
+Running eval on dataset_train_0.5_.extxyz:   0%|          | 0/1 [00:00<?, ?it/s]Running eval on dataset_train_0.5_.extxyz: 100%|██████████| 1/1 [00:34<00:00, 34.08s/it]Running eval on dataset_train_0.5_.extxyz: 100%|██████████| 1/1 [00:34<00:00, 34.08s/it]
+[INFO] 2025-10-22 01:52:50 | ✅ Done: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_train_0.5_.extxyz
+
+[INFO] 2025-10-22 01:52:50 | 🚀 Evaluating dataset: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_test_0.5_.extxyz
+Running eval on dataset_test_0.5_.extxyz:   0%|          | 0/1 [00:00<?, ?it/s]Running eval on dataset_test_0.5_.extxyz: 100%|██████████| 1/1 [00:33<00:00, 33.07s/it]Running eval on dataset_test_0.5_.extxyz: 100%|██████████| 1/1 [00:33<00:00, 33.07s/it]
+[INFO] 2025-10-22 01:53:24 | ✅ Done: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_test_0.5_.extxyz
+
+[INFO] 2025-10-22 01:53:24 | 📥 Loading evaluation results...
+[INFO] 2025-10-22 01:53:24 | 📊 Generating RMSE plots...
+[INFO] 2025-10-22 01:53:25 | 📊 Saved RMSE plot: tests/mace_eval/RMSE_TRAIN.png
+[INFO] 2025-10-22 01:53:25 | 📊 Saved RMSE plot: tests/mace_eval/RMSE_TEST.png
+[INFO] 2025-10-22 01:53:25 | ⚙️ Extracting molecular properties for vibrational analysis...
+[INFO] 2025-10-22 01:53:34 | 🎯 Saved Trans/Rot/Vib plot: tests/mace_eval/VIB_Comparison.png
+[INFO] 2025-10-22 01:53:34 | 🎉 ALL EVALUATION + VISUALIZATION COMPLETE ✅

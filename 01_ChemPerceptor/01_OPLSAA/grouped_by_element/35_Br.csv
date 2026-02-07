@@ -1,0 +1,23 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+35,0.0,Br - Br   |,79.904,oplsaa.lt,Br,35
+402,-1.0,Br - Br   | Br-,79.904,oplsaa.lt,Br,35
+722,-0.22,Br - Br   | Br alkyl bromide (UA),79.904,oplsaa.lt,Br,35
+730,-0.15,Br - Br   | Br bromobenzene,79.904,oplsaa.lt,Br,35
+975,-0.2,Br - Br   | Br in alkyl bromides JPCB 16264 (2004),79.904,oplsaa.lt,Br,35
+982,-0.08,Br - Br   | Br in acyl bromide tentative,79.904,oplsaa.lt,Br,35
+1017,-0.27,Br - Br   | Br bromobenzene with X site,79.904,oplsaa.lt,Br,35
+1102,-1.0,Br - Br   | Br- correct free energies,79.904,oplsaa.lt,Br,35
+345,-1.0,"""Bromide Ion Br-""",79.904,oplsaa2008.lt,Br,35
+663,-0.22,"""Bromide -CH2-Br (UA)""",79.904,oplsaa2008.lt,Br,35
+671,-0.2,"""Bromobenzene CBr""",79.904,oplsaa2008.lt,Br,35
+805,-0.2,"""Alkyl Bromide C-Br""",79.904,oplsaa2008.lt,Br,35
+812,-0.08,"""Acyl Bromide Br-C=O""",79.904,oplsaa2008.lt,Br,35
+877,-1.0,"""Bromide Ion (GBSA)""",79.904,oplsaa2008.lt,Br,35
+35,0.0,Br - Br   |,79.904,oplsaa2024.lt,Br,35
+402,-1.0,Br - Br   | Br-,79.904,oplsaa2024.lt,Br,35
+722,-0.22,Br - Br   | Br alkyl bromide (UA),79.904,oplsaa2024.lt,Br,35
+730,-0.15,Br - Br   | Br bromobenzene,79.904,oplsaa2024.lt,Br,35
+975,-0.2,Br - Br   | Br in alkyl bromides JPCB 16264 (2004),79.904,oplsaa2024.lt,Br,35
+982,-0.08,Br - Br   | Br in acyl bromide tentative,79.904,oplsaa2024.lt,Br,35
+1017,-0.27,Br - Br   | Br bromobenzene with X site,79.904,oplsaa2024.lt,Br,35
+1102,-1.0,Br - Br   | Br- correct free energies,79.904,oplsaa2024.lt,Br,35

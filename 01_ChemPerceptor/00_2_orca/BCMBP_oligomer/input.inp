@@ -1,0 +1,10 @@
+! PBE def2-SVP def2/J TightSCF RIJCOSX Opt D4
+
+
+%maxcore 5000
+
+%pal
+nprocs 32
+end
+
+* xyzfile 0 1 xtbopt.xyz

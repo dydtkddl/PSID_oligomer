@@ -1,0 +1,32 @@
+=== MACE Training Started ===
+Wed 22 Oct 2025 12:34:48 PM KST
+Working Directory: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD
+Wed Oct 22 12:34:48 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:43:00.0 Off |                  N/A |
+| 60%   23C    P8              27W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+====================================================
+[INFO] ✅ CUDA available: NVIDIA GeForce RTX 3090
+====================================================
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md.py", line 69, in <module>
+    init_conf = ea.sel_by_info_val(read(DATA_PATH, ":"), "Nmols", 1)[0].copy()
+IndexError: list index out of range
+=== Job Completed ===
+Wed 22 Oct 2025 12:34:51 PM KST

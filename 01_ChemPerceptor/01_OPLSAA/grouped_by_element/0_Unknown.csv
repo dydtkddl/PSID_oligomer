@@ -1,0 +1,20 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+1006,0.075,"XX - XC   | chlorine plus site Jan 23, 2012",0.0,oplsaa.lt,Unknown,0
+1007,0.1,"XX - XB   | bromine plus site Jan 23, 2012",0.0,oplsaa.lt,Unknown,0
+1008,0.11,"XX - XI   | iodine plus site Jan 23, 2012",0.0,oplsaa.lt,Unknown,0
+9995,-1.0484,"XX - tipM | TIP4P water M, long-range Coulombic solver",0.0,oplsaa.lt,Unknown,0
+9992,-0.241,"XX - tipL | TIP5P water L, long-range Coulombic solver",0.0,oplsaa.lt,Unknown,0
+9985,-1.358284,XX - opcE | OPC water E,0.0,oplsaa.lt,Unknown,0
+67,-1.04,"""TIP4P Water M""",9.999999999999999e-31,oplsaa2008.lt,Unknown,0
+72,-1.022,"""TIP4F Water M""",9.999999999999999e-31,oplsaa2008.lt,Unknown,0
+75,-0.241,"""TIP5P Water LP""",9.999999999999999e-31,oplsaa2008.lt,Unknown,0
+339,0.2,"""DiMePhosphate CH3-O (UA)""",15.035,oplsaa2008.lt,Unknown,0
+347,1.0,"""Ammonium Ion NH4+ (UA)""",18.039,oplsaa2008.lt,Unknown,0
+375,-0.98,"""Ethyl Anion CH3-CH2-""",9.999999999999999e-31,oplsaa2008.lt,Unknown,0
+834,2.0,"""Zinc Ion Zn+2""",9.999999999999999e-31,oplsaa2008.lt,Unknown,0
+1006,0.075,"XX - XC   | chlorine plus site Jan 23, 2012",0.0,oplsaa2024.lt,Unknown,0
+1007,0.1,"XX - XB   | bromine plus site Jan 23, 2012",0.0,oplsaa2024.lt,Unknown,0
+1008,0.11,"XX - XI   | iodine plus site Jan 23, 2012",0.0,oplsaa2024.lt,Unknown,0
+9995,-1.0484,"XX - tipM | TIP4P water M, long-range Coulombic solver",0.0,oplsaa2024.lt,Unknown,0
+9992,-0.241,"XX - tipL | TIP5P water L, long-range Coulombic solver",0.0,oplsaa2024.lt,Unknown,0
+9985,-1.358284,XX - opcE | OPC water E,0.0,oplsaa2024.lt,Unknown,0

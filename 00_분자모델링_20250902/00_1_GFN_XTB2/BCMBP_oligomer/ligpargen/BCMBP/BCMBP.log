@@ -1,0 +1,21 @@
+2025-10-14 00:23:43 — INFO — INPUT FILE: xtbopt_fixed.xyz
+2025-10-14 00:23:43 — INFO — NUMBER OF OPTIMIZATIONS: 0
+2025-10-14 00:23:43 — INFO — Parsing molecule from input: /home/yongsang/PSID_oligomer/00_분자모델링_20250902/00_1_GFN_XTB2/BCMBP_oligomer/ligpargen/xtbopt_fixed.xyz
+2025-10-14 00:23:44 — INFO — Center of mass position:  1.816 21.646  2.646
+2025-10-14 00:23:44 — INFO — Closest atom to the center of mass: C  181 with distance :  0.931  (A) 
+2025-10-14 00:23:44 — INFO — MOLECULE CHARGE USED: 0
+2025-10-14 00:23:44 — INFO — CHARGE ALGORITHM USED: CM1A
+2025-10-14 00:23:44 — INFO — RESIDUE NAME USED: MOL
+2025-10-14 00:23:44 — INFO — Parsing Bonds, Angles and dihedrals
+2025-10-14 00:23:44 — INFO — Parsing Atoms
+2025-10-14 00:23:44 — INFO — --- SUMMARY MOLECULE STRUCTURE ---
+2025-10-14 00:23:44 — INFO — Number of Atoms: 327
+2025-10-14 00:23:44 — INFO — Number of Variable Bonds: 323
+2025-10-14 00:23:44 — INFO — Number of Additional Bonds: 34
+2025-10-14 00:23:44 — INFO — Number of Variable Angles: 322
+2025-10-14 00:23:44 — INFO — Number of Additional Angles: 302
+2025-10-14 00:23:44 — INFO — Number of Variable Torsions: 320
+2025-10-14 00:23:44 — INFO — Number of Additional Torsions: 788
+2025-10-14 00:23:44 — INFO — Number of excluded Atoms: 0
+2025-10-14 00:23:44 — INFO — Generating Zmat
+2025-10-14 00:23:44 — INFO — Running BOSS

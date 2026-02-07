@@ -1,0 +1,47 @@
+Wed 22 Oct 2025 01:14:58 AM KST
+Working Directory: /data/dydtkddhkdwk/20251021_MACE_FIT/20251022_try03_eval
+Wed Oct 22 01:14:58 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:43:00.0 Off |                  N/A |
+| 60%   21C    P8              27W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+=====================================================
+[INFO] CUDA is available ✅ Using GPU: NVIDIA GeForce RTX 3090
+[INFO] CUDA Device Count: 1
+=====================================================
+
+[INFO] 2025-10-22 01:15:05 | 🚀 START EVALUATION
+[INFO] 2025-10-22 01:15:05 | 🔹 Evaluating dataset: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_train_0.5_.extxyz
+[INFO] 2025-10-22 01:15:05 | 🔹 Model loaded: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model
+[INFO] 2025-10-22 01:15:05 | 🔹 Saving results to: tests/mace_eval/train_eval.xyz
+[INFO] 2025-10-22 01:15:05 | 🔹 Batch size: 10
+[INFO] 2025-10-22 01:15:05 | 🔹 Device: cuda
+Running eval on dataset_train_0.5_.extxyz:   0%|          | 0/1 [00:00<?, ?it/s]Running eval on dataset_train_0.5_.extxyz: 100%|██████████| 1/1 [00:34<00:00, 34.03s/it]Running eval on dataset_train_0.5_.extxyz: 100%|██████████| 1/1 [00:34<00:00, 34.03s/it]
+[INFO] 2025-10-22 01:15:39 | ✅ Done: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_train_0.5_.extxyz
+
+[INFO] 2025-10-22 01:15:39 | 🔹 Evaluating dataset: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_test_0.5_.extxyz
+[INFO] 2025-10-22 01:15:39 | 🔹 Model loaded: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model
+[INFO] 2025-10-22 01:15:39 | 🔹 Saving results to: tests/mace_eval/test_eval.xyz
+[INFO] 2025-10-22 01:15:39 | 🔹 Batch size: 10
+[INFO] 2025-10-22 01:15:39 | 🔹 Device: cuda
+Running eval on dataset_test_0.5_.extxyz:   0%|          | 0/1 [00:00<?, ?it/s]Running eval on dataset_test_0.5_.extxyz: 100%|██████████| 1/1 [00:33<00:00, 33.03s/it]Running eval on dataset_test_0.5_.extxyz: 100%|██████████| 1/1 [00:33<00:00, 33.03s/it]
+[INFO] 2025-10-22 01:16:12 | ✅ Done: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_test_0.5_.extxyz
+
+[INFO] 2025-10-22 01:16:12 | ✅ ALL EVALUATION COMPLETE!
+=== Job Completed ===
+Wed 22 Oct 2025 01:16:13 AM KST

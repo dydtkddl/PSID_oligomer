@@ -1,0 +1,26 @@
+tolerance 2.0
+filetype xyz
+output ionpairs.xyz
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_056/structures/TFSI_01.xyz
+  number 1
+  inside box 0.0 0.0 0.0 12.0 12.0 12.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_056/structures/TFSI_02.xyz
+  number 1
+  inside box 0.0 0.0 0.0 12.0 12.0 12.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_056/structures/VBBI_01.xyz
+  number 1
+  inside box 0.0 0.0 0.0 12.0 12.0 12.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_056/structures/VBBI_02.xyz
+  number 1
+  inside box 0.0 0.0 0.0 12.0 12.0 12.0
+end structure
+
+seed 1056
+randominitialpoint

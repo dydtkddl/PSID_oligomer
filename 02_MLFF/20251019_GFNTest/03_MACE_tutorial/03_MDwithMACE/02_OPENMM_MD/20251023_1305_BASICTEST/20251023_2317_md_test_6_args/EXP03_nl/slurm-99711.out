@@ -1,0 +1,112 @@
+=== MACE Training Started ===
+Thu 23 Oct 2025 11:42:09 PM KST
+Working Directory: /data/dydtkddhkdwk/20251023_MACE_MD_OPENMM/20251023_1305_BASICTEST/20251023_2317_md_test_6_args/EXP03_nl
+Thu Oct 23 23:42:09 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:03:00.0 Off |                  N/A |
+| 58%   22C    P8              34W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+                                                                        [96m                                                                         
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                         ====================================================================================================                         
+                          ooo        ooooo       .o.         .oooooo.   oooooooooooo         ooo        ooooo oooooooooo.                             
+                          `88.       .888'      .888.       d8P'  `Y8b  `888'     `8         `88.       .888' `888'   `Y8b                            
+                           888b     d'888      .8"888.     888           888                  888b     d'888   888      888                           
+                           8 Y88. .P  888     .8' `888.    888           888oooo8             8 Y88. .P  888   888      888                           
+                           8  `888'   888    .88ooo8888.   888           888    "    8888888  8  `888'   888   888      888                           
+                           8    Y     888   .8'     `888.  `88b    ooo   888       o          8    Y     888   888     d88'                           
+                          o8o        o888o o88o     o8888o  `Y8bood8P'  o888ooooood8         o8o        o888o o888bood8P'                             
+                         ====================================================================================================                         
+                        [0m                                                                                                                          
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
++-----------------------+----------------------------------------------------------------------------------------------------------------------+
+|        Argument       |                                                        Value                                                         |
++-----------------------+----------------------------------------------------------------------------------------------------------------------+
+|          file         |                                                ../ionpairs_unique.pdb                                                |
+|         ml_mol        |                                                         None                                                         |
+|        run_type       |                                                          md                                                          |
+|         steps         |                                                         500                                                          |
+|     steps_per_iter    |                                                         1000                                                         |
+|        padding        |                                                         1.2                                                          |
+|       box_shape       |                                                         cube                                                         |
+|     constrain_res     |                                                         None                                                         |
+|    nonbondedCutoff    |                                                         1.0                                                          |
+|     ionic_strength    |                                                         0.0                                                          |
+|       potential       |                                                         mace                                                         |
+|      temperature      |                                                        300.0                                                         |
+|       minimiser       |                                                         None                                                         |
+|        pressure       |                                                         None                                                         |
+|       remove_cmm      |                                                        False                                                         |
+|    set_temperature    |                                                        False                                                         |
+|         unwrap        |                                                         True                                                         |
+|       integrator      |                                                       langevin                                                       |
+|        timestep       |                                                         1.0                                                          |
+|       extract_nb      |                                                        False                                                         |
+|        replicas       |                                                          1                                                           |
+| replica_mixing_scheme |                                                       swap-all                                                       |
+|    lambda_schedule    |                                                         None                                                         |
+|    optimized_model    |                                                        False                                                         |
+|       direction       |                                                       forward                                                        |
+|      output_file      |                                                      output.pdb                                                      |
+|       log_level       |                                                        DEBUG                                                         |
+|         dtype         |                                                       float64                                                        |
+|       output_dir      |                                                          ./                                                          |
+|          box          |                                                         None                                                         |
+|        restart        |                                                        False                                                         |
+|        decouple       |                                                        False                                                         |
+|         equil         |                                                       minimise                                                       |
+|      forcefields      |                                 ['amber/protein.ff14SB.xml', 'amber14/DNA.OL15.xml']                                 |
+|      water_model      |                                                        tip3p                                                         |
+|          smff         |                                                         1.0                                                          |
+|        interval       |                                                         100                                                          |
+|        resname        |                                                         UNK                                                          |
+|           nl          |                                                        nnpops                                                        |
+|      max_n_pairs      |                                                          -1                                                          |
+|          meta         |                                                        False                                                         |
+|       model_path      | /data/dydtkddhkdwk/20251023_MACE_MD_OPENMM/20251023_1305_BASICTEST/MYMODEL/mace_off_finetune_stagetwo_compiled.model |
+|      system_type      |                                                         pure                                                         |
+|        mm_only        |                                                        False                                                         |
+|       write_gmx       |                                                        False                                                         |
+|      ml_selection     |                                                       resname                                                        |
++-----------------------+----------------------------------------------------------------------------------------------------------------------+
+2025-10-23 23:42:18.467 DEBUG: OpenMM will use Double precision
+2025-10-23 23:42:18.467 INFO: Using SMFF openff_unconstrained-1.0.0.offxml
+2025-10-23 23:42:18.467 DEBUG: OpenMM will use Double precision
+2025-10-23 23:42:18.591 INFO: Parased box vectors (Vec3(x=3.5, y=0.0, z=0.0), Vec3(x=0.0, y=3.5, z=0.0), Vec3(x=0.0, y=0.0, z=3.5)) nm from pdb file
+2025-10-23 23:42:18.609 INFO: Initialized topology with 870 atoms
+2025-10-23 23:42:18.622 WARNING: Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+2025-10-23 23:42:18.837 DEBUG: Creating converter from 7 to 5
+2025-10-23 23:42:18.837 DEBUG: Creating converter from 5 to 7
+2025-10-23 23:42:18.837 DEBUG: Creating converter from 7 to 5
+2025-10-23 23:42:18.837 DEBUG: Creating converter from 5 to 7
+2025-10-23 23:42:21.887 DEBUG: Running mixed MD for 500 steps
+2025-10-23 23:42:24.264 INFO: Skipping minimisation step
+#"Progress (%)","Step","Time (ps)","Potential Energy (kJ/mole)","Total Energy (kJ/mole)","Temperature (K)","Box Volume (nm^3)","Density (g/mL)","Speed (ns/day)","Time Remaining"
+20.0%,100,0.10000000000000007,-474900.14701990975,-474076.25383523095,76.01961919828908,42.875,0.30530604354325924,0,--
+40.0%,200,0.20000000000000015,-474919.05721094465,-473685.81809166266,113.78946928029609,42.875,0.30530604354325924,0.185,2:19
+60.0%,300,0.3000000000000002,-474957.27498880064,-473337.23847826966,149.47879277081853,42.875,0.30530604354325924,0.185,1:33
+80.0%,400,0.4000000000000003,-474879.16850541724,-473035.0183047327,170.1574895963523,42.875,0.30530604354325924,0.185,0:46
+100.0%,500,0.5000000000000003,-474920.1112157003,-472765.383102421,198.81413476092558,42.875,0.30530604354325924,0.184,0:00
+/var/spool/slurm/d/job99711/slurm_script: line 47: --nl: command not found
+=== NVT Simulation Completed ===
+=== Job Coeted ===
+Thu 23 Oct 2025 11:47:01 PM KST

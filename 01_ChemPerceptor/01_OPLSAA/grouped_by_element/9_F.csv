@@ -1,0 +1,41 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+9,0.0,F  - F~   |,18.998,oplsaa.lt,F,9
+400,-1.0,F  - F~   | F-,18.998,oplsaa.lt,F,9
+719,-0.28,F  - F~   | F fluorobenzene,18.998,oplsaa.lt,F,9
+721,-0.13,F  - F~   | F hexafluorobenzene,18.998,oplsaa.lt,F,9
+726,-0.2,"F  - F~   | F """,18.998,oplsaa.lt,F,9
+728,-0.2,F  - F~   | F difluorobenzenes,18.998,oplsaa.lt,F,9
+786,-0.39,F  - F~   | F in PF6-,18.998,oplsaa.lt,F,9
+792,-0.2,"F  - F~   | F "" test",18.998,oplsaa.lt,F,9
+956,-0.22,F  - F~   | F in monoalkyl fluorides tentative,18.998,oplsaa.lt,F,9
+965,-0.12,"F  - F~   | F F in perfluoroalkanes """,18.998,oplsaa.lt,F,9
+980,-0.08,F  - F~   | F in acyl fluoride tentative,18.998,oplsaa.lt,F,9
+986,-0.15,F  - F~   | F: trifluoroanisole,18.998,oplsaa.lt,F,9
+1100,-1.0,F  - F~   | F- 1100-1114 provide,18.998,oplsaa.lt,F,9
+1264,-0.2057,"F  - F~   | F """,18.998,oplsaa.lt,F,9
+106,-0.2057,"""Trifluoroethanol F""",18.998,oplsaa2008.lt,F,9
+343,-1.0,"""Fluoride Ion F-""",18.998,oplsaa2008.lt,F,9
+660,-0.22,"""Fluorobenzene CF""",18.998,oplsaa2008.lt,F,9
+662,-0.13,"""Hexafluorobenzene CF""",18.998,oplsaa2008.lt,F,9
+667,-0.2,"""TrifluoroMeBenzene CF3-""",18.998,oplsaa2008.lt,F,9
+669,-0.2,"""Difluorobenzene CF""",18.998,oplsaa2008.lt,F,9
+727,-0.39,"""Hexafluorophosphate Ion""",18.998,oplsaa2008.lt,F,9
+786,-0.22,"""Alkyl Fluoride C-F""",18.998,oplsaa2008.lt,F,9
+795,-0.12,"""Perfluoroalkane C-F""",18.998,oplsaa2008.lt,F,9
+810,-0.08,"""Acyl Fluoride F-C=O""",18.998,oplsaa2008.lt,F,9
+816,-0.15,"""Trifluoroanisole -OCF3""",18.998,oplsaa2008.lt,F,9
+875,-1.0,"""Fluoride Ion (GBSA)""",18.998,oplsaa2008.lt,F,9
+9,0.0,F  - F~   |,18.998,oplsaa2024.lt,F,9
+400,-1.0,F  - F~   | F-,18.998,oplsaa2024.lt,F,9
+719,-0.28,F  - F~   | F fluorobenzene,18.998,oplsaa2024.lt,F,9
+721,-0.13,F  - F~   | F hexafluorobenzene,18.998,oplsaa2024.lt,F,9
+726,-0.2,"F  - F~   | F """,18.998,oplsaa2024.lt,F,9
+728,-0.2,F  - F~   | F difluorobenzenes,18.998,oplsaa2024.lt,F,9
+786,-0.39,F  - F~   | F in PF6-,18.998,oplsaa2024.lt,F,9
+792,-0.2,"F  - F~   | F "" test",18.998,oplsaa2024.lt,F,9
+956,-0.22,F  - F~   | F in monoalkyl fluorides tentative,18.998,oplsaa2024.lt,F,9
+965,-0.12,"F  - F~   | F F in perfluoroalkanes """,18.998,oplsaa2024.lt,F,9
+980,-0.08,F  - F~   | F in acyl fluoride tentative,18.998,oplsaa2024.lt,F,9
+986,-0.15,F  - F~   | F: trifluoroanisole,18.998,oplsaa2024.lt,F,9
+1100,-1.0,F  - F~   | F- 1100-1114 provide,18.998,oplsaa2024.lt,F,9
+1264,-0.2057,"F  - F~   | F """,18.998,oplsaa2024.lt,F,9

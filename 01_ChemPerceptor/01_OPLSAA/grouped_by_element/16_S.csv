@@ -1,0 +1,57 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+16,0.0,S  - S~   |,32.065,oplsaa.lt,S,16
+82,-0.47,"S  - SH   | S IN H2S JPC,90,6379 (1986)",32.065,oplsaa.lt,S,16
+83,-0.45,"S  - SH   | S IN RSH """,32.065,oplsaa.lt,S,16
+84,-0.47,"S  - S~   | S IN RSR """,32.065,oplsaa.lt,S,16
+85,-0.3,"S  - S~   | S IN RSSR """,32.065,oplsaa.lt,S,16
+124,0.139,S  - SZ   | DMSO UA unpublished,32.065,oplsaa.lt,S,16
+200,-0.335,"S  - SH   | all-atom S: OPLS-AA/L (JPC B 2001, 105, 6474)",32.065,oplsaa.lt,S,16
+201,-0.47,"S  - SH   | S IN H2S JPC,90,6379 (1986)",32.065,oplsaa.lt,S,16
+202,-0.335,S  - S~   | all-atom S: sulfides OPLS-AA/L,32.065,oplsaa.lt,S,16
+203,-0.2175,S  - S~   | all-atom S: disulfides OPLS-AA/L,32.065,oplsaa.lt,S,16
+222,-0.32,S  - S~   | S in thioanisoles OPLS-AA/L,32.065,oplsaa.lt,S,16
+417,-0.9,S  - SH   | S in CH3S-,32.065,oplsaa.lt,S,16
+474,1.48,S  - SY   | S in sulfonamide,32.065,oplsaa.lt,S,16
+493,1.374,S  - SY   | S in sulfone,32.065,oplsaa.lt,S,16
+495,0.245,S  - SZ   | alkyl aryl sulfoxide - all atom,32.065,oplsaa.lt,S,16
+496,0.13,S  - SZ   | sulfoxide - all atom,32.065,oplsaa.lt,S,16
+633,-0.03,S  - SA   | S in thiazole OPLS-AA/L,32.065,oplsaa.lt,S,16
+682,-0.334,S  - SH   | S in 6-mercaptopurine OPLS-AA/L,32.065,oplsaa.lt,S,16
+696,-0.205,S  - S~   | S in diphenylthioether OPLS-AA/L,32.065,oplsaa.lt,S,16
+734,-0.22,S  - SH   | all-atom S: thiophenol (HS is,32.065,oplsaa.lt,S,16
+1233,0.0,S  - SA   | S thiazole jlj0003 OPLS-AA/L,32.065,oplsaa.lt,S,16
+142,-0.335,"""Thiol -SH""",32.06,oplsaa2008.lt,S,16
+143,-0.47,"""Hydrogen Sulfide H2S""",32.06,oplsaa2008.lt,S,16
+144,-0.435,"""Sulfide -S-""",32.06,oplsaa2008.lt,S,16
+145,-0.2175,"""Disulfide -S-S-""",32.06,oplsaa2008.lt,S,16
+164,-0.32,"""Thioanisole -SCH3""",32.06,oplsaa2008.lt,S,16
+359,-0.9,"""Methyl Thiolate CH3S-""",32.06,oplsaa2008.lt,S,16
+415,1.48,"""Sulfonamide -SO2N<""",32.06,oplsaa2008.lt,S,16
+434,1.374,"""Sulfone R-SO2-R""",32.06,oplsaa2008.lt,S,16
+436,0.245,"""Alkyl Aryl Sulfoxide""",32.06,oplsaa2008.lt,S,16
+437,0.13,"""Dialkyl Sulfoxide""",32.06,oplsaa2008.lt,S,16
+574,-0.03,"""Thiazole S""",32.06,oplsaa2008.lt,S,16
+623,-0.334,"""6-Mercaptopurine SH""",32.06,oplsaa2008.lt,S,16
+637,-0.205,"""Diphenyl Thioether S""",32.06,oplsaa2008.lt,S,16
+675,-0.22,"""Thiophenol SH""",32.06,oplsaa2008.lt,S,16
+16,0.0,S  - S~   |,32.065,oplsaa2024.lt,S,16
+82,-0.47,"S  - SH   | S IN H2S JPC,90,6379 (1986)",32.065,oplsaa2024.lt,S,16
+83,-0.45,"S  - SH   | S IN RSH """,32.065,oplsaa2024.lt,S,16
+84,-0.47,"S  - S~   | S IN RSR """,32.065,oplsaa2024.lt,S,16
+85,-0.3,"S  - S~   | S IN RSSR """,32.065,oplsaa2024.lt,S,16
+124,0.139,S  - SZ   | DMSO UA unpublished,32.065,oplsaa2024.lt,S,16
+200,-0.335,"S  - SH   | all-atom S: OPLS-AA/L (JPC B 2001, 105, 6474)",32.065,oplsaa2024.lt,S,16
+201,-0.47,"S  - SH   | S IN H2S JPC,90,6379 (1986)",32.065,oplsaa2024.lt,S,16
+202,-0.335,S  - S~   | all-atom S: sulfides OPLS-AA/L,32.065,oplsaa2024.lt,S,16
+203,-0.2175,S  - S~   | all-atom S: disulfides OPLS-AA/L,32.065,oplsaa2024.lt,S,16
+222,-0.32,S  - S~   | S in thioanisoles OPLS-AA/L,32.065,oplsaa2024.lt,S,16
+417,-0.9,S  - SH   | S in CH3S-,32.065,oplsaa2024.lt,S,16
+474,1.48,S  - SY   | S in sulfonamide,32.065,oplsaa2024.lt,S,16
+493,1.374,S  - SY   | S in sulfone,32.065,oplsaa2024.lt,S,16
+495,0.245,S  - SZ   | alkyl aryl sulfoxide - all atom,32.065,oplsaa2024.lt,S,16
+496,0.13,S  - SZ   | sulfoxide - all atom,32.065,oplsaa2024.lt,S,16
+633,-0.03,S  - SA   | S in thiazole OPLS-AA/L,32.065,oplsaa2024.lt,S,16
+682,-0.334,S  - SH   | S in 6-mercaptopurine OPLS-AA/L,32.065,oplsaa2024.lt,S,16
+696,-0.205,S  - S~   | S in diphenylthioether OPLS-AA/L,32.065,oplsaa2024.lt,S,16
+734,-0.22,S  - SH   | all-atom S: thiophenol (HS is,32.065,oplsaa2024.lt,S,16
+1233,0.0,S  - SA   | S thiazole jlj0003 OPLS-AA/L,32.065,oplsaa2024.lt,S,16

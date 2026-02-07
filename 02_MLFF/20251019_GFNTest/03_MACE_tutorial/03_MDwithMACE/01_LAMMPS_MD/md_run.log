@@ -1,0 +1,8 @@
+[2025-10-22 12:55:36] === INITIALIZING ===
+[2025-10-22 12:55:36] [GPU] Using GPU: NVIDIA GeForce RTX 3090
+[2025-10-22 12:55:36] [LOAD] Loading structure: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/00_bulkmake/packmol_cases/case_001/ionpairs.xyz
+[2025-10-22 12:55:41] [MODEL] Loading MACE model: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model
+[2025-10-22 12:55:42] [MD] Langevin thermostat set (T=1200.0K, dt=1fs)
+[2025-10-22 12:55:42] [MD] Starting simulation...
+[2025-10-22 13:19:29] [MD] Step 50, E=-52.0057 eV/atom, T=1152.1K
+[2025-10-22 13:19:29] [GPU] Memory used: 6552 MB

@@ -1,0 +1,2 @@
+usage: train_mace.py [-h] --base BASE [--config CONFIG]
+train_mace.py: error: the following arguments are required: --base

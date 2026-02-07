@@ -1,0 +1,587 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+1,0.0,"H  - H~   | Types 1-18, 35, 53 give generic L-J",1.008,oplsaa.lt,H,1
+60,0.06,H  - HC   | H all-atom H: alkanes,1.008,oplsaa.lt,H,1
+79,0.435,"H  - HO   | H(O) ALCOHOLS """,1.008,oplsaa.lt,H,1
+86,0.235,"H  - HS   | H IN H2S """,1.008,oplsaa.lt,H,1
+87,0.27,"H  - HS   | H(S) IN RSH """,1.008,oplsaa.lt,H,1
+100,0.0,DM - DM   | DUMMY ATOM,1.0,oplsaa.lt,H,1
+128,0.34,H  - H~   | Ammonia,1.008,oplsaa.lt,H,1
+140,0.06,H  - HC   | H all-atom H: alkanes,1.008,oplsaa.lt,H,1
+144,0.115,H  - HC   | alkene H (H-C=) all atom,1.008,oplsaa.lt,H,1
+146,0.115,"H  - HA   | Benzene H - 12 site """,1.008,oplsaa.lt,H,1
+153,0.103,H  - HC   | H in RCH2Cl,1.008,oplsaa.lt,H,1
+155,0.418,H  - HO   | all-atom H(O): mono alcohols,1.008,oplsaa.lt,H,1
+156,0.04,H  - HC   | all-atom H(C): methanol,1.008,oplsaa.lt,H,1
+168,0.43,H  - HO   | H phenol 145 & 146,1.008,oplsaa.lt,H,1
+170,0.435,H  - HO   | H(O): diols,1.008,oplsaa.lt,H,1
+172,0.465,H  - HO   | H(O): triols,1.008,oplsaa.lt,H,1
+176,0.06,"H  - HC   | H(CXOH): "" OPLS/2020",1.008,oplsaa.lt,H,1
+185,0.03,H  - HC   | H(COR): alpha H ether OPLS/2020 see 794,1.008,oplsaa.lt,H,1
+188,0.435,H  - HO   | H(O): hemiacetal,1.008,oplsaa.lt,H,1
+190,0.1,H  - HC   | H(CHO2): acetal OCH2O,1.008,oplsaa.lt,H,1
+192,0.1,H  - HC   | H(CHO2): hemiacetal OCH2OH,1.008,oplsaa.lt,H,1
+194,0.1,H  - HC   | H(CHO2): acetal OCHRO,1.008,oplsaa.lt,H,1
+196,0.1,H  - HC   | H(C2O2): hemiacetal OCHROH,1.008,oplsaa.lt,H,1
+204,0.155,H  - HS   | all-atom H(S): thiols (mod 11/99),1.008,oplsaa.lt,H,1
+205,0.235,"H  - HS   | H IN H2S JPC,90,6379 (1986)",1.008,oplsaa.lt,H,1
+240,0.38,H  - H~   | H on N: primary amide see 1035-1045,1.008,oplsaa.lt,H,1
+241,0.3,H  - H~   | H on N: secondary amide,1.008,oplsaa.lt,H,1
+250,0.333,H  - H~   | H in O=C(NH2)2 Urea,1.008,oplsaa.lt,H,1
+254,0.37,H  - H~   | H(N) in imide,1.008,oplsaa.lt,H,1
+255,0.06,H  - HC   | H(C) in formimide,1.008,oplsaa.lt,H,1
+270,0.45,H  - HO   | H in CCOOH,1.008,oplsaa.lt,H,1
+279,0.0,H  - HC   | AA H-alpha in aldehyde & formamide,1.008,oplsaa.lt,H,1
+282,0.06,H  - HC   | AA H on C-alpha in ketone & aldehyde & acyl halide,1.008,oplsaa.lt,H,1
+289,0.35,"H  - H3   | H (NH4+) "" see also 940-945,",1.008,oplsaa.lt,H,1
+290,0.33,"H  - H3   | H (RNH3+) "" 1120-1130, 309-310",1.008,oplsaa.lt,H,1
+301,0.46,H  - H3   | H: guanidinium NH2,1.008,oplsaa.lt,H,1
+304,0.44,H  - H3   | H: guanidinium NHR,1.008,oplsaa.lt,H,1
+310,0.31,H  - H3   | H (R2NH2+),1.008,oplsaa.lt,H,1
+314,0.37,H  - H~   | DAP H-amine,1.008,oplsaa.lt,H,1
+316,0.1,H  - HA   | DAP H3,1.008,oplsaa.lt,H,1
+318,0.1,H  - HA   | DAP H4,1.008,oplsaa.lt,H,1
+325,0.41,H  - H~   | Uracil H-N1,1.008,oplsaa.lt,H,1
+327,0.36,H  - H~   | Uracil H-N3,1.008,oplsaa.lt,H,1
+329,0.1,H  - HC   | Uracil H-C5,1.008,oplsaa.lt,H,1
+330,0.1,H  - HC   | Uracil H-C6 Thymine,1.008,oplsaa.lt,H,1
+332,0.08,H  - HC   | Thymine H-CC5,1.008,oplsaa.lt,H,1
+339,0.38,H  - H~   | Cytosine H-N1,1.008,oplsaa.lt,H,1
+342,0.385,H  - H~   | Cytosine H-NC4/N3,1.008,oplsaa.lt,H,1
+343,0.355,H  - H~   | Cytosine H-NC4/C5,1.008,oplsaa.lt,H,1
+344,0.1,H  - HC   | Cytosine H-C5,1.008,oplsaa.lt,H,1
+345,0.1,H  - HA   | Cytosine H-C6,1.008,oplsaa.lt,H,1
+355,0.2,H  - HA   | Adenine H-C2 nucleoside,1.008,oplsaa.lt,H,1
+357,0.385,H  - H~   | Adenine H-NC6/N1,1.008,oplsaa.lt,H,1
+358,0.355,H  - H~   | Adenine H-NC6/C5,1.008,oplsaa.lt,H,1
+359,0.2,H  - HA   | Adenine H-C8 Guanine,1.008,oplsaa.lt,H,1
+360,0.35,H  - H~   | Adenine H-N9 Guanine,1.008,oplsaa.lt,H,1
+367,0.38,H  - H~   | Guanine H-N1,1.008,oplsaa.lt,H,1
+369,0.4,H  - H~   | Guanine H-NC2,1.008,oplsaa.lt,H,1
+372,0.12,H  - HC   | 9-Me A or G H-CN9,1.008,oplsaa.lt,H,1
+374,0.14,H  - HC   | 1-Me U or T H-CN1,1.008,oplsaa.lt,H,1
+376,0.13,H  - HC   | 1-Me Cytosine H-CN1,1.008,oplsaa.lt,H,1
+383,0.49,H  - H~   | CytH+ H-N1,1.008,oplsaa.lt,H,1
+385,0.48,H  - H~   | CytH+ H-N3,1.008,oplsaa.lt,H,1
+387,0.46,H  - H~   | CytH+ H-NC4/N3,1.008,oplsaa.lt,H,1
+388,0.43,H  - H~   | CytH+ H-NC4/C5,1.008,oplsaa.lt,H,1
+389,0.14,H  - HA   | CytH+ H-C5,1.008,oplsaa.lt,H,1
+390,0.14,H  - HA   | CytH+ H-C6,1.008,oplsaa.lt,H,1
+392,0.16,H  - HC   | 1-Me CytH+ H-CN1,1.008,oplsaa.lt,H,1
+416,0.1,H  - HC   | H in CH3S-,1.008,oplsaa.lt,H,1
+419,0.06,H  - HC   | H in CH3O-,1.008,oplsaa.lt,H,1
+422,0.19,H  - HC   | H in CH2CN-,1.008,oplsaa.lt,H,1
+426,0.07,H  - HC   | HC in CH3NH- RNH-,1.008,oplsaa.lt,H,1
+428,0.4,H  - H~   | HN in CH3NH-,1.008,oplsaa.lt,H,1
+430,0.08,H  - HC   | H in CH3CH2-,1.008,oplsaa.lt,H,1
+432,0.07,H  - HC   | H1 in CH3CH2-,1.008,oplsaa.lt,H,1
+435,0.3,"H  - HO   | H in OH- JACS 108, 2517 (86)",1.008,oplsaa.lt,H,1
+444,-0.03,"H  - HC   | H in "" 6-31+G* CHELPG",1.008,oplsaa.lt,H,1
+449,-0.1,"H  - HC   | H in """,1.008,oplsaa.lt,H,1
+454,-0.02,"H  - HC   | H(CO) "" 6-31+G* CHELPG",1.008,oplsaa.lt,H,1
+456,0.08,"H  - HC   | H(CP) """,1.008,oplsaa.lt,H,1
+459,0.02,"H  - HC   | H(CO) "" """,1.008,oplsaa.lt,H,1
+462,0.12,"H  - HC   | H(CP) "" """,1.008,oplsaa.lt,H,1
+469,0.03,H  - HC   | alkoxy H's in esters,1.008,oplsaa.lt,H,1
+477,0.18,H  - HC   | H of Me attached to S of sulfonamide,1.008,oplsaa.lt,H,1
+479,0.44,H  - H~   | H on N: primary sulfonamide,1.008,oplsaa.lt,H,1
+481,0.41,H  - H~   | H on N: secondary sulfonamide,1.008,oplsaa.lt,H,1
+483,0.03,H  - HC   | H of alpha CH3-N of sulfonamide,1.008,oplsaa.lt,H,1
+485,-0.06,H  - HC   | H of alpha CH2-N of sulfonamide,1.008,oplsaa.lt,H,1
+487,0.06,H  - HC   | H of beta CH3 of N-ethyl sulfonamide,1.008,oplsaa.lt,H,1
+504,0.42,H  - H~   | H on NE in TRP,1.008,oplsaa.lt,H,1
+513,0.46,H  - H~   | H on N in HIP,1.008,oplsaa.lt,H,1
+524,0.012,H  - HA   | H1 in pyridine 520-656,1.008,oplsaa.lt,H,1
+525,0.155,H  - HA   | H2 in pyridine,1.008,oplsaa.lt,H,1
+526,0.065,H  - HA   | H3 in pyridine,1.008,oplsaa.lt,H,1
+529,0.042,H  - HA   | H in pyrazine,1.008,oplsaa.lt,H,1
+534,-0.032,H  - HA   | H2 in pyrimidine,1.008,oplsaa.lt,H,1
+535,0.011,H  - HA   | H4 in pyrimidine,1.008,oplsaa.lt,H,1
+536,0.197,H  - HA   | H5 in pyrimidine,1.008,oplsaa.lt,H,1
+540,-0.009,H  - HA   | H3 in pyridazine,1.008,oplsaa.lt,H,1
+541,0.122,H  - HA   | H4 in pyridazine,1.008,oplsaa.lt,H,1
+545,0.317,H  - H~   | H1 in pyrrole,1.008,oplsaa.lt,H,1
+546,0.155,H  - HA   | H2 in pyrrole,1.008,oplsaa.lt,H,1
+547,0.118,H  - HA   | H3 in pyrrole,1.008,oplsaa.lt,H,1
+553,0.301,H  - H~   | H1 in pyrazole,1.008,oplsaa.lt,H,1
+554,0.072,H  - HA   | H3 in pyrazole,1.008,oplsaa.lt,H,1
+555,0.15,H  - HA   | H4 in pyrazole,1.008,oplsaa.lt,H,1
+556,0.135,H  - HA   | H5 in pyrazole,1.008,oplsaa.lt,H,1
+562,0.306,H  - H~   | H1 in imidazole,1.008,oplsaa.lt,H,1
+563,0.078,H  - HA   | H2 in imidazole,1.008,oplsaa.lt,H,1
+564,0.075,H  - HA   | H4 in imidazole,1.008,oplsaa.lt,H,1
+565,0.187,H  - HA   | H5 in imidazole,1.008,oplsaa.lt,H,1
+569,0.142,H  - HA   | H2 in furan,1.008,oplsaa.lt,H,1
+570,0.126,H  - HA   | H3 in furan,1.008,oplsaa.lt,H,1
+576,0.043,H  - HA   | H2 in oxazole,1.008,oplsaa.lt,H,1
+577,0.091,H  - HA   | H4 in oxazole,1.008,oplsaa.lt,H,1
+578,0.181,H  - HA   | H5 in oxazole,1.008,oplsaa.lt,H,1
+584,0.053,H  - HA   | H3 in isoxazole,1.008,oplsaa.lt,H,1
+585,0.184,H  - HA   | H4 in isoxazole,1.008,oplsaa.lt,H,1
+586,0.098,H  - HA   | H5 in isoxazole,1.008,oplsaa.lt,H,1
+596,0.376,H  - H~   | H1 in indole,1.008,oplsaa.lt,H,1
+597,0.147,H  - HA   | H2 in indole,1.008,oplsaa.lt,H,1
+598,0.172,H  - HA   | H3 in indole,1.008,oplsaa.lt,H,1
+599,0.155,H  - HA   | H4 in indole,1.008,oplsaa.lt,H,1
+600,0.107,H  - HA   | H5 in indole,1.008,oplsaa.lt,H,1
+601,0.11,H  - HA   | H6 in indole,1.008,oplsaa.lt,H,1
+602,0.14,H  - HA   | H7 in indole,1.008,oplsaa.lt,H,1
+613,0.028,H  - HA   | H2 in quinoline,1.008,oplsaa.lt,H,1
+614,0.146,H  - HA   | H3 in quinoline,1.008,oplsaa.lt,H,1
+615,0.119,H  - HA   | H4 in quinoline,1.008,oplsaa.lt,H,1
+616,0.133,H  - HA   | H5 in quinoline,1.008,oplsaa.lt,H,1
+617,0.113,H  - HA   | H6 in quinoline,1.008,oplsaa.lt,H,1
+618,0.114,H  - HA   | H7 in quinoline,1.008,oplsaa.lt,H,1
+619,0.157,H  - HA   | H8 in quinoline,1.008,oplsaa.lt,H,1
+629,0.024,H  - HA   | H2 in purine,1.008,oplsaa.lt,H,1
+630,0.101,H  - HA   | H6 in purine,1.008,oplsaa.lt,H,1
+631,0.086,H  - HA   | H8 in purine,1.008,oplsaa.lt,H,1
+632,0.413,H  - H~   | H9 in purine,1.008,oplsaa.lt,H,1
+638,0.101,H  - HA   | H2 in thiazole,1.008,oplsaa.lt,H,1
+639,0.068,H  - HA   | H4 in thiazole,1.008,oplsaa.lt,H,1
+640,0.205,H  - HA   | H5 in thiazole,1.008,oplsaa.lt,H,1
+643,-0.014,"H  - HA   | H in 1,3,5-triazine",1.008,oplsaa.lt,H,1
+653,0.032,"H  - HA   | H2 in 1,10-phenanthroline",1.008,oplsaa.lt,H,1
+654,0.146,"H  - HA   | H3 in 1,10-phenanthroline",1.008,oplsaa.lt,H,1
+655,0.108,"H  - HA   | H4 in 1,10-phenanthroline",1.008,oplsaa.lt,H,1
+656,0.14,"H  - HA   | H5 in 1,10-phenanthroline",1.008,oplsaa.lt,H,1
+663,0.118,H  - HA   | H2 in 1-methylimidazole,1.008,oplsaa.lt,H,1
+664,0.093,H  - HA   | H4 in 1-methylimidazole,1.008,oplsaa.lt,H,1
+665,0.208,H  - HA   | H5 in 1-methylimidazole,1.008,oplsaa.lt,H,1
+666,0.098,H  - HC   | HC1 in 1-methylimidazole,1.008,oplsaa.lt,H,1
+683,0.255,H  - HS   | H(S) in 6-mercaptopurine,1.008,oplsaa.lt,H,1
+702,0.174,H  - HC   | H in t-butyl+,1.008,oplsaa.lt,H,1
+710,0.2,H  - HC   | H in Cl..CH3..Cl- TS,1.008,oplsaa.lt,H,1
+740,0.141,H  - HA   | HD of Benzamidine,1.008,oplsaa.lt,H,1
+741,0.129,H  - HA   | HE of Benzamidine,1.008,oplsaa.lt,H,1
+744,0.426,H  - H~   | H1-N of Benzamidine,1.008,oplsaa.lt,H,1
+745,0.465,H  - H~   | H2-N of Benzamidine,1.008,oplsaa.lt,H,1
+746,0.119,H  - HA   | H-CG of Benzamidine,1.008,oplsaa.lt,H,1
+759,0.06,H  - HC   | HC-CT-CN alpha-H in nitriles,1.008,oplsaa.lt,H,1
+763,0.06,H  - HC   | HC-CT-NO2 alpha-H in nitroalkanes,1.008,oplsaa.lt,H,1
+777,0.03,"H  - HC   | "" H in CH2",1.008,oplsaa.lt,H,1
+778,0.03,"H  - HC   | "" H in CH",1.008,oplsaa.lt,H,1
+779,0.06,"H  - HC   | "" H in CH3",1.008,oplsaa.lt,H,1
+784,0.172,H  - HC   | H in CH3PR3+,1.008,oplsaa.lt,H,1
+794,0.03,H  - HC   | H(COR): alpha H ether 2020 for CH3-O-R,1.008,oplsaa.lt,H,1
+799,0.0,H  - HC   | H all-atom H: q = 0,1.008,oplsaa.lt,H,1
+909,0.36,H  - H~   | H(N) primary amines,1.008,oplsaa.lt,H,1
+910,0.38,H  - H~   | H(N) secondary amines,1.008,oplsaa.lt,H,1
+911,0.06,"H  - HC   | H(C) for Carbons directly bonded to N in amines, diamine",1.008,oplsaa.lt,H,1
+926,0.2,H  - HC   | alkyne RC%CH terminal H,1.008,oplsaa.lt,H,1
+935,0.39,H  - HO   | H(3') OH by Deping,1.008,oplsaa.lt,H,1
+941,0.29,H  - H3   | H (R3NH+),1.008,oplsaa.lt,H,1
+950,0.074,H  - HC   | glycine zwit. 6-31G* CHELPG charges,1.008,oplsaa.lt,H,1
+955,0.317,H  - H3   | glycine zwit. 6-31G* CHELPG charges,1.008,oplsaa.lt,H,1
+958,0.1,H  - HC   | H in RCHF tentative,1.008,oplsaa.lt,H,1
+967,0.15,"H  - HC   | H in CF2H """,1.008,oplsaa.lt,H,1
+972,0.103,H  - HC   | H in RCHCl 153,1.008,oplsaa.lt,H,1
+977,0.103,"H  - HC   | H in RCHBr """,1.008,oplsaa.lt,H,1
+994,0.411,H  - H~   | HN in hydroxamic acid,1.008,oplsaa.lt,H,1
+996,0.435,H  - HO   | HO in hydroxamic acid,1.008,oplsaa.lt,H,1
+1015,0.1,H  - HC   | H in RCHI,1.008,oplsaa.lt,H,1
+1029,0.03,H  - HC   | H epoxide on C-O,1.008,oplsaa.lt,H,1
+1042,0.06,H  - HC   | H on CT:tertiary amide,1.008,oplsaa.lt,H,1
+1045,0.0,H  - HC   | H on CO: tert formamide,1.008,oplsaa.lt,H,1
+1064,-0.01,"H  - H~   | H on Si in silane, silanol, silyl ether",1.008,oplsaa.lt,H,1
+1074,0.35,H  - HO   | H in SiOH silanol,1.008,oplsaa.lt,H,1
+1097,0.03,H  - HA   | H in C5H5- cyclopentadienyl anion,1.008,oplsaa.lt,H,1
+1099,0.099,H  - HA   | H in C5H5 cyclopentadienyl radical,1.008,oplsaa.lt,H,1
+1124,0.1,H  - HC   | H in CH3NR3+,1.008,oplsaa.lt,H,1
+1153,0.15,H  - HC   | allene H,1.008,oplsaa.lt,H,1
+1239,0.2,H  - HA   | H4 thiazole jlj0003,1.008,oplsaa.lt,H,1
+1240,0.2,H  - HA   | H5 thiazole jlj0003,1.008,oplsaa.lt,H,1
+1263,0.4286,"H  - HO   | HO """,1.008,oplsaa.lt,H,1
+1265,0.0825,"H  - HC   | H """,1.008,oplsaa.lt,H,1
+9998,0.417,"H  - tipH | TIP3P water H, long-range Coulombic solver",1.008,oplsaa.lt,H,1
+9996,0.5242,"H  - tipH | TIP4P water H, long-range Coulombic solver",1.008,oplsaa.lt,H,1
+9993,0.241,"H  - tipH | TIP5P water H, long-range Coulombic solver",1.008,oplsaa.lt,H,1
+9990,0.41,H  - spcH | SPC water H,1.008,oplsaa.lt,H,1
+9988,0.4238,H  - spcH | SPC/E water H,1.008,oplsaa.lt,H,1
+9986,0.679142,H  - opcH | OPC water H,1.008,oplsaa.lt,H,1
+57,0.0,"""Dummy Atom""",1.0,oplsaa2008.lt,H,1
+64,0.417,"""TIP3P Water H""",1.008,oplsaa2008.lt,H,1
+66,0.52,"""TIP4P Water H""",1.008,oplsaa2008.lt,H,1
+69,0.411,"""TIP3F Water H""",1.008,oplsaa2008.lt,H,1
+71,0.511,"""TIP4F Water H""",1.008,oplsaa2008.lt,H,1
+74,0.241,"""TIP5P Water H""",1.008,oplsaa2008.lt,H,1
+77,0.41,"""SPC Water H""",1.008,oplsaa2008.lt,H,1
+79,0.34,"""Ammonia NH3""",1.008,oplsaa2008.lt,H,1
+85,0.06,"""Alkane H-C""",1.008,oplsaa2008.lt,H,1
+89,0.115,"""Alkene H-C=""",1.008,oplsaa2008.lt,H,1
+91,0.115,"""Aromatic H-C""",1.008,oplsaa2008.lt,H,1
+97,0.418,"""Alcohol -OH""",1.008,oplsaa2008.lt,H,1
+98,0.04,"""Methanol CH3-""",1.008,oplsaa2008.lt,H,1
+105,0.4286,"""Trifluoroethanol -OH""",1.008,oplsaa2008.lt,H,1
+107,0.0825,"""Trifluoroethanol -CH2-""",1.008,oplsaa2008.lt,H,1
+110,0.435,"""Phenol -OH""",1.008,oplsaa2008.lt,H,1
+112,0.435,"""Diol -OH""",1.008,oplsaa2008.lt,H,1
+114,0.465,"""Triol -OH""",1.008,oplsaa2008.lt,H,1
+118,0.06,"""Diol & Triol H-COH""",1.008,oplsaa2008.lt,H,1
+127,0.03,"""Alkyl Ether H-COR""",1.008,oplsaa2008.lt,H,1
+130,0.435,"""Hemiacetal -OH""",1.008,oplsaa2008.lt,H,1
+132,0.1,"""Acetal RO-CH2-OR""",1.008,oplsaa2008.lt,H,1
+134,0.1,"""Hemiacetal RO-CH2-OH""",1.008,oplsaa2008.lt,H,1
+136,0.1,"""Acetal RO-CHR-OR""",1.008,oplsaa2008.lt,H,1
+138,0.1,"""Hemiacetal RO-CHR-OH""",1.008,oplsaa2008.lt,H,1
+146,0.155,"""Thiol -SH""",1.008,oplsaa2008.lt,H,1
+147,0.235,"""Hydrogen Sulfide H2S""",1.008,oplsaa2008.lt,H,1
+182,0.38,"""Amide -CO-NH2""",1.008,oplsaa2008.lt,H,1
+183,0.3,"""Amide -CO-NHR""",1.008,oplsaa2008.lt,H,1
+192,0.333,"""Urea -NH2""",1.008,oplsaa2008.lt,H,1
+196,0.37,"""Imide -NH-""",1.008,oplsaa2008.lt,H,1
+197,0.06,"""Formimide H-C=O""",1.008,oplsaa2008.lt,H,1
+212,0.45,"""Carboxylic Acid -COOH""",1.008,oplsaa2008.lt,H,1
+221,0.0,"""Aldehyde/Formamide H-C=O""",1.008,oplsaa2008.lt,H,1
+224,0.06,"""Acyl H-C-COX""",1.008,oplsaa2008.lt,H,1
+232,0.35,"""Ammonium NH4+""",1.008,oplsaa2008.lt,H,1
+233,0.33,"""Ammonium RNH3+""",1.008,oplsaa2008.lt,H,1
+244,0.46,"""Guanidinium -NH2""",1.008,oplsaa2008.lt,H,1
+247,0.44,"""Guanidinium -NHR""",1.008,oplsaa2008.lt,H,1
+253,0.31,"""Ammonium R2NH2+""",1.008,oplsaa2008.lt,H,1
+257,0.37,"""Diaminopyridine -NH2""",1.008,oplsaa2008.lt,H,1
+259,0.1,"""Diaminopyridine H3""",1.008,oplsaa2008.lt,H,1
+261,0.1,"""Diaminopyridine H4""",1.008,oplsaa2008.lt,H,1
+268,0.41,"""Uracil & Thymine HN1""",1.008,oplsaa2008.lt,H,1
+270,0.36,"""Uracil & Thymine HN3""",1.008,oplsaa2008.lt,H,1
+272,0.1,"""Uracil & Thymine HC5""",1.008,oplsaa2008.lt,H,1
+273,0.1,"""Uracil & Thymine HC6""",1.008,oplsaa2008.lt,H,1
+275,0.08,"""Thymine CH3-""",1.008,oplsaa2008.lt,H,1
+282,0.38,"""Cytosine HN1""",1.008,oplsaa2008.lt,H,1
+285,0.385,"""Cytosine NH2- (N3)""",1.008,oplsaa2008.lt,H,1
+286,0.355,"""Cytosine NH2- (C5)""",1.008,oplsaa2008.lt,H,1
+287,0.1,"""Cytosine HC5""",1.008,oplsaa2008.lt,H,1
+288,0.1,"""Cytosine HC6""",1.008,oplsaa2008.lt,H,1
+298,0.2,"""Adenine HC2""",1.008,oplsaa2008.lt,H,1
+300,0.385,"""Adenine NH2- (N1)""",1.008,oplsaa2008.lt,H,1
+301,0.355,"""Adenine NH2- (C5)""",1.008,oplsaa2008.lt,H,1
+302,0.2,"""Adenine & Guanine HC8""",1.008,oplsaa2008.lt,H,1
+303,0.35,"""Adenine & Guanine HN9""",1.008,oplsaa2008.lt,H,1
+310,0.38,"""Guanine HN1""",1.008,oplsaa2008.lt,H,1
+312,0.4,"""Guanine NH2-""",1.008,oplsaa2008.lt,H,1
+315,0.12,"""9-Me-A & 9-Me-G CH3-""",1.008,oplsaa2008.lt,H,1
+317,0.14,"""1-Me-U & 1-Me-T CH3-""",1.008,oplsaa2008.lt,H,1
+319,0.13,"""1-Me-Cytosine CH3-""",1.008,oplsaa2008.lt,H,1
+326,0.49,"""CytosineH+ HN1""",1.008,oplsaa2008.lt,H,1
+328,0.48,"""CytosineH+ HN3""",1.008,oplsaa2008.lt,H,1
+330,0.46,"""CytosineH+ NH2- (N3)""",1.008,oplsaa2008.lt,H,1
+331,0.43,"""CytosineH+ NH2- (C5)""",1.008,oplsaa2008.lt,H,1
+332,0.14,"""CytosineH+ HC5""",1.008,oplsaa2008.lt,H,1
+333,0.14,"""CytosineH+ HC6""",1.008,oplsaa2008.lt,H,1
+335,0.16,"""1-Me-CytosineH+ CH3-""",1.008,oplsaa2008.lt,H,1
+358,0.1,"""Methyl Thiolate CH3S-""",1.008,oplsaa2008.lt,H,1
+361,0.06,"""Methoxide CH3O-""",1.008,oplsaa2008.lt,H,1
+364,0.19,"""Nitrile Anion CNCH2-""",1.008,oplsaa2008.lt,H,1
+368,0.07,"""Me Amine Anion CH3NH-""",1.008,oplsaa2008.lt,H,1
+370,0.4,"""Methyl Amine Anion""",1.008,oplsaa2008.lt,H,1
+372,0.08,"""Ethyl Anion CH3-CH2-""",1.008,oplsaa2008.lt,H,1
+374,0.07,"""Ethyl Anion CH3-CH2-""",1.008,oplsaa2008.lt,H,1
+377,0.3,"""Hydroxide Ion OH-""",1.008,oplsaa2008.lt,H,1
+385,-0.03,"""DiMe Phosphate CH3-O""",1.008,oplsaa2008.lt,H,1
+390,-0.1,"""Me Phosphate CH3-O""",1.008,oplsaa2008.lt,H,1
+395,-0.02,"""Me MePhosphonate CH3-O""",1.008,oplsaa2008.lt,H,1
+397,0.08,"""Me MePhosphonate CH3-P""",1.008,oplsaa2008.lt,H,1
+400,0.02,"""Bz MePhosphonate CH3-O""",1.008,oplsaa2008.lt,H,1
+403,0.12,"""Me BzPhosphonate CH3-P""",1.008,oplsaa2008.lt,H,1
+410,0.03,"""Ester -OCH<""",1.008,oplsaa2008.lt,H,1
+418,0.18,"""Sulfonamide CH3-S""",1.008,oplsaa2008.lt,H,1
+420,0.44,"""Sulfonamide -SO2NH2""",1.008,oplsaa2008.lt,H,1
+422,0.41,"""Sulfonamide -SO2NHR""",1.008,oplsaa2008.lt,H,1
+424,0.03,"""N-Me Sulfonamide CH3-""",1.008,oplsaa2008.lt,H,1
+426,-0.06,"""Sulfonamide N-CH2-R""",1.008,oplsaa2008.lt,H,1
+428,0.06,"""N-Et Sulfonamide CH3-""",1.008,oplsaa2008.lt,H,1
+445,0.42,"""TRP HNE & HID/HIE HN""",1.008,oplsaa2008.lt,H,1
+454,0.46,"""HIP HND & HNE""",1.008,oplsaa2008.lt,H,1
+465,0.012,"""Pyridine H1""",1.008,oplsaa2008.lt,H,1
+466,0.155,"""Pyridine H2""",1.008,oplsaa2008.lt,H,1
+467,0.065,"""Pyridine H3""",1.008,oplsaa2008.lt,H,1
+470,0.042,"""Pyrazine CH""",1.008,oplsaa2008.lt,H,1
+475,-0.032,"""Pyrimidine HC2""",1.008,oplsaa2008.lt,H,1
+476,0.011,"""Pyrimidine HC4""",1.008,oplsaa2008.lt,H,1
+477,0.197,"""Pyrimidine HC5""",1.008,oplsaa2008.lt,H,1
+481,-0.009,"""Pyridazine HC3""",1.008,oplsaa2008.lt,H,1
+482,0.122,"""Pyridazine HC4""",1.008,oplsaa2008.lt,H,1
+486,0.317,"""Pyrrole HN""",1.008,oplsaa2008.lt,H,1
+487,0.155,"""Pyrrole HC2""",1.008,oplsaa2008.lt,H,1
+488,0.118,"""Pyrrole HC3""",1.008,oplsaa2008.lt,H,1
+494,0.301,"""Pyrazole HN1""",1.008,oplsaa2008.lt,H,1
+495,0.072,"""Pyrazole HC3""",1.008,oplsaa2008.lt,H,1
+496,0.15,"""Pyrazole HC4""",1.008,oplsaa2008.lt,H,1
+497,0.135,"""Pyrazole HC5""",1.008,oplsaa2008.lt,H,1
+503,0.306,"""Imidazole HN1""",1.008,oplsaa2008.lt,H,1
+504,0.078,"""Imidazole HC2""",1.008,oplsaa2008.lt,H,1
+505,0.075,"""Imidazole HC4""",1.008,oplsaa2008.lt,H,1
+506,0.187,"""Imidazole HC5""",1.008,oplsaa2008.lt,H,1
+510,0.142,"""Furan HC2""",1.008,oplsaa2008.lt,H,1
+511,0.126,"""Furan HC3""",1.008,oplsaa2008.lt,H,1
+517,0.043,"""Oxazole HC2""",1.008,oplsaa2008.lt,H,1
+518,0.091,"""Oxazole HC4""",1.008,oplsaa2008.lt,H,1
+519,0.181,"""Oxazole HC5""",1.008,oplsaa2008.lt,H,1
+525,0.053,"""Isoxazole HC3""",1.008,oplsaa2008.lt,H,1
+526,0.184,"""Isoxazole HC4""",1.008,oplsaa2008.lt,H,1
+527,0.098,"""Isoxazole HC5""",1.008,oplsaa2008.lt,H,1
+537,0.376,"""Indole HN1""",1.008,oplsaa2008.lt,H,1
+538,0.147,"""Indole HC2""",1.008,oplsaa2008.lt,H,1
+539,0.172,"""Indole HC3""",1.008,oplsaa2008.lt,H,1
+540,0.155,"""Indole HC4""",1.008,oplsaa2008.lt,H,1
+541,0.107,"""Indole HC5""",1.008,oplsaa2008.lt,H,1
+542,0.11,"""Indole HC6""",1.008,oplsaa2008.lt,H,1
+543,0.14,"""Indole HC7""",1.008,oplsaa2008.lt,H,1
+554,0.028,"""Quinoline HC2""",1.008,oplsaa2008.lt,H,1
+555,0.146,"""Quinoline HC3""",1.008,oplsaa2008.lt,H,1
+556,0.119,"""Quinoline HC4""",1.008,oplsaa2008.lt,H,1
+557,0.133,"""Quinoline HC5""",1.008,oplsaa2008.lt,H,1
+558,0.113,"""Quinoline HC6""",1.008,oplsaa2008.lt,H,1
+559,0.114,"""Quinoline HC7""",1.008,oplsaa2008.lt,H,1
+560,0.157,"""Quinoline HC8""",1.008,oplsaa2008.lt,H,1
+570,0.024,"""Purine HC2""",1.008,oplsaa2008.lt,H,1
+571,0.101,"""Purine HC6""",1.008,oplsaa2008.lt,H,1
+572,0.086,"""Purine HC8""",1.008,oplsaa2008.lt,H,1
+573,0.413,"""Purine HN9""",1.008,oplsaa2008.lt,H,1
+579,0.101,"""Thiazole HC2""",1.008,oplsaa2008.lt,H,1
+580,0.068,"""Thiazole HC4""",1.008,oplsaa2008.lt,H,1
+581,0.205,"""Thiazole HC5""",1.008,oplsaa2008.lt,H,1
+584,-0.014,"""1,3,5-Triazine CH""",1.008,oplsaa2008.lt,H,1
+594,0.032,"""1,10-Phenanthroline HC2""",1.008,oplsaa2008.lt,H,1
+595,0.146,"""1,10-Phenanthroline HC3""",1.008,oplsaa2008.lt,H,1
+596,0.108,"""1,10-Phenanthroline HC4""",1.008,oplsaa2008.lt,H,1
+597,0.14,"""1,10-Phenanthroline HC5""",1.008,oplsaa2008.lt,H,1
+604,0.118,"""1-Methylimidazole HC2""",1.008,oplsaa2008.lt,H,1
+605,0.093,"""1-Methylimidazole HC4""",1.008,oplsaa2008.lt,H,1
+606,0.208,"""1-Methylimidazole HC5""",1.008,oplsaa2008.lt,H,1
+607,0.098,"""1-Methylimidazole CH3-""",1.008,oplsaa2008.lt,H,1
+624,0.255,"""6-Mercaptopurine SH""",1.008,oplsaa2008.lt,H,1
+643,0.174,"""t-Butyl Cation CH3-""",1.008,oplsaa2008.lt,H,1
+651,0.2,"""Cl..CH3..Cl- Sn2 TS""",1.008,oplsaa2008.lt,H,1
+656,0.03,"""Cyclopentadienyl Anion""",1.008,oplsaa2008.lt,H,1
+658,0.099,"""Cyclopentadienyl Radical""",1.008,oplsaa2008.lt,H,1
+681,0.141,"""Benzamidine HCD""",1.008,oplsaa2008.lt,H,1
+682,0.129,"""Benzamidine HCE""",1.008,oplsaa2008.lt,H,1
+685,0.426,"""Benzamidine H1-N""",1.008,oplsaa2008.lt,H,1
+686,0.465,"""Benzamidine H2-N""",1.008,oplsaa2008.lt,H,1
+687,0.119,"""Benzamidine HCG""",1.008,oplsaa2008.lt,H,1
+700,0.06,"""Alkyl Nitrile H-C-CN""",1.008,oplsaa2008.lt,H,1
+704,0.06,"""Nitroalkane H-C-NO2""",1.008,oplsaa2008.lt,H,1
+718,0.03,"""Propylene Carbonate CH2""",1.008,oplsaa2008.lt,H,1
+719,0.03,"""Propylene Carbonate CH""",1.008,oplsaa2008.lt,H,1
+720,0.06,"""Propylene Carbonate CH3""",1.008,oplsaa2008.lt,H,1
+725,0.172,"""Phosphonium CH3-PR3+""",1.008,oplsaa2008.lt,H,1
+739,0.36,"""Amine RNH2""",1.008,oplsaa2008.lt,H,1
+740,0.38,"""Amine R2NH""",1.008,oplsaa2008.lt,H,1
+741,0.06,"""Amine H-C-N""",1.008,oplsaa2008.lt,H,1
+756,0.2,"""Alkyne HCC-""",1.008,oplsaa2008.lt,H,1
+760,0.06,"""Alkyne H-C-CC-""",1.008,oplsaa2008.lt,H,1
+765,0.39,"""Sugar H3' (-OH)""",1.008,oplsaa2008.lt,H,1
+771,0.29,"""Ammonium R3NH+""",1.008,oplsaa2008.lt,H,1
+780,0.074,"""GLY Zwitterion HA""",1.008,oplsaa2008.lt,H,1
+785,0.317,"""GLY Zwitterion HN""",1.008,oplsaa2008.lt,H,1
+788,0.1,"""Alkyl Fluoride H-C-F""",1.008,oplsaa2008.lt,H,1
+797,0.15,"""DifluoroMeBenzene -CHF2""",1.008,oplsaa2008.lt,H,1
+802,0.103,"""Alkyl Chloride H-C-Cl""",1.008,oplsaa2008.lt,H,1
+807,0.103,"""Alkyl Bromide H-C-Br""",1.008,oplsaa2008.lt,H,1
+824,0.411,"""Hydroxamic Acid HN""",1.008,oplsaa2008.lt,H,1
+826,0.435,"""Hydroxamic Acid OH""",1.008,oplsaa2008.lt,H,1
+839,0.1,"""Alkyl Iodide H-C-I""",1.008,oplsaa2008.lt,H,1
+852,0.06,"""Tertiary Amide H-C-N""",1.008,oplsaa2008.lt,H,1
+855,0.0,"""Tertiary Formamide H-C=O""",1.008,oplsaa2008.lt,H,1
+870,-0.1,"""Alkyl Silane H-C-Si""",1.008,oplsaa2008.lt,H,1
+892,0.1,"""Ammonium CH3-NR3+""",1.008,oplsaa2008.lt,H,1
+899,0.15,"""Allene/Ketene H-C=C=X""",1.008,oplsaa2008.lt,H,1
+1,0.0,"H  - H~   | Types 1-18, 35, 53 give generic L-J",1.008,oplsaa2024.lt,H,1
+60,0.06,H  - HC   | H all-atom H: alkanes,1.008,oplsaa2024.lt,H,1
+79,0.435,"H  - HO   | H(O) ALCOHOLS """,1.008,oplsaa2024.lt,H,1
+86,0.235,"H  - HS   | H IN H2S """,1.008,oplsaa2024.lt,H,1
+87,0.27,"H  - HS   | H(S) IN RSH """,1.008,oplsaa2024.lt,H,1
+100,0.0,DM - DM   | DUMMY ATOM,1.0,oplsaa2024.lt,H,1
+128,0.34,H  - H~   | Ammonia,1.008,oplsaa2024.lt,H,1
+140,0.06,H  - HC   | H all-atom H: alkanes,1.008,oplsaa2024.lt,H,1
+144,0.115,H  - HC   | alkene H (H-C=) all atom,1.008,oplsaa2024.lt,H,1
+146,0.115,"H  - HA   | Benzene H - 12 site """,1.008,oplsaa2024.lt,H,1
+153,0.103,H  - HC   | H in RCH2Cl,1.008,oplsaa2024.lt,H,1
+155,0.418,H  - HO   | all-atom H(O): mono alcohols,1.008,oplsaa2024.lt,H,1
+156,0.04,H  - HC   | all-atom H(C): methanol,1.008,oplsaa2024.lt,H,1
+168,0.43,H  - HO   | H phenol 145 & 146,1.008,oplsaa2024.lt,H,1
+170,0.435,H  - HO   | H(O): diols,1.008,oplsaa2024.lt,H,1
+172,0.465,H  - HO   | H(O): triols,1.008,oplsaa2024.lt,H,1
+176,0.06,"H  - HC   | H(CXOH): "" OPLS/2020",1.008,oplsaa2024.lt,H,1
+185,0.03,H  - HC   | H(COR): alpha H ether OPLS/2020 see 794,1.008,oplsaa2024.lt,H,1
+188,0.435,H  - HO   | H(O): hemiacetal,1.008,oplsaa2024.lt,H,1
+190,0.1,H  - HC   | H(CHO2): acetal OCH2O,1.008,oplsaa2024.lt,H,1
+192,0.1,H  - HC   | H(CHO2): hemiacetal OCH2OH,1.008,oplsaa2024.lt,H,1
+194,0.1,H  - HC   | H(CHO2): acetal OCHRO,1.008,oplsaa2024.lt,H,1
+196,0.1,H  - HC   | H(C2O2): hemiacetal OCHROH,1.008,oplsaa2024.lt,H,1
+204,0.155,H  - HS   | all-atom H(S): thiols (mod 11/99),1.008,oplsaa2024.lt,H,1
+205,0.235,"H  - HS   | H IN H2S JPC,90,6379 (1986)",1.008,oplsaa2024.lt,H,1
+240,0.38,H  - H~   | H on N: primary amide see 1035-1045,1.008,oplsaa2024.lt,H,1
+241,0.3,H  - H~   | H on N: secondary amide,1.008,oplsaa2024.lt,H,1
+250,0.333,H  - H~   | H in O=C(NH2)2 Urea,1.008,oplsaa2024.lt,H,1
+254,0.37,H  - H~   | H(N) in imide,1.008,oplsaa2024.lt,H,1
+255,0.06,H  - HC   | H(C) in formimide,1.008,oplsaa2024.lt,H,1
+270,0.45,H  - HO   | H in CCOOH,1.008,oplsaa2024.lt,H,1
+279,0.0,H  - HC   | AA H-alpha in aldehyde & formamide,1.008,oplsaa2024.lt,H,1
+282,0.06,H  - HC   | AA H on C-alpha in ketone & aldehyde & acyl halide,1.008,oplsaa2024.lt,H,1
+289,0.35,"H  - H3   | H (NH4+) "" see also 940-945,",1.008,oplsaa2024.lt,H,1
+290,0.33,"H  - H3   | H (RNH3+) "" 1120-1130, 309-310",1.008,oplsaa2024.lt,H,1
+301,0.46,H  - H3   | H: guanidinium NH2,1.008,oplsaa2024.lt,H,1
+304,0.44,H  - H3   | H: guanidinium NHR,1.008,oplsaa2024.lt,H,1
+310,0.31,H  - H3   | H (R2NH2+),1.008,oplsaa2024.lt,H,1
+314,0.37,H  - H~   | DAP H-amine,1.008,oplsaa2024.lt,H,1
+316,0.1,H  - HA   | DAP H3,1.008,oplsaa2024.lt,H,1
+318,0.1,H  - HA   | DAP H4,1.008,oplsaa2024.lt,H,1
+325,0.41,H  - H~   | Uracil H-N1,1.008,oplsaa2024.lt,H,1
+327,0.36,H  - H~   | Uracil H-N3,1.008,oplsaa2024.lt,H,1
+329,0.1,H  - HC   | Uracil H-C5,1.008,oplsaa2024.lt,H,1
+330,0.1,H  - HC   | Uracil H-C6 Thymine,1.008,oplsaa2024.lt,H,1
+332,0.08,H  - HC   | Thymine H-CC5,1.008,oplsaa2024.lt,H,1
+339,0.38,H  - H~   | Cytosine H-N1,1.008,oplsaa2024.lt,H,1
+342,0.385,H  - H~   | Cytosine H-NC4/N3,1.008,oplsaa2024.lt,H,1
+343,0.355,H  - H~   | Cytosine H-NC4/C5,1.008,oplsaa2024.lt,H,1
+344,0.1,H  - HC   | Cytosine H-C5,1.008,oplsaa2024.lt,H,1
+345,0.1,H  - HA   | Cytosine H-C6,1.008,oplsaa2024.lt,H,1
+355,0.2,H  - HA   | Adenine H-C2 nucleoside,1.008,oplsaa2024.lt,H,1
+357,0.385,H  - H~   | Adenine H-NC6/N1,1.008,oplsaa2024.lt,H,1
+358,0.355,H  - H~   | Adenine H-NC6/C5,1.008,oplsaa2024.lt,H,1
+359,0.2,H  - HA   | Adenine H-C8 Guanine,1.008,oplsaa2024.lt,H,1
+360,0.35,H  - H~   | Adenine H-N9 Guanine,1.008,oplsaa2024.lt,H,1
+367,0.38,H  - H~   | Guanine H-N1,1.008,oplsaa2024.lt,H,1
+369,0.4,H  - H~   | Guanine H-NC2,1.008,oplsaa2024.lt,H,1
+372,0.12,H  - HC   | 9-Me A or G H-CN9,1.008,oplsaa2024.lt,H,1
+374,0.14,H  - HC   | 1-Me U or T H-CN1,1.008,oplsaa2024.lt,H,1
+376,0.13,H  - HC   | 1-Me Cytosine H-CN1,1.008,oplsaa2024.lt,H,1
+383,0.49,H  - H~   | CytH+ H-N1,1.008,oplsaa2024.lt,H,1
+385,0.48,H  - H~   | CytH+ H-N3,1.008,oplsaa2024.lt,H,1
+387,0.46,H  - H~   | CytH+ H-NC4/N3,1.008,oplsaa2024.lt,H,1
+388,0.43,H  - H~   | CytH+ H-NC4/C5,1.008,oplsaa2024.lt,H,1
+389,0.14,H  - HA   | CytH+ H-C5,1.008,oplsaa2024.lt,H,1
+390,0.14,H  - HA   | CytH+ H-C6,1.008,oplsaa2024.lt,H,1
+392,0.16,H  - HC   | 1-Me CytH+ H-CN1,1.008,oplsaa2024.lt,H,1
+416,0.1,H  - HC   | H in CH3S-,1.008,oplsaa2024.lt,H,1
+419,0.06,H  - HC   | H in CH3O-,1.008,oplsaa2024.lt,H,1
+422,0.19,H  - HC   | H in CH2CN-,1.008,oplsaa2024.lt,H,1
+426,0.07,H  - HC   | HC in CH3NH- RNH-,1.008,oplsaa2024.lt,H,1
+428,0.4,H  - H~   | HN in CH3NH-,1.008,oplsaa2024.lt,H,1
+430,0.08,H  - HC   | H in CH3CH2-,1.008,oplsaa2024.lt,H,1
+432,0.07,H  - HC   | H1 in CH3CH2-,1.008,oplsaa2024.lt,H,1
+435,0.3,"H  - HO   | H in OH- JACS 108, 2517 (86)",1.008,oplsaa2024.lt,H,1
+444,-0.03,"H  - HC   | H in "" 6-31+G* CHELPG",1.008,oplsaa2024.lt,H,1
+449,-0.1,"H  - HC   | H in """,1.008,oplsaa2024.lt,H,1
+454,-0.02,"H  - HC   | H(CO) "" 6-31+G* CHELPG",1.008,oplsaa2024.lt,H,1
+456,0.08,"H  - HC   | H(CP) """,1.008,oplsaa2024.lt,H,1
+459,0.02,"H  - HC   | H(CO) "" """,1.008,oplsaa2024.lt,H,1
+462,0.12,"H  - HC   | H(CP) "" """,1.008,oplsaa2024.lt,H,1
+469,0.03,H  - HC   | alkoxy H's in esters,1.008,oplsaa2024.lt,H,1
+477,0.18,H  - HC   | H of Me attached to S of sulfonamide,1.008,oplsaa2024.lt,H,1
+479,0.44,H  - H~   | H on N: primary sulfonamide,1.008,oplsaa2024.lt,H,1
+481,0.41,H  - H~   | H on N: secondary sulfonamide,1.008,oplsaa2024.lt,H,1
+483,0.03,H  - HC   | H of alpha CH3-N of sulfonamide,1.008,oplsaa2024.lt,H,1
+485,-0.06,H  - HC   | H of alpha CH2-N of sulfonamide,1.008,oplsaa2024.lt,H,1
+487,0.06,H  - HC   | H of beta CH3 of N-ethyl sulfonamide,1.008,oplsaa2024.lt,H,1
+504,0.42,H  - H~   | H on NE in TRP,1.008,oplsaa2024.lt,H,1
+513,0.46,H  - H~   | H on N in HIP,1.008,oplsaa2024.lt,H,1
+524,0.012,H  - HA   | H1 in pyridine 520-656,1.008,oplsaa2024.lt,H,1
+525,0.155,H  - HA   | H2 in pyridine,1.008,oplsaa2024.lt,H,1
+526,0.065,H  - HA   | H3 in pyridine,1.008,oplsaa2024.lt,H,1
+529,0.042,H  - HA   | H in pyrazine,1.008,oplsaa2024.lt,H,1
+534,-0.032,H  - HA   | H2 in pyrimidine,1.008,oplsaa2024.lt,H,1
+535,0.011,H  - HA   | H4 in pyrimidine,1.008,oplsaa2024.lt,H,1
+536,0.197,H  - HA   | H5 in pyrimidine,1.008,oplsaa2024.lt,H,1
+540,-0.009,H  - HA   | H3 in pyridazine,1.008,oplsaa2024.lt,H,1
+541,0.122,H  - HA   | H4 in pyridazine,1.008,oplsaa2024.lt,H,1
+545,0.317,H  - H~   | H1 in pyrrole,1.008,oplsaa2024.lt,H,1
+546,0.155,H  - HA   | H2 in pyrrole,1.008,oplsaa2024.lt,H,1
+547,0.118,H  - HA   | H3 in pyrrole,1.008,oplsaa2024.lt,H,1
+553,0.301,H  - H~   | H1 in pyrazole,1.008,oplsaa2024.lt,H,1
+554,0.072,H  - HA   | H3 in pyrazole,1.008,oplsaa2024.lt,H,1
+555,0.15,H  - HA   | H4 in pyrazole,1.008,oplsaa2024.lt,H,1
+556,0.135,H  - HA   | H5 in pyrazole,1.008,oplsaa2024.lt,H,1
+562,0.306,H  - H~   | H1 in imidazole,1.008,oplsaa2024.lt,H,1
+563,0.078,H  - HA   | H2 in imidazole,1.008,oplsaa2024.lt,H,1
+564,0.075,H  - HA   | H4 in imidazole,1.008,oplsaa2024.lt,H,1
+565,0.187,H  - HA   | H5 in imidazole,1.008,oplsaa2024.lt,H,1
+569,0.142,H  - HA   | H2 in furan,1.008,oplsaa2024.lt,H,1
+570,0.126,H  - HA   | H3 in furan,1.008,oplsaa2024.lt,H,1
+576,0.043,H  - HA   | H2 in oxazole,1.008,oplsaa2024.lt,H,1
+577,0.091,H  - HA   | H4 in oxazole,1.008,oplsaa2024.lt,H,1
+578,0.181,H  - HA   | H5 in oxazole,1.008,oplsaa2024.lt,H,1
+584,0.053,H  - HA   | H3 in isoxazole,1.008,oplsaa2024.lt,H,1
+585,0.184,H  - HA   | H4 in isoxazole,1.008,oplsaa2024.lt,H,1
+586,0.098,H  - HA   | H5 in isoxazole,1.008,oplsaa2024.lt,H,1
+596,0.376,H  - H~   | H1 in indole,1.008,oplsaa2024.lt,H,1
+597,0.147,H  - HA   | H2 in indole,1.008,oplsaa2024.lt,H,1
+598,0.172,H  - HA   | H3 in indole,1.008,oplsaa2024.lt,H,1
+599,0.155,H  - HA   | H4 in indole,1.008,oplsaa2024.lt,H,1
+600,0.107,H  - HA   | H5 in indole,1.008,oplsaa2024.lt,H,1
+601,0.11,H  - HA   | H6 in indole,1.008,oplsaa2024.lt,H,1
+602,0.14,H  - HA   | H7 in indole,1.008,oplsaa2024.lt,H,1
+613,0.028,H  - HA   | H2 in quinoline,1.008,oplsaa2024.lt,H,1
+614,0.146,H  - HA   | H3 in quinoline,1.008,oplsaa2024.lt,H,1
+615,0.119,H  - HA   | H4 in quinoline,1.008,oplsaa2024.lt,H,1
+616,0.133,H  - HA   | H5 in quinoline,1.008,oplsaa2024.lt,H,1
+617,0.113,H  - HA   | H6 in quinoline,1.008,oplsaa2024.lt,H,1
+618,0.114,H  - HA   | H7 in quinoline,1.008,oplsaa2024.lt,H,1
+619,0.157,H  - HA   | H8 in quinoline,1.008,oplsaa2024.lt,H,1
+629,0.024,H  - HA   | H2 in purine,1.008,oplsaa2024.lt,H,1
+630,0.101,H  - HA   | H6 in purine,1.008,oplsaa2024.lt,H,1
+631,0.086,H  - HA   | H8 in purine,1.008,oplsaa2024.lt,H,1
+632,0.413,H  - H~   | H9 in purine,1.008,oplsaa2024.lt,H,1
+638,0.101,H  - HA   | H2 in thiazole,1.008,oplsaa2024.lt,H,1
+639,0.068,H  - HA   | H4 in thiazole,1.008,oplsaa2024.lt,H,1
+640,0.205,H  - HA   | H5 in thiazole,1.008,oplsaa2024.lt,H,1
+643,-0.014,"H  - HA   | H in 1,3,5-triazine",1.008,oplsaa2024.lt,H,1
+653,0.032,"H  - HA   | H2 in 1,10-phenanthroline",1.008,oplsaa2024.lt,H,1
+654,0.146,"H  - HA   | H3 in 1,10-phenanthroline",1.008,oplsaa2024.lt,H,1
+655,0.108,"H  - HA   | H4 in 1,10-phenanthroline",1.008,oplsaa2024.lt,H,1
+656,0.14,"H  - HA   | H5 in 1,10-phenanthroline",1.008,oplsaa2024.lt,H,1
+663,0.118,H  - HA   | H2 in 1-methylimidazole,1.008,oplsaa2024.lt,H,1
+664,0.093,H  - HA   | H4 in 1-methylimidazole,1.008,oplsaa2024.lt,H,1
+665,0.208,H  - HA   | H5 in 1-methylimidazole,1.008,oplsaa2024.lt,H,1
+666,0.098,H  - HC   | HC1 in 1-methylimidazole,1.008,oplsaa2024.lt,H,1
+683,0.255,H  - HS   | H(S) in 6-mercaptopurine,1.008,oplsaa2024.lt,H,1
+702,0.174,H  - HC   | H in t-butyl+,1.008,oplsaa2024.lt,H,1
+710,0.2,H  - HC   | H in Cl..CH3..Cl- TS,1.008,oplsaa2024.lt,H,1
+740,0.141,H  - HA   | HD of Benzamidine,1.008,oplsaa2024.lt,H,1
+741,0.129,H  - HA   | HE of Benzamidine,1.008,oplsaa2024.lt,H,1
+744,0.426,H  - H~   | H1-N of Benzamidine,1.008,oplsaa2024.lt,H,1
+745,0.465,H  - H~   | H2-N of Benzamidine,1.008,oplsaa2024.lt,H,1
+746,0.119,H  - HA   | H-CG of Benzamidine,1.008,oplsaa2024.lt,H,1
+759,0.06,H  - HC   | HC-CT-CN alpha-H in nitriles,1.008,oplsaa2024.lt,H,1
+763,0.06,H  - HC   | HC-CT-NO2 alpha-H in nitroalkanes,1.008,oplsaa2024.lt,H,1
+777,0.03,"H  - HC   | "" H in CH2",1.008,oplsaa2024.lt,H,1
+778,0.03,"H  - HC   | "" H in CH",1.008,oplsaa2024.lt,H,1
+779,0.06,"H  - HC   | "" H in CH3",1.008,oplsaa2024.lt,H,1
+784,0.172,H  - HC   | H in CH3PR3+,1.008,oplsaa2024.lt,H,1
+794,0.03,H  - HC   | H(COR): alpha H ether 2020 for CH3-O-R,1.008,oplsaa2024.lt,H,1
+799,0.0,H  - HC   | H all-atom H: q = 0,1.008,oplsaa2024.lt,H,1
+909,0.36,H  - H~   | H(N) primary amines,1.008,oplsaa2024.lt,H,1
+910,0.38,H  - H~   | H(N) secondary amines,1.008,oplsaa2024.lt,H,1
+911,0.06,"H  - HC   | H(C) for Carbons directly bonded to N in amines, diamine",1.008,oplsaa2024.lt,H,1
+926,0.2,H  - HC   | alkyne RC%CH terminal H,1.008,oplsaa2024.lt,H,1
+935,0.39,H  - HO   | H(3') OH by Deping,1.008,oplsaa2024.lt,H,1
+941,0.29,H  - H3   | H (R3NH+),1.008,oplsaa2024.lt,H,1
+950,0.074,H  - HC   | glycine zwit. 6-31G* CHELPG charges,1.008,oplsaa2024.lt,H,1
+955,0.317,H  - H3   | glycine zwit. 6-31G* CHELPG charges,1.008,oplsaa2024.lt,H,1
+958,0.1,H  - HC   | H in RCHF tentative,1.008,oplsaa2024.lt,H,1
+967,0.15,"H  - HC   | H in CF2H """,1.008,oplsaa2024.lt,H,1
+972,0.103,H  - HC   | H in RCHCl 153,1.008,oplsaa2024.lt,H,1
+977,0.103,"H  - HC   | H in RCHBr """,1.008,oplsaa2024.lt,H,1
+994,0.411,H  - H~   | HN in hydroxamic acid,1.008,oplsaa2024.lt,H,1
+996,0.435,H  - HO   | HO in hydroxamic acid,1.008,oplsaa2024.lt,H,1
+1015,0.1,H  - HC   | H in RCHI,1.008,oplsaa2024.lt,H,1
+1029,0.03,H  - HC   | H epoxide on C-O,1.008,oplsaa2024.lt,H,1
+1042,0.06,H  - HC   | H on CT:tertiary amide,1.008,oplsaa2024.lt,H,1
+1045,0.0,H  - HC   | H on CO: tert formamide,1.008,oplsaa2024.lt,H,1
+1064,-0.01,"H  - H~   | H on Si in silane, silanol, silyl ether",1.008,oplsaa2024.lt,H,1
+1074,0.35,H  - HO   | H in SiOH silanol,1.008,oplsaa2024.lt,H,1
+1097,0.03,H  - HA   | H in C5H5- cyclopentadienyl anion,1.008,oplsaa2024.lt,H,1
+1099,0.099,H  - HA   | H in C5H5 cyclopentadienyl radical,1.008,oplsaa2024.lt,H,1
+1124,0.1,H  - HC   | H in CH3NR3+,1.008,oplsaa2024.lt,H,1
+1153,0.15,H  - HC   | allene H,1.008,oplsaa2024.lt,H,1
+1239,0.2,H  - HA   | H4 thiazole jlj0003,1.008,oplsaa2024.lt,H,1
+1240,0.2,H  - HA   | H5 thiazole jlj0003,1.008,oplsaa2024.lt,H,1
+1263,0.4286,"H  - HO   | HO """,1.008,oplsaa2024.lt,H,1
+1265,0.0825,"H  - HC   | H """,1.008,oplsaa2024.lt,H,1
+9998,0.417,"H  - tipH | TIP3P water H, long-range Coulombic solver",1.008,oplsaa2024.lt,H,1
+9996,0.5242,"H  - tipH | TIP4P water H, long-range Coulombic solver",1.008,oplsaa2024.lt,H,1
+9993,0.241,"H  - tipH | TIP5P water H, long-range Coulombic solver",1.008,oplsaa2024.lt,H,1
+9990,0.41,H  - spcH | SPC water H,1.008,oplsaa2024.lt,H,1
+9988,0.4238,H  - spcH | SPC/E water H,1.008,oplsaa2024.lt,H,1
+9986,0.679142,H  - opcH | OPC water H,1.008,oplsaa2024.lt,H,1

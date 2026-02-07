@@ -1,0 +1,7 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+410,1.0,Cs - Cs   | Cs+,132.905,oplsaa.lt,Cs,55
+1110,1.0,Cs - Cs   | Cs+,132.905,oplsaa.lt,Cs,55
+352,1.0,"""Cesium Ion Cs+""",132.905,oplsaa2008.lt,Cs,55
+883,1.0,"""Cesium Ion (GBSA)""",132.905,oplsaa2008.lt,Cs,55
+410,1.0,Cs - Cs   | Cs+,132.905,oplsaa2024.lt,Cs,55
+1110,1.0,Cs - Cs   | Cs+,132.905,oplsaa2024.lt,Cs,55

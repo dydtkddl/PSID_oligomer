@@ -1,0 +1,28 @@
+Wed 22 Oct 2025 01:21:38 AM KST
+Working Directory: /data/dydtkddhkdwk/20251021_MACE_FIT/20251022_try03_eval
+Wed Oct 22 01:21:38 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:43:00.0 Off |                  N/A |
+| 60%   23C    P8              27W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251021_MACE_FIT/20251022_try03_eval/eval.py", line 14, in <module>
+    from aseMolec import pltProps as pp
+ModuleNotFoundError: No module named 'aseMolec'
+=== Job Completed ===
+Wed 22 Oct 2025 01:21:45 AM KST

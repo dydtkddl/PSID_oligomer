@@ -1,0 +1,17 @@
+tolerance 3.5
+filetype pdb
+output case_{index}.pdb
+
+structure ../anion.pdb
+  number 20
+  inside box 0 0 0 25 25 25
+end structure
+
+structure ../cation.pdb
+  number 10
+  inside box 0 0 0 25 25 25
+end structure
+
+seed {seed}
+randominitialpoint
+

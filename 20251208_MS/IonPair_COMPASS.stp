@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+  <Version>25.1</Version>
+  <Reference>{D7D93CAC-3936-4F21-9861-4A5B80142B3C}</Reference>
+  <DocumentManager>
+    <Document>
+      <ID>{55E9832B-9495-42D9-85F6-9D3FFAD961C8}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{B7813C5F-2711-41E4-8439-2AE51826F4D1}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt\anion Forcite GeomOpt\anion.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{FA9671F7-ACD1-481C-9E21-AFC996254F9B}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt\anion Forcite GeomOpt\SMForcite_Extension_anion.xms</URL>
+    </Document>
+    <Document>
+      <ID>{5A30E13E-ECD3-4CBB-8B06-E57870D320C6}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt\anion.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{59EC9735-C8BC-457D-A03D-F691D8FEE054}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt\SMForcite_Extension_anion.xms</URL>
+    </Document>
+    <Document>
+      <ID>{F78330C3-14DE-4640-894C-DD0108D032FA}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (2)\anion.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{6624786E-30A0-4DFA-BDF1-EF379566EEAE}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (2)\SMForcite_Extension_anion.xms</URL>
+    </Document>
+    <Document>
+      <ID>{20D528DC-A744-4A0F-BFCF-86D646CD8F06}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (3)\anion.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{7DF42F3D-0D9A-44EC-87D3-3ACF45FC51AF}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (3)\SMForcite_Extension_anion.xms</URL>
+    </Document>
+    <Document>
+      <ID>{076BE47B-59CB-453D-B7EF-C8CC5D158411}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (4)\anion.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{9A92A0A1-AD47-4BBA-8294-1B1BBC088EF3}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (4)\cc Forcite GeomOpt\cation.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{681DFC7B-9042-4067-830A-5CF7A0FA3078}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (4)\cc Forcite GeomOpt\cc Forcite Dynamics\cc.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{24EA8EF1-F0B6-49C0-B4BD-F7BC20C11C4A}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (4)\cc Forcite GeomOpt\cc Forcite Dynamics\SMForcite_Extension_cc.xms</URL>
+    </Document>
+    <Document>
+      <ID>{B3BC1B72-8114-4918-B01F-B4A0975D77C9}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (4)\cc Forcite GeomOpt\cc Forcite Dynamics (2)\cc.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{12E57817-735E-44DB-BC4B-2A91852881C5}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (4)\cc Forcite GeomOpt\cc Forcite Dynamics (2)\SMForcite_Extension_cc.xms</URL>
+    </Document>
+    <Document>
+      <ID>{4C57FA3A-E13F-41F8-802E-8AEE58E74BFE}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (4)\cc Forcite GeomOpt\cc.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{B292D279-EAC8-4716-8971-64FED0A29FB3}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (4)\cc Forcite GeomOpt\SMForcite_Extension_cc.xms</URL>
+    </Document>
+    <Document>
+      <ID>{190B7915-3933-41A4-84CB-42610ED101D9}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (4)\SMForcite_Extension_anion.xms</URL>
+    </Document>
+    <Document>
+      <ID>{09A7736D-38F2-42B6-8646-34E6F8047664}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (5)\anion.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{16D0999E-EBF0-4C79-9A17-B2D62BB8C0B4}</ID>
+      <Paths>1</Paths>
+      <URL>.\anion Forcite GeomOpt (5)\SMForcite_Extension_anion.xms</URL>
+    </Document>
+  </DocumentManager>
+  <ViewRegistry>
+    <Frame>
+      <Active>true</Active>
+      <Left>0</Left>
+      <Top>0</Top>
+      <Width>994</Width>
+      <Height>329</Height>
+      <Maximized>false</Maximized>
+      <Minimized>false</Minimized>
+      <View>
+        <Active>true</Active>
+        <DocumentID>{55E9832B-9495-42D9-85F6-9D3FFAD961C8}</DocumentID>
+        <Type>SVViewer3D.Viewer3DControl</Type>
+      </View>
+    </Frame>
+    <Frame>
+      <Active>false</Active>
+      <Left>26</Left>
+      <Top>26</Top>
+      <Width>994</Width>
+      <Height>329</Height>
+      <Maximized>false</Maximized>
+      <Minimized>false</Minimized>
+      <View>
+        <Active>true</Active>
+        <DocumentID>{20D528DC-A744-4A0F-BFCF-86D646CD8F06}</DocumentID>
+        <Type>SVViewer3D.Viewer3DControl</Type>
+      </View>
+    </Frame>
+  </ViewRegistry>
+  <DocumentEventManager>
+  </DocumentEventManager>
+</Project>

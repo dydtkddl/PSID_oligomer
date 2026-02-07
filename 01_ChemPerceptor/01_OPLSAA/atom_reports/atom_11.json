@@ -1,0 +1,19 @@
+{
+  "mol2_id": 11,
+  "rd_idx": 10,
+  "symbol": "C",
+  "formal_charge": 0,
+  "hybridization": "sp3",
+  "aromatic": false,
+  "degree": 2,
+  "total_h_count": 2,
+  "ring_sizes": [
+    5
+  ],
+  "functional_groups": [
+    "sp3 carbon"
+  ],
+  "primary_label": "sp3 carbon",
+  "environment": "aliphatic sp3 in-5-ring",
+  "description": "Tetrahedral carbon."
+}

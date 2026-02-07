@@ -1,0 +1,10 @@
+2025-10-21 23:24:15,429 INFO: Start MACE log analysis
+2025-10-21 23:24:15,429 INFO: log file: 20251021_try01/logs/train_99429.log
+2025-10-21 23:24:15,430 INFO: outdir:   20251021_try01/log_analysis
+2025-10-21 23:24:15,652 INFO: 선택된 TRAINING 섹션 인덱스: 0, 라인 범위: [50, 155] (총 106줄)
+2025-10-21 23:24:15,671 INFO: 파싱 완료: 총 101 레코드 (Initial 포함). 에폭 범위: -1 ~ 99
+2025-10-21 23:24:15,679 INFO: CSV 저장: 20251021_try01/log_analysis/metrics_epoch_times.csv
+2025-10-21 23:24:16,155 INFO: 메트릭 플롯 저장: 20251021_try01/log_analysis/plot_metrics.png
+2025-10-21 23:24:16,348 INFO: 시간 플롯 저장: 20251021_try01/log_analysis/plot_time.png
+2025-10-21 23:24:16,349 INFO: 최종 에폭 요약: epoch=99, loss=0.006351, RMSE_E=2.690 meV/atom, RMSE_F=21.910 meV/Å, 누적시간=6600.4 sec
+2025-10-21 23:24:16,349 INFO: 완료

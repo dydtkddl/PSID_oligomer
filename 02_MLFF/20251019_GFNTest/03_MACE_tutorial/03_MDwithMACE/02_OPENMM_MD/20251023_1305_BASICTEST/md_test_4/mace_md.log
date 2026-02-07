@@ -1,0 +1,11 @@
+2025-10-23 13:24:18.583 INFO: Using SMFF openff_unconstrained-1.0.0.offxml
+2025-10-23 13:24:18.667 INFO: Using reduced periodic box vectors [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+2025-10-23 13:24:18.680 WARNING: Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+2025-10-23 13:27:38.820 INFO: Using SMFF openff_unconstrained-1.0.0.offxml
+2025-10-23 13:27:38.852 INFO: Using reduced periodic box vectors [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+2025-10-23 13:27:38.862 WARNING: Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+2025-10-23 13:27:42.007 INFO: Minimising energy...

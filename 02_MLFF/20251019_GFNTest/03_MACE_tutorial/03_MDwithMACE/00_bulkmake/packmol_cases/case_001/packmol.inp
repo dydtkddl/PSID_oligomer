@@ -1,0 +1,16 @@
+tolerance 2.0
+filetype pdb
+output ionpairs.pdb
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_001/structures/TFSI_01.pdb
+  number 15
+  inside box 0.0 0.0 0.0 35.0 35.0 35.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_001/structures/VBBI_01.pdb
+  number 15
+  inside box 0.0 0.0 0.0 35.0 35.0 35.0
+end structure
+
+seed 1001
+randominitialpoint

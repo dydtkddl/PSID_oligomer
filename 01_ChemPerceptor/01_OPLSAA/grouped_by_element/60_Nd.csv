@@ -1,0 +1,4 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+704,3.0,Nd - Nd   | Nd+3 Lanthanide params -,144.242,oplsaa.lt,Nd,60
+645,3.0,"""Neodymium Ion Nd+3""",144.24,oplsaa2008.lt,Nd,60
+704,3.0,Nd - Nd   | Nd+3 Lanthanide params -,144.242,oplsaa2024.lt,Nd,60

@@ -1,0 +1,27 @@
+[2025-10-22 12:20:41] INFO: Reading multi-frame XYZ files...
+[2025-10-22 12:20:41] INFO: TFSI file TFSI_confcross.xyz: 4 frames
+[2025-10-22 12:20:41] INFO: TFSI file TFSI_crest_conformers.xyz: 12 frames
+[2025-10-22 12:20:41] INFO: TFSI file TFSI_crest_rotamers.xyz: 90 frames
+[2025-10-22 12:20:41] INFO: VBBI file VBBI_confcross.xyz: 750 frames
+[2025-10-22 12:20:41] INFO: VBBI file VBBI_crest_conformers.xyz: 175 frames
+[2025-10-22 12:20:41] INFO: VBBI file VBBI_crest_rotamers.xyz: 396 frames
+[2025-10-22 12:20:41] INFO: Total TFSI frames: 106; total VBBI frames: 1321
+[2025-10-22 12:20:41] DEBUG: Case 001: TFSI idx [99, 54, 85, 97, 12, 50, 45, 8, 59, 21, 68, 55, 16, 28, 30]; VBBI idx [745, 1001, 415, 750, 466, 938, 374, 83, 998, 292, 945, 851, 411, 47, 1097]
+[2025-10-22 12:20:41] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_001: packmol < packmol.inp
+[2025-10-22 12:20:47] INFO: [OK] case_001 completed.
+[2025-10-22 12:20:47] DEBUG: Case 002: TFSI idx [59, 91, 103, 98, 27, 69, 22, 89, 90, 13, 32, 20, 36, 11, 0]; VBBI idx [643, 33, 1302, 525, 596, 1062, 1122, 243, 397, 598, 780, 654, 467, 474, 731]
+[2025-10-22 12:20:47] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_002: packmol < packmol.inp
+[2025-10-22 12:20:50] INFO: [OK] case_002 completed.
+[2025-10-22 12:20:50] DEBUG: Case 003: TFSI idx [79, 62, 15, 37, 48, 58, 46, 76, 35, 60, 42, 1, 6, 18, 57]; VBBI idx [153, 466, 598, 51, 758, 258, 420, 279, 1295, 1031, 677, 711, 690, 979, 412]
+[2025-10-22 12:20:50] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_003: packmol < packmol.inp
+[2025-10-22 12:20:52] INFO: [OK] case_003 completed.
+[2025-10-22 12:20:52] DEBUG: Case 004: TFSI idx [51, 96, 9, 28, 105, 30, 38, 98, 53, 102, 41, 0, 71, 75, 90]; VBBI idx [339, 202, 995, 835, 1263, 958, 769, 812, 1063, 50, 610, 97, 89, 413, 411]
+[2025-10-22 12:20:52] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_004: packmol < packmol.inp
+[2025-10-22 12:20:54] INFO: [OK] case_004 completed.
+[2025-10-22 12:20:54] DEBUG: Case 005: TFSI idx [13, 43, 25, 18, 12, 9, 17, 70, 34, 26, 71, 93, 80, 6, 20]; VBBI idx [317, 749, 1210, 345, 174, 1000, 572, 460, 442, 555, 1253, 33, 1270, 40, 486]
+[2025-10-22 12:20:54] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005: packmol < packmol.inp
+[2025-10-22 12:20:55] INFO: [OK] case_005 completed.
+[2025-10-22 12:20:55] INFO: === Summary ===
+[2025-10-22 12:20:55] INFO: Success: 5 / 5
+[2025-10-22 12:20:55] INFO: Timeouts: 0
+[2025-10-22 12:20:55] INFO: Failed:   0

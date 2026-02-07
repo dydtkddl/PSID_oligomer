@@ -1,0 +1,39 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+14,0.0,Si - Si   |,28.086,oplsaa.lt,Si,14
+1060,0.32,Si - Si   | Si in tetraalkylsilane R4Si,28.086,oplsaa.lt,Si,14
+1061,0.25,Si - Si   | Si in R3SiH,28.086,oplsaa.lt,Si,14
+1062,0.18,Si - Si   | Si in R2SiH2,28.086,oplsaa.lt,Si,14
+1063,0.11,Si - Si   | Si in RSiH3,28.086,oplsaa.lt,Si,14
+1070,0.39,Si - Si   | Si in R3SiOH,28.086,oplsaa.lt,Si,14
+1071,0.32,Si - Si   | Si in R2SiHOH,28.086,oplsaa.lt,Si,14
+1072,0.25,Si - Si   | Si in RSiH2OH,28.086,oplsaa.lt,Si,14
+1075,0.39,Si - Si   | Si in R3SiOR silyl ether,28.086,oplsaa.lt,Si,14
+1076,0.32,"Si - Si   | Si in R2SiHOR """,28.086,oplsaa.lt,Si,14
+1077,0.25,"Si - Si   | Si in RSiH2OR """,28.086,oplsaa.lt,Si,14
+1079,0.24,Si - Si   | Si in R3SiSi disilane,28.086,oplsaa.lt,Si,14
+1080,0.17,Si - Si   | Si in R2SiHSi disilane,28.086,oplsaa.lt,Si,14
+1081,0.1,Si - Si   | Si in RSiH2Si disilane,28.086,oplsaa.lt,Si,14
+1082,0.03,Si - Si   | Si in H3Si-Si disilane,28.086,oplsaa.lt,Si,14
+1083,0.04,Si - Si   | Si in SiH4,28.086,oplsaa.lt,Si,14
+1084,0.18,Si - Si   | Si in SiH3OH,28.086,oplsaa.lt,Si,14
+866,1.0,"""Alkyl Silane R4Si""",28.086,oplsaa2008.lt,Si,14
+867,0.85,"""Alkyl Silane R3SiH""",28.086,oplsaa2008.lt,Si,14
+868,0.7,"""Alkyl Silane R2SiH2""",28.086,oplsaa2008.lt,Si,14
+869,0.55,"""Alkyl Silane RSiH3""",28.086,oplsaa2008.lt,Si,14
+14,0.0,Si - Si   |,28.086,oplsaa2024.lt,Si,14
+1060,0.32,Si - Si   | Si in tetraalkylsilane R4Si,28.086,oplsaa2024.lt,Si,14
+1061,0.25,Si - Si   | Si in R3SiH,28.086,oplsaa2024.lt,Si,14
+1062,0.18,Si - Si   | Si in R2SiH2,28.086,oplsaa2024.lt,Si,14
+1063,0.11,Si - Si   | Si in RSiH3,28.086,oplsaa2024.lt,Si,14
+1070,0.39,Si - Si   | Si in R3SiOH,28.086,oplsaa2024.lt,Si,14
+1071,0.32,Si - Si   | Si in R2SiHOH,28.086,oplsaa2024.lt,Si,14
+1072,0.25,Si - Si   | Si in RSiH2OH,28.086,oplsaa2024.lt,Si,14
+1075,0.39,Si - Si   | Si in R3SiOR silyl ether,28.086,oplsaa2024.lt,Si,14
+1076,0.32,"Si - Si   | Si in R2SiHOR """,28.086,oplsaa2024.lt,Si,14
+1077,0.25,"Si - Si   | Si in RSiH2OR """,28.086,oplsaa2024.lt,Si,14
+1079,0.24,Si - Si   | Si in R3SiSi disilane,28.086,oplsaa2024.lt,Si,14
+1080,0.17,Si - Si   | Si in R2SiHSi disilane,28.086,oplsaa2024.lt,Si,14
+1081,0.1,Si - Si   | Si in RSiH2Si disilane,28.086,oplsaa2024.lt,Si,14
+1082,0.03,Si - Si   | Si in H3Si-Si disilane,28.086,oplsaa2024.lt,Si,14
+1083,0.04,Si - Si   | Si in SiH4,28.086,oplsaa2024.lt,Si,14
+1084,0.18,Si - Si   | Si in SiH3OH,28.086,oplsaa2024.lt,Si,14

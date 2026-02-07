@@ -1,0 +1,22 @@
+2025-10-14 00:34:55 — INFO — INPUT FILE: anion.xyz
+2025-10-14 00:34:55 — INFO — NUMBER OF OPTIMIZATIONS: 0
+2025-10-14 00:34:55 — INFO — Parsing molecule from input: /home/yongsang/PSID_oligomer/00_분자모델링_20250902/00_1_GFN_XTB2/BCMBP_oligomer/ligpargen/anion.xyz
+2025-10-14 00:34:55 — INFO — Center of mass position:  1.851  2.482 -0.635
+2025-10-14 00:34:55 — INFO — Closest atom to the center of mass: N  10 with distance :  0.600  (A) 
+2025-10-14 00:34:55 — WARNING — AUTO DETECTED CHARGE: 0  USER INPUT CHARGE: -1  (NOT MATCHING CHARGES)
+2025-10-14 00:34:55 — INFO — MOLECULE CHARGE USED: -1
+2025-10-14 00:34:55 — INFO — CHARGE ALGORITHM USED: CM1A
+2025-10-14 00:34:55 — INFO — RESIDUE NAME USED: MOL
+2025-10-14 00:34:55 — INFO — Parsing Bonds, Angles and dihedrals
+2025-10-14 00:34:55 — INFO — Parsing Atoms
+2025-10-14 00:34:55 — INFO — --- SUMMARY MOLECULE STRUCTURE ---
+2025-10-14 00:34:55 — INFO — Number of Atoms: 18
+2025-10-14 00:34:55 — INFO — Number of Variable Bonds: 14
+2025-10-14 00:34:55 — INFO — Number of Additional Bonds: 0
+2025-10-14 00:34:55 — INFO — Number of Variable Angles: 13
+2025-10-14 00:34:55 — INFO — Number of Additional Angles: 12
+2025-10-14 00:34:55 — INFO — Number of Variable Torsions: 12
+2025-10-14 00:34:55 — INFO — Number of Additional Torsions: 12
+2025-10-14 00:34:55 — INFO — Number of excluded Atoms: 0
+2025-10-14 00:34:55 — INFO — Generating Zmat
+2025-10-14 00:34:55 — INFO — Running BOSS

@@ -1,0 +1,210 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+8,0.0,O  - O~   |,15.999,oplsaa.lt,O,8
+78,-0.7,"O  - OH   | O ALCOHOLS JPC,90,1276 (1986)",15.999,oplsaa.lt,O,8
+108,-0.5,"O  - OS   | ETHER O JCC,11,958 (1990) UA",15.999,oplsaa.lt,O,8
+125,-0.459,O  - OY   | DMSO,15.999,oplsaa.lt,O,8
+129,-0.5,O  - O~   | O in DMF - united atom,15.999,oplsaa.lt,O,8
+154,-0.683,O  - OH   | all-atom O: mono alcohols,15.999,oplsaa.lt,O,8
+160,-0.65,O  - OH   | all-atom O: mono tert. alcohols OPLS/2020,15.999,oplsaa.lt,O,8
+167,-0.53,"O  - OH   | O phenol atom C, H",15.999,oplsaa.lt,O,8
+169,-0.7,O  - OH   | O: diols,15.999,oplsaa.lt,O,8
+171,-0.73,O  - OH   | O: triols,15.999,oplsaa.lt,O,8
+177,-0.17,O  - OS   | diphenyl ether OPLS/2020,15.999,oplsaa.lt,O,8
+179,-0.285,O  - OS   | O: anisole OPLS/2020,15.999,oplsaa.lt,O,8
+180,-0.4,O  - OS   | O: dialkyl ether OPLS/2020,15.999,oplsaa.lt,O,8
+186,-0.33,O  - OS   | O: acetal/hemiacetal ether O OPLS/2020,15.999,oplsaa.lt,O,8
+187,-0.7,O  - OH   | O(H): hemiacetal,15.999,oplsaa.lt,O,8
+236,-0.5,O  - O~   | O: C=O in amide. is neutral - use,15.999,oplsaa.lt,O,8
+248,-0.39,O  - O~   | O in O=C(NH2)2 Urea Isr. J. Chem,15.999,oplsaa.lt,O,8
+253,-0.42,O  - O~   | O in imide,15.999,oplsaa.lt,O,8
+268,-0.53,O  - OH   | Oh in CCOOH R in RCOOH is,15.999,oplsaa.lt,O,8
+269,-0.44,O  - O~   | Oc in CCOOH neutral; use 135-140,15.999,oplsaa.lt,O,8
+272,-0.8,O  - O2   | O: O in COO- carboxylate,15.999,oplsaa.lt,O,8
+278,-0.45,O  - O~   | AA O: aldehyde & acyl halide - 135-139,15.999,oplsaa.lt,O,8
+281,-0.47,O  - O~   | AA O: ketone - 135-139,15.999,oplsaa.lt,O,8
+326,-0.4,O  - O~   | Uracil O-C2,15.999,oplsaa.lt,O,8
+328,-0.42,O  - O~   | Uracil O-C4,15.999,oplsaa.lt,O,8
+340,-0.48,O  - O~   | Cytosine O-C2,15.999,oplsaa.lt,O,8
+370,-0.51,O  - O~   | Guanine O-C6,15.999,oplsaa.lt,O,8
+384,-0.3,O  - O~   | CytH+ O-C2,15.999,oplsaa.lt,O,8
+394,-0.66,"O  - O2   | O(=) "" OPLS UA",15.999,oplsaa.lt,O,8
+395,-0.43,"O  - OS   | O "" see 440",15.999,oplsaa.lt,O,8
+420,-0.98,O  - OH   | O in CH3O-,15.999,oplsaa.lt,O,8
+434,-1.3,O  - OH   | O in OH- Hyroxide O-H = 0.953 A,15.999,oplsaa.lt,O,8
+437,-0.25,O  - OU   | O in UO2+ r(U-O) = 1.80 A,15.999,oplsaa.lt,O,8
+439,-0.865,O  - OS   | O-(POn)2 in GTP (JT-R 4/4/05),15.999,oplsaa.lt,O,8
+441,-0.92,"O  - O2   | O= in """,15.999,oplsaa.lt,O,8
+442,-0.6,"O  - OS   | O in "" dimethyl",15.999,oplsaa.lt,O,8
+446,-1.12,"O  - O2   | O= in """,15.999,oplsaa.lt,O,8
+447,-0.7,"O  - OS   | O in "" methyl phosphate",15.999,oplsaa.lt,O,8
+451,-0.97,"O  - O2   | O= in """,15.999,oplsaa.lt,O,8
+452,-0.63,"O  - OS   | O in "" methyl",15.999,oplsaa.lt,O,8
+466,-0.41,O  - O~   | AA =O: esters ketone params (see 280-282),15.999,oplsaa.lt,O,8
+467,-0.33,O  - OS   | AA -OR: ester -,15.999,oplsaa.lt,O,8
+473,-0.215,O  - OS   | AA -OR phenyl ester,15.999,oplsaa.lt,O,8
+475,-0.68,O  - OY   | O in sulfonamide,15.999,oplsaa.lt,O,8
+494,-0.687,O  - OY   | O in sulfone,15.999,oplsaa.lt,O,8
+497,-0.42,O  - OY   | sulfoxide - all atom,15.999,oplsaa.lt,O,8
+566,-0.19,O  - OA   | O in furan,15.999,oplsaa.lt,O,8
+571,-0.257,O  - OS   | O in oxazole,15.999,oplsaa.lt,O,8
+579,-0.122,O  - OS   | O in isoxazole,15.999,oplsaa.lt,O,8
+761,-0.37,O  - ON   | O in nitro R-NO2,15.999,oplsaa.lt,O,8
+771,-0.5,O  - O~   | propylene carbonate O,15.999,oplsaa.lt,O,8
+773,-0.45,"O  - OS   | "" OS parameters",15.999,oplsaa.lt,O,8
+780,-0.78,O  - OS   | O-(POn)2 in GTP (JT-R 10/18/05),15.999,oplsaa.lt,O,8
+788,-0.598,O  - O~   | O in NO3- r(NO) =,15.999,oplsaa.lt,O,8
+934,-0.655,O  - OH   | O5' by Deping,15.999,oplsaa.lt,O,8
+954,-0.709,O  - O2   | glycine zwit. 6-31G* CHELPG charges,15.999,oplsaa.lt,O,8
+984,-0.25,O  - OS   | O: trifluoroanisole,15.999,oplsaa.lt,O,8
+992,-0.658,O  - O~   | O in hydroxamic acid,15.999,oplsaa.lt,O,8
+995,-0.442,O  - OH   | OH in hydroxamic acid,15.999,oplsaa.lt,O,8
+1025,-0.4,O  - O^   | O epoxide oxirane,15.999,oplsaa.lt,O,8
+1036,-0.6,O  - O~   | O: C=O in tert amide. is neutral - use,15.999,oplsaa.lt,O,8
+1044,-0.57,O  - O~   | O: C=O in tert formamide.,15.999,oplsaa.lt,O,8
+1073,-0.5,O  - OH   | O in SiOH silanol,15.999,oplsaa.lt,O,8
+1078,-0.35,O  - OS   | O: alkyl silyl ether - R on O is 181-185,15.999,oplsaa.lt,O,8
+1159,-0.25,O  - O~   | ketene O,15.999,oplsaa.lt,O,8
+1161,-0.35,O  - O~   | CO2 Madura 2009,15.999,oplsaa.lt,O,8
+1262,-0.6351,"O  - OH   | OH """,15.999,oplsaa.lt,O,8
+9999,-0.834,"O  - tipO | TIP3P water O, long-range Coulombic solver",15.999,oplsaa.lt,O,8
+9997,0.0,"O  - tipO | TIP4P water O, long-range Coulombic solver",15.999,oplsaa.lt,O,8
+9994,0.0,"O  - tipO | TIP5P water O, long-range Coulombic solver",15.999,oplsaa.lt,O,8
+9991,-0.82,O  - spcO | SPC water O,15.999,oplsaa.lt,O,8
+9989,-0.8476,O  - spcO | SPC/E water O,15.999,oplsaa.lt,O,8
+9987,0.0,O  - opcO | OPC water O,15.999,oplsaa.lt,O,8
+63,-0.834,"""TIP3P Water O""",15.999,oplsaa2008.lt,O,8
+65,0.0,"""TIP4P Water O""",15.999,oplsaa2008.lt,O,8
+68,-0.822,"""TIP3F Water O""",15.999,oplsaa2008.lt,O,8
+70,0.0,"""TIP4F Water O""",15.999,oplsaa2008.lt,O,8
+73,0.0,"""TIP5P Water O""",15.999,oplsaa2008.lt,O,8
+76,-0.82,"""SPC Water O""",15.999,oplsaa2008.lt,O,8
+96,-0.683,"""Alcohol -OH""",15.999,oplsaa2008.lt,O,8
+104,-0.6351,"""Trifluoroethanol -OH""",15.999,oplsaa2008.lt,O,8
+109,-0.585,"""Phenol -OH""",15.999,oplsaa2008.lt,O,8
+111,-0.7,"""Diol -OH""",15.999,oplsaa2008.lt,O,8
+113,-0.73,"""Triol -OH""",15.999,oplsaa2008.lt,O,8
+119,-0.17,"""Diphenyl Ether""",15.999,oplsaa2008.lt,O,8
+121,-0.285,"""Anisole -OCH3""",15.999,oplsaa2008.lt,O,8
+122,-0.4,"""Dialkyl Ether -O-""",15.999,oplsaa2008.lt,O,8
+128,-0.4,"""Acetal RO-CR2OX""",15.999,oplsaa2008.lt,O,8
+129,-0.7,"""Hemiacetal -OH""",15.999,oplsaa2008.lt,O,8
+178,-0.5,"""Amide C=O""",15.999,oplsaa2008.lt,O,8
+190,-0.39,"""Urea C=O""",15.999,oplsaa2008.lt,O,8
+195,-0.42,"""Imide C=O""",15.999,oplsaa2008.lt,O,8
+210,-0.44,"""Carboxylic Acid C=O""",15.999,oplsaa2008.lt,O,8
+211,-0.53,"""Carboxylic Acid -OH""",15.999,oplsaa2008.lt,O,8
+214,-0.8,"""Carboxylate COO-""",15.999,oplsaa2008.lt,O,8
+220,-0.45,"""Aldehyde/Acyl Halide C=O""",15.999,oplsaa2008.lt,O,8
+223,-0.47,"""Ketone C=O""",15.999,oplsaa2008.lt,O,8
+269,-0.4,"""Uracil & Thymine O2""",15.999,oplsaa2008.lt,O,8
+271,-0.42,"""Uracil & Thymine O4""",15.999,oplsaa2008.lt,O,8
+283,-0.48,"""Cytosine O2""",15.999,oplsaa2008.lt,O,8
+313,-0.51,"""Guanine O6""",15.999,oplsaa2008.lt,O,8
+327,-0.3,"""CytosineH+ O2""",15.999,oplsaa2008.lt,O,8
+337,-0.66,"""DiMePhosphate O=P-O (UA)""",15.999,oplsaa2008.lt,O,8
+338,-0.43,"""DiMePhosphate CH3-O (UA)""",15.999,oplsaa2008.lt,O,8
+362,-0.98,"""Methoxide CH3O-""",15.999,oplsaa2008.lt,O,8
+376,-1.3,"""Hydroxide Ion OH-""",15.999,oplsaa2008.lt,O,8
+379,-0.25,"""Uranyl Ion UO2+""",15.999,oplsaa2008.lt,O,8
+380,-0.865,"""GTP O-(POn)2""",15.999,oplsaa2008.lt,O,8
+382,-0.92,"""DiMe Phosphate O=P-O""",15.999,oplsaa2008.lt,O,8
+383,-0.6,"""DiMe Phosphate CH3-O""",15.999,oplsaa2008.lt,O,8
+387,-1.12,"""Me Phosphate O=PO2""",15.999,oplsaa2008.lt,O,8
+388,-0.7,"""Me Phosphate CH3-O""",15.999,oplsaa2008.lt,O,8
+392,-0.97,"""Me MePhosphonate O=P-O""",15.999,oplsaa2008.lt,O,8
+393,-0.63,"""Me MePhosphonate CH3-O""",15.999,oplsaa2008.lt,O,8
+407,-0.43,"""Ester C=O""",15.999,oplsaa2008.lt,O,8
+408,-0.33,"""Ester CO-O-R""",15.999,oplsaa2008.lt,O,8
+414,-0.215,"""Phenyl Ester -OPh""",15.999,oplsaa2008.lt,O,8
+416,-0.68,"""Sulfonamide -SO2N<""",15.999,oplsaa2008.lt,O,8
+435,-0.687,"""Sulfone R-SO2-R""",15.999,oplsaa2008.lt,O,8
+438,-0.42,"""Sulfoxide R-SO-R""",15.999,oplsaa2008.lt,O,8
+507,-0.19,"""Furan O""",15.999,oplsaa2008.lt,O,8
+512,-0.257,"""Oxazole O""",15.999,oplsaa2008.lt,O,8
+520,-0.122,"""Isoxazole O""",15.999,oplsaa2008.lt,O,8
+702,-0.37,"""Nitroalkane -NO2""",15.999,oplsaa2008.lt,O,8
+712,-0.5,"""Propylene Carbonate C=O""",15.999,oplsaa2008.lt,O,8
+714,-0.45,"""Propylene Carbonate C-O""",15.999,oplsaa2008.lt,O,8
+721,-0.78,"""GTP O-(POn)2""",15.999,oplsaa2008.lt,O,8
+729,-0.598,"""Nitrate Ion NO3-""",15.999,oplsaa2008.lt,O,8
+764,-0.655,"""Sugar O5'""",15.999,oplsaa2008.lt,O,8
+784,-0.709,"""GLY Zwitterion O""",15.999,oplsaa2008.lt,O,8
+814,-0.25,"""Trifluoroanisole -OCF3""",15.999,oplsaa2008.lt,O,8
+822,-0.658,"""Hydroxamic Acid C=O""",15.999,oplsaa2008.lt,O,8
+825,-0.442,"""Hydroxamic Acid OH""",15.999,oplsaa2008.lt,O,8
+846,-0.6,"""Tertiary Amide -CO-NR2""",15.999,oplsaa2008.lt,O,8
+854,-0.57,"""Tertiary Formamide C=O""",15.999,oplsaa2008.lt,O,8
+905,-0.25,"""Ketene C=O""",15.999,oplsaa2008.lt,O,8
+8,0.0,O  - O~   |,15.999,oplsaa2024.lt,O,8
+78,-0.7,"O  - OH   | O ALCOHOLS JPC,90,1276 (1986)",15.999,oplsaa2024.lt,O,8
+108,-0.5,"O  - OS   | ETHER O JCC,11,958 (1990) UA",15.999,oplsaa2024.lt,O,8
+125,-0.459,O  - OY   | DMSO,15.999,oplsaa2024.lt,O,8
+129,-0.5,O  - O~   | O in DMF - united atom,15.999,oplsaa2024.lt,O,8
+154,-0.683,O  - OH   | all-atom O: mono alcohols,15.999,oplsaa2024.lt,O,8
+160,-0.65,O  - OH   | all-atom O: mono tert. alcohols OPLS/2020,15.999,oplsaa2024.lt,O,8
+167,-0.53,"O  - OH   | O phenol atom C, H",15.999,oplsaa2024.lt,O,8
+169,-0.7,O  - OH   | O: diols,15.999,oplsaa2024.lt,O,8
+171,-0.73,O  - OH   | O: triols,15.999,oplsaa2024.lt,O,8
+177,-0.17,O  - OS   | diphenyl ether OPLS/2020,15.999,oplsaa2024.lt,O,8
+179,-0.285,O  - OS   | O: anisole OPLS/2020,15.999,oplsaa2024.lt,O,8
+180,-0.4,O  - OS   | O: dialkyl ether OPLS/2020,15.999,oplsaa2024.lt,O,8
+186,-0.33,O  - OS   | O: acetal/hemiacetal ether O OPLS/2020,15.999,oplsaa2024.lt,O,8
+187,-0.7,O  - OH   | O(H): hemiacetal,15.999,oplsaa2024.lt,O,8
+236,-0.5,O  - O~   | O: C=O in amide. is neutral - use,15.999,oplsaa2024.lt,O,8
+248,-0.39,O  - O~   | O in O=C(NH2)2 Urea Isr. J. Chem,15.999,oplsaa2024.lt,O,8
+253,-0.42,O  - O~   | O in imide,15.999,oplsaa2024.lt,O,8
+268,-0.53,O  - OH   | Oh in CCOOH R in RCOOH is,15.999,oplsaa2024.lt,O,8
+269,-0.44,O  - O~   | Oc in CCOOH neutral; use 135-140,15.999,oplsaa2024.lt,O,8
+272,-0.8,O  - O2   | O: O in COO- carboxylate,15.999,oplsaa2024.lt,O,8
+278,-0.45,O  - O~   | AA O: aldehyde & acyl halide - 135-139,15.999,oplsaa2024.lt,O,8
+281,-0.47,O  - O~   | AA O: ketone - 135-139,15.999,oplsaa2024.lt,O,8
+326,-0.4,O  - O~   | Uracil O-C2,15.999,oplsaa2024.lt,O,8
+328,-0.42,O  - O~   | Uracil O-C4,15.999,oplsaa2024.lt,O,8
+340,-0.48,O  - O~   | Cytosine O-C2,15.999,oplsaa2024.lt,O,8
+370,-0.51,O  - O~   | Guanine O-C6,15.999,oplsaa2024.lt,O,8
+384,-0.3,O  - O~   | CytH+ O-C2,15.999,oplsaa2024.lt,O,8
+394,-0.66,"O  - O2   | O(=) "" OPLS UA",15.999,oplsaa2024.lt,O,8
+395,-0.43,"O  - OS   | O "" see 440",15.999,oplsaa2024.lt,O,8
+420,-0.98,O  - OH   | O in CH3O-,15.999,oplsaa2024.lt,O,8
+434,-1.3,O  - OH   | O in OH- Hyroxide O-H = 0.953 A,15.999,oplsaa2024.lt,O,8
+437,-0.25,O  - OU   | O in UO2+ r(U-O) = 1.80 A,15.999,oplsaa2024.lt,O,8
+439,-0.865,O  - OS   | O-(POn)2 in GTP (JT-R 4/4/05),15.999,oplsaa2024.lt,O,8
+441,-0.92,"O  - O2   | O= in """,15.999,oplsaa2024.lt,O,8
+442,-0.6,"O  - OS   | O in "" dimethyl",15.999,oplsaa2024.lt,O,8
+446,-1.12,"O  - O2   | O= in """,15.999,oplsaa2024.lt,O,8
+447,-0.7,"O  - OS   | O in "" methyl phosphate",15.999,oplsaa2024.lt,O,8
+451,-0.97,"O  - O2   | O= in """,15.999,oplsaa2024.lt,O,8
+452,-0.63,"O  - OS   | O in "" methyl",15.999,oplsaa2024.lt,O,8
+466,-0.41,O  - O~   | AA =O: esters ketone params (see 280-282),15.999,oplsaa2024.lt,O,8
+467,-0.33,O  - OS   | AA -OR: ester -,15.999,oplsaa2024.lt,O,8
+473,-0.215,O  - OS   | AA -OR phenyl ester,15.999,oplsaa2024.lt,O,8
+475,-0.68,O  - OY   | O in sulfonamide,15.999,oplsaa2024.lt,O,8
+494,-0.687,O  - OY   | O in sulfone,15.999,oplsaa2024.lt,O,8
+497,-0.42,O  - OY   | sulfoxide - all atom,15.999,oplsaa2024.lt,O,8
+566,-0.19,O  - OA   | O in furan,15.999,oplsaa2024.lt,O,8
+571,-0.257,O  - OS   | O in oxazole,15.999,oplsaa2024.lt,O,8
+579,-0.122,O  - OS   | O in isoxazole,15.999,oplsaa2024.lt,O,8
+761,-0.37,O  - ON   | O in nitro R-NO2,15.999,oplsaa2024.lt,O,8
+771,-0.5,O  - O~   | propylene carbonate O,15.999,oplsaa2024.lt,O,8
+773,-0.45,"O  - OS   | "" OS parameters",15.999,oplsaa2024.lt,O,8
+780,-0.78,O  - OS   | O-(POn)2 in GTP (JT-R 10/18/05),15.999,oplsaa2024.lt,O,8
+788,-0.598,O  - O~   | O in NO3- r(NO) =,15.999,oplsaa2024.lt,O,8
+934,-0.655,O  - OH   | O5' by Deping,15.999,oplsaa2024.lt,O,8
+954,-0.709,O  - O2   | glycine zwit. 6-31G* CHELPG charges,15.999,oplsaa2024.lt,O,8
+984,-0.25,O  - OS   | O: trifluoroanisole,15.999,oplsaa2024.lt,O,8
+992,-0.658,O  - O~   | O in hydroxamic acid,15.999,oplsaa2024.lt,O,8
+995,-0.442,O  - OH   | OH in hydroxamic acid,15.999,oplsaa2024.lt,O,8
+1025,-0.4,O  - O^   | O epoxide oxirane,15.999,oplsaa2024.lt,O,8
+1036,-0.6,O  - O~   | O: C=O in tert amide. is neutral - use,15.999,oplsaa2024.lt,O,8
+1044,-0.57,O  - O~   | O: C=O in tert formamide.,15.999,oplsaa2024.lt,O,8
+1073,-0.5,O  - OH   | O in SiOH silanol,15.999,oplsaa2024.lt,O,8
+1078,-0.35,O  - OS   | O: alkyl silyl ether - R on O is 181-185,15.999,oplsaa2024.lt,O,8
+1159,-0.25,O  - O~   | ketene O,15.999,oplsaa2024.lt,O,8
+1161,-0.35,O  - O~   | CO2 Madura 2009,15.999,oplsaa2024.lt,O,8
+1262,-0.6351,"O  - OH   | OH """,15.999,oplsaa2024.lt,O,8
+9999,-0.834,"O  - tipO | TIP3P water O, long-range Coulombic solver",15.999,oplsaa2024.lt,O,8
+9997,0.0,"O  - tipO | TIP4P water O, long-range Coulombic solver",15.999,oplsaa2024.lt,O,8
+9994,0.0,"O  - tipO | TIP5P water O, long-range Coulombic solver",15.999,oplsaa2024.lt,O,8
+9991,-0.82,O  - spcO | SPC water O,15.999,oplsaa2024.lt,O,8
+9989,-0.8476,O  - spcO | SPC/E water O,15.999,oplsaa2024.lt,O,8
+9987,0.0,O  - opcO | OPC water O,15.999,oplsaa2024.lt,O,8

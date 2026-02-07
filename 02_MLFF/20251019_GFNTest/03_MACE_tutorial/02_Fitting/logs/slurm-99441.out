@@ -1,0 +1,27 @@
+=== MACE Training Started ===
+Tue 21 Oct 2025 07:59:57 PM KST
+Working Directory: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try02_cuequivariance_test
+Tue Oct 21 19:59:57 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:43:00.0 Off |                  N/A |
+| 60%   23C    P8              28W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+usage: train_mace.py [-h] --base BASE [--config CONFIG]
+train_mace.py: error: the following arguments are required: --base
+=== Job Completed ===
+Tue 21 Oct 2025 08:00:05 PM KST

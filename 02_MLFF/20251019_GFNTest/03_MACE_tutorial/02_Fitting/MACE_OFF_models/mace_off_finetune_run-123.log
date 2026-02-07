@@ -1,0 +1,20 @@
+2025-10-21 15:42:31.578 INFO: ===========VERIFYING SETTINGS===========
+2025-10-21 15:42:31.578 INFO: MACE version: 0.3.14
+2025-10-21 15:42:31.619 INFO: CUDA version: 11.8, CUDA device: 0
+2025-10-21 15:42:31.937 INFO: Using foundation model /data/dydtkddhkdwk/20251021_MACE_FIT/mace-off/mace_off24/MACE-OFF24_medium.model as initial checkpoint.
+2025-10-21 15:42:31.940 WARNING: Using multiheads finetuning with a foundation model that is not a Materials Project model, need to provied a path to a pretraining file with --pt_train_file.
+2025-10-21 15:42:31.940 INFO: ===========LOADING INPUT DATA===========
+2025-10-21 15:42:31.940 INFO: Using heads: ['Default']
+2025-10-21 15:42:31.940 INFO: Using the key specifications to parse data:
+2025-10-21 15:42:31.940 INFO: Default: KeySpecification(info_keys={'energy': 'energy_xtb', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'total_charge', 'polarizability': 'polarizability', 'total_spin': 'total_spin'}, arrays_keys={'forces': 'forces_xtb', 'charges': 'REF_charges'})
+2025-10-21 15:42:31.940 INFO: =============    Processing head Default     ===========
+2025-10-21 15:42:32.305 INFO: Training set 1/1 [energy: 409, stress: 0, virials: 0, dipole components: 0, head: 409, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 409, charges: 0]
+2025-10-21 15:42:32.307 INFO: Total Training set [energy: 409, stress: 0, virials: 0, dipole components: 0, head: 409, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 409, charges: 0]
+2025-10-21 15:42:32.307 INFO: No validation set provided, splitting training data instead.
+2025-10-21 15:42:32.309 INFO: Using random 10% of training set for validation with indices saved in: ./valid_indices_123.txt
+2025-10-21 15:42:32.311 INFO: Random Split Training set [energy: 369, stress: 0, virials: 0, dipole components: 0, head: 369, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 369, charges: 0]
+2025-10-21 15:42:32.311 INFO: Random Split Validation set [energy: 40, stress: 0, virials: 0, dipole components: 0, head: 40, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 40, charges: 0]
+2025-10-21 15:42:32.661 INFO: Test set 1/1 [energy: 410, stress: 0, virials: 0, dipole components: 0, head: 410, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 410, charges: 0]
+2025-10-21 15:42:32.664 INFO: Total Test set [energy: 410, stress: 0, virials: 0, dipole components: 0, head: 410, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 410, charges: 0]
+2025-10-21 15:42:32.664 INFO: Total number of configurations: train=369, valid=40, tests=[Default_Default: 408, isolated_atom_Default: 2],
+2025-10-21 15:42:32.672 INFO: Atomic Numbers used: [np.int64(1), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(16)]

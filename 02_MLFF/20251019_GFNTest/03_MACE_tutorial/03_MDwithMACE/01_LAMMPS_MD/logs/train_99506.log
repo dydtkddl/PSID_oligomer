@@ -1,0 +1,3 @@
+[2025-10-22 12:55:36] === INITIALIZING ===
+[2025-10-22 12:55:36] [GPU] Using GPU: NVIDIA GeForce RTX 3090
+[2025-10-22 12:55:36] [LOAD] Loading structure: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/00_bulkmake/packmol_cases/case_001/ionpairs.xyz

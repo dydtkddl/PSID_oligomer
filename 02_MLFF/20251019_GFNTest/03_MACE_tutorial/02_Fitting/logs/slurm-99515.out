@@ -1,0 +1,51 @@
+=== MACE Training Started ===
+Wed 22 Oct 2025 03:44:19 PM KST
+Working Directory: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD
+Wed Oct 22 15:44:19 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:43:00.0 Off |                  N/A |
+| 60%   22C    P8              27W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+[2025-10-22 15:44:21] === INITIALIZING MD RUN ===
+[2025-10-22 15:44:21] [DEVICE] Using GPU: NVIDIA GeForce RTX 3090
+[2025-10-22 15:44:21] [LOAD] Reading initial structure from: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/00_bulkmake/packmol_cases/case_001/ionpairs.xyz
+[2025-10-22 15:44:21] [MODEL] Loading MACE model: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model
+Using head Default out of ['Default']
+Default dtype float32 does not match model dtype float64, converting models to float32.
+[2025-10-22 15:44:26] [MD] Langevin thermostat initialized (Target Temp=1200.0K, dt=1fs)
+[2025-10-22 15:44:26] [MD] Simulation started (total_steps=2000, interval=10)
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md.py", line 133, in <module>
+    main()
+  File "/data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md.py", line 129, in main
+    simpleMD(init_conf, args.temp, mace_calc, args.output_md, args.interval, args.steps, args.log_file, device)
+  File "/data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md.py", line 77, in simpleMD
+    dyn.run(total_steps)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/ase/md/md.py", line 171, in run
+    return Dynamics.run(self, steps=steps)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/ase/optimize/optimize.py", line 286, in run
+    for converged in Dynamics.irun(self, steps=steps):
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/ase/optimize/optimize.py", line 241, in irun
+    self.call_observers()
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/ase/optimize/optimize.py", line 204, in call_observers
+    function(*args, **kwargs)
+  File "/data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md.py", line 63, in save_step
+    energies.append(dyn.get_potential_energy() / len(dyn.atoms))
+AttributeError: 'Langevin' object has no attribute 'get_potential_energy'
+=== Job Completed ===
+Wed 22 Oct 2025 03:44:29 PM KST

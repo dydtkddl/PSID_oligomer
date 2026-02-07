@@ -1,0 +1,7 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+408,1.0,K  - K~   | K+,39.098,oplsaa.lt,K,19
+1108,1.0,K  - K~   | K+ 400-414.,39.098,oplsaa.lt,K,19
+350,1.0,"""Potassium Ion K+""",39.098,oplsaa2008.lt,K,19
+881,1.0,"""Potassium Ion (GBSA)""",39.098,oplsaa2008.lt,K,19
+408,1.0,K  - K~   | K+,39.098,oplsaa2024.lt,K,19
+1108,1.0,K  - K~   | K+ 400-414.,39.098,oplsaa2024.lt,K,19

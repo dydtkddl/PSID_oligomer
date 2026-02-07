@@ -1,0 +1,149 @@
+=== MACE Training Started ===
+Thu 23 Oct 2025 01:19:10 PM KST
+Working Directory: /data/dydtkddhkdwk/20251023_MACE_MD_OPENMM/20251023_1305_BASICTEST
+Thu Oct 23 13:19:10 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:43:00.0 Off |                  N/A |
+| 60%   23C    P8              27W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+
+****** PyMBAR will use 64-bit JAX! *******
+* JAX is currently set to 32-bit bitsize *
+* which is its default.                  *
+*                                        *
+* PyMBAR requires 64-bit mode and WILL   *
+* enable JAX's 64-bit mode when called.  *
+*                                        *
+* This MAY cause problems with other     *
+* Uses of JAX in the same code.          *
+******************************************
+
+[W init.cpp:767] Warning: nvfuser is no longer supported in torch script, use _jit_set_nvfuser_enabled is deprecated and a no-op (function operator())
+                                                                        [96m                                                                         
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                         ====================================================================================================                         
+                          ooo        ooooo       .o.         .oooooo.   oooooooooooo         ooo        ooooo oooooooooo.                             
+                          `88.       .888'      .888.       d8P'  `Y8b  `888'     `8         `88.       .888' `888'   `Y8b                            
+                           888b     d'888      .8"888.     888           888                  888b     d'888   888      888                           
+                           8 Y88. .P  888     .8' `888.    888           888oooo8             8 Y88. .P  888   888      888                           
+                           8  `888'   888    .88ooo8888.   888           888    "    8888888  8  `888'   888   888      888                           
+                           8    Y     888   .8'     `888.  `88b    ooo   888       o          8    Y     888   888     d88'                           
+                          o8o        o888o o88o     o8888o  `Y8bood8P'  o888ooooood8         o8o        o888o o888bood8P'                             
+                         ====================================================================================================                         
+                        [0m                                                                                                                          
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
++-----------------------+----------------------------------------------------------------------------------------------------------------------+
+|        Argument       |                                                        Value                                                         |
++-----------------------+----------------------------------------------------------------------------------------------------------------------+
+|          file         |                                                      ejm_31.sdf                                                      |
+|         ml_mol        |                                                         None                                                         |
+|        run_type       |                                                          md                                                          |
+|         steps         |                                                         1000                                                         |
+|     steps_per_iter    |                                                         1000                                                         |
+|        padding        |                                                         1.2                                                          |
+|       box_shape       |                                                         cube                                                         |
+|     constrain_res     |                                                         None                                                         |
+|    nonbondedCutoff    |                                                         1.0                                                          |
+|     ionic_strength    |                                                         0.15                                                         |
+|       potential       |                                                         mace                                                         |
+|      temperature      |                                                        298.15                                                        |
+|       minimiser       |                                                        openmm                                                        |
+|        pressure       |                                                         None                                                         |
+|       remove_cmm      |                                                        False                                                         |
+|    set_temperature    |                                                        False                                                         |
+|         unwrap        |                                                         True                                                         |
+|       integrator      |                                                       langevin                                                       |
+|        timestep       |                                                         1.0                                                          |
+|       extract_nb      |                                                        False                                                         |
+|        replicas       |                                                          1                                                           |
+| replica_mixing_scheme |                                                       swap-all                                                       |
+|    lambda_schedule    |                                                         None                                                         |
+|    optimized_model    |                                                        False                                                         |
+|       direction       |                                                       forward                                                        |
+|      output_file      |                                                      output.pdb                                                      |
+|       log_level       |                                                         INFO                                                         |
+|         dtype         |                                                       float64                                                        |
+|       output_dir      |                                                      md_test_2                                                       |
+|          box          |                                                         None                                                         |
+|        restart        |                                                        False                                                         |
+|        decouple       |                                                        False                                                         |
+|         equil         |                                                       minimise                                                       |
+|      forcefields      |                                 ['amber/protein.ff14SB.xml', 'amber14/DNA.OL15.xml']                                 |
+|      water_model      |                                                        tip3p                                                         |
+|          smff         |                                                         1.0                                                          |
+|        interval       |                                                         100                                                          |
+|        resname        |                                                         UNK                                                          |
+|           nl          |                                                        nnpops                                                        |
+|      max_n_pairs      |                                                          -1                                                          |
+|          meta         |                                                        False                                                         |
+|       model_path      | /data/dydtkddhkdwk/20251023_MACE_MD_OPENMM/20251023_1305_BASICTEST/MYMODEL/mace_off_finetune_stagetwo_compiled.model |
+|      system_type      |                                                         pure                                                         |
+|        mm_only        |                                                        False                                                         |
+|       write_gmx       |                                                        False                                                         |
+|      ml_selection     |                                                       resname                                                        |
++-----------------------+----------------------------------------------------------------------------------------------------------------------+
+INFO:mace_md:Using SMFF openff_unconstrained-1.0.0.offxml
+2025-10-23 13:19:17.088 INFO: Using SMFF openff_unconstrained-1.0.0.offxml
+INFO:mace_md:Initialized topology with (32, 3) positions
+2025-10-23 13:19:17.161 INFO: Initialized topology with (32, 3) positions
+WARNING:root:Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+2025-10-23 13:19:17.165 WARNING: Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/torch/serialization.py:1006: UserWarning: 'torch.load' received a zip file that looks like a TorchScript archive dispatching to 'torch.jit.load' (call 'torch.jit.load' directly to silence this warning)
+  warnings.warn("'torch.load' received a zip file that looks like a TorchScript archive"
+Got precision double default torch.float64
+Model dtype is torch.float64.
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/bin/mace-md", line 7, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/mace_md/cli/entrypoint.py", line 114, in main
+    system = PureSystem(
+             ^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/mace_md/hybrid_md.py", line 1028, in __init__
+    self.create_system(ml_mol=ml_mol, model_path=model_path)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/mace_md/hybrid_md.py", line 1163, in create_system
+    self.system = ml_potential.createSystem(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/openmmml/mlpotential.py", line 185, in createSystem
+    self._impl.addForces(topology, system, None, 0, **args)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/openmmml/models/macepotential.py", line 294, in addForces
+    atomic_numbers_to_indices(atomicNumbers, z_table=zTable),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/mace/tools/utils.py", line 103, in atomic_numbers_to_indices
+    return to_index_fn(atomic_numbers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/numpy/lib/function_base.py", line 2372, in __call__
+    return self._call_as_normal(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/numpy/lib/function_base.py", line 2365, in _call_as_normal
+    return self._vectorize_call(func=func, args=vargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/numpy/lib/function_base.py", line 2455, in _vectorize_call
+    outputs = ufunc(*inputs)
+              ^^^^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/mace/tools/utils.py", line 89, in z_to_index
+    return self.zs.index(atomic_number)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 17 is not in list
+=== Job Completed ===
+Thu 23 Oct 2025 01:19:18 PM KST

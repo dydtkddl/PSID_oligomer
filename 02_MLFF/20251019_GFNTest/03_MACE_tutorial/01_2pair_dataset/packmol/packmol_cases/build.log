@@ -1,0 +1,312 @@
+[2025-10-21 12:59:16] INFO: Reading multi-frame XYZ files...
+[2025-10-21 12:59:16] INFO: TFSI file TFSI_confcross.xyz: 4 frames
+[2025-10-21 12:59:16] INFO: TFSI file TFSI_crest_conformers.xyz: 12 frames
+[2025-10-21 12:59:16] INFO: TFSI file TFSI_crest_rotamers.xyz: 90 frames
+[2025-10-21 12:59:16] INFO: VBBI file VBBI_confcross.xyz: 750 frames
+[2025-10-21 12:59:16] INFO: VBBI file VBBI_crest_conformers.xyz: 175 frames
+[2025-10-21 12:59:16] INFO: VBBI file VBBI_crest_rotamers.xyz: 396 frames
+[2025-10-21 12:59:16] INFO: Total TFSI frames: 106; total VBBI frames: 1321
+[2025-10-21 12:59:16] DEBUG: Case 001: TFSI idx [99, 54]; VBBI idx [203, 806]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_001: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_001 completed.
+[2025-10-21 12:59:16] DEBUG: Case 002: TFSI idx [45, 8]; VBBI idx [958, 339]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_002: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_002 completed.
+[2025-10-21 12:59:16] DEBUG: Case 003: TFSI idx [68, 55]; VBBI idx [266, 454]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_003: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_003 completed.
+[2025-10-21 12:59:16] DEBUG: Case 004: TFSI idx [85, 30]; VBBI idx [745, 1001]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_004: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_004 completed.
+[2025-10-21 12:59:16] DEBUG: Case 005: TFSI idx [25, 87]; VBBI idx [750, 466]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_005: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_005 completed.
+[2025-10-21 12:59:16] DEBUG: Case 006: TFSI idx [102, 58]; VBBI idx [374, 83]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_006: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_006 completed.
+[2025-10-21 12:59:16] DEBUG: Case 007: TFSI idx [86, 95]; VBBI idx [998, 292]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_007: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_007 completed.
+[2025-10-21 12:59:16] DEBUG: Case 008: TFSI idx [59, 91]; VBBI idx [851, 411]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_008: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_008 completed.
+[2025-10-21 12:59:16] DEBUG: Case 009: TFSI idx [2, 97]; VBBI idx [1097, 959]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_009: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_009 completed.
+[2025-10-21 12:59:16] DEBUG: Case 010: TFSI idx [91, 103]; VBBI idx [446, 1115]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_010: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_010 completed.
+[2025-10-21 12:59:16] DEBUG: Case 011: TFSI idx [22, 89]; VBBI idx [222, 516]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_011: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_011 completed.
+[2025-10-21 12:59:16] DEBUG: Case 012: TFSI idx [20, 36]; VBBI idx [190, 2]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_012: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_012 completed.
+[2025-10-21 12:59:16] DEBUG: Case 013: TFSI idx [40, 104]; VBBI idx [33, 1302]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_013: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_013 completed.
+[2025-10-21 12:59:16] DEBUG: Case 014: TFSI idx [32, 37]; VBBI idx [1062, 1122]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_014: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_014 completed.
+[2025-10-21 12:59:16] DEBUG: Case 015: TFSI idx [15, 24]; VBBI idx [598, 780]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_015: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_015 completed.
+[2025-10-21 12:59:16] DEBUG: Case 016: TFSI idx [40, 84]; VBBI idx [467, 474]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_016: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_016 completed.
+[2025-10-21 12:59:16] DEBUG: Case 017: TFSI idx [45, 79]; VBBI idx [994, 245]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_017: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_017 completed.
+[2025-10-21 12:59:16] DEBUG: Case 018: TFSI idx [37, 48]; VBBI idx [938, 750]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_018: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_018 completed.
+[2025-10-21 12:59:16] DEBUG: Case 019: TFSI idx [62, 76]; VBBI idx [574, 964]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_019: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_019 completed.
+[2025-10-21 12:59:16] DEBUG: Case 020: TFSI idx [42, 1]; VBBI idx [111, 292]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_020: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_020 completed.
+[2025-10-21 12:59:16] DEBUG: Case 021: TFSI idx [57, 83]; VBBI idx [153, 466]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_021: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_021 completed.
+[2025-10-21 12:59:16] DEBUG: Case 022: TFSI idx [37, 104]; VBBI idx [51, 758]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_022: packmol < packmol.inp
+[2025-10-21 12:59:16] INFO: [OK] case_022 completed.
+[2025-10-21 12:59:16] DEBUG: Case 023: TFSI idx [16, 26]; VBBI idx [279, 1295]
+[2025-10-21 12:59:16] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_023: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_023 completed.
+[2025-10-21 12:59:17] DEBUG: Case 024: TFSI idx [95, 64]; VBBI idx [677, 711]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_024: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_024 completed.
+[2025-10-21 12:59:17] DEBUG: Case 025: TFSI idx [43, 37]; VBBI idx [979, 412]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_025: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_025 completed.
+[2025-10-21 12:59:17] DEBUG: Case 026: TFSI idx [51, 96]; VBBI idx [150, 461]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_026: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_026 completed.
+[2025-10-21 12:59:17] DEBUG: Case 027: TFSI idx [105, 30]; VBBI idx [617, 614]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_027: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_027 completed.
+[2025-10-21 12:59:17] DEBUG: Case 028: TFSI idx [98, 53]; VBBI idx [662, 12]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_028: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_028 completed.
+[2025-10-21 12:59:17] DEBUG: Case 029: TFSI idx [71, 75]; VBBI idx [339, 202]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_029: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_029 completed.
+[2025-10-21 12:59:17] DEBUG: Case 030: TFSI idx [62, 52]; VBBI idx [1263, 958]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_030: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_030 completed.
+[2025-10-21 12:59:17] DEBUG: Case 031: TFSI idx [48, 50]; VBBI idx [1063, 50]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_031: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_031 completed.
+[2025-10-21 12:59:17] DEBUG: Case 032: TFSI idx [38, 6]; VBBI idx [89, 413]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_032: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_032 completed.
+[2025-10-21 12:59:17] DEBUG: Case 033: TFSI idx [25, 13]; VBBI idx [703, 409]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_033: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_033 completed.
+[2025-10-21 12:59:17] DEBUG: Case 034: TFSI idx [18, 12]; VBBI idx [152, 272]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_034: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_034 completed.
+[2025-10-21 12:59:17] DEBUG: Case 035: TFSI idx [70, 34]; VBBI idx [428, 1140]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_035: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_035 completed.
+[2025-10-21 12:59:17] DEBUG: Case 036: TFSI idx [43, 13]; VBBI idx [430, 1293]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_036: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_036 completed.
+[2025-10-21 12:59:17] DEBUG: Case 037: TFSI idx [6, 20]; VBBI idx [317, 749]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_037: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_037 completed.
+[2025-10-21 12:59:17] DEBUG: Case 038: TFSI idx [75, 21]; VBBI idx [174, 1000]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_038: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_038 completed.
+[2025-10-21 12:59:17] DEBUG: Case 039: TFSI idx [35, 91]; VBBI idx [460, 442]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_039: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_039 completed.
+[2025-10-21 12:59:17] DEBUG: Case 040: TFSI idx [34, 78]; VBBI idx [33, 1270]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_040: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_040 completed.
+[2025-10-21 12:59:17] DEBUG: Case 041: TFSI idx [2, 30]; VBBI idx [294, 1251]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_041: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_041 completed.
+[2025-10-21 12:59:17] DEBUG: Case 042: TFSI idx [67, 66]; VBBI idx [898, 476]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_042: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_042 completed.
+[2025-10-21 12:59:17] DEBUG: Case 043: TFSI idx [61, 21]; VBBI idx [541, 1061]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_043: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_043 completed.
+[2025-10-21 12:59:17] DEBUG: Case 044: TFSI idx [52, 90]; VBBI idx [6, 64]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_044: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_044 completed.
+[2025-10-21 12:59:17] DEBUG: Case 045: TFSI idx [58, 95]; VBBI idx [1241, 127]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_045: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_045 completed.
+[2025-10-21 12:59:17] DEBUG: Case 046: TFSI idx [86, 49]; VBBI idx [140, 990]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_046: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_046 completed.
+[2025-10-21 12:59:17] DEBUG: Case 047: TFSI idx [35, 91]; VBBI idx [1307, 447]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_047: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_047 completed.
+[2025-10-21 12:59:17] DEBUG: Case 048: TFSI idx [3, 54]; VBBI idx [215, 597]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_048: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_048 completed.
+[2025-10-21 12:59:17] DEBUG: Case 049: TFSI idx [27, 42]; VBBI idx [471, 693]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_049: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_049 completed.
+[2025-10-21 12:59:17] DEBUG: Case 050: TFSI idx [28, 1]; VBBI idx [457, 1192]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_050: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_050 completed.
+[2025-10-21 12:59:17] DEBUG: Case 051: TFSI idx [100, 94]; VBBI idx [1239, 285]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_051: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_051 completed.
+[2025-10-21 12:59:17] DEBUG: Case 052: TFSI idx [4, 69]; VBBI idx [1023, 969]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_052: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_052 completed.
+[2025-10-21 12:59:17] DEBUG: Case 053: TFSI idx [19, 83]; VBBI idx [1270, 312]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_053: packmol < packmol.inp
+[2025-10-21 12:59:17] INFO: [OK] case_053 completed.
+[2025-10-21 12:59:17] DEBUG: Case 054: TFSI idx [92, 90]; VBBI idx [774, 869]
+[2025-10-21 12:59:17] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_054: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_054 completed.
+[2025-10-21 12:59:18] DEBUG: Case 055: TFSI idx [25, 77]; VBBI idx [1234, 483]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_055: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_055 completed.
+[2025-10-21 12:59:18] DEBUG: Case 056: TFSI idx [43, 13]; VBBI idx [521, 640]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_056: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_056 completed.
+[2025-10-21 12:59:18] DEBUG: Case 057: TFSI idx [51, 41]; VBBI idx [994, 888]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_057: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_057 completed.
+[2025-10-21 12:59:18] DEBUG: Case 058: TFSI idx [78, 27]; VBBI idx [371, 290]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_058: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_058 completed.
+[2025-10-21 12:59:18] DEBUG: Case 059: TFSI idx [37, 94]; VBBI idx [867, 583]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_059: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_059 completed.
+[2025-10-21 12:59:18] DEBUG: Case 060: TFSI idx [15, 97]; VBBI idx [535, 264]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_060: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_060 completed.
+[2025-10-21 12:59:18] DEBUG: Case 061: TFSI idx [57, 80]; VBBI idx [829, 347]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_061: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_061 completed.
+[2025-10-21 12:59:18] DEBUG: Case 062: TFSI idx [61, 28]; VBBI idx [539, 533]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_062: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_062 completed.
+[2025-10-21 12:59:18] DEBUG: Case 063: TFSI idx [68, 9]; VBBI idx [708, 1109]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_063: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_063 completed.
+[2025-10-21 12:59:18] DEBUG: Case 064: TFSI idx [103, 66]; VBBI idx [188, 355]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_064: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_064 completed.
+[2025-10-21 12:59:18] DEBUG: Case 065: TFSI idx [18, 95]; VBBI idx [980, 898]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_065: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_065 completed.
+[2025-10-21 12:59:18] DEBUG: Case 066: TFSI idx [89, 64]; VBBI idx [1109, 313]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_066: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_066 completed.
+[2025-10-21 12:59:18] DEBUG: Case 067: TFSI idx [90, 24]; VBBI idx [256, 866]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_067: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_067 completed.
+[2025-10-21 12:59:18] DEBUG: Case 068: TFSI idx [54, 1]; VBBI idx [639, 156]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_068: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_068 completed.
+[2025-10-21 12:59:18] DEBUG: Case 069: TFSI idx [11, 51]; VBBI idx [1056, 1105]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_069: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_069 completed.
+[2025-10-21 12:59:18] DEBUG: Case 070: TFSI idx [27, 58]; VBBI idx [765, 787]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_070: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_070 completed.
+[2025-10-21 12:59:18] DEBUG: Case 071: TFSI idx [99, 70]; VBBI idx [1065, 840]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_071: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_071 completed.
+[2025-10-21 12:59:18] DEBUG: Case 072: TFSI idx [59, 89]; VBBI idx [5, 1283]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_072: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_072 completed.
+[2025-10-21 12:59:18] DEBUG: Case 073: TFSI idx [57, 105]; VBBI idx [581, 917]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_073: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_073 completed.
+[2025-10-21 12:59:18] DEBUG: Case 074: TFSI idx [36, 24]; VBBI idx [502, 130]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_074: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_074 completed.
+[2025-10-21 12:59:18] DEBUG: Case 075: TFSI idx [91, 74]; VBBI idx [1320, 67]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_075: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_075 completed.
+[2025-10-21 12:59:18] DEBUG: Case 076: TFSI idx [7, 33]; VBBI idx [264, 61]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_076: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_076 completed.
+[2025-10-21 12:59:18] DEBUG: Case 077: TFSI idx [4, 96]; VBBI idx [479, 941]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_077: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_077 completed.
+[2025-10-21 12:59:18] DEBUG: Case 078: TFSI idx [83, 64]; VBBI idx [448, 1019]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_078: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_078 completed.
+[2025-10-21 12:59:18] DEBUG: Case 079: TFSI idx [37, 91]; VBBI idx [639, 494]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_079: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_079 completed.
+[2025-10-21 12:59:18] DEBUG: Case 080: TFSI idx [9, 81]; VBBI idx [1011, 1302]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_080: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_080 completed.
+[2025-10-21 12:59:18] DEBUG: Case 081: TFSI idx [55, 80]; VBBI idx [736, 509]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_081: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_081 completed.
+[2025-10-21 12:59:18] DEBUG: Case 082: TFSI idx [16, 81]; VBBI idx [105, 425]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_082: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_082 completed.
+[2025-10-21 12:59:18] DEBUG: Case 083: TFSI idx [25, 54]; VBBI idx [932, 851]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_083: packmol < packmol.inp
+[2025-10-21 12:59:18] INFO: [OK] case_083 completed.
+[2025-10-21 12:59:18] DEBUG: Case 084: TFSI idx [5, 40]; VBBI idx [561, 452]
+[2025-10-21 12:59:18] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_084: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_084 completed.
+[2025-10-21 12:59:19] DEBUG: Case 085: TFSI idx [24, 44]; VBBI idx [251, 1108]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_085: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_085 completed.
+[2025-10-21 12:59:19] DEBUG: Case 086: TFSI idx [17, 55]; VBBI idx [1039, 1]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_086: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_086 completed.
+[2025-10-21 12:59:19] DEBUG: Case 087: TFSI idx [62, 19]; VBBI idx [747, 1296]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_087: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_087 completed.
+[2025-10-21 12:59:19] DEBUG: Case 088: TFSI idx [14, 51]; VBBI idx [940, 398]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_088: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_088 completed.
+[2025-10-21 12:59:19] DEBUG: Case 089: TFSI idx [84, 22]; VBBI idx [523, 186]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_089: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_089 completed.
+[2025-10-21 12:59:19] DEBUG: Case 090: TFSI idx [1, 56]; VBBI idx [684, 998]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_090: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_090 completed.
+[2025-10-21 12:59:19] DEBUG: Case 091: TFSI idx [94, 3]; VBBI idx [721, 999]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_091: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_091 completed.
+[2025-10-21 12:59:19] DEBUG: Case 092: TFSI idx [7, 20]; VBBI idx [784, 854]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_092: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_092 completed.
+[2025-10-21 12:59:19] DEBUG: Case 093: TFSI idx [28, 23]; VBBI idx [1057, 1104]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_093: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_093 completed.
+[2025-10-21 12:59:19] DEBUG: Case 094: TFSI idx [91, 85]; VBBI idx [268, 242]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_094: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_094 completed.
+[2025-10-21 12:59:19] DEBUG: Case 095: TFSI idx [91, 87]; VBBI idx [1316, 754]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_095: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_095 completed.
+[2025-10-21 12:59:19] DEBUG: Case 096: TFSI idx [47, 81]; VBBI idx [194, 1175]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_096: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_096 completed.
+[2025-10-21 12:59:19] DEBUG: Case 097: TFSI idx [88, 47]; VBBI idx [687, 476]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_097: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_097 completed.
+[2025-10-21 12:59:19] DEBUG: Case 098: TFSI idx [5, 97]; VBBI idx [1133, 891]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_098: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_098 completed.
+[2025-10-21 12:59:19] DEBUG: Case 099: TFSI idx [71, 95]; VBBI idx [933, 946]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_099: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_099 completed.
+[2025-10-21 12:59:19] DEBUG: Case 100: TFSI idx [99, 64]; VBBI idx [1224, 705]
+[2025-10-21 12:59:19] DEBUG: Running in /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/02_XTB_IONPAIR_MD/2pairs/packmol/packmol_cases/case_100: packmol < packmol.inp
+[2025-10-21 12:59:19] INFO: [OK] case_100 completed.
+[2025-10-21 12:59:19] INFO: === Summary ===
+[2025-10-21 12:59:19] INFO: Success: 100 / 100
+[2025-10-21 12:59:19] INFO: Timeouts: 0
+[2025-10-21 12:59:19] INFO: Failed:   0

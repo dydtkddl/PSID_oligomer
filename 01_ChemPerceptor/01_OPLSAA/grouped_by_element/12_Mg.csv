@@ -1,0 +1,9 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+12,0.0,Mg - Mg   |,24.305,oplsaa.lt,Mg,12
+411,2.0,Mg - Mg   | Mg++,24.305,oplsaa.lt,Mg,12
+1111,2.0,Mg - Mg   | Mg++,24.305,oplsaa.lt,Mg,12
+353,2.0,"""Magnesium Ion Mg+2""",24.305,oplsaa2008.lt,Mg,12
+884,2.0,"""Magnesium Ion (GBSA)""",24.305,oplsaa2008.lt,Mg,12
+12,0.0,Mg - Mg   |,24.305,oplsaa2024.lt,Mg,12
+411,2.0,Mg - Mg   | Mg++,24.305,oplsaa2024.lt,Mg,12
+1111,2.0,Mg - Mg   | Mg++,24.305,oplsaa2024.lt,Mg,12

@@ -1,0 +1,9 @@
+$md
+  temp=300
+  time=50
+  step=2.0
+  dump=5
+  thermostat=nvt
+  hmass=4
+$end
+

@@ -1,0 +1,19 @@
+{
+  "mol2_id": 6,
+  "rd_idx": 5,
+  "symbol": "C",
+  "formal_charge": 0,
+  "hybridization": "sp2",
+  "aromatic": true,
+  "degree": 3,
+  "total_h_count": 0,
+  "ring_sizes": [
+    6
+  ],
+  "functional_groups": [
+    "aromatic carbon"
+  ],
+  "primary_label": "aromatic carbon",
+  "environment": "aromatic sp2 in-6-ring",
+  "description": "Carbon in aromatic ring; delocalized π system."
+}

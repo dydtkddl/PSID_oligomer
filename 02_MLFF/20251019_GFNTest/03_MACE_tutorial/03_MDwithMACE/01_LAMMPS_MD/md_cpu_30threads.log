@@ -1,0 +1,7 @@
+[2025-10-22 14:59:12] === INITIALIZING ===
+[2025-10-22 14:59:12] [CPU] Running on CPU
+[2025-10-22 14:59:12] [CPU] Using 30 threads (OMP/MKL/PyTorch)
+[2025-10-22 14:59:12] [LOAD] Loading structure: /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_001/ionpairs.xyz
+[2025-10-22 14:59:12] [MODEL] Loading MACE model: /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/02_Fitting/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model
+[2025-10-22 14:59:14] [MD] Langevin thermostat set (T=1200.0K, dt=1fs)
+[2025-10-22 14:59:14] [MD] Starting simulation...

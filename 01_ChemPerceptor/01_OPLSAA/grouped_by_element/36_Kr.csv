@@ -1,0 +1,4 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+104,0.0,"Kr - Kr   | Kr - Mol.Phys.,24,1013 (1972)",83.798,oplsaa.lt,Kr,36
+61,0.0,"""Krypton Atom""",83.8,oplsaa2008.lt,Kr,36
+104,0.0,"Kr - Kr   | Kr - Mol.Phys.,24,1013 (1972)",83.798,oplsaa2024.lt,Kr,36

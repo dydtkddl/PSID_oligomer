@@ -1,0 +1,14 @@
+
+# Example Packmol template showing single structure repeated many times.
+# (Not used by the Python script, but provided for manual runs.)
+tolerance 2.0
+filetype xyz
+output output.xyz
+
+structure ./some_structure.xyz
+  number 50
+  inside box 0 0 0 100 100 100
+end structure
+
+seed 2025
+randominitialpoint

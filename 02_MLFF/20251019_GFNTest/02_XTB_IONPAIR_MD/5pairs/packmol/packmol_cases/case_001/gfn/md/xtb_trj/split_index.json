@@ -1,0 +1,372 @@
+{
+  "input": "xtb.trj",
+  "total_frames": 4432,
+  "selected_frames": 4432,
+  "frames_per_file": 100,
+  "start": 1,
+  "end": null,
+  "stride": 1,
+  "gzip": false,
+  "parts": [
+    {
+      "file": "xtb_trj/part_0001.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        1,
+        100
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0002.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        101,
+        200
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0003.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        201,
+        300
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0004.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        301,
+        400
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0005.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        401,
+        500
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0006.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        501,
+        600
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0007.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        601,
+        700
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0008.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        701,
+        800
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0009.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        801,
+        900
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0010.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        901,
+        1000
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0011.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        1001,
+        1100
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0012.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        1101,
+        1200
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0013.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        1201,
+        1300
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0014.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        1301,
+        1400
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0015.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        1401,
+        1500
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0016.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        1501,
+        1600
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0017.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        1601,
+        1700
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0018.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        1701,
+        1800
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0019.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        1801,
+        1900
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0020.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        1901,
+        2000
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0021.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        2001,
+        2100
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0022.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        2101,
+        2200
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0023.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        2201,
+        2300
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0024.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        2301,
+        2400
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0025.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        2401,
+        2500
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0026.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        2501,
+        2600
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0027.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        2601,
+        2700
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0028.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        2701,
+        2800
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0029.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        2801,
+        2900
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0030.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        2901,
+        3000
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0031.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        3001,
+        3100
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0032.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        3101,
+        3200
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0033.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        3201,
+        3300
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0034.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        3301,
+        3400
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0035.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        3401,
+        3500
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0036.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        3501,
+        3600
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0037.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        3601,
+        3700
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0038.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        3701,
+        3800
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0039.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        3801,
+        3900
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0040.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        3901,
+        4000
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0041.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        4001,
+        4100
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0042.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        4101,
+        4200
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0043.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        4201,
+        4300
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0044.xyz",
+      "frames_in_file": 100,
+      "selected_frame_range": [
+        4301,
+        4400
+      ]
+    },
+    {
+      "file": "xtb_trj/part_0045.xyz",
+      "frames_in_file": 32,
+      "selected_frame_range": [
+        4401,
+        4432
+      ]
+    }
+  ]
+}

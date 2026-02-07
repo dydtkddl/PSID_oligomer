@@ -1,0 +1,6 @@
+2025-10-23 14:11:49.023 INFO: Using SMFF openff_unconstrained-1.0.0.offxml
+2025-10-23 14:12:17.380 INFO: Using SMFF openff_unconstrained-1.0.0.offxml
+2025-10-23 14:32:36.554 INFO: Using SMFF openff_unconstrained-1.0.0.offxml
+2025-10-23 14:32:36.655 INFO: Parased box vectors None from pdb file
+2025-10-23 14:32:36.657 INFO: Initialized topology with 120 atoms
+2025-10-23 14:32:36.662 WARNING: Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.

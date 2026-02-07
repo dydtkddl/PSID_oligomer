@@ -1,0 +1,157 @@
+=== MACE Training Started ===
+Fri 24 Oct 2025 12:54:57 AM KST
+Working Directory: /data/dydtkddhkdwk/20251023_MACE_MD_OPENMM/20251023_1305_BASICTEST/20251023_2317_md_test_6_args/EXP07_5000step_with_minimise
+Fri Oct 24 00:54:57 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:43:00.0 Off |                  N/A |
+| 61%   63C    P0             148W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+
+****** PyMBAR will use 64-bit JAX! *******
+* JAX is currently set to 32-bit bitsize *
+* which is its default.                  *
+*                                        *
+* PyMBAR requires 64-bit mode and WILL   *
+* enable JAX's 64-bit mode when called.  *
+*                                        *
+* This MAY cause problems with other     *
+* Uses of JAX in the same code.          *
+******************************************
+
+[W init.cpp:767] Warning: nvfuser is no longer supported in torch script, use _jit_set_nvfuser_enabled is deprecated and a no-op (function operator())
+                                                                        [96m                                                                         
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                         ====================================================================================================                         
+                          ooo        ooooo       .o.         .oooooo.   oooooooooooo         ooo        ooooo oooooooooo.                             
+                          `88.       .888'      .888.       d8P'  `Y8b  `888'     `8         `88.       .888' `888'   `Y8b                            
+                           888b     d'888      .8"888.     888           888                  888b     d'888   888      888                           
+                           8 Y88. .P  888     .8' `888.    888           888oooo8             8 Y88. .P  888   888      888                           
+                           8  `888'   888    .88ooo8888.   888           888    "    8888888  8  `888'   888   888      888                           
+                           8    Y     888   .8'     `888.  `88b    ooo   888       o          8    Y     888   888     d88'                           
+                          o8o        o888o o88o     o8888o  `Y8bood8P'  o888ooooood8         o8o        o888o o888bood8P'                             
+                         ====================================================================================================                         
+                        [0m                                                                                                                          
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
++-----------------------+----------------------------------------------------------------------------------------------------------------------+
+|        Argument       |                                                        Value                                                         |
++-----------------------+----------------------------------------------------------------------------------------------------------------------+
+|          file         |                                                ../ionpairs_unique.pdb                                                |
+|         ml_mol        |                                                         None                                                         |
+|        run_type       |                                                          md                                                          |
+|         steps         |                                                        50000                                                         |
+|     steps_per_iter    |                                                         1000                                                         |
+|        padding        |                                                         1.2                                                          |
+|       box_shape       |                                                         cube                                                         |
+|     constrain_res     |                                                         None                                                         |
+|    nonbondedCutoff    |                                                         1.0                                                          |
+|     ionic_strength    |                                                         0.0                                                          |
+|       potential       |                                                         mace                                                         |
+|      temperature      |                                                        300.0                                                         |
+|       minimiser       |                                                        openmm                                                        |
+|        pressure       |                                                         None                                                         |
+|       remove_cmm      |                                                        False                                                         |
+|    set_temperature    |                                                        False                                                         |
+|         unwrap        |                                                         True                                                         |
+|       integrator      |                                                       langevin                                                       |
+|        timestep       |                                                         1.0                                                          |
+|       extract_nb      |                                                        False                                                         |
+|        replicas       |                                                          1                                                           |
+| replica_mixing_scheme |                                                       swap-all                                                       |
+|    lambda_schedule    |                                                         None                                                         |
+|    optimized_model    |                                                         True                                                         |
+|       direction       |                                                       forward                                                        |
+|      output_file      |                                                      output.pdb                                                      |
+|       log_level       |                                                        DEBUG                                                         |
+|         dtype         |                                                       float32                                                        |
+|       output_dir      |                                                          ./                                                          |
+|          box          |                                                         None                                                         |
+|        restart        |                                                        False                                                         |
+|        decouple       |                                                        False                                                         |
+|         equil         |                                                       minimise                                                       |
+|      forcefields      |                                 ['amber/protein.ff14SB.xml', 'amber14/DNA.OL15.xml']                                 |
+|      water_model      |                                                        tip3p                                                         |
+|          smff         |                                                         1.0                                                          |
+|        interval       |                                                         100                                                          |
+|        resname        |                                                         UNK                                                          |
+|           nl          |                                                        torch                                                         |
+|      max_n_pairs      |                                                          -1                                                          |
+|          meta         |                                                        False                                                         |
+|       model_path      | /data/dydtkddhkdwk/20251023_MACE_MD_OPENMM/20251023_1305_BASICTEST/MYMODEL/mace_off_finetune_stagetwo_compiled.model |
+|      system_type      |                                                         pure                                                         |
+|        mm_only        |                                                        False                                                         |
+|       write_gmx       |                                                        False                                                         |
+|      ml_selection     |                                                       resname                                                        |
++-----------------------+----------------------------------------------------------------------------------------------------------------------+
+DEBUG:mace_md:OpenMM will use Mixed precision
+2025-10-24 00:55:04.532 DEBUG: OpenMM will use Mixed precision
+INFO:mace_md:Using SMFF openff_unconstrained-1.0.0.offxml
+2025-10-24 00:55:04.532 INFO: Using SMFF openff_unconstrained-1.0.0.offxml
+DEBUG:mace_md:OpenMM will use Mixed precision
+2025-10-24 00:55:04.532 DEBUG: OpenMM will use Mixed precision
+INFO:mace_md:Parased box vectors (Vec3(x=3.5, y=0.0, z=0.0), Vec3(x=0.0, y=3.5, z=0.0), Vec3(x=0.0, y=0.0, z=3.5)) nm from pdb file
+2025-10-24 00:55:04.600 INFO: Parased box vectors (Vec3(x=3.5, y=0.0, z=0.0), Vec3(x=0.0, y=3.5, z=0.0), Vec3(x=0.0, y=0.0, z=3.5)) nm from pdb file
+INFO:mace_md:Initialized topology with 870 atoms
+2025-10-24 00:55:04.609 INFO: Initialized topology with 870 atoms
+WARNING:root:Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+2025-10-24 00:55:04.617 WARNING: Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+DEBUG:h5py._conv:Creating converter from 7 to 5
+2025-10-24 00:55:04.774 DEBUG: Creating converter from 7 to 5
+DEBUG:h5py._conv:Creating converter from 5 to 7
+2025-10-24 00:55:04.774 DEBUG: Creating converter from 5 to 7
+DEBUG:h5py._conv:Creating converter from 7 to 5
+2025-10-24 00:55:04.774 DEBUG: Creating converter from 7 to 5
+DEBUG:h5py._conv:Creating converter from 5 to 7
+2025-10-24 00:55:04.774 DEBUG: Creating converter from 5 to 7
+/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/torch/serialization.py:1006: UserWarning: 'torch.load' received a zip file that looks like a TorchScript archive dispatching to 'torch.jit.load' (call 'torch.jit.load' directly to silence this warning)
+  warnings.warn("'torch.load' received a zip file that looks like a TorchScript archive"
+Model dtype is torch.float64 and requested dtype is torch.float32. The model will be converted to the requested dtype.
+DEBUG:mace_md:Running mixed MD for 50000 steps
+2025-10-24 00:55:06.284 DEBUG: Running mixed MD for 50000 steps
+INFO:root:Minimising energy...
+2025-10-24 00:55:07.469 INFO: Minimising energy...
+[W LinearAlgebra.cpp:3033] Warning: at::frobenius_norm is deprecated and it is just left for JIT compatibility. It will be removed in a future PyTorch release. Please use `linalg.vector_norm(A, 2., dim, keepdim)` instead (function operator())
+[W autograd_not_implemented_fallback.cpp:63] Warning: neighbors::getNeighborPairs: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (function warnAutogradNotImplemented)
+#"Progress (%)","Step","Time (ps)","Potential Energy (kJ/mole)","Total Energy (kJ/mole)","Temperature (K)","Box Volume (nm^3)","Density (g/mL)","Speed (ns/day)","Time Remaining"
+0.2%,100,0.10000000000000007,-478478.5,-478136.10583163175,31.59229227659774,42.875,0.30530604354325924,0,--
+0.4%,200,0.20000000000000015,-478224.34375,-477604.3847863607,57.20285737379723,42.875,0.30530604354325924,0.815,1:27:59
+0.6%,300,0.3000000000000002,-478001.96875,-477137.1389818168,79.79678782542602,42.875,0.30530604354325924,0.813,1:28:00
+0.8%,400,0.4000000000000003,-477766.40625,-476685.83716693276,99.70279125957451,42.875,0.30530604354325924,0.812,1:27:57
+1.0%,500,0.5000000000000003,-477597.5,-476357.7843642166,114.38704955808325,42.875,0.30530604354325924,0.811,1:27:54
+1.2%,600,0.6000000000000004,-477367.78125,-475971.5849559401,128.82532902839532,42.875,0.30530604354325924,0.812,1:27:38
+1.4%,700,0.7000000000000005,-477233.375,-475560.4158099613,154.36190385601978,42.875,0.30530604354325924,0.811,1:27:31
+1.6%,800,0.8000000000000006,-477106.59375,-475216.7796445626,174.37084238889108,42.875,0.30530604354325924,0.811,1:27:22
+1.8%,900,0.9000000000000007,-476866.65625,-474889.93258578837,182.38988136817997,42.875,0.30530604354325924,0.811,1:27:10
+2.0%,1000,1.0000000000000007,-476733.625,-474648.5433155946,192.38794372066846,42.875,0.30530604354325924,0.811,1:27:02
+2.2%,1100,1.0999999999999897,-476708.0,-474539.0388232505,200.12740216640046,42.875,0.30530604354325924,0.809,1:26:59
+2.4%,1200,1.1999999999999786,-476714.8125,-474347.01529645023,218.47375982701143,42.875,0.30530604354325924,0.809,1:26:49
+2.6%,1300,1.2999999999999676,-476548.15625,-474088.87633328966,226.91475818337574,42.875,0.30530604354325924,0.809,1:26:38
+2.8%,1400,1.3999999999999566,-476444.40625,-473831.5590473495,241.08422434182822,42.875,0.30530604354325924,0.809,1:26:27
+3.0%,1500,1.4999999999999456,-476363.1875,-473726.31086953415,243.3013903362132,42.875,0.30530604354325924,0.81,1:26:11
+3.2%,1600,1.5999999999999346,-476177.21875,-473512.818568285,245.84095483784506,42.875,0.30530604354325924,0.81,1:26:01
+3.4%,1700,1.6999999999999236,-476217.28125,-473446.5134017439,255.655369686559,42.875,0.30530604354325924,0.811,1:25:46
+3.6%,1800,1.7999999999999126,-476163.15625,-473321.7146306456,262.1763523407556,42.875,0.30530604354325924,0.811,1:25:32
+3.8%,1900,1.8999999999999015,-476070.65625,-473269.6657303463,258.4439787120064,42.875,0.30530604354325924,0.812,1:25:19
+4.0%,2000,1.9999999999998905,-476124.46875,-473262.87170776504,264.03606862516205,42.875,0.30530604354325924,0.812,1:25:05
+4.2%,2100,2.0999999999998797,-476047.6875,-473120.9098374074,270.05020496084205,42.875,0.30530604354325924,0.813,1:24:51
+4.4%,2200,2.1999999999998687,-476048.8125,-473160.67767549446,266.4846774255419,42.875,0.30530604354325924,0.813,1:24:41
+4.6%,2300,2.2999999999998577,-476046.53125,-473113.1735457988,270.6573373739946,42.875,0.30530604354325924,0.813,1:24:27

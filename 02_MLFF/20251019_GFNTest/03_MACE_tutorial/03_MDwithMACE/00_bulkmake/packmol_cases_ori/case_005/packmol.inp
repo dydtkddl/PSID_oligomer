@@ -1,0 +1,156 @@
+tolerance 2.0
+filetype xyz
+output ionpairs.xyz
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_01.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_02.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_03.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_04.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_05.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_06.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_07.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_08.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_09.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_10.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_11.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_12.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_13.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_14.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/TFSI_15.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_01.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_02.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_03.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_04.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_05.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_06.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_07.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_08.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_09.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_10.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_11.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_12.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_13.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_14.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+structure /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_005/structures/VBBI_15.xyz
+  number 1
+  inside box 0.0 0.0 0.0 20.0 20.0 20.0
+end structure
+
+seed 1005
+randominitialpoint

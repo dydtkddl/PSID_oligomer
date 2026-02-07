@@ -1,0 +1,23 @@
+# Amorphous Cell Construct Input Data
+#
+# Run_Name:
+AC
+# Molecule_Name:
+MANY_MOLECULE_SYSTEM
+# Temperature  Density  Num_Mols  Num_Configs  Random_Num_Seed  Initial_Density:
+298.000000 1.000000 10 10 72489 1.000000
+# Liquid_Crystal_Flag:
+0
+# 2d_Flag  a_len  b_len  c_len:
+0 16.691319 16.691319 16.691319
+# File_Name_Root:
+anion.xyz
+# AC Method  iDiscoNonBondFlag
+1  0
+# Director Cone_Angle
+1.000000 0.000000 0.000000 180.000000
+# NSubst  Subst_Width  Auto_Subst  Ring_Check  Lookahead  Num_Lookahead_Conf  Bonds_Per_Step:
+1 20.000000 0 1 1 48 1
+SMALL_MOLECULE_PARTICIPANTS:
+anion_xyz 10
+POLYMER_PARTICIPANTS:

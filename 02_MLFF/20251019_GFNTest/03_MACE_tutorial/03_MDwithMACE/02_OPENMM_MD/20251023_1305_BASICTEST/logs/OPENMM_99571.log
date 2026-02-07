@@ -1,0 +1,106 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+
+****** PyMBAR will use 64-bit JAX! *******
+* JAX is currently set to 32-bit bitsize *
+* which is its default.                  *
+*                                        *
+* PyMBAR requires 64-bit mode and WILL   *
+* enable JAX's 64-bit mode when called.  *
+*                                        *
+* This MAY cause problems with other     *
+* Uses of JAX in the same code.          *
+******************************************
+
+[W init.cpp:767] Warning: nvfuser is no longer supported in torch script, use _jit_set_nvfuser_enabled is deprecated and a no-op (function operator())
+                                                                        [96m                                                                         
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                         ====================================================================================================                         
+                          ooo        ooooo       .o.         .oooooo.   oooooooooooo         ooo        ooooo oooooooooo.                             
+                          `88.       .888'      .888.       d8P'  `Y8b  `888'     `8         `88.       .888' `888'   `Y8b                            
+                           888b     d'888      .8"888.     888           888                  888b     d'888   888      888                           
+                           8 Y88. .P  888     .8' `888.    888           888oooo8             8 Y88. .P  888   888      888                           
+                           8  `888'   888    .88ooo8888.   888           888    "    8888888  8  `888'   888   888      888                           
+                           8    Y     888   .8'     `888.  `88b    ooo   888       o          8    Y     888   888     d88'                           
+                          o8o        o888o o88o     o8888o  `Y8bood8P'  o888ooooood8         o8o        o888o o888bood8P'                             
+                         ====================================================================================================                         
+                        [0m                                                                                                                          
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
++-----------------------+------------------------------------------------------+
+|        Argument       |                        Value                         |
++-----------------------+------------------------------------------------------+
+|          file         |                      ejm_31.sdf                      |
+|         ml_mol        |                         None                         |
+|        run_type       |                          md                          |
+|         steps         |                         1000                         |
+|     steps_per_iter    |                         1000                         |
+|        padding        |                         1.2                          |
+|       box_shape       |                         cube                         |
+|     constrain_res     |                         None                         |
+|    nonbondedCutoff    |                         1.0                          |
+|     ionic_strength    |                         0.15                         |
+|       potential       |                         mace                         |
+|      temperature      |                        298.15                        |
+|       minimiser       |                        openmm                        |
+|        pressure       |                         None                         |
+|       remove_cmm      |                        False                         |
+|    set_temperature    |                        False                         |
+|         unwrap        |                         True                         |
+|       integrator      |                       langevin                       |
+|        timestep       |                         1.0                          |
+|       extract_nb      |                        False                         |
+|        replicas       |                          1                           |
+| replica_mixing_scheme |                       swap-all                       |
+|    lambda_schedule    |                         None                         |
+|    optimized_model    |                        False                         |
+|       direction       |                       forward                        |
+|      output_file      |                      output.pdb                      |
+|       log_level       |                         INFO                         |
+|         dtype         |                       float64                        |
+|       output_dir      |                       md_test                        |
+|          box          |                         None                         |
+|        restart        |                        False                         |
+|        decouple       |                        False                         |
+|         equil         |                       minimise                       |
+|      forcefields      | ['amber/protein.ff14SB.xml', 'amber14/DNA.OL15.xml'] |
+|      water_model      |                        tip3p                         |
+|          smff         |                         1.0                          |
+|        interval       |                         100                          |
+|        resname        |                         UNK                          |
+|           nl          |                        nnpops                        |
+|      max_n_pairs      |                          -1                          |
+|          meta         |                        False                         |
+|       model_path      |                   MACE_test.model                    |
+|      system_type      |                         pure                         |
+|        mm_only        |                        False                         |
+|       write_gmx       |                        False                         |
+|      ml_selection     |                       resname                        |
++-----------------------+------------------------------------------------------+
+INFO:mace_md:Using SMFF openff_unconstrained-1.0.0.offxml
+2025-10-23 13:10:48.050 INFO: Using SMFF openff_unconstrained-1.0.0.offxml
+INFO:mace_md:Initialized topology with (32, 3) positions
+2025-10-23 13:10:48.149 INFO: Initialized topology with (32, 3) positions
+WARNING:root:Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+2025-10-23 13:10:48.154 WARNING: Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+/data/dydtkddhkdwk/anaconda3/envs/mace-openmm/lib/python3.11/site-packages/torch/jit/_check.py:177: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+Got precision double default torch.float64
+Model dtype is torch.float64.
+Optimized model False
+INFO:root:Minimising energy...
+2025-10-23 13:10:52.833 INFO: Minimising energy...
+[W LinearAlgebra.cpp:3033] Warning: at::frobenius_norm is deprecated and it is just left for JIT compatibility. It will be removed in a future PyTorch release. Please use `linalg.vector_norm(A, 2., dim, keepdim)` instead (function operator())
+#"Progress (%)","Step","Time (ps)","Potential Energy (kJ/mole)","Total Energy (kJ/mole)","Temperature (K)","Box Volume (nm^3)","Density (g/mL)","Speed (ns/day)","Time Remaining"
+10.0%,100,0.10000000000000007,-358.483910154192,-346.4711983971024,30.099940280721132,8.0,0.0672858228325437,0,--
+20.0%,200,0.20000000000000015,-347.4957582708404,-321.256574677145,65.74684177525424,8.0,0.0672858228325437,2.95,0:23
+30.0%,300,0.3000000000000002,-344.2822746563941,-298.8413586353331,113.86012469066142,8.0,0.0672858228325437,2.95,0:20
+40.0%,400,0.4000000000000003,-328.1296155626692,-285.8476672532632,105.94478122848061,8.0,0.0672858228325437,2.95,0:17
+50.0%,500,0.5000000000000003,-327.9747705336724,-278.0474007481662,125.1017155248308,8.0,0.0672858228325437,2.93,0:14
+60.0%,600,0.6000000000000004,-328.5283715831462,-269.484495559624,147.94470875416178,8.0,0.0672858228325437,2.95,0:11
+70.0%,700,0.7000000000000005,-309.12757072961256,-245.77632059558414,158.73758434417522,8.0,0.0672858228325437,2.95,0:08
+80.0%,800,0.8000000000000006,-308.0993485373798,-222.3261792505279,214.91960561683536,8.0,0.0672858228325437,2.95,0:05
+90.0%,900,0.9000000000000007,-287.9975627435193,-222.10348466243897,165.1090823787668,8.0,0.0672858228325437,2.95,0:02
+100.0%,1000,1.0000000000000007,-275.9672517940801,-212.17096912544008,159.8526908235163,8.0,0.0672858228325437,2.95,0:00

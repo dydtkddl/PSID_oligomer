@@ -1,0 +1,1401 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+6,0.0,C  - C~   |,12.011,oplsaa.lt,C,6
+54,-0.18,C  - CT   | n-CH3 all-atom C: alkanes,12.011,oplsaa.lt,C,6
+55,-0.18,C  - CT   | iso-CH3 all-atom C: alkanes,12.011,oplsaa.lt,C,6
+56,-0.18,C  - CT   | neo-CH3 all-atom C: alkanes,12.011,oplsaa.lt,C,6
+57,-0.12,C  - CT   | CH2 all-atom C: alkanes,12.011,oplsaa.lt,C,6
+58,-0.06,C  - CT   | CH all-atom C: alkanes,12.011,oplsaa.lt,C,6
+59,0.0,C  - CT   | C all-atom C: alkanes,12.011,oplsaa.lt,C,6
+61,-0.065,"C  - CT   | all-atom C: CH3, toluene",12.011,oplsaa.lt,C,6
+62,-0.005,"C  - CT   | all-atom C: CH2, ethyl benzene",12.011,oplsaa.lt,C,6
+63,0.055,"C  - CT   | all-atom C: CH, i-propyl benzene",12.011,oplsaa.lt,C,6
+64,0.115,"C  - CT   | all-atom C: C, t-butyl benzene",12.011,oplsaa.lt,C,6
+66,0.0,"C  - C4   | CH4 66-77: JACS,106,6638 (1984)",12.011,oplsaa.lt,C,6
+67,0.0,C  - C3   | CH3 (C1) ETHANE,12.011,oplsaa.lt,C,6
+68,0.0,C  - C3   | CH3 (C2) N-ALKANES,12.011,oplsaa.lt,C,6
+69,0.0,C  - C3   | CH3 (C3) ISOBUTANE,12.011,oplsaa.lt,C,6
+70,0.0,C  - C3   | CH3 (C4) NEOPENTANE,12.011,oplsaa.lt,C,6
+71,0.0,C  - C2   | CH2 (SP3) ALKANES,12.011,oplsaa.lt,C,6
+72,0.0,C  - C9   | CH2 (SP2) 1-ALKENES,12.011,oplsaa.lt,C,6
+73,0.0,C  - CH   | CH (SP3) ISOBUTANE,12.011,oplsaa.lt,C,6
+74,0.0,C  - C8   | CH (SP2) 2-ALKENES,12.011,oplsaa.lt,C,6
+75,0.0,C  - CD   | CH (AROM) BENZENOID united atom,12.011,oplsaa.lt,C,6
+76,0.0,C  - CT   | C (SP3) NEOPENTANE,12.011,oplsaa.lt,C,6
+77,0.0,C  - C7   | C (SP2) ISOBUTENE,12.011,oplsaa.lt,C,6
+80,0.265,"C  - C3   | CH3 IN METHANOL """,12.011,oplsaa.lt,C,6
+81,0.265,"C  - C2   | CH2 IN ETHANOL """,12.011,oplsaa.lt,C,6
+88,0.18,"C  - C3   | CH3 IN CH3SH """,12.011,oplsaa.lt,C,6
+89,0.18,"C  - C2   | CH2 IN CH3CH2SH """,12.011,oplsaa.lt,C,6
+90,0.235,"C  - C3   | CH3 IN CH3SR """,12.011,oplsaa.lt,C,6
+91,0.235,"C  - C2   | CH2 IN RCH2SR """,12.011,oplsaa.lt,C,6
+92,0.3,"C  - C3   | CH3 IN CH3SSR """,12.011,oplsaa.lt,C,6
+93,0.3,"C  - C2   | CH2 IN RCH2SSR """,12.011,oplsaa.lt,C,6
+95,0.28,"C  - CZ   | C IN CH3CN """,12.011,oplsaa.lt,C,6
+96,0.15,"C  - C3   | CH3 IN CH3CN united atom """,12.011,oplsaa.lt,C,6
+106,0.265,C  - CH   | CH (SP3) ISOPROPANOL,12.011,oplsaa.lt,C,6
+107,0.265,C  - CT   | C (SP3) T-BUTANOL,12.011,oplsaa.lt,C,6
+109,0.25,"C  - C3   | ETHER CH3 (-O) """,12.011,oplsaa.lt,C,6
+110,0.25,"C  - C2   | ETHER CH2 (-O) """,12.011,oplsaa.lt,C,6
+118,0.5,C  - C2   | CH2 Methylenechloride C-Cl=1.772,12.011,oplsaa.lt,C,6
+120,0.42,"C  - CH   | CH Chloroform JPC,94,1683 (1990)",12.011,oplsaa.lt,C,6
+122,0.248,C  - CT   | C CCl4,12.011,oplsaa.lt,C,6
+126,0.16,C  - C3   | DMSO,12.011,oplsaa.lt,C,6
+131,0.5,"C  - C~   | C in C=O for UA formamide, DMF.",12.011,oplsaa.lt,C,6
+132,0.285,C  - C3   | CH3 in HCON(CH3)2 DMF,12.011,oplsaa.lt,C,6
+135,-0.18,C  - CT   | CH3 all-atom C: alkanes,12.011,oplsaa.lt,C,6
+136,-0.12,C  - CT   | CH2 all-atom C: alkanes,12.011,oplsaa.lt,C,6
+137,-0.06,C  - CT   | CH all-atom C: alkanes,12.011,oplsaa.lt,C,6
+138,-0.24,C  - CT   | CH4 all-atom C: methane mod 1/2020,12.011,oplsaa.lt,C,6
+139,0.0,C  - CT   | C all-atom C: alkanes,12.011,oplsaa.lt,C,6
+141,0.0,C  - CM   | alkene C (R2-C=) all atom,12.011,oplsaa.lt,C,6
+142,-0.115,C  - CM   | alkene C (RH-C=) all atom,12.011,oplsaa.lt,C,6
+143,-0.23,C  - CM   | alkene C (H2-C=) all atom,12.011,oplsaa.lt,C,6
+145,-0.115,C  - CA   | Benzene C - 12 site OPLS/2020,12.011,oplsaa.lt,C,6
+147,0.0,C  - CB   | Naphthalene fusion C (C9),12.011,oplsaa.lt,C,6
+148,-0.065,"C  - CT   | all-atom C: CH3, toluene",12.011,oplsaa.lt,C,6
+149,-0.005,"C  - CT   | all-atom C: CH2, ethyl benzene",12.011,oplsaa.lt,C,6
+150,-0.115,C  - C=   | diene =CH-CH=; see 178 also,12.011,oplsaa.lt,C,6
+152,-0.006,"C  - CT   | RCH2Cl "" """,12.011,oplsaa.lt,C,6
+157,0.145,"C  - CT   | all-atom C: CH3 & CH2, prim. alcohols",12.011,oplsaa.lt,C,6
+158,0.205,"C  - CT   | all-atom C: CH, sec. alcohols",12.011,oplsaa.lt,C,6
+159,0.232,"C  - CT   | all-atom C: C, tert. alcohols OPLS/2020",12.011,oplsaa.lt,C,6
+165,0.0,C  - CA   | Cipso in styrene,12.011,oplsaa.lt,C,6
+166,0.1,C  - CA   | C(OH) phenol Use with all,12.011,oplsaa.lt,C,6
+173,0.145,"C  - CT   | C(H2OH): diols, triols",12.011,oplsaa.lt,C,6
+174,0.205,"C  - CT   | C(HROH): """,12.011,oplsaa.lt,C,6
+175,0.265,"C  - CT   | C(R2OH): """,12.011,oplsaa.lt,C,6
+178,0.0,C  - C=   | diene =CR-RC=; see 150 also,12.011,oplsaa.lt,C,6
+181,0.11,C  - CT   | C(H3OR): methyl ether,12.011,oplsaa.lt,C,6
+182,0.14,C  - CT   | C(H2OR): ethyl ether,12.011,oplsaa.lt,C,6
+183,0.17,C  - CT   | C(HOR): i-Pr ether,12.011,oplsaa.lt,C,6
+184,0.2,C  - CT   | C(OR): t-Bu ether,12.011,oplsaa.lt,C,6
+189,0.06,C  - CO   | C(H2O2): acetal OCH2O,12.011,oplsaa.lt,C,6
+191,0.195,C  - CO   | C(H2O2): hemiacetal OCH2OH,12.011,oplsaa.lt,C,6
+193,0.16,C  - CO   | C(HCO2): acetal OCHRO,12.011,oplsaa.lt,C,6
+195,0.295,C  - CO   | C(HCO2): hemiacetal OCHROH,12.011,oplsaa.lt,C,6
+197,0.26,C  - CO   | C(C2O2): acetal OCRRO,12.011,oplsaa.lt,C,6
+198,0.395,C  - CO   | C(C2O2): hemiacetal OCRROH,12.011,oplsaa.lt,C,6
+199,0.085,C  - CA   | C(OMe) anisole OPLS/2020,12.011,oplsaa.lt,C,6
+206,0.06,"C  - CT   | all-atom C: CH2, thiols",12.011,oplsaa.lt,C,6
+207,0.12,"C  - CT   | all-atom C: CH, thiols",12.011,oplsaa.lt,C,6
+208,0.18,"C  - CT   | all-atom C: C, thiols",12.011,oplsaa.lt,C,6
+209,-0.0125,"C  - CT   | all-atom C: CH3, sulfides OPLS-AA/L",12.011,oplsaa.lt,C,6
+210,0.0475,"C  - CT   | all-atom C: CH2, sulfides OPLS-AA/L",12.011,oplsaa.lt,C,6
+211,0.1175,"C  - CT   | all-atom C: CH, sulfides OPLS-AA/L",12.011,oplsaa.lt,C,6
+212,0.1675,"C  - CT   | all-atom C: C, sulfides OPLS-AA/L",12.011,oplsaa.lt,C,6
+213,0.0375,"C  - CT   | all-atom C: CH3, disulfides",12.011,oplsaa.lt,C,6
+214,0.0975,"C  - CT   | all-atom C: CH2, disulfides",12.011,oplsaa.lt,C,6
+215,0.1575,"C  - CT   | all-atom C: CH, disulfides",12.011,oplsaa.lt,C,6
+216,0.2175,"C  - CT   | all-atom C: C, disulfides",12.011,oplsaa.lt,C,6
+217,0.0,"C  - CT   | all-atom C: CH3, methanethiol",12.011,oplsaa.lt,C,6
+218,0.2,C  - CT   | C in CH2OH - benzyl alcohols,12.011,oplsaa.lt,C,6
+219,0.26,C  - CT   | C in CHROH - benzyl alcohols,12.011,oplsaa.lt,C,6
+220,0.32,C  - CT   | C in CR2OH - benzyl alcohols,12.011,oplsaa.lt,C,6
+221,-0.055,"C  - CA   | C(CH2OH) - benzyl alcohols, nitriles",12.011,oplsaa.lt,C,6
+223,0.08,C  - CT   | C in RCH2NH2 and Gly CA (See 900 for amines),12.011,oplsaa.lt,C,6
+224,0.14,C  - CT   | C in R2CHNH2 and Ala CA,12.011,oplsaa.lt,C,6
+225,0.2,C  - CT   | C in R3CNH2 and Aib CA,12.011,oplsaa.lt,C,6
+227,0.005,C  - CM   | chloroalkene C (ClH-C=),12.011,oplsaa.lt,C,6
+228,0.1025,C  - CA   | C(SMe) thioanisole,12.011,oplsaa.lt,C,6
+229,0.14,C  - CT   | C on N: secondary N-CHR2 amide,12.011,oplsaa.lt,C,6
+230,0.2,C  - CT   | C on N: secondary N-CR3 amide,12.011,oplsaa.lt,C,6
+231,0.7,C  - C~   | C: C=O in benzophenone,12.011,oplsaa.lt,C,6
+232,0.565,C  - C~   | C: C=O in benzaldehyde,12.011,oplsaa.lt,C,6
+233,0.585,C  - C~   | C: C=O in acetophenone,12.011,oplsaa.lt,C,6
+234,0.615,C  - C~   | C: C=O in benzamide,12.011,oplsaa.lt,C,6
+235,0.5,C  - C~   | C: C=O in amide. Acyl R in amides,12.011,oplsaa.lt,C,6
+242,0.02,C  - CT   | C on N: secondary N-Me amide,12.011,oplsaa.lt,C,6
+243,-0.11,C  - CT   | C on N: tertiary N-Me amide,12.011,oplsaa.lt,C,6
+244,0.08,C  - CT   | C on N: secondary N-CH2R amide,12.011,oplsaa.lt,C,6
+245,-0.05,C  - CT   | C on N: tertiary N-CH2R amide (Pro Cdelta),12.011,oplsaa.lt,C,6
+246,0.01,C  - CT   | C on N: tertiary N-CHR2 amide (Pro Calpha),12.011,oplsaa.lt,C,6
+247,0.142,C  - C~   | C in O=C(NH2)2 Urea,12.011,oplsaa.lt,C,6
+252,0.42,C  - C~   | C(=O) in imide,12.011,oplsaa.lt,C,6
+256,-0.12,C  - CT   | C in CH3 imide,12.011,oplsaa.lt,C,6
+257,-0.06,C  - CT   | C in RCH2 imide,12.011,oplsaa.lt,C,6
+258,0.0,C  - CT   | C in R2CH imide,12.011,oplsaa.lt,C,6
+259,0.06,C  - CT   | C in R3C imide,12.011,oplsaa.lt,C,6
+260,0.035,C  - CA   | C(CN) benzonitrile cyano,12.011,oplsaa.lt,C,6
+261,0.395,C  - CZ   | C(N) benzonitrile,12.011,oplsaa.lt,C,6
+263,0.18,C  - CA   | C(Cl) chlorobenzene,12.011,oplsaa.lt,C,6
+266,0.085,C  - CA   | ipso C in N-phenylacetamide,12.011,oplsaa.lt,C,6
+267,0.52,C  - C~   | Co in CCOOH carboxylic acid,12.011,oplsaa.lt,C,6
+271,0.7,C  - C~   | C in COO- carboxylate,12.011,oplsaa.lt,C,6
+273,-0.28,"C  - CT   | C: CH3, carboxylate ion",12.011,oplsaa.lt,C,6
+274,-0.22,"C  - CT   | C: CH2, carboxylate ion",12.011,oplsaa.lt,C,6
+275,-0.16,"C  - CT   | C: CH, carboxylate ion",12.011,oplsaa.lt,C,6
+276,-0.1,"C  - CT   | C: C, carboxylate ion",12.011,oplsaa.lt,C,6
+277,0.45,C  - C~   | AA C: aldehyde & acyl halide - for C-alpha use,12.011,oplsaa.lt,C,6
+280,0.47,C  - C~   | AA C: ketone - for C-alpha use,12.011,oplsaa.lt,C,6
+283,0.04,C  - CT   | AA C-alpha on C-terminal ALA,12.011,oplsaa.lt,C,6
+284,-0.02,C  - CT   | AA C-alpha on C-terminal GLY,12.011,oplsaa.lt,C,6
+285,-0.09,C  - CT   | AA C-alpha on C-terminal PRO,12.011,oplsaa.lt,C,6
+291,0.13,C  - CT   | C in CH3NH3+,12.011,oplsaa.lt,C,6
+292,0.19,C  - CT   | C in RCH2NH3+ & CA in N-term Gly,12.011,oplsaa.lt,C,6
+293,0.25,"C  - CT   | C in R2CHNH3+ & CA in N-term Ala, etc.",12.011,oplsaa.lt,C,6
+294,0.31,C  - CT   | C in R3CNH3+,12.011,oplsaa.lt,C,6
+295,0.23,C  - CT   | AA:C-alpha in N-term PRO,12.011,oplsaa.lt,C,6
+296,0.17,C  - CT   | AA:C-delta in N-term PRO,12.011,oplsaa.lt,C,6
+297,0.11,C  - CT   | CT in CH3NH2+R,12.011,oplsaa.lt,C,6
+298,0.09,C  - CT   | AA C-alpha in Gly zwitterion,12.011,oplsaa.lt,C,6
+299,0.15,C  - CT   | AA C-alpha in Ala zwitterion,12.011,oplsaa.lt,C,6
+302,0.64,C  - CA   | C: guanidinium C+,12.011,oplsaa.lt,C,6
+305,0.2,"C  - CT   | C: CH3, methylguanidinium",12.011,oplsaa.lt,C,6
+306,-0.11,"C  - CT   | C: CH3, ethylguanidinium",12.011,oplsaa.lt,C,6
+307,0.19,"C  - CT   | C: CH2(D), ARG, ethylguanidinium",12.011,oplsaa.lt,C,6
+308,-0.05,"C  - CT   | C: CH2(G), ARG",12.011,oplsaa.lt,C,6
+312,0.36,C  - CA   | DAP C2 pyridine,12.011,oplsaa.lt,C,6
+315,-0.15,C  - CA   | DAP C3,12.011,oplsaa.lt,C,6
+317,-0.04,C  - CA   | DAP C4,12.011,oplsaa.lt,C,6
+320,0.5,C  - C~   | Uracil C2,12.011,oplsaa.lt,C,6
+322,0.45,C  - C~   | Uracil C4,12.011,oplsaa.lt,C,6
+323,-0.07,C  - CM   | Uracil C5,12.011,oplsaa.lt,C,6
+324,0.08,C  - CM   | Uracil C6,12.011,oplsaa.lt,C,6
+331,-0.14,C  - CT   | Thymine C-C5,12.011,oplsaa.lt,C,6
+334,0.55,C  - C~   | Cytosine C2,12.011,oplsaa.lt,C,6
+336,0.46,C  - CA   | Cytosine C4 Nucleotide base,12.011,oplsaa.lt,C,6
+337,-0.06,C  - CM   | Cytosine C5 parameters:,12.011,oplsaa.lt,C,6
+338,0.1,"C  - CM   | Cytosine C6 JACS,113,2810(1991)",12.011,oplsaa.lt,C,6
+347,0.22,C  - CQ   | Adenine C2,12.011,oplsaa.lt,C,6
+349,0.38,C  - CB   | Adenine C4,12.011,oplsaa.lt,C,6
+350,0.15,C  - CB   | Adenine C5,12.011,oplsaa.lt,C,6
+351,0.44,C  - CA   | Adenine C6,12.011,oplsaa.lt,C,6
+353,0.2,C  - CR   | Adenine C8 Guanine,12.011,oplsaa.lt,C,6
+362,0.46,C  - CA   | Guanine C2,12.011,oplsaa.lt,C,6
+364,0.34,C  - CB   | Guanine C4,12.011,oplsaa.lt,C,6
+365,0.12,C  - CB   | Guanine C5,12.011,oplsaa.lt,C,6
+366,0.52,C  - C~   | Guanine C6,12.011,oplsaa.lt,C,6
+371,-0.01,C  - CT   | 9-Me A or G C-N9,12.011,oplsaa.lt,C,6
+373,-0.01,C  - CT   | 1-Me U or T C-N1,12.011,oplsaa.lt,C,6
+375,-0.01,C  - CT   | 1-Me Cytosine C-N1,12.011,oplsaa.lt,C,6
+378,0.65,C  - C~   | CytH+ C2,12.011,oplsaa.lt,C,6
+380,0.66,C  - CA   | CytH+ C4,12.011,oplsaa.lt,C,6
+381,-0.06,C  - CM   | CytH+ C5,12.011,oplsaa.lt,C,6
+382,0.1,C  - CM   | CytH+ C6,12.011,oplsaa.lt,C,6
+391,0.01,C  - CT   | 1-Me CytH+ C-N1,12.011,oplsaa.lt,C,6
+396,0.02,"C  - CT   | C in CH3 "" for AA",12.011,oplsaa.lt,C,6
+397,0.18,C  - CM   | F3C-C5 thymine; trifluorothymine,12.011,oplsaa.lt,C,6
+399,0.12,C  - CM   | chloroalkene C (Cl2-C=) - tentaive,12.011,oplsaa.lt,C,6
+415,-0.4,C  - C3   | C in CH3S- thiolate,12.011,oplsaa.lt,C,6
+418,-0.2,C  - C3   | C in CH3O- alkoxide,12.011,oplsaa.lt,C,6
+421,-1.07,C  - CT   | C1 in CH2CN- RCN-,12.011,oplsaa.lt,C,6
+423,0.51,"C  - CZ   | C2 in CH2CN- JACS 111,",12.011,oplsaa.lt,C,6
+425,-0.3,C  - C3   | C in CH3NH-,12.011,oplsaa.lt,C,6
+429,-0.4,C  - C3   | C2 in CH3CH2- RCH2-,12.011,oplsaa.lt,C,6
+431,0.0,C  - CT   | C1 in CH3CH2-,12.011,oplsaa.lt,C,6
+438,0.27,C  - CT   | C in dimetyl phosphate,12.011,oplsaa.lt,C,6
+443,0.3,"C  - CT   | C in "" phosphate",12.011,oplsaa.lt,C,6
+448,0.44,"C  - CT   | C in "" 6-31+G* CHELPG",12.011,oplsaa.lt,C,6
+453,0.28,"C  - CT   | C(O) "" methylphosphonate",12.011,oplsaa.lt,C,6
+455,-0.51,"C  - CT   | C(P) """,12.011,oplsaa.lt,C,6
+457,-0.14,C  - CA   | Cipso benzyl methylphosphonate,12.011,oplsaa.lt,C,6
+458,0.32,"C  - CT   | C(O) "" """,12.011,oplsaa.lt,C,6
+460,-0.04,C  - CA   | Cipso methyl benzylphosphonate,12.011,oplsaa.lt,C,6
+461,-0.47,"C  - CT   | C(P) "" """,12.011,oplsaa.lt,C,6
+463,0.14,C  - CA   | Cipso C6H5OPO3(2-) use with 445-7,12.011,oplsaa.lt,C,6
+464,0.24,C  - CT   | C6(R2) of barbiturate,12.011,oplsaa.lt,C,6
+465,0.49,"C  - C~   | AA C: esters - for R on C=O, use",12.011,oplsaa.lt,C,6
+468,0.16,C  - CT   | methoxy C in esters - see also 490-492 OPLS/2020,12.011,oplsaa.lt,C,6
+470,0.635,C  - C~   | Co in benzoic acid,12.011,oplsaa.lt,C,6
+471,0.605,"C  - C~   | Co in methyl benzoate, aryl ester",12.011,oplsaa.lt,C,6
+472,0.135,C  - CA   | Cipso phenyl ester,12.011,oplsaa.lt,C,6
+476,-0.54,C  - CT   | CH3 attached to S of sulfonamide,12.011,oplsaa.lt,C,6
+482,0.18,C  - CT   | alpha CH3-N of sulfonamide,12.011,oplsaa.lt,C,6
+484,0.39,C  - CT   | alpha CH2-N of sulfonamide,12.011,oplsaa.lt,C,6
+486,-0.18,C  - CT   | beta CH3 of N-ethyl sulfonamide,12.011,oplsaa.lt,C,6
+488,0.0,C  - CA   | benzene C attached to S of sulfonamide,12.011,oplsaa.lt,C,6
+489,0.03,C  - CA   | benzene C attached to S of alkyl aryl sulfoxide,12.011,oplsaa.lt,C,6
+490,0.19,C  - CT   | C(H2OS) ethyl ester,12.011,oplsaa.lt,C,6
+491,0.22,C  - CT   | C(HOS) i-pr ester,12.011,oplsaa.lt,C,6
+492,0.25,C  - CT   | C(OS) t-bu ester,12.011,oplsaa.lt,C,6
+498,-0.035,C  - CT   | CH3 all-atom C: sulfoxide,12.011,oplsaa.lt,C,6
+499,0.025,C  - CT   | CH2 all-atom C: sulfoxide,12.011,oplsaa.lt,C,6
+500,0.075,C  - CS   | CG in TRP,12.011,oplsaa.lt,C,6
+501,-0.055,C  - CB   | CD C in TRP,12.011,oplsaa.lt,C,6
+502,0.13,C  - CN   | CE C in TRP,12.011,oplsaa.lt,C,6
+505,-0.005,C  - CT   | CB in HIS,12.011,oplsaa.lt,C,6
+506,0.295,"C  - CR   | CE1 in HID, HIE",12.011,oplsaa.lt,C,6
+507,-0.015,"C  - CV   | CD2 in HID, CG in HIE",12.011,oplsaa.lt,C,6
+508,0.015,"C  - CW   | CG in HID, CD2 in HIE",12.011,oplsaa.lt,C,6
+509,0.385,C  - CR   | CE1 in HIP,12.011,oplsaa.lt,C,6
+510,0.215,"C  - CX   | CG, CD2 in HIP",12.011,oplsaa.lt,C,6
+514,-0.115,C  - CW   | CD1 in TRP,12.011,oplsaa.lt,C,6
+515,0.055,"C  - CT   | all-atom C: CH, isopropyl benzene",12.011,oplsaa.lt,C,6
+516,0.115,"C  - CT   | all-atom C: C, t-butyl benzene",12.011,oplsaa.lt,C,6
+517,-0.03,C  - CM   | vinyl ether HCOR,12.011,oplsaa.lt,C,6
+518,0.085,C  - CM   | vinyl ether RCOR,12.011,oplsaa.lt,C,6
+519,0.0,C  - C!   | biphenyl C1,12.011,oplsaa.lt,C,6
+521,0.473,C  - CA   | C1 in pyridine CHELPG,12.011,oplsaa.lt,C,6
+522,-0.447,C  - CA   | C2 in pyridine charges,12.011,oplsaa.lt,C,6
+523,0.227,C  - CA   | C3 in pyridine for,12.011,oplsaa.lt,C,6
+528,0.192,C  - CA   | C in pyrazine,12.011,oplsaa.lt,C,6
+531,0.874,C  - CQ   | C2 in pyrimidine,12.011,oplsaa.lt,C,6
+532,0.653,C  - CA   | C4 in pyrimidine,12.011,oplsaa.lt,C,6
+533,-0.689,C  - CA   | C5 in pyrimidine,12.011,oplsaa.lt,C,6
+538,0.378,C  - CA   | C3 in pyridazine,12.011,oplsaa.lt,C,6
+539,-0.16,C  - CA   | C4 in pyridazine,12.011,oplsaa.lt,C,6
+543,-0.163,C  - CW   | C2 in pyrrole,12.011,oplsaa.lt,C,6
+544,-0.149,C  - CS   | C3 in pyrrole,12.011,oplsaa.lt,C,6
+550,0.246,C  - CU   | C3 in pyrazole,12.011,oplsaa.lt,C,6
+551,-0.32,C  - CS   | C4 in pyrazole,12.011,oplsaa.lt,C,6
+552,-0.034,C  - CW   | C5 in pyrazole,12.011,oplsaa.lt,C,6
+558,0.275,C  - CR   | C2 in imidazole,12.011,oplsaa.lt,C,6
+560,0.185,C  - CV   | C4 in imidazole,12.011,oplsaa.lt,C,6
+561,-0.286,C  - CW   | C5 in imidazole,12.011,oplsaa.lt,C,6
+567,-0.019,C  - CW   | C2 in furan,12.011,oplsaa.lt,C,6
+568,-0.154,C  - CS   | C3 in furan,12.011,oplsaa.lt,C,6
+572,0.511,C  - CR   | C2 in oxazole,12.011,oplsaa.lt,C,6
+574,0.169,C  - CV   | C4 in oxazole,12.011,oplsaa.lt,C,6
+575,-0.148,C  - CW   | C5 in oxazole,12.011,oplsaa.lt,C,6
+581,0.405,C  - CU   | C3 in isoxazole,12.011,oplsaa.lt,C,6
+582,-0.455,C  - CS   | C4 in isoxazole,12.011,oplsaa.lt,C,6
+583,0.25,C  - CW   | C5 in isoxazole,12.011,oplsaa.lt,C,6
+588,0.001,C  - CW   | C2 in indole,12.011,oplsaa.lt,C,6
+589,-0.39,C  - CS   | C3 in indole,12.011,oplsaa.lt,C,6
+590,-0.27,C  - CA   | C4 in indole,12.011,oplsaa.lt,C,6
+591,-0.127,C  - CA   | C5 in indole,12.011,oplsaa.lt,C,6
+592,-0.108,C  - CA   | C6 in indole,12.011,oplsaa.lt,C,6
+593,-0.258,C  - CA   | C7 in indole,12.011,oplsaa.lt,C,6
+594,0.22,C  - CW   | C8 in indole,12.011,oplsaa.lt,C,6
+595,0.225,C  - CS   | C9 in indole,12.011,oplsaa.lt,C,6
+604,0.425,C  - CA   | C2 in quinoline,12.011,oplsaa.lt,C,6
+605,-0.359,C  - CA   | C3 in quinoline,12.011,oplsaa.lt,C,6
+606,-0.008,C  - CA   | C4 in quinoline,12.011,oplsaa.lt,C,6
+607,-0.197,C  - CA   | C5 in quinoline,12.011,oplsaa.lt,C,6
+608,-0.112,C  - CA   | C6 in quinoline,12.011,oplsaa.lt,C,6
+609,-0.07,C  - CA   | C7 in quinoline,12.011,oplsaa.lt,C,6
+610,-0.307,C  - CA   | C8 in quinoline,12.011,oplsaa.lt,C,6
+611,0.563,C  - CA   | C9 in quinoline,12.011,oplsaa.lt,C,6
+612,-0.051,C  - CA   | C10 in quinoline,12.011,oplsaa.lt,C,6
+621,0.679,C  - CQ   | C2 in purine,12.011,oplsaa.lt,C,6
+623,0.736,C  - CB   | C4 in purine,12.011,oplsaa.lt,C,6
+624,0.038,C  - CB   | C5 in purine,12.011,oplsaa.lt,C,6
+625,0.343,C  - CA   | C6 in purine,12.011,oplsaa.lt,C,6
+627,0.452,C  - CR   | C8 in purine,12.011,oplsaa.lt,C,6
+634,0.242,C  - CR   | C2 in thiazole,12.011,oplsaa.lt,C,6
+636,0.228,C  - CV   | C4 in thiazole,12.011,oplsaa.lt,C,6
+637,-0.299,C  - CW   | C5 in thiazole,12.011,oplsaa.lt,C,6
+642,0.965,"C  - CQ   | C in 1,3,5-triazine",12.011,oplsaa.lt,C,6
+644,0.13,C  - CA   | C5 in serotonin,12.011,oplsaa.lt,C,6
+645,0.052,C  - CT   | C on C3 in serotonin,12.011,oplsaa.lt,C,6
+647,0.392,"C  - CA   | C2 in 1,10-phenanthroline",12.011,oplsaa.lt,C,6
+648,-0.348,"C  - CA   | C3 in 1,10-phenanthroline",12.011,oplsaa.lt,C,6
+649,0.02,"C  - CA   | C4 in 1,10-phenanthroline",12.011,oplsaa.lt,C,6
+650,-0.042,"C  - CA   | C12 in 1,10-phenanthroline",12.011,oplsaa.lt,C,6
+651,0.347,"C  - CA   | C11 in 1,10-phenanthroline",12.011,oplsaa.lt,C,6
+652,-0.196,"C  - CA   | C5 in 1,10-phenanthroline",12.011,oplsaa.lt,C,6
+658,0.166,C  - CR   | C2 in 1-methylimidazole,12.011,oplsaa.lt,C,6
+660,0.173,C  - CV   | C4 in 1-methylimidazole,12.011,oplsaa.lt,C,6
+661,-0.395,C  - CW   | C5 in 1-methylimidazole,12.011,oplsaa.lt,C,6
+662,-0.199,C  - CT   | C1 in 1-methylimidazole,12.011,oplsaa.lt,C,6
+667,-0.139,C  - CT   | C1 in 1-ethylimidazole,12.011,oplsaa.lt,C,6
+668,-0.079,C  - CT   | C1 in 1-isopropylimidazole,12.011,oplsaa.lt,C,6
+669,0.099,C  - CT   | C1 in 1-MeO-Me-imidazole,12.011,oplsaa.lt,C,6
+670,-0.168,"C  - CT   | CH3, 2-methyl pyridine",12.011,oplsaa.lt,C,6
+671,-0.108,"C  - CT   | CH2, 2-ethyl pyridine",12.011,oplsaa.lt,C,6
+672,-0.189,"C  - CT   | CH3, 3-methyl pyridazine",12.011,oplsaa.lt,C,6
+673,-0.129,"C  - CT   | CH2, 3-ethyl pyridazine",12.011,oplsaa.lt,C,6
+674,-0.169,"C  - CT   | CH3, 4-methyl pyrimidine",12.011,oplsaa.lt,C,6
+675,-0.109,"C  - CT   | CH2, 4-ethyl pyrimidine",12.011,oplsaa.lt,C,6
+676,-0.138,"C  - CT   | CH3, 2-methyl pyrazine",12.011,oplsaa.lt,C,6
+677,-0.078,"C  - CT   | CH2, 2-ethyl pyrazine",12.011,oplsaa.lt,C,6
+678,-0.025,"C  - CT   | CH3, 2-methyl pyrrole",12.011,oplsaa.lt,C,6
+679,0.035,"C  - CT   | CH2, 2-ethyl pyrrole",12.011,oplsaa.lt,C,6
+680,-0.038,"C  - CT   | CH3, 2-methyl furan",12.011,oplsaa.lt,C,6
+681,0.022,"C  - CT   | CH2, 2-ethyl furan",12.011,oplsaa.lt,C,6
+684,0.523,C  - CA   | C6 in 6-mercaptopurine,12.011,oplsaa.lt,C,6
+685,0.5,C  - C^   | C: C=O beta-lactam,12.011,oplsaa.lt,C,6
+687,0.2275,C  - CY   | CH(N): penicillin,12.011,oplsaa.lt,C,6
+688,0.14,C  - CY   | CH(CO): penicillin,12.011,oplsaa.lt,C,6
+689,-0.008,"C  - CT   | CH3, 3-methyl indole",12.011,oplsaa.lt,C,6
+690,0.588,C  - C!   | 2-phenyl pyridine C2,12.011,oplsaa.lt,C,6
+691,-0.103,C  - C!   | 2-phenyl pyridine C2',12.011,oplsaa.lt,C,6
+692,-0.332,C  - C!   | 3-phenyl pyridine C3,12.011,oplsaa.lt,C,6
+693,0.04,C  - C!   | 3-phenyl pyridine C3',12.011,oplsaa.lt,C,6
+694,0.342,C  - C!   | 4-phenyl pyridine C4,12.011,oplsaa.lt,C,6
+695,-0.05,C  - C!   | 4-phenyl pyridine C4',12.011,oplsaa.lt,C,6
+700,0.619,C  - C+   | C+ in t-butyl+ B3LYP/6-31G*,12.011,oplsaa.lt,C,6
+701,-0.395,C  - CT   | C in t-butyl+ charges,12.011,oplsaa.lt,C,6
+708,-0.344,C  - CM   | C in Cl..CH3..Cl- TS,12.011,oplsaa.lt,C,6
+711,-0.12,C  - CY   | CH2 C: cyclopropane OPLS-2020,12.011,oplsaa.lt,C,6
+712,-0.06,C  - CY   | CHR C: cyclopropane OPLS-2020,12.011,oplsaa.lt,C,6
+713,0.0,C  - CY   | CR2 C: cyclopropane OPLS-2020,12.011,oplsaa.lt,C,6
+714,-0.12,C  - CY   | CH2 C: cyclobutane OPLS-2020,12.011,oplsaa.lt,C,6
+715,-0.06,C  - CY   | CHR C: cyclobutane OPLS-2020,12.011,oplsaa.lt,C,6
+716,0.0,C  - CY   | CR2 C: cyclobutane OPLS-2020,12.011,oplsaa.lt,C,6
+718,0.28,C  - CA   | C(F) fluorobenzene,12.011,oplsaa.lt,C,6
+720,0.13,C  - CA   | C(F) hexafluorobenzene,12.011,oplsaa.lt,C,6
+723,0.22,C  - C2   | CH2 alkyl bromide (UA),12.011,oplsaa.lt,C,6
+724,0.15,C  - CA   | C(CF3) trifluoromethylbenzene,12.011,oplsaa.lt,C,6
+725,0.45,"C  - CT   | CF3 """,12.011,oplsaa.lt,C,6
+727,0.2,C  - CA   | C(F) difluorobenzenes,12.011,oplsaa.lt,C,6
+729,0.15,"C  - CA   | C(Br) bromobenzene JCTC 2012, 8, 3895",12.011,oplsaa.lt,C,6
+731,0.1,C  - CA   | C(I) iodobenzene sigma CA changed to 0.068,12.011,oplsaa.lt,C,6
+733,0.055,"C  - CY   | all-atom C: CH, cyclopropyl/butyl benzene",12.011,oplsaa.lt,C,6
+735,0.065,C  - CA   | C(S) thiophenol,12.011,oplsaa.lt,C,6
+736,0.013,C  - CA   | CG of Benzamidine,12.011,oplsaa.lt,C,6
+737,-0.106,C  - CA   | CD of Benzamidine,12.011,oplsaa.lt,C,6
+738,-0.09,C  - CA   | CE of Benzamidine,12.011,oplsaa.lt,C,6
+739,-0.119,C  - CA   | CZ of Benzamidine,12.011,oplsaa.lt,C,6
+742,0.827,C  - CA   | C+ of Benzamidine,12.011,oplsaa.lt,C,6
+747,-0.02,C  - CT   | CH3 in neutral MeGDN,12.011,oplsaa.lt,C,6
+748,0.04,C  - CT   | CD of neutral ARG,12.011,oplsaa.lt,C,6
+752,0.55,"C  - CA   | CZ "" "" """,12.011,oplsaa.lt,C,6
+754,0.46,"C  - CZ   | C IN RCN """,12.011,oplsaa.lt,C,6
+755,-0.08,C  - CT   | C of CH3 in CH3CN,12.011,oplsaa.lt,C,6
+756,-0.02,C  - CT   | C of CH2 in RCH2CN,12.011,oplsaa.lt,C,6
+757,0.04,C  - CT   | C of CH in R2CHCN,12.011,oplsaa.lt,C,6
+758,0.1,C  - CT   | C of C in R3CCN,12.011,oplsaa.lt,C,6
+762,0.02,C  - CT   | CT-NO2 nitromethane,12.011,oplsaa.lt,C,6
+764,0.08,C  - CT   | CT-NO2 nitroethane,12.011,oplsaa.lt,C,6
+765,0.14,C  - CT   | CT-NO2 2-nitropropane,12.011,oplsaa.lt,C,6
+766,0.2,C  - CT   | CT-NO2 2-methyl-2-nitropropane,12.011,oplsaa.lt,C,6
+768,0.09,C  - CA   | C(NO2) nitrobenzene,12.011,oplsaa.lt,C,6
+769,0.035,C  - CT   | C of CH2 in PhCH2CN,12.011,oplsaa.lt,C,6
+772,0.86,"C  - C~   | "" C=O Lucienne's",12.011,oplsaa.lt,C,6
+774,0.21,"C  - CT   | "" C in CH2",12.011,oplsaa.lt,C,6
+775,0.16,"C  - CT   | "" C in CH",12.011,oplsaa.lt,C,6
+776,-0.1,"C  - CT   | "" C in CH3 see also 789",12.011,oplsaa.lt,C,6
+782,-0.5081,C  - CT   | CH3PR3+ 6-31G* CHELPG,12.011,oplsaa.lt,C,6
+783,-0.008,C  - CT   | RCH2PR3+,12.011,oplsaa.lt,C,6
+789,0.18,C  - CT   | methoxy C in carbonate,12.011,oplsaa.lt,C,6
+790,0.15,C  - CA   | C(CF3) trifluoromethylbenzene test,12.011,oplsaa.lt,C,6
+791,0.45,"C  - CF   | CF3 "" test",12.011,oplsaa.lt,C,6
+793,0.38,C  - CA   | C-ipso phenylguanidinium ion,12.011,oplsaa.lt,C,6
+798,0.0,C  - CT   | CH4 all-atom C: q = 0,12.011,oplsaa.lt,C,6
+903,0.0,"C  - CT   | CH3(N) primary aliphatic amines, H(C) type 911",12.011,oplsaa.lt,C,6
+904,0.02,"C  - CT   | CH3(N) secondary aliphatic amines, H(C) type 911",12.011,oplsaa.lt,C,6
+905,0.03,"C  - CT   | CH3(N) tertiary aliphatic amines, H(C) type 911",12.011,oplsaa.lt,C,6
+906,0.06,"C  - CT   | CH2(N) primary aliphatic amines, H(C) type 911",12.011,oplsaa.lt,C,6
+907,0.08,"C  - CT   | CH2(N) secondary aliphatic amines, H(C) type 911",12.011,oplsaa.lt,C,6
+908,0.09,"C  - CT   | CH2(N) tertiary aliphatic amines, H(C) type 911",12.011,oplsaa.lt,C,6
+912,0.12,C  - CT   | CH primary isopropyl amine,12.011,oplsaa.lt,C,6
+913,0.18,C  - CT   | C primary t-butyl amine,12.011,oplsaa.lt,C,6
+914,0.14,C  - CT   | CH secondary isopropyl amine,12.011,oplsaa.lt,C,6
+915,0.15,C  - CT   | CH tertiary isopropyl amine,12.011,oplsaa.lt,C,6
+916,0.18,C  - CA   | C(NH2) aniline,12.011,oplsaa.lt,C,6
+917,0.2,C  - CA   | C(NHR) N-methylaniline,12.011,oplsaa.lt,C,6
+918,0.21,"C  - CA   | C(NR2) N,N-dimethylaniline",12.011,oplsaa.lt,C,6
+919,0.115,C  - CT   | C in CH2NH2 - benzyl amines; C(CH2NH2) is,12.011,oplsaa.lt,C,6
+920,0.175,C  - CT   | C in CHRNH2 - benzyl amines,12.011,oplsaa.lt,C,6
+921,0.235,C  - CT   | C in CR2NH2 - benzyl amines,12.011,oplsaa.lt,C,6
+922,0.195,C  - CT   | C in CH2OR - benzyl ethers; C(CH2OR) is,12.011,oplsaa.lt,C,6
+923,0.1525,C  - CT   | C in CH2SR - benzyl sulfides; C(CH2SR) is,12.011,oplsaa.lt,C,6
+924,0.135,C  - CT   | C in CH2NHR - benzyl amines; C(CH2NH2) is,12.011,oplsaa.lt,C,6
+925,-0.2,C  - CZ   | alkyne C%C - acetylene,12.011,oplsaa.lt,C,6
+927,0.02,C  - CT   | H3C-C%C,12.011,oplsaa.lt,C,6
+928,0.08,C  - CT   | RCH2-C%C,12.011,oplsaa.lt,C,6
+929,0.14,C  - CT   | R2CH-C%C,12.011,oplsaa.lt,C,6
+930,0.2,C  - CT   | R3C-C%C,12.011,oplsaa.lt,C,6
+931,0.45,"C  - CO   | C1' of (ade, gua) by Deping",12.011,oplsaa.lt,C,6
+932,0.48,C  - CO   | C1' of cyt by Deping,12.011,oplsaa.lt,C,6
+933,0.51,"C  - CO   | C1' of (ura, thy) by Deping",12.011,oplsaa.lt,C,6
+939,0.0,C  - CZ   | alkyne RC%CR - only did MC for MeCCMe,12.011,oplsaa.lt,C,6
+942,0.09,C  - CT   | C in CH3NHR2+,12.011,oplsaa.lt,C,6
+943,0.15,C  - CT   | C in RCH2NHR2+,12.011,oplsaa.lt,C,6
+944,0.21,C  - CT   | C in R2CHNHR2+,12.011,oplsaa.lt,C,6
+945,0.27,C  - CT   | C in R3CNHR2+,12.011,oplsaa.lt,C,6
+946,0.096,C  - CW   | C2 in 2-phenylfuran,12.011,oplsaa.lt,C,6
+947,-0.039,C  - CS   | C3 in 3-phenylfuran,12.011,oplsaa.lt,C,6
+948,0.027,C  - C!   | C2' in 2-phenylfuran,12.011,oplsaa.lt,C,6
+949,0.011,C  - C!   | C3' in 2-phenylfuran,12.011,oplsaa.lt,C,6
+951,-0.029,C  - CT   | glycine zwit. 6-31G* CHELPG charges,12.011,oplsaa.lt,C,6
+952,0.7,C  - C~   | glycine zwit. 6-31G* CHELPG charges,12.011,oplsaa.lt,C,6
+957,0.02,"C  - CT   | RCH2F "" "" tentative",12.011,oplsaa.lt,C,6
+959,0.12,"C  - CT   | R2CHF "" "" tentative",12.011,oplsaa.lt,C,6
+960,0.22,"C  - CT   | R3CF "" "" tentative",12.011,oplsaa.lt,C,6
+961,0.36,"C  - CF   | CF3 perfluoroalkanes JPC A, 105, 4118",12.011,oplsaa.lt,C,6
+962,0.24,"C  - CF   | CF2 perfluoroalkanes """,12.011,oplsaa.lt,C,6
+963,0.12,"C  - CF   | CF perfluoroalkanes """,12.011,oplsaa.lt,C,6
+964,0.48,"C  - CF   | CF4 """,12.011,oplsaa.lt,C,6
+966,0.25,C  - CT   | CF2H difluoromethylbenzene,12.011,oplsaa.lt,C,6
+968,-0.08,C  - CT   | FCH2COO- fluoroacetate tentative,12.011,oplsaa.lt,C,6
+969,-0.106,"C  - CT   | ClCH2COO- chloroacetate """,12.011,oplsaa.lt,C,6
+971,-0.006,"C  - CT   | RCH2Cl "" "" 152",12.011,oplsaa.lt,C,6
+973,0.097,"C  - CT   | R2CHCl "" "" tentative",12.011,oplsaa.lt,C,6
+974,0.2,"C  - CT   | R3CCl "" "" tentative",12.011,oplsaa.lt,C,6
+976,-0.006,"C  - CT   | RCH2Br "" "" """,12.011,oplsaa.lt,C,6
+978,0.097,"C  - CT   | R2CHBr "" "" tentative",12.011,oplsaa.lt,C,6
+979,0.2,"C  - CT   | R3CBr "" "" tentative",12.011,oplsaa.lt,C,6
+983,0.1,C  - CA   | C(OCF3): trifluoroanisole,12.011,oplsaa.lt,C,6
+985,0.6,C  - CT   | C in CF3: trifluoroanisole,12.011,oplsaa.lt,C,6
+988,-0.045,"C  - CA   | ipso C in N-methyl,N-phenylacetamide",12.011,oplsaa.lt,C,6
+989,0.145,C  - CT   | C in CH2NR2 - benzyl amines; C(CH2NH2) is,12.011,oplsaa.lt,C,6
+990,0.888,C  - C~   | C in hydroxamic acid jtr 11/98,12.011,oplsaa.lt,C,6
+991,1.003,C  - C~   | C in aromatic hydroxamic aciT,12.011,oplsaa.lt,C,6
+997,0.225,C  - CT   | C in CHROR - benzyl ethers; C(CHROR) is,12.011,oplsaa.lt,C,6
+998,0.255,C  - CT   | C in CRROR - benzyl ethers; C(CRROR) is,12.011,oplsaa.lt,C,6
+1000,-0.034,C  - C!   | 3-phenyl pyrrole C3,12.011,oplsaa.lt,C,6
+1001,0.003,C  - C!   | 3-phenyl pyrrole C3',12.011,oplsaa.lt,C,6
+1002,0.3,C  - C!   | 4-phenyl imidazole C4,12.011,oplsaa.lt,C,6
+1003,-0.04,C  - C!   | 4-phenyl imidazole C4',12.011,oplsaa.lt,C,6
+1004,-0.0575,C  - CA   | diphenylmethane Cipso,12.011,oplsaa.lt,C,6
+1009,0.175,C  - CA   | C(Cl) chlorobenzene with X site,12.011,oplsaa.lt,C,6
+1011,-0.07,C  - CT   | C(I) iodoalkane - tentative - primary,12.011,oplsaa.lt,C,6
+1012,0.03,C  - CT   | C(I) iodoalkane - tentative - secondary,12.011,oplsaa.lt,C,6
+1013,0.13,C  - CT   | C(I) iodoalkane - tentative - tertiary,12.011,oplsaa.lt,C,6
+1016,0.17,C  - CA   | C(Br) bromobenzene with X site,12.011,oplsaa.lt,C,6
+1018,0.15,C  - CA   | C(I) iodobenzene with X site,12.011,oplsaa.lt,C,6
+1022,0.155,C  - CA   | benzene C on N of N-phenyl sulfonamide,12.011,oplsaa.lt,C,6
+1026,0.14,C  - CY   | CH2 epoxide,12.011,oplsaa.lt,C,6
+1027,0.17,C  - CY   | CH epoxide,12.011,oplsaa.lt,C,6
+1028,0.2,C  - CY   | C epoxide,12.011,oplsaa.lt,C,6
+1032,-0.1,C  - CA   | ipso C in benzoate ion,12.011,oplsaa.lt,C,6
+1034,0.218,C  - CA   | ipso C in N-phenylurea,12.011,oplsaa.lt,C,6
+1035,0.6,C  - C~   | C: C=O in tert amide. Acyl R in amides,12.011,oplsaa.lt,C,6
+1038,0.0,C  - CT   | C on N: tertiary amide CH3,12.011,oplsaa.lt,C,6
+1039,0.06,C  - CT   | C on N: tertiary amide CH2R,12.011,oplsaa.lt,C,6
+1040,0.12,C  - CT   | C on N: tertiary amide CHR2,12.011,oplsaa.lt,C,6
+1041,0.18,C  - CT   | C on N: tertiary amide CR3,12.011,oplsaa.lt,C,6
+1043,0.57,C  - C~   | C: C=O in tert formamide.,12.011,oplsaa.lt,C,6
+1049,0.02,C  - CT   | CH; Calpha in beta-2-peptides,12.011,oplsaa.lt,C,6
+1050,-0.04,"C  - CT   | CH2; Calpha in all (M, N-ter)",12.011,oplsaa.lt,C,6
+1051,0.0,"C  - CT   | CH2; Cbeta in b-Gly (M, C-ter)",12.011,oplsaa.lt,C,6
+1052,0.06,"C  - CT   | CH; Cbeta in most (M, C-ter)",12.011,oplsaa.lt,C,6
+1053,-0.07,"C  - CT   | CH; Cbeta in b-Pro (M, C-ter)",12.011,oplsaa.lt,C,6
+1054,-0.14,C  - CT   | CH2; Calpha for all (C-ter),12.011,oplsaa.lt,C,6
+1055,0.17,C  - CT   | CH; Cbeta for most (N-ter),12.011,oplsaa.lt,C,6
+1056,0.11,C  - CT   | CH; Cbeta for b-Gly (N-ter),12.011,oplsaa.lt,C,6
+1057,0.15,C  - CT   | CH; Cbeta for b-Pro (N-ter),12.011,oplsaa.lt,C,6
+1058,0.17,C  - CT   | CH2; Cepsilon for b-Pro (N-ter),12.011,oplsaa.lt,C,6
+1065,-0.26,"C  - CT   | CH3 on Si in silane, """,12.011,oplsaa.lt,C,6
+1066,-0.2,"C  - CT   | CH2 on Si in silane, """,12.011,oplsaa.lt,C,6
+1067,-0.14,"C  - CT   | CH on Si in silane, """,12.011,oplsaa.lt,C,6
+1068,-0.08,"C  - CT   | C on Si in silane, """,12.011,oplsaa.lt,C,6
+1069,-0.08,C  - CA   | C ipso in phenyl silane,12.011,oplsaa.lt,C,6
+1096,-0.23,C  - CA   | C in C5H5- cyclopentadienyl anion,12.011,oplsaa.lt,C,6
+1098,-0.099,C  - CA   | C in C5H5 cyclopentadienyl radical,12.011,oplsaa.lt,C,6
+1120,-0.05,C  - CT   | C in CH3NR3+ July 2005,12.011,oplsaa.lt,C,6
+1121,0.05,C  - CT   | C in RCH2NR3+ WLJ,12.011,oplsaa.lt,C,6
+1122,0.15,C  - CT   | C in R2CHNR3+ ammonium,12.011,oplsaa.lt,C,6
+1123,0.25,C  - CT   | C in R3CNR3+,12.011,oplsaa.lt,C,6
+1126,0.135,C  - CA   | Cipso (ArNR3+),12.011,oplsaa.lt,C,6
+1128,0.155,C  - CA   | Cipso (ArNR2H+),12.011,oplsaa.lt,C,6
+1151,0.0,C  - C|   | triene C (R2-C=) central C=C,12.011,oplsaa.lt,C,6
+1152,-0.115,C  - C|   | triene C (RH-C=) central C=C,12.011,oplsaa.lt,C,6
+1154,-0.25,C  - CM   | allene C1 CH2,12.011,oplsaa.lt,C,6
+1155,-0.1,C  - CM   | allene C1 CHR,12.011,oplsaa.lt,C,6
+1156,0.05,C  - CM   | allene C1 CR2,12.011,oplsaa.lt,C,6
+1157,-0.1,C  - C°   | allene C2,12.011,oplsaa.lt,C,6
+1158,0.2,C  - C°   | ketene C2,12.011,oplsaa.lt,C,6
+1160,0.7,C  - C°   | CO2 Madura 2009 carbon dioxide,12.011,oplsaa.lt,C,6
+1200,0.088,C  - CT   | CB in N-Me HIS,12.011,oplsaa.lt,C,6
+1234,0.35,C  - CR   | C2 thiazole jlj0003,12.011,oplsaa.lt,C,6
+1236,0.0,C  - CV   | C4 thiazole jlj0003,12.011,oplsaa.lt,C,6
+1237,-0.15,C  - CW   | C5 thiazole jlj0003,12.011,oplsaa.lt,C,6
+1260,0.1263,C  - CT   | CH2 Trifluoroethanol TFE,12.011,oplsaa.lt,C,6
+1261,0.5323,C  - CT   | CF3 E Duffy Thesis 1994,12.011,oplsaa.lt,C,6
+1268,-0.005,C  - CY   | CHCH=CH2 vinylcyclopropane OPLS-2020,12.011,oplsaa.lt,C,6
+1269,-0.17,C  - CM   | vinylcyclopropane,12.011,oplsaa.lt,C,6
+1270,0.08,C  - CY   | CHC%CH ethynylcyclopropane OPLS-2020,12.011,oplsaa.lt,C,6
+1271,-0.14,C  - CZ   | ethynylcyclopropane,12.011,oplsaa.lt,C,6
+48,0.248,"""Carbon Tetrachloride""",12.011,oplsaa2008.lt,C,6
+80,-0.18,"""Alkane CH3-""",12.011,oplsaa2008.lt,C,6
+81,-0.12,"""Alkane -CH2-""",12.011,oplsaa2008.lt,C,6
+82,-0.06,"""Alkane >CH-""",12.011,oplsaa2008.lt,C,6
+83,-0.24,"""Methane CH4""",12.011,oplsaa2008.lt,C,6
+84,0.0,"""Alkane >C<""",12.011,oplsaa2008.lt,C,6
+86,0.0,"""Alkene R2-C=""",12.011,oplsaa2008.lt,C,6
+87,-0.115,"""Alkene RH-C=""",12.011,oplsaa2008.lt,C,6
+88,-0.23,"""Alkene H2-C=""",12.011,oplsaa2008.lt,C,6
+90,-0.115,"""Aromatic C""",12.011,oplsaa2008.lt,C,6
+92,0.0,"""Naphthalene Fusion C""",12.011,oplsaa2008.lt,C,6
+93,-0.065,"""Methyl Benzene CH3-""",12.011,oplsaa2008.lt,C,6
+94,-0.005,"""Ethyl Benzene -CH2-""",12.011,oplsaa2008.lt,C,6
+95,-0.115,"""Diene =CH-CH=""",12.011,oplsaa2008.lt,C,6
+99,0.145,"""Alcohol CH3OH & RCH2OH""",12.011,oplsaa2008.lt,C,6
+100,0.205,"""Alcohol R2CHOH""",12.011,oplsaa2008.lt,C,6
+101,0.265,"""Alcohol R3COH""",12.011,oplsaa2008.lt,C,6
+102,0.1263,"""Trifluoroethanol -CH2-""",12.011,oplsaa2008.lt,C,6
+103,0.5323,"""Trifluoroethanol CF3-""",12.011,oplsaa2008.lt,C,6
+108,0.15,"""Phenol C-OH""",12.011,oplsaa2008.lt,C,6
+115,0.145,"""Diol & Triol -CH2OH""",12.011,oplsaa2008.lt,C,6
+116,0.205,"""Diol & Triol -CHROH""",12.011,oplsaa2008.lt,C,6
+117,0.265,"""Diol & Triol -CR2OH""",12.011,oplsaa2008.lt,C,6
+120,0.0,"""Diene =CR-CR=""",12.011,oplsaa2008.lt,C,6
+123,0.11,"""Methyl Ether CH3OR""",12.011,oplsaa2008.lt,C,6
+124,0.14,"""Ethyl Ether -CH2OR""",12.011,oplsaa2008.lt,C,6
+125,0.17,"""Isopropyl Ether >CHOR""",12.011,oplsaa2008.lt,C,6
+126,0.2,"""t-Butyl Ether COR""",12.011,oplsaa2008.lt,C,6
+131,0.2,"""Acetal RO-CH2-OR""",12.011,oplsaa2008.lt,C,6
+133,0.265,"""Hemiacetal RO-CH2-OH""",12.011,oplsaa2008.lt,C,6
+135,0.3,"""Acetal RO-CHR-OR""",12.011,oplsaa2008.lt,C,6
+137,0.365,"""Hemiacetal RO-CHR-OH""",12.011,oplsaa2008.lt,C,6
+139,0.4,"""Acetal RO-CR2-OR""",12.011,oplsaa2008.lt,C,6
+140,0.465,"""Hemiacetal RO-CR2-OH""",12.011,oplsaa2008.lt,C,6
+141,0.085,"""Anisole C-OCH3""",12.011,oplsaa2008.lt,C,6
+148,0.06,"""Thiol -CH2-SH""",12.011,oplsaa2008.lt,C,6
+149,0.12,"""Thiol >CH-SH""",12.011,oplsaa2008.lt,C,6
+150,0.18,"""Thiol C-SH""",12.011,oplsaa2008.lt,C,6
+151,0.0375,"""Methyl Sulfide CH3-SR""",12.011,oplsaa2008.lt,C,6
+152,0.0975,"""Sulfide RCH2-SR""",12.011,oplsaa2008.lt,C,6
+153,0.1575,"""Sulfide R2CH-SR""",12.011,oplsaa2008.lt,C,6
+154,0.2175,"""Sulfide R3C-SR""",12.011,oplsaa2008.lt,C,6
+155,0.0375,"""Disulfide CH3-S-SR""",12.011,oplsaa2008.lt,C,6
+156,0.0975,"""Disulfide RCH2-S-SR""",12.011,oplsaa2008.lt,C,6
+157,0.1575,"""Disulfide R2CH-S-SR""",12.011,oplsaa2008.lt,C,6
+158,0.2175,"""Disulfide R3C-S-SR""",12.011,oplsaa2008.lt,C,6
+159,0.0,"""Methanethiol CH3-SH""",12.011,oplsaa2008.lt,C,6
+160,0.2,"""Benzyl Alcohol -CH2OH""",12.011,oplsaa2008.lt,C,6
+161,0.26,"""Benzyl Alcohol -CHROH""",12.011,oplsaa2008.lt,C,6
+162,0.32,"""Benzyl Alcohol -CR2OH""",12.011,oplsaa2008.lt,C,6
+163,-0.055,"""Benzyl Alcohol/Nitrile""",12.011,oplsaa2008.lt,C,6
+165,0.08,"""RCH2-NH2 & GLY CA""",12.011,oplsaa2008.lt,C,6
+166,0.14,"""RCHR-NH2 & ALA CA""",12.011,oplsaa2008.lt,C,6
+167,0.2,"""R3C-NH2 & AIB CA""",12.011,oplsaa2008.lt,C,6
+169,0.005,"""Chloroalkene Cl-CH=""",12.011,oplsaa2008.lt,C,6
+170,0.1025,"""Thioanisole C-SCH3""",12.011,oplsaa2008.lt,C,6
+171,0.14,"""Amide -NH-CHR2""",12.011,oplsaa2008.lt,C,6
+172,0.2,"""Amide -NH-CR3""",12.011,oplsaa2008.lt,C,6
+173,0.7,"""Benzophenone C=O""",12.011,oplsaa2008.lt,C,6
+174,0.565,"""Benzaldehyde C=O""",12.011,oplsaa2008.lt,C,6
+175,0.585,"""Acetophenone C=O""",12.011,oplsaa2008.lt,C,6
+176,0.615,"""Benzamide C=O""",12.011,oplsaa2008.lt,C,6
+177,0.5,"""Amide C=O""",12.011,oplsaa2008.lt,C,6
+184,0.02,"""Amide -NH-CH3""",12.011,oplsaa2008.lt,C,6
+185,-0.11,"""Amide -NR-CH3""",12.011,oplsaa2008.lt,C,6
+186,0.08,"""Amide -NH-CH2R""",12.011,oplsaa2008.lt,C,6
+187,-0.05,"""Amide -NR-CH2R & PRO CD""",12.011,oplsaa2008.lt,C,6
+188,0.01,"""Amide -NR-CHR2 & PRO CA""",12.011,oplsaa2008.lt,C,6
+189,0.142,"""Urea C=O""",12.011,oplsaa2008.lt,C,6
+194,0.42,"""Imide C=O""",12.011,oplsaa2008.lt,C,6
+198,-0.12,"""Imide CH3-CONHCO-""",12.011,oplsaa2008.lt,C,6
+199,-0.06,"""Imide -CH2-CONHCO-""",12.011,oplsaa2008.lt,C,6
+200,0.0,"""Imide >CH-CONHCO-""",12.011,oplsaa2008.lt,C,6
+201,0.06,"""Imide C-CONHCO-""",12.011,oplsaa2008.lt,C,6
+202,0.035,"""Benzonitrile C-CN""",12.011,oplsaa2008.lt,C,6
+203,0.395,"""Benzonitrile -CN""",12.011,oplsaa2008.lt,C,6
+205,0.18,"""Chlorobenzene C-Cl""",12.011,oplsaa2008.lt,C,6
+208,0.085,"""N-Phenylacetamide N-CA""",12.011,oplsaa2008.lt,C,6
+209,0.52,"""Carboxylic Acid -COOH""",12.011,oplsaa2008.lt,C,6
+213,0.7,"""Carboxylate COO-""",12.011,oplsaa2008.lt,C,6
+215,-0.28,"""Carboxylate CH3-COO-""",12.011,oplsaa2008.lt,C,6
+216,-0.22,"""Carboxylate RCH2-COO-""",12.011,oplsaa2008.lt,C,6
+217,-0.16,"""Carboxylate R2CH-COO-""",12.011,oplsaa2008.lt,C,6
+218,-0.1,"""Carboxylate R3C-COO-""",12.011,oplsaa2008.lt,C,6
+219,0.45,"""Aldehyde/Acyl Halide C=O""",12.011,oplsaa2008.lt,C,6
+222,0.47,"""Ketone C=O""",12.011,oplsaa2008.lt,C,6
+225,0.04,"""C-Terminal ALA CA""",12.011,oplsaa2008.lt,C,6
+226,-0.02,"""C-Terminal GLY CA""",12.011,oplsaa2008.lt,C,6
+227,0.1,"""C-Terminal AIB CA""",12.011,oplsaa2008.lt,C,6
+228,-0.09,"""C-Terminal PRO CA""",12.011,oplsaa2008.lt,C,6
+234,0.13,"""Ammonium CH3-NH3+""",12.011,oplsaa2008.lt,C,6
+235,0.19,"""CH3NH3+/N-Term GLY CA""",12.011,oplsaa2008.lt,C,6
+236,0.25,"""RCH2NH3+/N-Term ALA CA""",12.011,oplsaa2008.lt,C,6
+237,0.31,"""R3C-NH3+/N-Term AIB CA""",12.011,oplsaa2008.lt,C,6
+238,0.23,"""N-Terminal PRO CA""",12.011,oplsaa2008.lt,C,6
+239,0.17,"""N-Terminal PRO CD""",12.011,oplsaa2008.lt,C,6
+240,0.11,"""Ammonium CH3-NH2R+""",12.011,oplsaa2008.lt,C,6
+241,0.09,"""GLY Zwitterion CA""",12.011,oplsaa2008.lt,C,6
+242,0.15,"""ALA Zwitterion CA""",12.011,oplsaa2008.lt,C,6
+245,0.64,"""Guanidinium C+""",12.011,oplsaa2008.lt,C,6
+248,0.2,"""Me Guanidinium CH3-""",12.011,oplsaa2008.lt,C,6
+249,-0.11,"""Et Guanidinium CH3-""",12.011,oplsaa2008.lt,C,6
+250,0.19,"""Et Guan -CH2- & ARG CD""",12.011,oplsaa2008.lt,C,6
+251,-0.05,"""Pr Guan -CH2- & ARG CG""",12.011,oplsaa2008.lt,C,6
+255,0.36,"""Diaminopyridine C2""",12.011,oplsaa2008.lt,C,6
+258,-0.15,"""Diaminopyridine C3""",12.011,oplsaa2008.lt,C,6
+260,-0.04,"""Diaminopyridine C4""",12.011,oplsaa2008.lt,C,6
+263,0.5,"""Uracil & Thymine C2""",12.011,oplsaa2008.lt,C,6
+265,0.45,"""Uracil & Thymine C4""",12.011,oplsaa2008.lt,C,6
+266,-0.07,"""Uracil & Thymine C5""",12.011,oplsaa2008.lt,C,6
+267,0.08,"""Uracil & Thymine C6""",12.011,oplsaa2008.lt,C,6
+274,-0.14,"""Thymine CH3-""",12.011,oplsaa2008.lt,C,6
+277,0.55,"""Cytosine C2""",12.011,oplsaa2008.lt,C,6
+279,0.46,"""Cytosine C4""",12.011,oplsaa2008.lt,C,6
+280,-0.06,"""Cytosine C5""",12.011,oplsaa2008.lt,C,6
+281,0.1,"""Cytosine C6""",12.011,oplsaa2008.lt,C,6
+290,0.22,"""Adenine C2""",12.011,oplsaa2008.lt,C,6
+292,0.38,"""Adenine C4""",12.011,oplsaa2008.lt,C,6
+293,0.15,"""Adenine C5""",12.011,oplsaa2008.lt,C,6
+294,0.44,"""Adenine C6""",12.011,oplsaa2008.lt,C,6
+296,0.2,"""Adenine & Guanine C8""",12.011,oplsaa2008.lt,C,6
+305,0.46,"""Guanine C2""",12.011,oplsaa2008.lt,C,6
+307,0.34,"""Guanine C4""",12.011,oplsaa2008.lt,C,6
+308,0.12,"""Guanine C5""",12.011,oplsaa2008.lt,C,6
+309,0.52,"""Guanine C6""",12.011,oplsaa2008.lt,C,6
+314,-0.01,"""9-Me A & 9-Me-G CH3-""",12.011,oplsaa2008.lt,C,6
+316,-0.01,"""1-Me-U & 1-Me-T CH3-""",12.011,oplsaa2008.lt,C,6
+318,-0.01,"""1-Me-Cytosine CH3-""",12.011,oplsaa2008.lt,C,6
+321,0.65,"""CytosineH+ C2""",12.011,oplsaa2008.lt,C,6
+323,0.66,"""CytosineH+ C4""",12.011,oplsaa2008.lt,C,6
+324,-0.06,"""CytosineH+ C5""",12.011,oplsaa2008.lt,C,6
+325,0.1,"""CytosineH+ C6""",12.011,oplsaa2008.lt,C,6
+334,0.01,"""1-Me-CytosineH+ CH3-""",12.011,oplsaa2008.lt,C,6
+340,0.18,"""Trifluorothymine CF3-""",12.011,oplsaa2008.lt,C,6
+342,0.12,"""Chloroalkene Cl2-C=""",12.011,oplsaa2008.lt,C,6
+357,-0.4,"""Methyl Thiolate CH3S-""",12.011,oplsaa2008.lt,C,6
+360,-0.2,"""Methoxide CH3O-""",12.011,oplsaa2008.lt,C,6
+363,-1.07,"""Nitrile Anion CNCH2-""",12.011,oplsaa2008.lt,C,6
+365,0.51,"""Nitrile Anion CNCH2-""",12.011,oplsaa2008.lt,C,6
+367,-0.3,"""Me Amine Anion CH3NH-""",12.011,oplsaa2008.lt,C,6
+371,-0.4,"""Ethyl Anion CH3-CH2-""",12.011,oplsaa2008.lt,C,6
+373,0.0,"""Ethyl Anion CH3-CH2-""",12.011,oplsaa2008.lt,C,6
+384,0.3,"""DiMe Phosphate CH3-O""",12.011,oplsaa2008.lt,C,6
+389,0.44,"""Me Phosphate CH3-O""",12.011,oplsaa2008.lt,C,6
+394,0.28,"""Me MePhosphonate CH3-O""",12.011,oplsaa2008.lt,C,6
+396,-0.51,"""Me MePhosphonate CH3-P""",12.011,oplsaa2008.lt,C,6
+398,-0.14,"""Bz MePhosphonate Cipso""",12.011,oplsaa2008.lt,C,6
+399,0.32,"""Bz MePhosphonate CH3-O""",12.011,oplsaa2008.lt,C,6
+401,-0.04,"""Me BzPhosphonate Cipso""",12.011,oplsaa2008.lt,C,6
+402,-0.47,"""Me BzPhosphonate CH3-P""",12.011,oplsaa2008.lt,C,6
+404,0.14,"""Ph Phosphate Cipso""",12.011,oplsaa2008.lt,C,6
+405,0.24,"""Barbiturate C6(R2)""",12.011,oplsaa2008.lt,C,6
+406,0.51,"""Ester -COOR""",12.011,oplsaa2008.lt,C,6
+409,0.16,"""Methyl Ester -OCH3""",12.011,oplsaa2008.lt,C,6
+411,0.635,"""Benzoic Acid -COOH""",12.011,oplsaa2008.lt,C,6
+412,0.625,"""Aryl Ester -COOR""",12.011,oplsaa2008.lt,C,6
+413,0.135,"""Phenyl Ester Cipso""",12.011,oplsaa2008.lt,C,6
+417,-0.54,"""Sulfonamide CH3-S""",12.011,oplsaa2008.lt,C,6
+423,0.18,"""N-Me Sulfonamide CH3-""",12.011,oplsaa2008.lt,C,6
+425,0.39,"""Sulfonamide N-CH2-R""",12.011,oplsaa2008.lt,C,6
+427,-0.18,"""N-Et Sulfonamide CH3-""",12.011,oplsaa2008.lt,C,6
+429,0.0,"""Aryl Sulfonamide C-SO2N""",12.011,oplsaa2008.lt,C,6
+430,0.03,"""Aryl Sulfoxide C-S=O""",12.011,oplsaa2008.lt,C,6
+431,0.19,"""alkoxy carbon, Et Ester -OCH2R"" (Price++Jorgensen,2001)",12.011,oplsaa2008.lt,C,6
+432,0.22,"""i-Pr Ester -OCHR2""",12.011,oplsaa2008.lt,C,6
+433,0.25,"""t-Bu Ester -OCR3""",12.011,oplsaa2008.lt,C,6
+439,-0.035,"""Sulfoxide CH3-SO-R""",12.011,oplsaa2008.lt,C,6
+440,0.025,"""Sulfoxide -CH2-SO-R""",12.011,oplsaa2008.lt,C,6
+441,0.075,"""TRP CG""",12.011,oplsaa2008.lt,C,6
+442,-0.055,"""TRP CD""",12.011,oplsaa2008.lt,C,6
+443,0.13,"""TRP CE""",12.011,oplsaa2008.lt,C,6
+446,-0.005,"""HIS CB""",12.011,oplsaa2008.lt,C,6
+447,0.295,"""HID & HIE CE1""",12.011,oplsaa2008.lt,C,6
+448,-0.015,"""HID CD2 & HIE CG""",12.011,oplsaa2008.lt,C,6
+449,0.015,"""HID CG & HIE CD2""",12.011,oplsaa2008.lt,C,6
+450,0.385,"""HIP CE1""",12.011,oplsaa2008.lt,C,6
+451,0.215,"""HIP CG & CD2""",12.011,oplsaa2008.lt,C,6
+455,-0.115,"""TRP CD1""",12.011,oplsaa2008.lt,C,6
+456,0.055,"""i-Pr Benzene -CHMe2""",12.011,oplsaa2008.lt,C,6
+457,0.115,"""t-Bu Benzene -CMe3""",12.011,oplsaa2008.lt,C,6
+458,-0.03,"""Vinyl Ether =CH-OR""",12.011,oplsaa2008.lt,C,6
+459,0.085,"""Vinyl Ether =CR-OR""",12.011,oplsaa2008.lt,C,6
+460,0.0,"""Biphenyl C1""",12.011,oplsaa2008.lt,C,6
+462,0.473,"""Pyridine C1""",12.011,oplsaa2008.lt,C,6
+463,-0.447,"""Pyridine C2""",12.011,oplsaa2008.lt,C,6
+464,0.227,"""Pyridine C3""",12.011,oplsaa2008.lt,C,6
+469,0.192,"""Pyrazine CH""",12.011,oplsaa2008.lt,C,6
+472,0.874,"""Pyrimidine C2""",12.011,oplsaa2008.lt,C,6
+473,0.653,"""Pyrimidine C4""",12.011,oplsaa2008.lt,C,6
+474,-0.689,"""Pyrimidine C5""",12.011,oplsaa2008.lt,C,6
+479,0.378,"""Pyridazine C3""",12.011,oplsaa2008.lt,C,6
+480,-0.16,"""Pyridazine C4""",12.011,oplsaa2008.lt,C,6
+484,-0.163,"""Pyrrole C2""",12.011,oplsaa2008.lt,C,6
+485,-0.149,"""Pyrrole C3""",12.011,oplsaa2008.lt,C,6
+491,0.246,"""Pyrazole C3""",12.011,oplsaa2008.lt,C,6
+492,-0.32,"""Pyrazole C4""",12.011,oplsaa2008.lt,C,6
+493,-0.034,"""Pyrazole C5""",12.011,oplsaa2008.lt,C,6
+499,0.275,"""Imidazole C2""",12.011,oplsaa2008.lt,C,6
+501,0.185,"""Imidazole C4""",12.011,oplsaa2008.lt,C,6
+502,-0.286,"""Imidazole C5""",12.011,oplsaa2008.lt,C,6
+508,-0.019,"""Furan C2""",12.011,oplsaa2008.lt,C,6
+509,-0.154,"""Furan C3""",12.011,oplsaa2008.lt,C,6
+513,0.511,"""Oxazole C2""",12.011,oplsaa2008.lt,C,6
+515,0.169,"""Oxazole C4""",12.011,oplsaa2008.lt,C,6
+516,-0.148,"""Oxazole C5""",12.011,oplsaa2008.lt,C,6
+522,0.405,"""Isoxazole C3""",12.011,oplsaa2008.lt,C,6
+523,-0.455,"""Isoxazole C4""",12.011,oplsaa2008.lt,C,6
+524,0.25,"""Isoxazole C5""",12.011,oplsaa2008.lt,C,6
+529,0.001,"""Indole C2""",12.011,oplsaa2008.lt,C,6
+530,-0.39,"""Indole C3""",12.011,oplsaa2008.lt,C,6
+531,-0.27,"""Indole C4""",12.011,oplsaa2008.lt,C,6
+532,-0.127,"""Indole C5""",12.011,oplsaa2008.lt,C,6
+533,-0.108,"""Indole C6""",12.011,oplsaa2008.lt,C,6
+534,-0.258,"""Indole C7""",12.011,oplsaa2008.lt,C,6
+535,0.22,"""Indole C8""",12.011,oplsaa2008.lt,C,6
+536,0.225,"""Indole C9""",12.011,oplsaa2008.lt,C,6
+545,0.425,"""Quinoline C2""",12.011,oplsaa2008.lt,C,6
+546,-0.359,"""Quinoline C3""",12.011,oplsaa2008.lt,C,6
+547,-0.008,"""Quinoline C4""",12.011,oplsaa2008.lt,C,6
+548,-0.197,"""Quinoline C5""",12.011,oplsaa2008.lt,C,6
+549,-0.112,"""Quinoline C6""",12.011,oplsaa2008.lt,C,6
+550,-0.07,"""Quinoline C7""",12.011,oplsaa2008.lt,C,6
+551,-0.307,"""Quinoline C8""",12.011,oplsaa2008.lt,C,6
+552,0.563,"""Quinoline C9""",12.011,oplsaa2008.lt,C,6
+553,-0.051,"""Quinoline C10""",12.011,oplsaa2008.lt,C,6
+562,0.679,"""Purine C2""",12.011,oplsaa2008.lt,C,6
+564,0.736,"""Purine C4""",12.011,oplsaa2008.lt,C,6
+565,0.038,"""Purine C5""",12.011,oplsaa2008.lt,C,6
+566,0.343,"""Purine C6""",12.011,oplsaa2008.lt,C,6
+568,0.452,"""Purine C8""",12.011,oplsaa2008.lt,C,6
+575,0.242,"""Thiazole C2""",12.011,oplsaa2008.lt,C,6
+577,0.228,"""Thiazole C4""",12.011,oplsaa2008.lt,C,6
+578,-0.299,"""Thiazole C5""",12.011,oplsaa2008.lt,C,6
+583,0.965,"""1,3,5-Triazine CH""",12.011,oplsaa2008.lt,C,6
+585,0.13,"""Serotonin C5-OH""",12.011,oplsaa2008.lt,C,6
+586,0.052,"""Serotonin CH2 on C3""",12.011,oplsaa2008.lt,C,6
+588,0.392,"""1,10-Phenanthroline C2""",12.011,oplsaa2008.lt,C,6
+589,-0.348,"""1,10-Phenanthroline C3""",12.011,oplsaa2008.lt,C,6
+590,0.02,"""1,10-Phenanthroline C4""",12.011,oplsaa2008.lt,C,6
+591,-0.042,"""1,10-Phenanthroline C12""",12.011,oplsaa2008.lt,C,6
+592,0.347,"""1,10-Phenanthroline C11""",12.011,oplsaa2008.lt,C,6
+593,-0.196,"""1,10-Phenanthroline C5""",12.011,oplsaa2008.lt,C,6
+599,0.166,"""1-Methylimidazole C2""",12.011,oplsaa2008.lt,C,6
+601,0.173,"""1-Methylimidazole C4""",12.011,oplsaa2008.lt,C,6
+602,-0.395,"""1-Methylimidazole C5""",12.011,oplsaa2008.lt,C,6
+603,-0.199,"""1-Methylimidazole CH3-""",12.011,oplsaa2008.lt,C,6
+608,-0.139,"""1-Et Imidazole RCH2-""",12.011,oplsaa2008.lt,C,6
+609,-0.079,"""1-iPr Imidazole R2CH-""",12.011,oplsaa2008.lt,C,6
+610,0.099,"""1-MeO-Me-Imidazole CH2""",12.011,oplsaa2008.lt,C,6
+611,-0.168,"""2-Me Pyridine CH3""",12.011,oplsaa2008.lt,C,6
+612,-0.108,"""2-Et Pyridine CH2""",12.011,oplsaa2008.lt,C,6
+613,-0.189,"""3-Me Pyridazine CH3""",12.011,oplsaa2008.lt,C,6
+614,-0.129,"""3-Et Pyridazine CH2""",12.011,oplsaa2008.lt,C,6
+615,-0.169,"""4-Me Pyrimidine CH3""",12.011,oplsaa2008.lt,C,6
+616,-0.109,"""4-Et Pyrimidine CH2""",12.011,oplsaa2008.lt,C,6
+617,-0.138,"""2-Me Pyrazine CH3""",12.011,oplsaa2008.lt,C,6
+618,-0.078,"""2-Et Pyrazine CH2""",12.011,oplsaa2008.lt,C,6
+619,-0.025,"""2-Me Pyrrole CH3""",12.011,oplsaa2008.lt,C,6
+620,0.035,"""2-Et Pyrrole CH2""",12.011,oplsaa2008.lt,C,6
+621,-0.038,"""2-Me Furan CH3""",12.011,oplsaa2008.lt,C,6
+622,0.022,"""2-Et Furan CH2""",12.011,oplsaa2008.lt,C,6
+625,0.523,"""6-Mercaptopurine C6""",12.011,oplsaa2008.lt,C,6
+626,0.5,"""Beta-Lactam N-C=O""",12.011,oplsaa2008.lt,C,6
+628,0.2275,"""Penicillin CH-N""",12.011,oplsaa2008.lt,C,6
+629,0.14,"""Penicillin CH-CO""",12.011,oplsaa2008.lt,C,6
+630,-0.008,"""3-Me Indole CH3""",12.011,oplsaa2008.lt,C,6
+631,0.588,"""2-Phenyl Pyridine C2""",12.011,oplsaa2008.lt,C,6
+632,-0.103,"""2-Phenyl Pyridine C2'""",12.011,oplsaa2008.lt,C,6
+633,-0.332,"""2-Phenyl Pyridine C3""",12.011,oplsaa2008.lt,C,6
+634,0.04,"""2-Phenyl Pyridine C3'""",12.011,oplsaa2008.lt,C,6
+635,0.342,"""2-Phenyl Pyridine C4""",12.011,oplsaa2008.lt,C,6
+636,-0.05,"""2-Phenyl Pyridine C4'""",12.011,oplsaa2008.lt,C,6
+641,0.619,"""t-Butyl Cation C+""",12.011,oplsaa2008.lt,C,6
+642,-0.395,"""t-Butyl Cation CH3-""",12.011,oplsaa2008.lt,C,6
+649,-0.344,"""Cl..CH3..Cl- Sn2 TS""",12.011,oplsaa2008.lt,C,6
+652,-0.12,"""Cyclopropane -CH2-""",12.011,oplsaa2008.lt,C,6
+653,-0.06,"""Cyclopropane -CHR-""",12.011,oplsaa2008.lt,C,6
+654,0.0,"""Cyclopropane -CR2-""",12.011,oplsaa2008.lt,C,6
+655,-0.23,"""Cyclopentadienyl Anion""",12.011,oplsaa2008.lt,C,6
+657,-0.099,"""Cyclopentadienyl Radical""",12.011,oplsaa2008.lt,C,6
+659,0.22,"""Fluorobenzene CF""",12.011,oplsaa2008.lt,C,6
+661,0.13,"""Hexafluorobenzene CF""",12.011,oplsaa2008.lt,C,6
+665,0.15,"""TrifluoroMeBenzene C-CF3""",12.011,oplsaa2008.lt,C,6
+666,0.45,"""TrifluoroMeBenzene CF3-""",12.011,oplsaa2008.lt,C,6
+668,0.2,"""Difluorobenzene CF""",12.011,oplsaa2008.lt,C,6
+670,0.2,"""Bromobenzene CBr""",12.011,oplsaa2008.lt,C,6
+672,0.1,"""Iodobenzene CI""",12.011,oplsaa2008.lt,C,6
+674,0.055,"""cProp/cBut Benzene C-Ar""",12.011,oplsaa2008.lt,C,6
+676,0.065,"""Thiophenol C-SH""",12.011,oplsaa2008.lt,C,6
+677,0.013,"""Benzamidine CG""",12.011,oplsaa2008.lt,C,6
+678,-0.106,"""Benzamidine CD""",12.011,oplsaa2008.lt,C,6
+679,-0.09,"""Benzamidine CE""",12.011,oplsaa2008.lt,C,6
+680,-0.119,"""Benzamidine CZ""",12.011,oplsaa2008.lt,C,6
+683,0.827,"""Benzamidine C+""",12.011,oplsaa2008.lt,C,6
+688,-0.02,"""Neutral MeGdn CH3-""",12.011,oplsaa2008.lt,C,6
+689,0.04,"""Neutral ARG CD""",12.011,oplsaa2008.lt,C,6
+693,0.55,"""Neutral ARG CZ (>C=)""",12.011,oplsaa2008.lt,C,6
+695,0.46,"""Alkyl Nitrile -CN""",12.011,oplsaa2008.lt,C,6
+696,-0.08,"""Acetonitrile CH3-CN""",12.011,oplsaa2008.lt,C,6
+697,-0.02,"""Alkyl Nitrile RCH2-CN""",12.011,oplsaa2008.lt,C,6
+698,0.04,"""Alkyl Nitrile R2CH-CN""",12.011,oplsaa2008.lt,C,6
+699,0.1,"""Alkyl Nitrile R3C-CN""",12.011,oplsaa2008.lt,C,6
+703,0.02,"""Nitromethane CH3-NO2""",12.011,oplsaa2008.lt,C,6
+705,0.08,"""Nitroalkane RCH2-NO2""",12.011,oplsaa2008.lt,C,6
+706,0.14,"""Nitroalkane R2CH-NO2""",12.011,oplsaa2008.lt,C,6
+707,0.2,"""Nitroalkane R3C-NO2""",12.011,oplsaa2008.lt,C,6
+709,0.09,"""Nitrobenzene C-NO2""",12.011,oplsaa2008.lt,C,6
+710,0.035,"""Benzonitrile -CH2-""",12.011,oplsaa2008.lt,C,6
+713,0.86,"""Propylene Carbonate C=O""",12.011,oplsaa2008.lt,C,6
+715,0.21,"""Propylene Carbonate CH2""",12.011,oplsaa2008.lt,C,6
+716,0.16,"""Propylene Carbonate CH""",12.011,oplsaa2008.lt,C,6
+717,-0.1,"""Propylene Carbonate CH3""",12.011,oplsaa2008.lt,C,6
+723,-0.5081,"""Phosphonium CH3-PR3+""",12.011,oplsaa2008.lt,C,6
+724,-0.008,"""Phosphonium RCH2-PR3+""",12.011,oplsaa2008.lt,C,6
+733,0.0,"""Amine CH3-NH2""",12.011,oplsaa2008.lt,C,6
+734,0.02,"""Amine CH3-NHR""",12.011,oplsaa2008.lt,C,6
+735,0.03,"""Amine CH3-NR2""",12.011,oplsaa2008.lt,C,6
+736,0.06,"""Amine RCH2-NH2""",12.011,oplsaa2008.lt,C,6
+737,0.08,"""Amine RCH2-NHR""",12.011,oplsaa2008.lt,C,6
+738,0.09,"""Amine RCH2-NR2""",12.011,oplsaa2008.lt,C,6
+742,0.12,"""Amine R2CH-NH2""",12.011,oplsaa2008.lt,C,6
+743,0.18,"""Amine R3C-NH2""",12.011,oplsaa2008.lt,C,6
+744,0.14,"""Amine R2CH-NHR""",12.011,oplsaa2008.lt,C,6
+745,0.15,"""Amine R2CH-NR2""",12.011,oplsaa2008.lt,C,6
+746,0.18,"""Aniline C-NH2""",12.011,oplsaa2008.lt,C,6
+747,0.2,"""N-Me Aniline C-NHR""",12.011,oplsaa2008.lt,C,6
+748,0.21,"""N-DiMe Aniline C-NR2""",12.011,oplsaa2008.lt,C,6
+749,0.115,"""Benzyl Amine -CH2NH2""",12.011,oplsaa2008.lt,C,6
+750,0.175,"""Benzyl Amine -CHRNH2""",12.011,oplsaa2008.lt,C,6
+751,0.235,"""Benzyl Amine -CR2NH2""",12.011,oplsaa2008.lt,C,6
+752,0.195,"""Benzyl Ether -CH2OR""",12.011,oplsaa2008.lt,C,6
+753,0.1525,"""Benzyl Sulfide -CH2SH""",12.011,oplsaa2008.lt,C,6
+754,0.135,"""Benzyl Amine -CH2NHR""",12.011,oplsaa2008.lt,C,6
+755,-0.21,"""Alkyne HCC-""",12.011,oplsaa2008.lt,C,6
+757,0.01,"""Alkyne RCCH R w/ 2/3 H""",12.011,oplsaa2008.lt,C,6
+758,0.01,"""Alkyne RCCH R w/ 1 H""",12.011,oplsaa2008.lt,C,6
+759,0.01,"""Alkyne RCCH R w/ O H/Ph""",12.011,oplsaa2008.lt,C,6
+761,0.45,"""A & G Sugar C1'""",12.011,oplsaa2008.lt,C,6
+762,0.48,"""C Sugar C1'""",12.011,oplsaa2008.lt,C,6
+763,0.51,"""U & T Sugar C1'""",12.011,oplsaa2008.lt,C,6
+769,0.0,"""Alkyne RCCR""",12.011,oplsaa2008.lt,C,6
+772,0.09,"""Ammonium CH3-NHR2+""",12.011,oplsaa2008.lt,C,6
+773,0.15,"""Ammonium RCH2-NHR2+""",12.011,oplsaa2008.lt,C,6
+774,0.21,"""Ammonium R2CH-NHR2+""",12.011,oplsaa2008.lt,C,6
+775,0.27,"""Ammonium R3C-NHR2+""",12.011,oplsaa2008.lt,C,6
+776,0.096,"""2-Phenyl Furan C2""",12.011,oplsaa2008.lt,C,6
+777,-0.039,"""2-Phenyl Furan C3""",12.011,oplsaa2008.lt,C,6
+778,0.027,"""2-Phenyl Furan C2'""",12.011,oplsaa2008.lt,C,6
+779,0.011,"""2-Phenyl Furan C3'""",12.011,oplsaa2008.lt,C,6
+781,-0.029,"""GLY Zwitterion CA""",12.011,oplsaa2008.lt,C,6
+782,0.7,"""GLY Zwitterion C""",12.011,oplsaa2008.lt,C,6
+787,0.02,"""Alkyl Fluoride RCH2-F""",12.011,oplsaa2008.lt,C,6
+789,0.12,"""Alkyl Fluoride R2CH-F""",12.011,oplsaa2008.lt,C,6
+790,0.22,"""Alkyl Fluoride R3C-F""",12.011,oplsaa2008.lt,C,6
+791,0.36,"""Perfluoroalkane CF3-""",12.011,oplsaa2008.lt,C,6
+792,0.24,"""Perfluoroalkane -CF2-""",12.011,oplsaa2008.lt,C,6
+793,0.12,"""Perfluoroalkane >CF-""",12.011,oplsaa2008.lt,C,6
+794,0.48,"""Tetrafluoromethane CF4""",12.011,oplsaa2008.lt,C,6
+796,0.25,"""DifluoroMeBenzene -CHF2""",12.011,oplsaa2008.lt,C,6
+798,-0.08,"""Fluoroacetate FCH2-COO-""",12.011,oplsaa2008.lt,C,6
+799,-0.106,"""Chloroacetate ClCH2-COO-""",12.011,oplsaa2008.lt,C,6
+801,-0.006,"""Alkyl Chloride RCH2-Cl""",12.011,oplsaa2008.lt,C,6
+803,0.097,"""Alkyl Chloride R2CH-Cl""",12.011,oplsaa2008.lt,C,6
+804,0.2,"""Alkyl Chloride R3C-Cl""",12.011,oplsaa2008.lt,C,6
+806,-0.006,"""Alkyl Bromide RCH2-Br""",12.011,oplsaa2008.lt,C,6
+808,0.097,"""Alkyl Bromide R2CH-Br""",12.011,oplsaa2008.lt,C,6
+809,0.2,"""Alkyl Bromide R3C-Br""",12.011,oplsaa2008.lt,C,6
+813,0.1,"""Trifluoroanisole C-OCF3""",12.011,oplsaa2008.lt,C,6
+815,0.6,"""Trifluoroanisole -OCF3""",12.011,oplsaa2008.lt,C,6
+818,-0.045,"""N-Me,N-PhAcetamide Cipso""",12.011,oplsaa2008.lt,C,6
+819,0.145,"""Benzyl Amine -CH2NR2""",12.011,oplsaa2008.lt,C,6
+820,0.888,"""Alkyl Hydroxamic Acid C""",12.011,oplsaa2008.lt,C,6
+821,1.003,"""Aryl Hydroxamic Acid C""",12.011,oplsaa2008.lt,C,6
+827,0.225,"""Benzyl Ether -CHROR""",12.011,oplsaa2008.lt,C,6
+828,0.255,"""Benzyl Ether -CR2OR""",12.011,oplsaa2008.lt,C,6
+829,-0.034,"""3-Phenyl Pyrrole C3""",12.011,oplsaa2008.lt,C,6
+830,0.003,"""3-Phenyl Pyrrole C3'""",12.011,oplsaa2008.lt,C,6
+831,0.3,"""4-Phenyl Imidazole C4""",12.011,oplsaa2008.lt,C,6
+832,-0.04,"""4-Phenyl Imidazole C4'""",12.011,oplsaa2008.lt,C,6
+833,-0.0575,"""Diphenylmethane Cipso""",12.011,oplsaa2008.lt,C,6
+835,-0.07,"""Alkyl Iodide RCH2-I""",12.011,oplsaa2008.lt,C,6
+836,0.03,"""Alkyl Iodide R2CH-I""",12.011,oplsaa2008.lt,C,6
+837,0.13,"""Alkyl Iodide R3C-I""",12.011,oplsaa2008.lt,C,6
+841,0.155,"""N-Ph Sulfonamide Cipso""",12.011,oplsaa2008.lt,C,6
+842,-0.1,"""Benzoate C-COO-""",12.011,oplsaa2008.lt,C,6
+844,0.218,"""N-Phenyl Urea Cipso""",12.011,oplsaa2008.lt,C,6
+845,0.6,"""Tertiary Amide -CO-NR2""",12.011,oplsaa2008.lt,C,6
+848,0.0,"""Tertiary Amide -NRCH3""",12.011,oplsaa2008.lt,C,6
+849,0.06,"""Tertiary Amide -NRCH2R""",12.011,oplsaa2008.lt,C,6
+850,0.12,"""Tertiary Amide -NRCHR2""",12.011,oplsaa2008.lt,C,6
+851,0.18,"""Tertiary Amide -NRCR3""",12.011,oplsaa2008.lt,C,6
+853,0.57,"""Tertiary Formamide C=O""",12.011,oplsaa2008.lt,C,6
+856,0.02,"""B2-Peptide CA""",12.011,oplsaa2008.lt,C,6
+857,-0.04,"""B3-Peptide CA Main/N-Ter""",12.011,oplsaa2008.lt,C,6
+858,0.0,"""B3-Pep CB GLY Main/C-Ter""",12.011,oplsaa2008.lt,C,6
+859,0.06,"""B3-Pep CB ALA Main/C-Ter""",12.011,oplsaa2008.lt,C,6
+860,-0.07,"""B3-Pep CB PRO Main/C-Ter""",12.011,oplsaa2008.lt,C,6
+861,-0.14,"""B3-Peptide CA C-Ter""",12.011,oplsaa2008.lt,C,6
+862,0.17,"""B3-Peptide CB ALA N-Ter""",12.011,oplsaa2008.lt,C,6
+863,0.11,"""B3-Peptide CB GLY N-Ter""",12.011,oplsaa2008.lt,C,6
+864,0.15,"""B3-Peptide CB PRO N-Ter""",12.011,oplsaa2008.lt,C,6
+865,0.17,"""B3-Peptide CE PRO N-Ter""",12.011,oplsaa2008.lt,C,6
+871,-0.43,"""Methyl Silane CH3-Si""",12.011,oplsaa2008.lt,C,6
+872,-0.37,"""Alkyl Silane RCH2-Si""",12.011,oplsaa2008.lt,C,6
+873,-0.31,"""Alkyl Silane R2CH-Si""",12.011,oplsaa2008.lt,C,6
+874,-0.25,"""Alkyl Silane R3C-Si""",12.011,oplsaa2008.lt,C,6
+888,-0.05,"""Ammonium CH3-NR3+""",12.011,oplsaa2008.lt,C,6
+889,0.05,"""Ammonium RCH2-NR3+""",12.011,oplsaa2008.lt,C,6
+890,0.15,"""Ammonium R2CH-NR3+""",12.011,oplsaa2008.lt,C,6
+891,0.25,"""Ammonium R3C-NR3+""",12.011,oplsaa2008.lt,C,6
+894,0.135,"""Anilinium C-NR3+""",12.011,oplsaa2008.lt,C,6
+896,0.155,"""Anilinium C-NHR2+""",12.011,oplsaa2008.lt,C,6
+897,0.0,"""Triene R2-C= (mid C=C)""",12.011,oplsaa2008.lt,C,6
+898,-0.115,"""Triene RH-C= (mid C=C)""",12.011,oplsaa2008.lt,C,6
+900,-0.25,"""Allene/Ketene H2C=C=X""",12.011,oplsaa2008.lt,C,6
+901,-0.1,"""Allene/Ketene HRC=C=X""",12.011,oplsaa2008.lt,C,6
+902,0.05,"""Allene/Ketene R2C=C=X""",12.011,oplsaa2008.lt,C,6
+903,-0.1,"""Allene =C=""",12.011,oplsaa2008.lt,C,6
+904,0.2,"""Ketene =C=""",12.011,oplsaa2008.lt,C,6
+906,0.088,"""N-Me-HIS CB""",12.011,oplsaa2008.lt,C,6
+6,0.0,C  - C~   |,12.011,oplsaa2024.lt,C,6
+54,-0.18,C  - CT   | n-CH3 all-atom C: alkanes,12.011,oplsaa2024.lt,C,6
+55,-0.18,C  - CT   | iso-CH3 all-atom C: alkanes,12.011,oplsaa2024.lt,C,6
+56,-0.18,C  - CT   | neo-CH3 all-atom C: alkanes,12.011,oplsaa2024.lt,C,6
+57,-0.12,C  - CT   | CH2 all-atom C: alkanes,12.011,oplsaa2024.lt,C,6
+58,-0.06,C  - CT   | CH all-atom C: alkanes,12.011,oplsaa2024.lt,C,6
+59,0.0,C  - CT   | C all-atom C: alkanes,12.011,oplsaa2024.lt,C,6
+61,-0.065,"C  - CT   | all-atom C: CH3, toluene",12.011,oplsaa2024.lt,C,6
+62,-0.005,"C  - CT   | all-atom C: CH2, ethyl benzene",12.011,oplsaa2024.lt,C,6
+63,0.055,"C  - CT   | all-atom C: CH, i-propyl benzene",12.011,oplsaa2024.lt,C,6
+64,0.115,"C  - CT   | all-atom C: C, t-butyl benzene",12.011,oplsaa2024.lt,C,6
+66,0.0,"C  - C4   | CH4 66-77: JACS,106,6638 (1984)",12.011,oplsaa2024.lt,C,6
+67,0.0,C  - C3   | CH3 (C1) ETHANE,12.011,oplsaa2024.lt,C,6
+68,0.0,C  - C3   | CH3 (C2) N-ALKANES,12.011,oplsaa2024.lt,C,6
+69,0.0,C  - C3   | CH3 (C3) ISOBUTANE,12.011,oplsaa2024.lt,C,6
+70,0.0,C  - C3   | CH3 (C4) NEOPENTANE,12.011,oplsaa2024.lt,C,6
+71,0.0,C  - C2   | CH2 (SP3) ALKANES,12.011,oplsaa2024.lt,C,6
+72,0.0,C  - C9   | CH2 (SP2) 1-ALKENES,12.011,oplsaa2024.lt,C,6
+73,0.0,C  - CH   | CH (SP3) ISOBUTANE,12.011,oplsaa2024.lt,C,6
+74,0.0,C  - C8   | CH (SP2) 2-ALKENES,12.011,oplsaa2024.lt,C,6
+75,0.0,C  - CD   | CH (AROM) BENZENOID united atom,12.011,oplsaa2024.lt,C,6
+76,0.0,C  - CT   | C (SP3) NEOPENTANE,12.011,oplsaa2024.lt,C,6
+77,0.0,C  - C7   | C (SP2) ISOBUTENE,12.011,oplsaa2024.lt,C,6
+80,0.265,"C  - C3   | CH3 IN METHANOL """,12.011,oplsaa2024.lt,C,6
+81,0.265,"C  - C2   | CH2 IN ETHANOL """,12.011,oplsaa2024.lt,C,6
+88,0.18,"C  - C3   | CH3 IN CH3SH """,12.011,oplsaa2024.lt,C,6
+89,0.18,"C  - C2   | CH2 IN CH3CH2SH """,12.011,oplsaa2024.lt,C,6
+90,0.235,"C  - C3   | CH3 IN CH3SR """,12.011,oplsaa2024.lt,C,6
+91,0.235,"C  - C2   | CH2 IN RCH2SR """,12.011,oplsaa2024.lt,C,6
+92,0.3,"C  - C3   | CH3 IN CH3SSR """,12.011,oplsaa2024.lt,C,6
+93,0.3,"C  - C2   | CH2 IN RCH2SSR """,12.011,oplsaa2024.lt,C,6
+95,0.28,"C  - CZ   | C IN CH3CN """,12.011,oplsaa2024.lt,C,6
+96,0.15,"C  - C3   | CH3 IN CH3CN united atom """,12.011,oplsaa2024.lt,C,6
+106,0.265,C  - CH   | CH (SP3) ISOPROPANOL,12.011,oplsaa2024.lt,C,6
+107,0.265,C  - CT   | C (SP3) T-BUTANOL,12.011,oplsaa2024.lt,C,6
+109,0.25,"C  - C3   | ETHER CH3 (-O) """,12.011,oplsaa2024.lt,C,6
+110,0.25,"C  - C2   | ETHER CH2 (-O) """,12.011,oplsaa2024.lt,C,6
+118,0.5,C  - C2   | CH2 Methylenechloride C-Cl=1.772,12.011,oplsaa2024.lt,C,6
+120,0.42,"C  - CH   | CH Chloroform JPC,94,1683 (1990)",12.011,oplsaa2024.lt,C,6
+122,0.248,C  - CT   | C CCl4,12.011,oplsaa2024.lt,C,6
+126,0.16,C  - C3   | DMSO,12.011,oplsaa2024.lt,C,6
+131,0.5,"C  - C~   | C in C=O for UA formamide, DMF.",12.011,oplsaa2024.lt,C,6
+132,0.285,C  - C3   | CH3 in HCON(CH3)2 DMF,12.011,oplsaa2024.lt,C,6
+135,-0.18,C  - CT   | CH3 all-atom C: alkanes,12.011,oplsaa2024.lt,C,6
+136,-0.12,C  - CT   | CH2 all-atom C: alkanes,12.011,oplsaa2024.lt,C,6
+137,-0.06,C  - CT   | CH all-atom C: alkanes,12.011,oplsaa2024.lt,C,6
+138,-0.24,C  - CT   | CH4 all-atom C: methane mod 1/2020,12.011,oplsaa2024.lt,C,6
+139,0.0,C  - CT   | C all-atom C: alkanes,12.011,oplsaa2024.lt,C,6
+141,0.0,C  - CM   | alkene C (R2-C=) all atom,12.011,oplsaa2024.lt,C,6
+142,-0.115,C  - CM   | alkene C (RH-C=) all atom,12.011,oplsaa2024.lt,C,6
+143,-0.23,C  - CM   | alkene C (H2-C=) all atom,12.011,oplsaa2024.lt,C,6
+145,-0.115,C  - CA   | Benzene C - 12 site OPLS/2020,12.011,oplsaa2024.lt,C,6
+147,0.0,C  - CB   | Naphthalene fusion C (C9),12.011,oplsaa2024.lt,C,6
+148,-0.065,"C  - CT   | all-atom C: CH3, toluene",12.011,oplsaa2024.lt,C,6
+149,-0.005,"C  - CT   | all-atom C: CH2, ethyl benzene",12.011,oplsaa2024.lt,C,6
+150,-0.115,C  - C=   | diene =CH-CH=; see 178 also,12.011,oplsaa2024.lt,C,6
+152,-0.006,"C  - CT   | RCH2Cl "" """,12.011,oplsaa2024.lt,C,6
+157,0.145,"C  - CT   | all-atom C: CH3 & CH2, prim. alcohols",12.011,oplsaa2024.lt,C,6
+158,0.205,"C  - CT   | all-atom C: CH, sec. alcohols",12.011,oplsaa2024.lt,C,6
+159,0.232,"C  - CT   | all-atom C: C, tert. alcohols OPLS/2020",12.011,oplsaa2024.lt,C,6
+165,0.0,C  - CA   | Cipso in styrene,12.011,oplsaa2024.lt,C,6
+166,0.1,C  - CA   | C(OH) phenol Use with all,12.011,oplsaa2024.lt,C,6
+173,0.145,"C  - CT   | C(H2OH): diols, triols",12.011,oplsaa2024.lt,C,6
+174,0.205,"C  - CT   | C(HROH): """,12.011,oplsaa2024.lt,C,6
+175,0.265,"C  - CT   | C(R2OH): """,12.011,oplsaa2024.lt,C,6
+178,0.0,C  - C=   | diene =CR-RC=; see 150 also,12.011,oplsaa2024.lt,C,6
+181,0.11,C  - CT   | C(H3OR): methyl ether,12.011,oplsaa2024.lt,C,6
+182,0.14,C  - CT   | C(H2OR): ethyl ether,12.011,oplsaa2024.lt,C,6
+183,0.17,C  - CT   | C(HOR): i-Pr ether,12.011,oplsaa2024.lt,C,6
+184,0.2,C  - CT   | C(OR): t-Bu ether,12.011,oplsaa2024.lt,C,6
+189,0.06,C  - CO   | C(H2O2): acetal OCH2O,12.011,oplsaa2024.lt,C,6
+191,0.195,C  - CO   | C(H2O2): hemiacetal OCH2OH,12.011,oplsaa2024.lt,C,6
+193,0.16,C  - CO   | C(HCO2): acetal OCHRO,12.011,oplsaa2024.lt,C,6
+195,0.295,C  - CO   | C(HCO2): hemiacetal OCHROH,12.011,oplsaa2024.lt,C,6
+197,0.26,C  - CO   | C(C2O2): acetal OCRRO,12.011,oplsaa2024.lt,C,6
+198,0.395,C  - CO   | C(C2O2): hemiacetal OCRROH,12.011,oplsaa2024.lt,C,6
+199,0.085,C  - CA   | C(OMe) anisole OPLS/2020,12.011,oplsaa2024.lt,C,6
+206,0.06,"C  - CT   | all-atom C: CH2, thiols",12.011,oplsaa2024.lt,C,6
+207,0.12,"C  - CT   | all-atom C: CH, thiols",12.011,oplsaa2024.lt,C,6
+208,0.18,"C  - CT   | all-atom C: C, thiols",12.011,oplsaa2024.lt,C,6
+209,-0.0125,"C  - CT   | all-atom C: CH3, sulfides OPLS-AA/L",12.011,oplsaa2024.lt,C,6
+210,0.0475,"C  - CT   | all-atom C: CH2, sulfides OPLS-AA/L",12.011,oplsaa2024.lt,C,6
+211,0.1175,"C  - CT   | all-atom C: CH, sulfides OPLS-AA/L",12.011,oplsaa2024.lt,C,6
+212,0.1675,"C  - CT   | all-atom C: C, sulfides OPLS-AA/L",12.011,oplsaa2024.lt,C,6
+213,0.0375,"C  - CT   | all-atom C: CH3, disulfides",12.011,oplsaa2024.lt,C,6
+214,0.0975,"C  - CT   | all-atom C: CH2, disulfides",12.011,oplsaa2024.lt,C,6
+215,0.1575,"C  - CT   | all-atom C: CH, disulfides",12.011,oplsaa2024.lt,C,6
+216,0.2175,"C  - CT   | all-atom C: C, disulfides",12.011,oplsaa2024.lt,C,6
+217,0.0,"C  - CT   | all-atom C: CH3, methanethiol",12.011,oplsaa2024.lt,C,6
+218,0.2,C  - CT   | C in CH2OH - benzyl alcohols,12.011,oplsaa2024.lt,C,6
+219,0.26,C  - CT   | C in CHROH - benzyl alcohols,12.011,oplsaa2024.lt,C,6
+220,0.32,C  - CT   | C in CR2OH - benzyl alcohols,12.011,oplsaa2024.lt,C,6
+221,-0.055,"C  - CA   | C(CH2OH) - benzyl alcohols, nitriles",12.011,oplsaa2024.lt,C,6
+223,0.08,C  - CT   | C in RCH2NH2 and Gly CA (See 900 for amines),12.011,oplsaa2024.lt,C,6
+224,0.14,C  - CT   | C in R2CHNH2 and Ala CA,12.011,oplsaa2024.lt,C,6
+225,0.2,C  - CT   | C in R3CNH2 and Aib CA,12.011,oplsaa2024.lt,C,6
+227,0.005,C  - CM   | chloroalkene C (ClH-C=),12.011,oplsaa2024.lt,C,6
+228,0.1025,C  - CA   | C(SMe) thioanisole,12.011,oplsaa2024.lt,C,6
+229,0.14,C  - CT   | C on N: secondary N-CHR2 amide,12.011,oplsaa2024.lt,C,6
+230,0.2,C  - CT   | C on N: secondary N-CR3 amide,12.011,oplsaa2024.lt,C,6
+231,0.7,C  - C~   | C: C=O in benzophenone,12.011,oplsaa2024.lt,C,6
+232,0.565,C  - C~   | C: C=O in benzaldehyde,12.011,oplsaa2024.lt,C,6
+233,0.585,C  - C~   | C: C=O in acetophenone,12.011,oplsaa2024.lt,C,6
+234,0.615,C  - C~   | C: C=O in benzamide,12.011,oplsaa2024.lt,C,6
+235,0.5,C  - C~   | C: C=O in amide. Acyl R in amides,12.011,oplsaa2024.lt,C,6
+242,0.02,C  - CT   | C on N: secondary N-Me amide,12.011,oplsaa2024.lt,C,6
+243,-0.11,C  - CT   | C on N: tertiary N-Me amide,12.011,oplsaa2024.lt,C,6
+244,0.08,C  - CT   | C on N: secondary N-CH2R amide,12.011,oplsaa2024.lt,C,6
+245,-0.05,C  - CT   | C on N: tertiary N-CH2R amide (Pro Cdelta),12.011,oplsaa2024.lt,C,6
+246,0.01,C  - CT   | C on N: tertiary N-CHR2 amide (Pro Calpha),12.011,oplsaa2024.lt,C,6
+247,0.142,C  - C~   | C in O=C(NH2)2 Urea,12.011,oplsaa2024.lt,C,6
+252,0.42,C  - C~   | C(=O) in imide,12.011,oplsaa2024.lt,C,6
+256,-0.12,C  - CT   | C in CH3 imide,12.011,oplsaa2024.lt,C,6
+257,-0.06,C  - CT   | C in RCH2 imide,12.011,oplsaa2024.lt,C,6
+258,0.0,C  - CT   | C in R2CH imide,12.011,oplsaa2024.lt,C,6
+259,0.06,C  - CT   | C in R3C imide,12.011,oplsaa2024.lt,C,6
+260,0.035,C  - CA   | C(CN) benzonitrile cyano,12.011,oplsaa2024.lt,C,6
+261,0.395,C  - CZ   | C(N) benzonitrile,12.011,oplsaa2024.lt,C,6
+263,0.18,C  - CA   | C(Cl) chlorobenzene,12.011,oplsaa2024.lt,C,6
+266,0.085,C  - CA   | ipso C in N-phenylacetamide,12.011,oplsaa2024.lt,C,6
+267,0.52,C  - C~   | Co in CCOOH carboxylic acid,12.011,oplsaa2024.lt,C,6
+271,0.7,C  - C~   | C in COO- carboxylate,12.011,oplsaa2024.lt,C,6
+273,-0.28,"C  - CT   | C: CH3, carboxylate ion",12.011,oplsaa2024.lt,C,6
+274,-0.22,"C  - CT   | C: CH2, carboxylate ion",12.011,oplsaa2024.lt,C,6
+275,-0.16,"C  - CT   | C: CH, carboxylate ion",12.011,oplsaa2024.lt,C,6
+276,-0.1,"C  - CT   | C: C, carboxylate ion",12.011,oplsaa2024.lt,C,6
+277,0.45,C  - C~   | AA C: aldehyde & acyl halide - for C-alpha use,12.011,oplsaa2024.lt,C,6
+280,0.47,C  - C~   | AA C: ketone - for C-alpha use,12.011,oplsaa2024.lt,C,6
+283,0.04,C  - CT   | AA C-alpha on C-terminal ALA,12.011,oplsaa2024.lt,C,6
+284,-0.02,C  - CT   | AA C-alpha on C-terminal GLY,12.011,oplsaa2024.lt,C,6
+285,-0.09,C  - CT   | AA C-alpha on C-terminal PRO,12.011,oplsaa2024.lt,C,6
+291,0.13,C  - CT   | C in CH3NH3+,12.011,oplsaa2024.lt,C,6
+292,0.19,C  - CT   | C in RCH2NH3+ & CA in N-term Gly,12.011,oplsaa2024.lt,C,6
+293,0.25,"C  - CT   | C in R2CHNH3+ & CA in N-term Ala, etc.",12.011,oplsaa2024.lt,C,6
+294,0.31,C  - CT   | C in R3CNH3+,12.011,oplsaa2024.lt,C,6
+295,0.23,C  - CT   | AA:C-alpha in N-term PRO,12.011,oplsaa2024.lt,C,6
+296,0.17,C  - CT   | AA:C-delta in N-term PRO,12.011,oplsaa2024.lt,C,6
+297,0.11,C  - CT   | CT in CH3NH2+R,12.011,oplsaa2024.lt,C,6
+298,0.09,C  - CT   | AA C-alpha in Gly zwitterion,12.011,oplsaa2024.lt,C,6
+299,0.15,C  - CT   | AA C-alpha in Ala zwitterion,12.011,oplsaa2024.lt,C,6
+302,0.64,C  - CA   | C: guanidinium C+,12.011,oplsaa2024.lt,C,6
+305,0.2,"C  - CT   | C: CH3, methylguanidinium",12.011,oplsaa2024.lt,C,6
+306,-0.11,"C  - CT   | C: CH3, ethylguanidinium",12.011,oplsaa2024.lt,C,6
+307,0.19,"C  - CT   | C: CH2(D), ARG, ethylguanidinium",12.011,oplsaa2024.lt,C,6
+308,-0.05,"C  - CT   | C: CH2(G), ARG",12.011,oplsaa2024.lt,C,6
+312,0.36,C  - CA   | DAP C2 pyridine,12.011,oplsaa2024.lt,C,6
+315,-0.15,C  - CA   | DAP C3,12.011,oplsaa2024.lt,C,6
+317,-0.04,C  - CA   | DAP C4,12.011,oplsaa2024.lt,C,6
+320,0.5,C  - C~   | Uracil C2,12.011,oplsaa2024.lt,C,6
+322,0.45,C  - C~   | Uracil C4,12.011,oplsaa2024.lt,C,6
+323,-0.07,C  - CM   | Uracil C5,12.011,oplsaa2024.lt,C,6
+324,0.08,C  - CM   | Uracil C6,12.011,oplsaa2024.lt,C,6
+331,-0.14,C  - CT   | Thymine C-C5,12.011,oplsaa2024.lt,C,6
+334,0.55,C  - C~   | Cytosine C2,12.011,oplsaa2024.lt,C,6
+336,0.46,C  - CA   | Cytosine C4 Nucleotide base,12.011,oplsaa2024.lt,C,6
+337,-0.06,C  - CM   | Cytosine C5 parameters:,12.011,oplsaa2024.lt,C,6
+338,0.1,"C  - CM   | Cytosine C6 JACS,113,2810(1991)",12.011,oplsaa2024.lt,C,6
+347,0.22,C  - CQ   | Adenine C2,12.011,oplsaa2024.lt,C,6
+349,0.38,C  - CB   | Adenine C4,12.011,oplsaa2024.lt,C,6
+350,0.15,C  - CB   | Adenine C5,12.011,oplsaa2024.lt,C,6
+351,0.44,C  - CA   | Adenine C6,12.011,oplsaa2024.lt,C,6
+353,0.2,C  - CR   | Adenine C8 Guanine,12.011,oplsaa2024.lt,C,6
+362,0.46,C  - CA   | Guanine C2,12.011,oplsaa2024.lt,C,6
+364,0.34,C  - CB   | Guanine C4,12.011,oplsaa2024.lt,C,6
+365,0.12,C  - CB   | Guanine C5,12.011,oplsaa2024.lt,C,6
+366,0.52,C  - C~   | Guanine C6,12.011,oplsaa2024.lt,C,6
+371,-0.01,C  - CT   | 9-Me A or G C-N9,12.011,oplsaa2024.lt,C,6
+373,-0.01,C  - CT   | 1-Me U or T C-N1,12.011,oplsaa2024.lt,C,6
+375,-0.01,C  - CT   | 1-Me Cytosine C-N1,12.011,oplsaa2024.lt,C,6
+378,0.65,C  - C~   | CytH+ C2,12.011,oplsaa2024.lt,C,6
+380,0.66,C  - CA   | CytH+ C4,12.011,oplsaa2024.lt,C,6
+381,-0.06,C  - CM   | CytH+ C5,12.011,oplsaa2024.lt,C,6
+382,0.1,C  - CM   | CytH+ C6,12.011,oplsaa2024.lt,C,6
+391,0.01,C  - CT   | 1-Me CytH+ C-N1,12.011,oplsaa2024.lt,C,6
+396,0.02,"C  - CT   | C in CH3 "" for AA",12.011,oplsaa2024.lt,C,6
+397,0.18,C  - CM   | F3C-C5 thymine; trifluorothymine,12.011,oplsaa2024.lt,C,6
+399,0.12,C  - CM   | chloroalkene C (Cl2-C=) - tentaive,12.011,oplsaa2024.lt,C,6
+415,-0.4,C  - C3   | C in CH3S- thiolate,12.011,oplsaa2024.lt,C,6
+418,-0.2,C  - C3   | C in CH3O- alkoxide,12.011,oplsaa2024.lt,C,6
+421,-1.07,C  - CT   | C1 in CH2CN- RCN-,12.011,oplsaa2024.lt,C,6
+423,0.51,"C  - CZ   | C2 in CH2CN- JACS 111,",12.011,oplsaa2024.lt,C,6
+425,-0.3,C  - C3   | C in CH3NH-,12.011,oplsaa2024.lt,C,6
+429,-0.4,C  - C3   | C2 in CH3CH2- RCH2-,12.011,oplsaa2024.lt,C,6
+431,0.0,C  - CT   | C1 in CH3CH2-,12.011,oplsaa2024.lt,C,6
+438,0.27,C  - CT   | C in dimetyl phosphate,12.011,oplsaa2024.lt,C,6
+443,0.3,"C  - CT   | C in "" phosphate",12.011,oplsaa2024.lt,C,6
+448,0.44,"C  - CT   | C in "" 6-31+G* CHELPG",12.011,oplsaa2024.lt,C,6
+453,0.28,"C  - CT   | C(O) "" methylphosphonate",12.011,oplsaa2024.lt,C,6
+455,-0.51,"C  - CT   | C(P) """,12.011,oplsaa2024.lt,C,6
+457,-0.14,C  - CA   | Cipso benzyl methylphosphonate,12.011,oplsaa2024.lt,C,6
+458,0.32,"C  - CT   | C(O) "" """,12.011,oplsaa2024.lt,C,6
+460,-0.04,C  - CA   | Cipso methyl benzylphosphonate,12.011,oplsaa2024.lt,C,6
+461,-0.47,"C  - CT   | C(P) "" """,12.011,oplsaa2024.lt,C,6
+463,0.14,C  - CA   | Cipso C6H5OPO3(2-) use with 445-7,12.011,oplsaa2024.lt,C,6
+464,0.24,C  - CT   | C6(R2) of barbiturate,12.011,oplsaa2024.lt,C,6
+465,0.49,"C  - C~   | AA C: esters - for R on C=O, use",12.011,oplsaa2024.lt,C,6
+468,0.16,C  - CT   | methoxy C in esters - see also 490-492 OPLS/2020,12.011,oplsaa2024.lt,C,6
+470,0.635,C  - C~   | Co in benzoic acid,12.011,oplsaa2024.lt,C,6
+471,0.605,"C  - C~   | Co in methyl benzoate, aryl ester",12.011,oplsaa2024.lt,C,6
+472,0.135,C  - CA   | Cipso phenyl ester,12.011,oplsaa2024.lt,C,6
+476,-0.54,C  - CT   | CH3 attached to S of sulfonamide,12.011,oplsaa2024.lt,C,6
+482,0.18,C  - CT   | alpha CH3-N of sulfonamide,12.011,oplsaa2024.lt,C,6
+484,0.39,C  - CT   | alpha CH2-N of sulfonamide,12.011,oplsaa2024.lt,C,6
+486,-0.18,C  - CT   | beta CH3 of N-ethyl sulfonamide,12.011,oplsaa2024.lt,C,6
+488,0.0,C  - CA   | benzene C attached to S of sulfonamide,12.011,oplsaa2024.lt,C,6
+489,0.03,C  - CA   | benzene C attached to S of alkyl aryl sulfoxide,12.011,oplsaa2024.lt,C,6
+490,0.19,C  - CT   | C(H2OS) ethyl ester,12.011,oplsaa2024.lt,C,6
+491,0.22,C  - CT   | C(HOS) i-pr ester,12.011,oplsaa2024.lt,C,6
+492,0.25,C  - CT   | C(OS) t-bu ester,12.011,oplsaa2024.lt,C,6
+498,-0.035,C  - CT   | CH3 all-atom C: sulfoxide,12.011,oplsaa2024.lt,C,6
+499,0.025,C  - CT   | CH2 all-atom C: sulfoxide,12.011,oplsaa2024.lt,C,6
+500,0.075,C  - CS   | CG in TRP,12.011,oplsaa2024.lt,C,6
+501,-0.055,C  - CB   | CD C in TRP,12.011,oplsaa2024.lt,C,6
+502,0.13,C  - CN   | CE C in TRP,12.011,oplsaa2024.lt,C,6
+505,-0.005,C  - CT   | CB in HIS,12.011,oplsaa2024.lt,C,6
+506,0.295,"C  - CR   | CE1 in HID, HIE",12.011,oplsaa2024.lt,C,6
+507,-0.015,"C  - CV   | CD2 in HID, CG in HIE",12.011,oplsaa2024.lt,C,6
+508,0.015,"C  - CW   | CG in HID, CD2 in HIE",12.011,oplsaa2024.lt,C,6
+509,0.385,C  - CR   | CE1 in HIP,12.011,oplsaa2024.lt,C,6
+510,0.215,"C  - CX   | CG, CD2 in HIP",12.011,oplsaa2024.lt,C,6
+514,-0.115,C  - CW   | CD1 in TRP,12.011,oplsaa2024.lt,C,6
+515,0.055,"C  - CT   | all-atom C: CH, isopropyl benzene",12.011,oplsaa2024.lt,C,6
+516,0.115,"C  - CT   | all-atom C: C, t-butyl benzene",12.011,oplsaa2024.lt,C,6
+517,-0.03,C  - CM   | vinyl ether HCOR,12.011,oplsaa2024.lt,C,6
+518,0.085,C  - CM   | vinyl ether RCOR,12.011,oplsaa2024.lt,C,6
+519,0.0,C  - C!   | biphenyl C1,12.011,oplsaa2024.lt,C,6
+521,0.473,C  - CA   | C1 in pyridine CHELPG,12.011,oplsaa2024.lt,C,6
+522,-0.447,C  - CA   | C2 in pyridine charges,12.011,oplsaa2024.lt,C,6
+523,0.227,C  - CA   | C3 in pyridine for,12.011,oplsaa2024.lt,C,6
+528,0.192,C  - CA   | C in pyrazine,12.011,oplsaa2024.lt,C,6
+531,0.874,C  - CQ   | C2 in pyrimidine,12.011,oplsaa2024.lt,C,6
+532,0.653,C  - CA   | C4 in pyrimidine,12.011,oplsaa2024.lt,C,6
+533,-0.689,C  - CA   | C5 in pyrimidine,12.011,oplsaa2024.lt,C,6
+538,0.378,C  - CA   | C3 in pyridazine,12.011,oplsaa2024.lt,C,6
+539,-0.16,C  - CA   | C4 in pyridazine,12.011,oplsaa2024.lt,C,6
+543,-0.163,C  - CW   | C2 in pyrrole,12.011,oplsaa2024.lt,C,6
+544,-0.149,C  - CS   | C3 in pyrrole,12.011,oplsaa2024.lt,C,6
+550,0.246,C  - CU   | C3 in pyrazole,12.011,oplsaa2024.lt,C,6
+551,-0.32,C  - CS   | C4 in pyrazole,12.011,oplsaa2024.lt,C,6
+552,-0.034,C  - CW   | C5 in pyrazole,12.011,oplsaa2024.lt,C,6
+558,0.275,C  - CR   | C2 in imidazole,12.011,oplsaa2024.lt,C,6
+560,0.185,C  - CV   | C4 in imidazole,12.011,oplsaa2024.lt,C,6
+561,-0.286,C  - CW   | C5 in imidazole,12.011,oplsaa2024.lt,C,6
+567,-0.019,C  - CW   | C2 in furan,12.011,oplsaa2024.lt,C,6
+568,-0.154,C  - CS   | C3 in furan,12.011,oplsaa2024.lt,C,6
+572,0.511,C  - CR   | C2 in oxazole,12.011,oplsaa2024.lt,C,6
+574,0.169,C  - CV   | C4 in oxazole,12.011,oplsaa2024.lt,C,6
+575,-0.148,C  - CW   | C5 in oxazole,12.011,oplsaa2024.lt,C,6
+581,0.405,C  - CU   | C3 in isoxazole,12.011,oplsaa2024.lt,C,6
+582,-0.455,C  - CS   | C4 in isoxazole,12.011,oplsaa2024.lt,C,6
+583,0.25,C  - CW   | C5 in isoxazole,12.011,oplsaa2024.lt,C,6
+588,0.001,C  - CW   | C2 in indole,12.011,oplsaa2024.lt,C,6
+589,-0.39,C  - CS   | C3 in indole,12.011,oplsaa2024.lt,C,6
+590,-0.27,C  - CA   | C4 in indole,12.011,oplsaa2024.lt,C,6
+591,-0.127,C  - CA   | C5 in indole,12.011,oplsaa2024.lt,C,6
+592,-0.108,C  - CA   | C6 in indole,12.011,oplsaa2024.lt,C,6
+593,-0.258,C  - CA   | C7 in indole,12.011,oplsaa2024.lt,C,6
+594,0.22,C  - CW   | C8 in indole,12.011,oplsaa2024.lt,C,6
+595,0.225,C  - CS   | C9 in indole,12.011,oplsaa2024.lt,C,6
+604,0.425,C  - CA   | C2 in quinoline,12.011,oplsaa2024.lt,C,6
+605,-0.359,C  - CA   | C3 in quinoline,12.011,oplsaa2024.lt,C,6
+606,-0.008,C  - CA   | C4 in quinoline,12.011,oplsaa2024.lt,C,6
+607,-0.197,C  - CA   | C5 in quinoline,12.011,oplsaa2024.lt,C,6
+608,-0.112,C  - CA   | C6 in quinoline,12.011,oplsaa2024.lt,C,6
+609,-0.07,C  - CA   | C7 in quinoline,12.011,oplsaa2024.lt,C,6
+610,-0.307,C  - CA   | C8 in quinoline,12.011,oplsaa2024.lt,C,6
+611,0.563,C  - CA   | C9 in quinoline,12.011,oplsaa2024.lt,C,6
+612,-0.051,C  - CA   | C10 in quinoline,12.011,oplsaa2024.lt,C,6
+621,0.679,C  - CQ   | C2 in purine,12.011,oplsaa2024.lt,C,6
+623,0.736,C  - CB   | C4 in purine,12.011,oplsaa2024.lt,C,6
+624,0.038,C  - CB   | C5 in purine,12.011,oplsaa2024.lt,C,6
+625,0.343,C  - CA   | C6 in purine,12.011,oplsaa2024.lt,C,6
+627,0.452,C  - CR   | C8 in purine,12.011,oplsaa2024.lt,C,6
+634,0.242,C  - CR   | C2 in thiazole,12.011,oplsaa2024.lt,C,6
+636,0.228,C  - CV   | C4 in thiazole,12.011,oplsaa2024.lt,C,6
+637,-0.299,C  - CW   | C5 in thiazole,12.011,oplsaa2024.lt,C,6
+642,0.965,"C  - CQ   | C in 1,3,5-triazine",12.011,oplsaa2024.lt,C,6
+644,0.13,C  - CA   | C5 in serotonin,12.011,oplsaa2024.lt,C,6
+645,0.052,C  - CT   | C on C3 in serotonin,12.011,oplsaa2024.lt,C,6
+647,0.392,"C  - CA   | C2 in 1,10-phenanthroline",12.011,oplsaa2024.lt,C,6
+648,-0.348,"C  - CA   | C3 in 1,10-phenanthroline",12.011,oplsaa2024.lt,C,6
+649,0.02,"C  - CA   | C4 in 1,10-phenanthroline",12.011,oplsaa2024.lt,C,6
+650,-0.042,"C  - CA   | C12 in 1,10-phenanthroline",12.011,oplsaa2024.lt,C,6
+651,0.347,"C  - CA   | C11 in 1,10-phenanthroline",12.011,oplsaa2024.lt,C,6
+652,-0.196,"C  - CA   | C5 in 1,10-phenanthroline",12.011,oplsaa2024.lt,C,6
+658,0.166,C  - CR   | C2 in 1-methylimidazole,12.011,oplsaa2024.lt,C,6
+660,0.173,C  - CV   | C4 in 1-methylimidazole,12.011,oplsaa2024.lt,C,6
+661,-0.395,C  - CW   | C5 in 1-methylimidazole,12.011,oplsaa2024.lt,C,6
+662,-0.199,C  - CT   | C1 in 1-methylimidazole,12.011,oplsaa2024.lt,C,6
+667,-0.139,C  - CT   | C1 in 1-ethylimidazole,12.011,oplsaa2024.lt,C,6
+668,-0.079,C  - CT   | C1 in 1-isopropylimidazole,12.011,oplsaa2024.lt,C,6
+669,0.099,C  - CT   | C1 in 1-MeO-Me-imidazole,12.011,oplsaa2024.lt,C,6
+670,-0.168,"C  - CT   | CH3, 2-methyl pyridine",12.011,oplsaa2024.lt,C,6
+671,-0.108,"C  - CT   | CH2, 2-ethyl pyridine",12.011,oplsaa2024.lt,C,6
+672,-0.189,"C  - CT   | CH3, 3-methyl pyridazine",12.011,oplsaa2024.lt,C,6
+673,-0.129,"C  - CT   | CH2, 3-ethyl pyridazine",12.011,oplsaa2024.lt,C,6
+674,-0.169,"C  - CT   | CH3, 4-methyl pyrimidine",12.011,oplsaa2024.lt,C,6
+675,-0.109,"C  - CT   | CH2, 4-ethyl pyrimidine",12.011,oplsaa2024.lt,C,6
+676,-0.138,"C  - CT   | CH3, 2-methyl pyrazine",12.011,oplsaa2024.lt,C,6
+677,-0.078,"C  - CT   | CH2, 2-ethyl pyrazine",12.011,oplsaa2024.lt,C,6
+678,-0.025,"C  - CT   | CH3, 2-methyl pyrrole",12.011,oplsaa2024.lt,C,6
+679,0.035,"C  - CT   | CH2, 2-ethyl pyrrole",12.011,oplsaa2024.lt,C,6
+680,-0.038,"C  - CT   | CH3, 2-methyl furan",12.011,oplsaa2024.lt,C,6
+681,0.022,"C  - CT   | CH2, 2-ethyl furan",12.011,oplsaa2024.lt,C,6
+684,0.523,C  - CA   | C6 in 6-mercaptopurine,12.011,oplsaa2024.lt,C,6
+685,0.5,C  - C^   | C: C=O beta-lactam,12.011,oplsaa2024.lt,C,6
+687,0.2275,C  - CY   | CH(N): penicillin,12.011,oplsaa2024.lt,C,6
+688,0.14,C  - CY   | CH(CO): penicillin,12.011,oplsaa2024.lt,C,6
+689,-0.008,"C  - CT   | CH3, 3-methyl indole",12.011,oplsaa2024.lt,C,6
+690,0.588,C  - C!   | 2-phenyl pyridine C2,12.011,oplsaa2024.lt,C,6
+691,-0.103,C  - C!   | 2-phenyl pyridine C2',12.011,oplsaa2024.lt,C,6
+692,-0.332,C  - C!   | 3-phenyl pyridine C3,12.011,oplsaa2024.lt,C,6
+693,0.04,C  - C!   | 3-phenyl pyridine C3',12.011,oplsaa2024.lt,C,6
+694,0.342,C  - C!   | 4-phenyl pyridine C4,12.011,oplsaa2024.lt,C,6
+695,-0.05,C  - C!   | 4-phenyl pyridine C4',12.011,oplsaa2024.lt,C,6
+700,0.619,C  - C+   | C+ in t-butyl+ B3LYP/6-31G*,12.011,oplsaa2024.lt,C,6
+701,-0.395,C  - CT   | C in t-butyl+ charges,12.011,oplsaa2024.lt,C,6
+708,-0.344,C  - CM   | C in Cl..CH3..Cl- TS,12.011,oplsaa2024.lt,C,6
+711,-0.12,C  - CY   | CH2 C: cyclopropane OPLS-2020,12.011,oplsaa2024.lt,C,6
+712,-0.06,C  - CY   | CHR C: cyclopropane OPLS-2020,12.011,oplsaa2024.lt,C,6
+713,0.0,C  - CY   | CR2 C: cyclopropane OPLS-2020,12.011,oplsaa2024.lt,C,6
+714,-0.12,C  - CY   | CH2 C: cyclobutane OPLS-2020,12.011,oplsaa2024.lt,C,6
+715,-0.06,C  - CY   | CHR C: cyclobutane OPLS-2020,12.011,oplsaa2024.lt,C,6
+716,0.0,C  - CY   | CR2 C: cyclobutane OPLS-2020,12.011,oplsaa2024.lt,C,6
+718,0.28,C  - CA   | C(F) fluorobenzene,12.011,oplsaa2024.lt,C,6
+720,0.13,C  - CA   | C(F) hexafluorobenzene,12.011,oplsaa2024.lt,C,6
+723,0.22,C  - C2   | CH2 alkyl bromide (UA),12.011,oplsaa2024.lt,C,6
+724,0.15,C  - CA   | C(CF3) trifluoromethylbenzene,12.011,oplsaa2024.lt,C,6
+725,0.45,"C  - CT   | CF3 """,12.011,oplsaa2024.lt,C,6
+727,0.2,C  - CA   | C(F) difluorobenzenes,12.011,oplsaa2024.lt,C,6
+729,0.15,"C  - CA   | C(Br) bromobenzene JCTC 2012, 8, 3895",12.011,oplsaa2024.lt,C,6
+731,0.1,C  - CA   | C(I) iodobenzene sigma CA changed to 0.068,12.011,oplsaa2024.lt,C,6
+733,0.055,"C  - CY   | all-atom C: CH, cyclopropyl/butyl benzene",12.011,oplsaa2024.lt,C,6
+735,0.065,C  - CA   | C(S) thiophenol,12.011,oplsaa2024.lt,C,6
+736,0.013,C  - CA   | CG of Benzamidine,12.011,oplsaa2024.lt,C,6
+737,-0.106,C  - CA   | CD of Benzamidine,12.011,oplsaa2024.lt,C,6
+738,-0.09,C  - CA   | CE of Benzamidine,12.011,oplsaa2024.lt,C,6
+739,-0.119,C  - CA   | CZ of Benzamidine,12.011,oplsaa2024.lt,C,6
+742,0.827,C  - CA   | C+ of Benzamidine,12.011,oplsaa2024.lt,C,6
+747,-0.02,C  - CT   | CH3 in neutral MeGDN,12.011,oplsaa2024.lt,C,6
+748,0.04,C  - CT   | CD of neutral ARG,12.011,oplsaa2024.lt,C,6
+752,0.55,"C  - CA   | CZ "" "" """,12.011,oplsaa2024.lt,C,6
+754,0.46,"C  - CZ   | C IN RCN """,12.011,oplsaa2024.lt,C,6
+755,-0.08,C  - CT   | C of CH3 in CH3CN,12.011,oplsaa2024.lt,C,6
+756,-0.02,C  - CT   | C of CH2 in RCH2CN,12.011,oplsaa2024.lt,C,6
+757,0.04,C  - CT   | C of CH in R2CHCN,12.011,oplsaa2024.lt,C,6
+758,0.1,C  - CT   | C of C in R3CCN,12.011,oplsaa2024.lt,C,6
+762,0.02,C  - CT   | CT-NO2 nitromethane,12.011,oplsaa2024.lt,C,6
+764,0.08,C  - CT   | CT-NO2 nitroethane,12.011,oplsaa2024.lt,C,6
+765,0.14,C  - CT   | CT-NO2 2-nitropropane,12.011,oplsaa2024.lt,C,6
+766,0.2,C  - CT   | CT-NO2 2-methyl-2-nitropropane,12.011,oplsaa2024.lt,C,6
+768,0.09,C  - CA   | C(NO2) nitrobenzene,12.011,oplsaa2024.lt,C,6
+769,0.035,C  - CT   | C of CH2 in PhCH2CN,12.011,oplsaa2024.lt,C,6
+772,0.86,"C  - C~   | "" C=O Lucienne's",12.011,oplsaa2024.lt,C,6
+774,0.21,"C  - CT   | "" C in CH2",12.011,oplsaa2024.lt,C,6
+775,0.16,"C  - CT   | "" C in CH",12.011,oplsaa2024.lt,C,6
+776,-0.1,"C  - CT   | "" C in CH3 see also 789",12.011,oplsaa2024.lt,C,6
+782,-0.5081,C  - CT   | CH3PR3+ 6-31G* CHELPG,12.011,oplsaa2024.lt,C,6
+783,-0.008,C  - CT   | RCH2PR3+,12.011,oplsaa2024.lt,C,6
+789,0.18,C  - CT   | methoxy C in carbonate,12.011,oplsaa2024.lt,C,6
+790,0.15,C  - CA   | C(CF3) trifluoromethylbenzene test,12.011,oplsaa2024.lt,C,6
+791,0.45,"C  - CF   | CF3 "" test",12.011,oplsaa2024.lt,C,6
+793,0.38,C  - CA   | C-ipso phenylguanidinium ion,12.011,oplsaa2024.lt,C,6
+798,0.0,C  - CT   | CH4 all-atom C: q = 0,12.011,oplsaa2024.lt,C,6
+903,0.0,"C  - CT   | CH3(N) primary aliphatic amines, H(C) type 911",12.011,oplsaa2024.lt,C,6
+904,0.02,"C  - CT   | CH3(N) secondary aliphatic amines, H(C) type 911",12.011,oplsaa2024.lt,C,6
+905,0.03,"C  - CT   | CH3(N) tertiary aliphatic amines, H(C) type 911",12.011,oplsaa2024.lt,C,6
+906,0.06,"C  - CT   | CH2(N) primary aliphatic amines, H(C) type 911",12.011,oplsaa2024.lt,C,6
+907,0.08,"C  - CT   | CH2(N) secondary aliphatic amines, H(C) type 911",12.011,oplsaa2024.lt,C,6
+908,0.09,"C  - CT   | CH2(N) tertiary aliphatic amines, H(C) type 911",12.011,oplsaa2024.lt,C,6
+912,0.12,C  - CT   | CH primary isopropyl amine,12.011,oplsaa2024.lt,C,6
+913,0.18,C  - CT   | C primary t-butyl amine,12.011,oplsaa2024.lt,C,6
+914,0.14,C  - CT   | CH secondary isopropyl amine,12.011,oplsaa2024.lt,C,6
+915,0.15,C  - CT   | CH tertiary isopropyl amine,12.011,oplsaa2024.lt,C,6
+916,0.18,C  - CA   | C(NH2) aniline,12.011,oplsaa2024.lt,C,6
+917,0.2,C  - CA   | C(NHR) N-methylaniline,12.011,oplsaa2024.lt,C,6
+918,0.21,"C  - CA   | C(NR2) N,N-dimethylaniline",12.011,oplsaa2024.lt,C,6
+919,0.115,C  - CT   | C in CH2NH2 - benzyl amines; C(CH2NH2) is,12.011,oplsaa2024.lt,C,6
+920,0.175,C  - CT   | C in CHRNH2 - benzyl amines,12.011,oplsaa2024.lt,C,6
+921,0.235,C  - CT   | C in CR2NH2 - benzyl amines,12.011,oplsaa2024.lt,C,6
+922,0.195,C  - CT   | C in CH2OR - benzyl ethers; C(CH2OR) is,12.011,oplsaa2024.lt,C,6
+923,0.1525,C  - CT   | C in CH2SR - benzyl sulfides; C(CH2SR) is,12.011,oplsaa2024.lt,C,6
+924,0.135,C  - CT   | C in CH2NHR - benzyl amines; C(CH2NH2) is,12.011,oplsaa2024.lt,C,6
+925,-0.2,C  - CZ   | alkyne C%C - acetylene,12.011,oplsaa2024.lt,C,6
+927,0.02,C  - CT   | H3C-C%C,12.011,oplsaa2024.lt,C,6
+928,0.08,C  - CT   | RCH2-C%C,12.011,oplsaa2024.lt,C,6
+929,0.14,C  - CT   | R2CH-C%C,12.011,oplsaa2024.lt,C,6
+930,0.2,C  - CT   | R3C-C%C,12.011,oplsaa2024.lt,C,6
+931,0.45,"C  - CO   | C1' of (ade, gua) by Deping",12.011,oplsaa2024.lt,C,6
+932,0.48,C  - CO   | C1' of cyt by Deping,12.011,oplsaa2024.lt,C,6
+933,0.51,"C  - CO   | C1' of (ura, thy) by Deping",12.011,oplsaa2024.lt,C,6
+939,0.0,C  - CZ   | alkyne RC%CR - only did MC for MeCCMe,12.011,oplsaa2024.lt,C,6
+942,0.09,C  - CT   | C in CH3NHR2+,12.011,oplsaa2024.lt,C,6
+943,0.15,C  - CT   | C in RCH2NHR2+,12.011,oplsaa2024.lt,C,6
+944,0.21,C  - CT   | C in R2CHNHR2+,12.011,oplsaa2024.lt,C,6
+945,0.27,C  - CT   | C in R3CNHR2+,12.011,oplsaa2024.lt,C,6
+946,0.096,C  - CW   | C2 in 2-phenylfuran,12.011,oplsaa2024.lt,C,6
+947,-0.039,C  - CS   | C3 in 3-phenylfuran,12.011,oplsaa2024.lt,C,6
+948,0.027,C  - C!   | C2' in 2-phenylfuran,12.011,oplsaa2024.lt,C,6
+949,0.011,C  - C!   | C3' in 2-phenylfuran,12.011,oplsaa2024.lt,C,6
+951,-0.029,C  - CT   | glycine zwit. 6-31G* CHELPG charges,12.011,oplsaa2024.lt,C,6
+952,0.7,C  - C~   | glycine zwit. 6-31G* CHELPG charges,12.011,oplsaa2024.lt,C,6
+957,0.02,"C  - CT   | RCH2F "" "" tentative",12.011,oplsaa2024.lt,C,6
+959,0.12,"C  - CT   | R2CHF "" "" tentative",12.011,oplsaa2024.lt,C,6
+960,0.22,"C  - CT   | R3CF "" "" tentative",12.011,oplsaa2024.lt,C,6
+961,0.36,"C  - CF   | CF3 perfluoroalkanes JPC A, 105, 4118",12.011,oplsaa2024.lt,C,6
+962,0.24,"C  - CF   | CF2 perfluoroalkanes """,12.011,oplsaa2024.lt,C,6
+963,0.12,"C  - CF   | CF perfluoroalkanes """,12.011,oplsaa2024.lt,C,6
+964,0.48,"C  - CF   | CF4 """,12.011,oplsaa2024.lt,C,6
+966,0.25,C  - CT   | CF2H difluoromethylbenzene,12.011,oplsaa2024.lt,C,6
+968,-0.08,C  - CT   | FCH2COO- fluoroacetate tentative,12.011,oplsaa2024.lt,C,6
+969,-0.106,"C  - CT   | ClCH2COO- chloroacetate """,12.011,oplsaa2024.lt,C,6
+971,-0.006,"C  - CT   | RCH2Cl "" "" 152",12.011,oplsaa2024.lt,C,6
+973,0.097,"C  - CT   | R2CHCl "" "" tentative",12.011,oplsaa2024.lt,C,6
+974,0.2,"C  - CT   | R3CCl "" "" tentative",12.011,oplsaa2024.lt,C,6
+976,-0.006,"C  - CT   | RCH2Br "" "" """,12.011,oplsaa2024.lt,C,6
+978,0.097,"C  - CT   | R2CHBr "" "" tentative",12.011,oplsaa2024.lt,C,6
+979,0.2,"C  - CT   | R3CBr "" "" tentative",12.011,oplsaa2024.lt,C,6
+983,0.1,C  - CA   | C(OCF3): trifluoroanisole,12.011,oplsaa2024.lt,C,6
+985,0.6,C  - CT   | C in CF3: trifluoroanisole,12.011,oplsaa2024.lt,C,6
+988,-0.045,"C  - CA   | ipso C in N-methyl,N-phenylacetamide",12.011,oplsaa2024.lt,C,6
+989,0.145,C  - CT   | C in CH2NR2 - benzyl amines; C(CH2NH2) is,12.011,oplsaa2024.lt,C,6
+990,0.888,C  - C~   | C in hydroxamic acid jtr 11/98,12.011,oplsaa2024.lt,C,6
+991,1.003,C  - C~   | C in aromatic hydroxamic aciT,12.011,oplsaa2024.lt,C,6
+997,0.225,C  - CT   | C in CHROR - benzyl ethers; C(CHROR) is,12.011,oplsaa2024.lt,C,6
+998,0.255,C  - CT   | C in CRROR - benzyl ethers; C(CRROR) is,12.011,oplsaa2024.lt,C,6
+1000,-0.034,C  - C!   | 3-phenyl pyrrole C3,12.011,oplsaa2024.lt,C,6
+1001,0.003,C  - C!   | 3-phenyl pyrrole C3',12.011,oplsaa2024.lt,C,6
+1002,0.3,C  - C!   | 4-phenyl imidazole C4,12.011,oplsaa2024.lt,C,6
+1003,-0.04,C  - C!   | 4-phenyl imidazole C4',12.011,oplsaa2024.lt,C,6
+1004,-0.0575,C  - CA   | diphenylmethane Cipso,12.011,oplsaa2024.lt,C,6
+1009,0.175,C  - CA   | C(Cl) chlorobenzene with X site,12.011,oplsaa2024.lt,C,6
+1011,-0.07,C  - CT   | C(I) iodoalkane - tentative - primary,12.011,oplsaa2024.lt,C,6
+1012,0.03,C  - CT   | C(I) iodoalkane - tentative - secondary,12.011,oplsaa2024.lt,C,6
+1013,0.13,C  - CT   | C(I) iodoalkane - tentative - tertiary,12.011,oplsaa2024.lt,C,6
+1016,0.17,C  - CA   | C(Br) bromobenzene with X site,12.011,oplsaa2024.lt,C,6
+1018,0.15,C  - CA   | C(I) iodobenzene with X site,12.011,oplsaa2024.lt,C,6
+1022,0.155,C  - CA   | benzene C on N of N-phenyl sulfonamide,12.011,oplsaa2024.lt,C,6
+1026,0.14,C  - CY   | CH2 epoxide,12.011,oplsaa2024.lt,C,6
+1027,0.17,C  - CY   | CH epoxide,12.011,oplsaa2024.lt,C,6
+1028,0.2,C  - CY   | C epoxide,12.011,oplsaa2024.lt,C,6
+1032,-0.1,C  - CA   | ipso C in benzoate ion,12.011,oplsaa2024.lt,C,6
+1034,0.218,C  - CA   | ipso C in N-phenylurea,12.011,oplsaa2024.lt,C,6
+1035,0.6,C  - C~   | C: C=O in tert amide. Acyl R in amides,12.011,oplsaa2024.lt,C,6
+1038,0.0,C  - CT   | C on N: tertiary amide CH3,12.011,oplsaa2024.lt,C,6
+1039,0.06,C  - CT   | C on N: tertiary amide CH2R,12.011,oplsaa2024.lt,C,6
+1040,0.12,C  - CT   | C on N: tertiary amide CHR2,12.011,oplsaa2024.lt,C,6
+1041,0.18,C  - CT   | C on N: tertiary amide CR3,12.011,oplsaa2024.lt,C,6
+1043,0.57,C  - C~   | C: C=O in tert formamide.,12.011,oplsaa2024.lt,C,6
+1049,0.02,C  - CT   | CH; Calpha in beta-2-peptides,12.011,oplsaa2024.lt,C,6
+1050,-0.04,"C  - CT   | CH2; Calpha in all (M, N-ter)",12.011,oplsaa2024.lt,C,6
+1051,0.0,"C  - CT   | CH2; Cbeta in b-Gly (M, C-ter)",12.011,oplsaa2024.lt,C,6
+1052,0.06,"C  - CT   | CH; Cbeta in most (M, C-ter)",12.011,oplsaa2024.lt,C,6
+1053,-0.07,"C  - CT   | CH; Cbeta in b-Pro (M, C-ter)",12.011,oplsaa2024.lt,C,6
+1054,-0.14,C  - CT   | CH2; Calpha for all (C-ter),12.011,oplsaa2024.lt,C,6
+1055,0.17,C  - CT   | CH; Cbeta for most (N-ter),12.011,oplsaa2024.lt,C,6
+1056,0.11,C  - CT   | CH; Cbeta for b-Gly (N-ter),12.011,oplsaa2024.lt,C,6
+1057,0.15,C  - CT   | CH; Cbeta for b-Pro (N-ter),12.011,oplsaa2024.lt,C,6
+1058,0.17,C  - CT   | CH2; Cepsilon for b-Pro (N-ter),12.011,oplsaa2024.lt,C,6
+1065,-0.26,"C  - CT   | CH3 on Si in silane, """,12.011,oplsaa2024.lt,C,6
+1066,-0.2,"C  - CT   | CH2 on Si in silane, """,12.011,oplsaa2024.lt,C,6
+1067,-0.14,"C  - CT   | CH on Si in silane, """,12.011,oplsaa2024.lt,C,6
+1068,-0.08,"C  - CT   | C on Si in silane, """,12.011,oplsaa2024.lt,C,6
+1069,-0.08,C  - CA   | C ipso in phenyl silane,12.011,oplsaa2024.lt,C,6
+1096,-0.23,C  - CA   | C in C5H5- cyclopentadienyl anion,12.011,oplsaa2024.lt,C,6
+1098,-0.099,C  - CA   | C in C5H5 cyclopentadienyl radical,12.011,oplsaa2024.lt,C,6
+1120,-0.05,C  - CT   | C in CH3NR3+ July 2005,12.011,oplsaa2024.lt,C,6
+1121,0.05,C  - CT   | C in RCH2NR3+ WLJ,12.011,oplsaa2024.lt,C,6
+1122,0.15,C  - CT   | C in R2CHNR3+ ammonium,12.011,oplsaa2024.lt,C,6
+1123,0.25,C  - CT   | C in R3CNR3+,12.011,oplsaa2024.lt,C,6
+1126,0.135,C  - CA   | Cipso (ArNR3+),12.011,oplsaa2024.lt,C,6
+1128,0.155,C  - CA   | Cipso (ArNR2H+),12.011,oplsaa2024.lt,C,6
+1151,0.0,C  - C|   | triene C (R2-C=) central C=C,12.011,oplsaa2024.lt,C,6
+1152,-0.115,C  - C|   | triene C (RH-C=) central C=C,12.011,oplsaa2024.lt,C,6
+1154,-0.25,C  - CM   | allene C1 CH2,12.011,oplsaa2024.lt,C,6
+1155,-0.1,C  - CM   | allene C1 CHR,12.011,oplsaa2024.lt,C,6
+1156,0.05,C  - CM   | allene C1 CR2,12.011,oplsaa2024.lt,C,6
+1157,-0.1,C  - C°   | allene C2,12.011,oplsaa2024.lt,C,6
+1158,0.2,C  - C°   | ketene C2,12.011,oplsaa2024.lt,C,6
+1160,0.7,C  - C°   | CO2 Madura 2009 carbon dioxide,12.011,oplsaa2024.lt,C,6
+1200,0.088,C  - CT   | CB in N-Me HIS,12.011,oplsaa2024.lt,C,6
+1234,0.35,C  - CR   | C2 thiazole jlj0003,12.011,oplsaa2024.lt,C,6
+1236,0.0,C  - CV   | C4 thiazole jlj0003,12.011,oplsaa2024.lt,C,6
+1237,-0.15,C  - CW   | C5 thiazole jlj0003,12.011,oplsaa2024.lt,C,6
+1260,0.1263,C  - CT   | CH2 Trifluoroethanol TFE,12.011,oplsaa2024.lt,C,6
+1261,0.5323,C  - CT   | CF3 E Duffy Thesis 1994,12.011,oplsaa2024.lt,C,6
+1268,-0.005,C  - CY   | CHCH=CH2 vinylcyclopropane OPLS-2020,12.011,oplsaa2024.lt,C,6
+1269,-0.17,C  - CM   | vinylcyclopropane,12.011,oplsaa2024.lt,C,6
+1270,0.08,C  - CY   | CHC%CH ethynylcyclopropane OPLS-2020,12.011,oplsaa2024.lt,C,6
+1271,-0.14,C  - CZ   | ethynylcyclopropane,12.011,oplsaa2024.lt,C,6

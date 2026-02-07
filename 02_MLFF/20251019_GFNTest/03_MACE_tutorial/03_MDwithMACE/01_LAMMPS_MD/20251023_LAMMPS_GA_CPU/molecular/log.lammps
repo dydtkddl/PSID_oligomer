@@ -1,0 +1,11 @@
+LAMMPS (10 Sep 2025)
+  using 30 OpenMP thread(s) per MPI task
+############################################################
+# LAMMPS + MACE - Ionic Liquid MD (CPU, robust & box-relax)
+############################################################
+
+units           real
+atom_style      molecular
+ERROR: Unrecognized atom style 'molecular' is part of the MOLECULE package which is not enabled in this LAMMPS binary.
+For more information see https://docs.lammps.org/err0010 (src/atom.cpp:751)
+Last input line: atom_style molecular

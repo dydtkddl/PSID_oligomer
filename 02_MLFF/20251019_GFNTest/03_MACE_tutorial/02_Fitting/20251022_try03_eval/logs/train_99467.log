@@ -1,0 +1,6 @@
+[INFO] 2025-10-22 01:12:21 | ==== START EVALUATION ====
+[INFO] 2025-10-22 01:12:21 | Start evaluating: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/dataset_train_0.5_.extxyz
+[INFO] 2025-10-22 01:12:21 | Using model: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model
+[INFO] 2025-10-22 01:12:21 | Output will be saved to: tests/mace_eval/train_eval.xyz
+[INFO] 2025-10-22 01:12:21 | Batch size: 10
+Running eval on dataset_train_0.5_.extxyz:   0%|          | 0/1 [00:00<?, ?it/s]

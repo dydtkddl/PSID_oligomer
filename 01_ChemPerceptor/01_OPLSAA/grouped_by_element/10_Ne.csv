@@ -1,0 +1,8 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+10,0.0,Ne - Ne   |,20.179,oplsaa.lt,Ne,10
+20,0.0,Ne - Ne   | 2-A probe,20.179,oplsaa.lt,Ne,10
+102,0.0,"Ne - Ne   | Neon - Hirschfelder (Wiley,1954)",20.179,oplsaa.lt,Ne,10
+59,0.0,"""Neon Atom""",20.179,oplsaa2008.lt,Ne,10
+10,0.0,Ne - Ne   |,20.179,oplsaa2024.lt,Ne,10
+20,0.0,Ne - Ne   | 2-A probe,20.179,oplsaa2024.lt,Ne,10
+102,0.0,"Ne - Ne   | Neon - Hirschfelder (Wiley,1954)",20.179,oplsaa2024.lt,Ne,10

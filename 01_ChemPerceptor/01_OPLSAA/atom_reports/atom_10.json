@@ -1,0 +1,19 @@
+{
+  "mol2_id": 10,
+  "rd_idx": 9,
+  "symbol": "N",
+  "formal_charge": 0,
+  "hybridization": "sp3",
+  "aromatic": false,
+  "degree": 3,
+  "total_h_count": 0,
+  "ring_sizes": [
+    5
+  ],
+  "functional_groups": [
+    "amine nitrogen"
+  ],
+  "primary_label": "amine nitrogen",
+  "environment": "aliphatic sp3 in-5-ring",
+  "description": "Aliphatic/allylic amine nitrogen; nucleophilic and basic."
+}

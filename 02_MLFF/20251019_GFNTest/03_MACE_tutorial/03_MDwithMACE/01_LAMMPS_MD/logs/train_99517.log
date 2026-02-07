@@ -1,0 +1,73 @@
+[2025-10-22 15:47:53] === INITIALIZING MD RUN ===
+[2025-10-22 15:47:53] [DEVICE] Using GPU: NVIDIA GeForce RTX 3090
+[2025-10-22 15:47:53] [LOAD] Structure: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/00_bulkmake/packmol_cases/case_001/ionpairs.xyz
+[2025-10-22 15:47:53] [MODEL] Loading MACE model: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model
+Using head Default out of ['Default']
+Default dtype float32 does not match model dtype float64, converting models to float32.
+[2025-10-22 15:47:57] [MD] Langevin thermostat initialized (T=1200.0K, dt=1fs)
+[2025-10-22 15:47:57] [MD] Simulation started (total_steps=2000, interval=10)
+[2025-10-22 15:48:19] [MD] Step 10 | E=-52.0286 eV/atom | T=1071.9K
+[2025-10-22 15:48:19] [GPU] Memory used: 6550 MB
+[2025-10-22 15:48:33] [MD] Step 20 | E=-52.0148 eV/atom | T=1105.7K
+[2025-10-22 15:48:33] [GPU] Memory used: 6550 MB
+[2025-10-22 15:48:46] [MD] Step 30 | E=-52.0109 eV/atom | T=1160.1K
+[2025-10-22 15:48:46] [GPU] Memory used: 6550 MB
+[2025-10-22 15:48:59] [MD] Step 40 | E=-52.0064 eV/atom | T=1230.0K
+[2025-10-22 15:48:59] [GPU] Memory used: 6550 MB
+[2025-10-22 15:49:12] [MD] Step 50 | E=-52.0120 eV/atom | T=1218.7K
+[2025-10-22 15:49:12] [GPU] Memory used: 6550 MB
+[2025-10-22 15:49:25] [MD] Step 60 | E=-52.0116 eV/atom | T=1169.8K
+[2025-10-22 15:49:25] [GPU] Memory used: 6550 MB
+[2025-10-22 15:49:37] [MD] Step 70 | E=-52.0147 eV/atom | T=1214.6K
+[2025-10-22 15:49:37] [GPU] Memory used: 6550 MB
+[2025-10-22 15:49:50] [MD] Step 80 | E=-52.0095 eV/atom | T=1178.6K
+[2025-10-22 15:49:50] [GPU] Memory used: 6550 MB
+[2025-10-22 15:50:02] [MD] Step 90 | E=-52.0127 eV/atom | T=1178.2K
+[2025-10-22 15:50:02] [GPU] Memory used: 6550 MB
+[2025-10-22 15:50:15] [MD] Step 100 | E=-52.0110 eV/atom | T=1204.1K
+[2025-10-22 15:50:15] [GPU] Memory used: 6550 MB
+[2025-10-22 15:50:27] [MD] Step 110 | E=-52.0111 eV/atom | T=1165.5K
+[2025-10-22 15:50:27] [GPU] Memory used: 6550 MB
+[2025-10-22 15:50:39] [MD] Step 120 | E=-52.0114 eV/atom | T=1252.4K
+[2025-10-22 15:50:39] [GPU] Memory used: 6550 MB
+[2025-10-22 15:50:51] [MD] Step 130 | E=-52.0053 eV/atom | T=1172.9K
+[2025-10-22 15:50:51] [GPU] Memory used: 6550 MB
+[2025-10-22 15:51:04] [MD] Step 140 | E=-52.0175 eV/atom | T=1226.0K
+[2025-10-22 15:51:04] [GPU] Memory used: 6550 MB
+[2025-10-22 15:51:16] [MD] Step 150 | E=-52.0064 eV/atom | T=1194.7K
+[2025-10-22 15:51:16] [GPU] Memory used: 6550 MB
+[2025-10-22 15:51:28] [MD] Step 160 | E=-52.0205 eV/atom | T=1224.1K
+[2025-10-22 15:51:28] [GPU] Memory used: 6550 MB
+[2025-10-22 15:51:40] [MD] Step 170 | E=-52.0134 eV/atom | T=1173.4K
+[2025-10-22 15:51:40] [GPU] Memory used: 6550 MB
+[2025-10-22 15:51:52] [MD] Step 180 | E=-52.0079 eV/atom | T=1247.9K
+[2025-10-22 15:51:52] [GPU] Memory used: 6550 MB
+[2025-10-22 15:52:04] [MD] Step 190 | E=-52.0132 eV/atom | T=1259.2K
+[2025-10-22 15:52:04] [GPU] Memory used: 6550 MB
+[2025-10-22 15:52:16] [MD] Step 200 | E=-52.0086 eV/atom | T=1230.2K
+[2025-10-22 15:52:16] [GPU] Memory used: 6550 MB
+[2025-10-22 15:52:17] [MD] Simulation finished in 4.33 min → saved: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md_gpu/mace01_md.xyz
+[2025-10-22 15:52:17] [PLOT] Saving MD plot to md_plot.png
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/matplotlib/style/core.py", line 129, in use
+    style = _rc_params_in_file(style)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 906, in _rc_params_in_file
+    with _open_file_or_url(fname) as fd:
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 883, in _open_file_or_url
+    with open(fname, encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'seaborn-darkgrid'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md.py", line 142, in <module>
+    main()
+  File "/data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md.py", line 137, in main
+    plot_md(time_fs, energies, temperatures, args.plot_file)
+  File "/data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md.py", line 73, in plot_md
+    plt.style.use("seaborn-darkgrid")
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/matplotlib/style/core.py", line 131, in use
+    raise OSError(
+OSError: 'seaborn-darkgrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)

@@ -1,0 +1,19 @@
+﻿mol2_id,rd_idx,symbol,formal_charge,hybridization,aromatic,degree,total_h_count,ring_sizes,primary_label,functional_groups,environment,description
+1,0,C,0,sp2,False,1,2,,alkene carbon,alkene carbon;sp2 carbon,aliphatic sp2,sp2 carbon in C=C; planar geometry. / Trigonal-planar carbon without explicit aromaticity.
+2,1,C,0,sp2,False,2,1,,alkene carbon,alkene carbon;sp2 carbon,aliphatic sp2,sp2 carbon in C=C; planar geometry. / Trigonal-planar carbon without explicit aromaticity.
+3,2,C,0,sp2,True,3,0,6,aromatic carbon,aromatic carbon,aromatic sp2 in-6-ring,Carbon in aromatic ring; delocalized π system.
+4,3,C,0,sp2,True,2,1,6,aromatic carbon,aromatic carbon,aromatic sp2 in-6-ring,Carbon in aromatic ring; delocalized π system.
+5,4,C,0,sp2,True,2,1,6,aromatic carbon,aromatic carbon,aromatic sp2 in-6-ring,Carbon in aromatic ring; delocalized π system.
+6,5,C,0,sp2,True,3,0,6,aromatic carbon,aromatic carbon,aromatic sp2 in-6-ring,Carbon in aromatic ring; delocalized π system.
+7,6,C,0,sp2,True,2,1,6,aromatic carbon,aromatic carbon,aromatic sp2 in-6-ring,Carbon in aromatic ring; delocalized π system.
+8,7,C,0,sp2,True,2,1,6,aromatic carbon,aromatic carbon,aromatic sp2 in-6-ring,Carbon in aromatic ring; delocalized π system.
+9,8,C,0,sp3,False,2,2,,benzylic carbon,benzylic carbon;sp3 carbon,aliphatic sp3,sp3 carbon adjacent to aromatic ring; activated toward reactions. / Tetrahedral carbon.
+11,10,C,0,sp3,False,2,2,5,sp3 carbon,sp3 carbon,aliphatic sp3 in-5-ring,Tetrahedral carbon.
+12,11,C,0,sp3,False,2,2,5,sp3 carbon,sp3 carbon,aliphatic sp3 in-5-ring,Tetrahedral carbon.
+13,12,C,0,sp3,False,2,2,5,sp3 carbon,sp3 carbon,aliphatic sp3 in-5-ring,Tetrahedral carbon.
+15,14,C,0,sp3,False,2,2,,sp3 carbon,sp3 carbon,aliphatic sp3,Tetrahedral carbon.
+16,15,C,0,sp3,False,2,2,,sp3 carbon,sp3 carbon,aliphatic sp3,Tetrahedral carbon.
+17,16,C,0,sp3,False,2,2,,sp3 carbon,sp3 carbon,aliphatic sp3,Tetrahedral carbon.
+18,17,C,0,sp3,False,1,3,,sp3 carbon,sp3 carbon,aliphatic sp3,Tetrahedral carbon.
+10,9,N,0,sp3,False,3,0,5,amine nitrogen,amine nitrogen,aliphatic sp3 in-5-ring,Aliphatic/allylic amine nitrogen; nucleophilic and basic.
+14,13,N,1,sp3,False,3,1,5,amine nitrogen,amine nitrogen;cationic nitrogen,aliphatic sp3 in-5-ring cationic,Aliphatic/allylic amine nitrogen; nucleophilic and basic. / Positively charged nitrogen center.

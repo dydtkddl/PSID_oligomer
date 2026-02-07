@@ -1,0 +1,2 @@
+*.trj filter=lfs diff=lfs merge=lfs -text
+*.mol2 filter=lfs diff=lfs merge=lfs -text

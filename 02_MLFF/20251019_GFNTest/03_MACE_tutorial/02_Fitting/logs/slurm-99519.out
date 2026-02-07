@@ -1,0 +1,98 @@
+=== MACE Training Started ===
+Wed 22 Oct 2025 03:53:32 PM KST
+Working Directory: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD
+Wed Oct 22 15:53:32 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:43:00.0 Off |                  N/A |
+| 61%   31C    P8              29W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+[2025-10-22 15:53:35] === INITIALIZING MD RUN ===
+[2025-10-22 15:53:35] [DEVICE] Using GPU: NVIDIA GeForce RTX 3090
+[2025-10-22 15:53:35] [LOAD] Structure: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/00_bulkmake/packmol_cases/case_001/ionpairs.xyz
+[2025-10-22 15:53:35] [MODEL] Loading MACE model: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model
+Using head Default out of ['Default']
+Default dtype float32 does not match model dtype float64, converting models to float32.
+[2025-10-22 15:53:39] [MD] Langevin thermostat initialized (T=1200.0K, dt=1fs)
+[2025-10-22 15:53:40] [MD] Simulation started (total_steps=2000, interval=10)
+[2025-10-22 15:54:01] [MD] Step 10 | E=-52.0268 eV/atom | T=1072.0K
+[2025-10-22 15:54:01] [GPU] Memory used: 6550 MB
+[2025-10-22 15:54:15] [MD] Step 20 | E=-52.0154 eV/atom | T=1124.0K
+[2025-10-22 15:54:15] [GPU] Memory used: 6552 MB
+[2025-10-22 15:54:29] [MD] Step 30 | E=-52.0108 eV/atom | T=1189.5K
+[2025-10-22 15:54:29] [GPU] Memory used: 6552 MB
+[2025-10-22 15:54:42] [MD] Step 40 | E=-52.0054 eV/atom | T=1168.6K
+[2025-10-22 15:54:42] [GPU] Memory used: 6552 MB
+[2025-10-22 15:54:55] [MD] Step 50 | E=-52.0068 eV/atom | T=1182.9K
+[2025-10-22 15:54:55] [GPU] Memory used: 6552 MB
+[2025-10-22 15:55:08] [MD] Step 60 | E=-52.0078 eV/atom | T=1165.9K
+[2025-10-22 15:55:08] [GPU] Memory used: 6552 MB
+[2025-10-22 15:55:21] [MD] Step 70 | E=-52.0097 eV/atom | T=1151.9K
+[2025-10-22 15:55:21] [GPU] Memory used: 6552 MB
+[2025-10-22 15:55:33] [MD] Step 80 | E=-52.0145 eV/atom | T=1196.9K
+[2025-10-22 15:55:33] [GPU] Memory used: 6552 MB
+[2025-10-22 15:55:46] [MD] Step 90 | E=-52.0135 eV/atom | T=1153.1K
+[2025-10-22 15:55:46] [GPU] Memory used: 6552 MB
+[2025-10-22 15:55:58] [MD] Step 100 | E=-52.0144 eV/atom | T=1188.2K
+[2025-10-22 15:55:58] [GPU] Memory used: 6552 MB
+[2025-10-22 15:56:10] [MD] Step 110 | E=-52.0121 eV/atom | T=1152.6K
+[2025-10-22 15:56:10] [GPU] Memory used: 6552 MB
+[2025-10-22 15:56:23] [MD] Step 120 | E=-52.0059 eV/atom | T=1199.8K
+[2025-10-22 15:56:23] [GPU] Memory used: 6552 MB
+[2025-10-22 15:56:35] [MD] Step 130 | E=-52.0158 eV/atom | T=1192.2K
+[2025-10-22 15:56:35] [GPU] Memory used: 6552 MB
+[2025-10-22 15:56:47] [MD] Step 140 | E=-52.0115 eV/atom | T=1226.5K
+[2025-10-22 15:56:47] [GPU] Memory used: 6552 MB
+[2025-10-22 15:57:00] [MD] Step 150 | E=-52.0141 eV/atom | T=1192.6K
+[2025-10-22 15:57:00] [GPU] Memory used: 6552 MB
+[2025-10-22 15:57:12] [MD] Step 160 | E=-52.0181 eV/atom | T=1227.0K
+[2025-10-22 15:57:12] [GPU] Memory used: 6552 MB
+[2025-10-22 15:57:24] [MD] Step 170 | E=-52.0191 eV/atom | T=1233.4K
+[2025-10-22 15:57:24] [GPU] Memory used: 6552 MB
+[2025-10-22 15:57:37] [MD] Step 180 | E=-52.0200 eV/atom | T=1177.4K
+[2025-10-22 15:57:37] [GPU] Memory used: 6552 MB
+[2025-10-22 15:57:48] [MD] Step 190 | E=-52.0135 eV/atom | T=1130.3K
+[2025-10-22 15:57:48] [GPU] Memory used: 6552 MB
+[2025-10-22 15:58:00] [MD] Step 200 | E=-52.0219 eV/atom | T=1193.0K
+[2025-10-22 15:58:00] [GPU] Memory used: 6552 MB
+[2025-10-22 15:58:01] [MD] Simulation finished in 4.36 min → saved: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md_gpu/mace01_md.xyz
+[2025-10-22 15:58:01] [PLOT] Saving MD plot to md_plot.png
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/matplotlib/style/core.py", line 129, in use
+    style = _rc_params_in_file(style)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 906, in _rc_params_in_file
+    with _open_file_or_url(fname) as fd:
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 883, in _open_file_or_url
+    with open(fname, encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'seaborn-darkgrid'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md.py", line 142, in <module>
+    main()
+  File "/data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md.py", line 137, in main
+    plot_md(time_fs, energies, temperatures, args.plot_file)
+  File "/data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md.py", line 73, in plot_md
+    plt.style.use("seaborn-darkgrid")
+  File "/data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/matplotlib/style/core.py", line 131, in use
+    raise OSError(
+OSError: 'seaborn-darkgrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+=== Job Completed ===
+Wed 22 Oct 2025 03:58:02 PM KST

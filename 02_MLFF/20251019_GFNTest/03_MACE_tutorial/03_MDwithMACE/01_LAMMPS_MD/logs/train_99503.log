@@ -1,0 +1,7 @@
+====================================================
+[INFO] ✅ CUDA available: NVIDIA GeForce RTX 3090
+====================================================
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md.py", line 69, in <module>
+    init_conf = ea.sel_by_info_val(read(DATA_PATH, ":"), "Nmols", 1)[0].copy()
+IndexError: list index out of range

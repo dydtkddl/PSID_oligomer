@@ -1,0 +1,21 @@
+Atom_Index,Charge,Info,DataMass,Source,ElementGuess,AtomicNumber
+15,0.0,P  - P~   |,30.974,oplsaa.lt,P,15
+393,0.78,P  - P~   | P dimethylphosphate anion,30.974,oplsaa.lt,P,15
+440,1.62,P  - P~   | P in Me2PO4-,30.974,oplsaa.lt,P,15
+445,1.92,P  - P~   | P in MeOPO3--,30.974,oplsaa.lt,P,15
+450,1.62,P  - P~   | P in MePO3Me-,30.974,oplsaa.lt,P,15
+781,0.9684,P  - P+   | phosphonium R4P+,30.974,oplsaa.lt,P,15
+785,1.34,P  - P~   | P in PF6-,30.974,oplsaa.lt,P,15
+336,0.78,"""DiMePhosphate P (UA)""",30.974,oplsaa2008.lt,P,15
+381,1.62,"""DiMe Phosphate P""",30.974,oplsaa2008.lt,P,15
+386,1.92,"""Me Phosphate P""",30.974,oplsaa2008.lt,P,15
+391,1.62,"""Me MePhosphonate P""",30.974,oplsaa2008.lt,P,15
+722,0.9684,"""Phosphonium R4P+""",30.974,oplsaa2008.lt,P,15
+726,1.34,"""Hexafluorophosphate Ion""",30.974,oplsaa2008.lt,P,15
+15,0.0,P  - P~   |,30.974,oplsaa2024.lt,P,15
+393,0.78,P  - P~   | P dimethylphosphate anion,30.974,oplsaa2024.lt,P,15
+440,1.62,P  - P~   | P in Me2PO4-,30.974,oplsaa2024.lt,P,15
+445,1.92,P  - P~   | P in MeOPO3--,30.974,oplsaa2024.lt,P,15
+450,1.62,P  - P~   | P in MePO3Me-,30.974,oplsaa2024.lt,P,15
+781,0.9684,P  - P+   | phosphonium R4P+,30.974,oplsaa2024.lt,P,15
+785,1.34,P  - P~   | P in PF6-,30.974,oplsaa2024.lt,P,15

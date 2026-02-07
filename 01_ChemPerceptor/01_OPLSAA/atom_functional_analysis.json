@@ -1,0 +1,58 @@
+{"mol2_id": 1, "rd_idx": 0, "symbol": "C", "formal_charge": 0, "hybridization": "sp2",
+ "aromatic": false, 
+ "degree": 1, "total_h_count": 2, "ring_sizes": [], "functional_groups": ["alkene carbon", "sp2 carbon"],
+  "primary_label": "alkene carbon", "environment": "aliphatic sp2",
+   "description": "sp2 carbon in C=C; planar geometry. / Trigonal-planar carbon without explicit aromaticity."}
+{"mol2_id": 2, "rd_idx": 1, "symbol": "C", "formal_charge": 0, "hybridization": "sp2", "aromatic": false,
+ "degree": 2, "total_h_count": 1, "ring_sizes": [], "functional_groups": ["alkene carbon", "sp2 carbon"],
+  "primary_label": "alkene carbon", "environment": "aliphatic sp2", 
+  "description": "sp2 carbon in C=C; planar geometry. / Trigonal-planar carbon without explicit aromaticity."}
+{"mol2_id": 3, "rd_idx": 2, "symbol": "C", "formal_charge": 0, "hybridization": "sp2", "aromatic": true, "degree": 3, "total_h_count": 0, "ring_sizes": [6], 
+"functional_groups": ["aromatic carbon"], "primary_label": "aromatic carbon", "environment": "aromatic sp2 in-6-ring",
+ "description": "Carbon in aromatic ring; delocalized π system."}
+{"mol2_id": 4, "rd_idx": 3, "symbol": "C", "formal_charge": 0, "hybridization": "sp2", "aromatic": true, "degree": 2, "total_h_count": 1, "ring_sizes": [6], 
+"functional_groups": ["aromatic carbon"], "primary_label": "aromatic carbon", "environment": "aromatic sp2 in-6-ring",
+ "description": "Carbon in aromatic ring; delocalized π system."}
+{"mol2_id": 5, "rd_idx": 4, "symbol": "C", "formal_charge": 0, "hybridization": "sp2", "aromatic": true, "degree": 2, "total_h_count": 1, "ring_sizes": [6], 
+"functional_groups": ["aromatic carbon"], "primary_label": "aromatic carbon", "environment": "aromatic sp2 in-6-ring"
+, "description": "Carbon in aromatic ring; delocalized π system."}
+{"mol2_id": 6, "rd_idx": 5, "symbol": "C", "formal_charge": 0, "hybridization": "sp2", "aromatic": true, "degree": 3, "total_h_count": 0, "ring_sizes": [6], 
+"functional_groups": ["aromatic carbon"], "primary_label": "aromatic carbon", "environment": "aromatic sp2 in-6-ring",
+ "description": "Carbon in aromatic ring; delocalized π system."}
+{"mol2_id": 7, "rd_idx": 6, "symbol": "C", "formal_charge": 0, "hybridization": "sp2", "aromatic": true, "degree": 2, "total_h_count": 1, "ring_sizes": [6], 
+"functional_groups": ["aromatic carbon"], "primary_label": "aromatic carbon", "environment": "aromatic sp2 in-6-ring",
+ "description": "Carbon in aromatic ring; delocalized π system."}
+{"mol2_id": 8, "rd_idx": 7, "symbol": "C", "formal_charge": 0, "hybridization": "sp2", "aromatic": true, "degree": 2, "total_h_count": 1, "ring_sizes": [6], 
+"functional_groups": ["aromatic carbon"], "primary_label": "aromatic carbon", "environment": "aromatic sp2 in-6-ring",
+ "description": "Carbon in aromatic ring; delocalized π system."}
+{"mol2_id": 9, "rd_idx": 8, "symbol": "C", "formal_charge": 0, "hybridization": "sp3", "aromatic": false, "degree": 2, "total_h_count": 2, "ring_sizes": [], 
+"functional_groups": ["benzylic carbon", "sp3 carbon"], "primary_label": "benzylic carbon", "environment": "aliphatic sp3", 
+"description": "sp3 carbon adjacent to aromatic ring; activated toward reactions. / Tetrahedral carbon."}
+{"mol2_id": 10, "rd_idx": 9, "symbol": "N", "formal_charge": 0, "hybridization": "sp3", "aromatic": false, "degree": 3, "total_h_count": 0, "ring_sizes": [5], 
+"functional_groups": ["amine nitrogen"], "primary_label": "amine nitrogen", "environment": "aliphatic sp3 in-5-ring", 
+"description": "Aliphatic/allylic amine nitrogen; nucleophilic and basic."}
+{"mol2_id": 11, "rd_idx": 10, "symbol": "C", "formal_charge": 0, "hybridization": "sp3", "aromatic": false, "degree": 2, "total_h_count": 2, "ring_sizes": [5],
+ "functional_groups": ["sp3 carbon"], "primary_label": "sp3 carbon", "environment": "aliphatic sp3 in-5-ring",
+  "description": "Tetrahedral carbon."}
+{"mol2_id": 12, "rd_idx": 11, "symbol": "C", "formal_charge": 0, "hybridization": "sp3", "aromatic": false, "degree": 2, "total_h_count": 2, "ring_sizes": [5],
+ "functional_groups": ["sp3 carbon"], "primary_label": "sp3 carbon", "environment": "aliphatic sp3 in-5-ring",
+  "description": "Tetrahedral carbon."}
+{"mol2_id": 13, "rd_idx": 12, "symbol": "C", "formal_charge": 0, "hybridization": "sp3", "aromatic": false, "degree": 2, "total_h_count": 2, "ring_sizes": [5],
+ "functional_groups": ["sp3 carbon"], "primary_label": "sp3 carbon", "environment": "aliphatic sp3 in-5-ring",
+  "description": "Tetrahedral carbon."}
+{"mol2_id": 14, "rd_idx": 13, "1symbol": "N", "formal_charge": 1, "hybridization": "sp3", "aromatic": false, "degree": 3, "total_h_count": 1, "ring_sizes": [5], 
+"functional_groups": ["amine nitrogen", "cationic nitrogen"], "primary_label": "amine nitrogen", "environment": "aliphatic sp3 in-5-ring cationic",
+ "description": "Aliphatic/allylic amine nitrogen; nucleophilic and basic. / Positively charged nitrogen center."}
+{"mol2_id": 15, "rd_idx": 14, "symbol": "C", "formal_charge": 0, "hybridization": "sp3", "aromatic": false, "degree": 2, "total_h_count": 2, "ring_sizes": [], 
+"functional_groups": ["sp3 carbon"], "primary_label": "sp3 carbon", "environment": "aliphatic sp3", 
+"description": "Tetrahedral carbon."}
+{"mol2_id": 16, "rd_idx": 15, "symbol": "C", "formal_charge": 0, "hybridization": "sp3", "aromatic": false, "degree": 2, "total_h_count": 2, "ring_sizes": [], 
+"functional_groups": ["sp3 carbon"], "primary_label": "sp3 carbon", "environment": "aliphatic sp3", 
+"description": "Tetrahedral carbon."}
+{"mol2_id": 17, "rd_idx": 16, "symbol": "C", "formal_charge": 0, "hybridization": "sp3", "aromatic"
+: false, "degree": 2, "total_h_count": 2, "ring_sizes": [], 
+"functional_groups": ["sp3 carbon"], "primary_label": "sp3 carbon", "environment": "aliphatic sp3",
+ "description": "Tetrahedral carbon."}
+{"mol2_id": 18, "rd_idx": 17, "symbol": "C", "formal_charge": 0, "hybridization": "sp3", "aromatic":
+ false, "degree": 1, "total_h_count": 3, "ring_sizes": [], 
+"functional_groups": ["sp3 carbon"], "primary_label": "sp3 carbon", "environment": "aliphatic sp3", "description": "Tetrahedral carbon."}

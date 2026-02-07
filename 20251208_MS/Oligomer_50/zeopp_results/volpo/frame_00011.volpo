@@ -1,0 +1,3 @@
+@ /mnt/c/Users/PSID_PC_20/Downloads/zeopp_results/volpo/frame_00011.volpo Unitcell_volume: 729000   Density: 0.127727   POAV_A^3: 634565 POAV_Volume_fraction: 0.87046 POAV_cm^3/g: 6.815 PONAV_A^3: 0 PONAV_Volume_fraction: 0 PONAV_cm^3/g: 0
+PROBE_OCCUPIABLE_VOL_CALC: filename| density(g/cm3)| probe rad| N points| probe ctr A fract| probe ctr NA fract| A fract| NA fract| narrow fract |ovlp fract.
+PROBE_OCCUPIABLE___RESULT: /mnt/c/Users/PSID_PC_20/Downloads/zeopp_results/volpo/frame_00011.volpo	0.127727	1.2	50000	0.83108	0	0.87046	0	0.05108	0.07846

@@ -1,0 +1,55 @@
+Error while loading libcue_ops.so: /data/dydtkddhkdwk/anaconda3/envs/mace_env/lib/python3.10/site-packages/cuequivariance_ops/lib/libcue_ops.so: undefined symbol: cublasGemmGroupedBatchedEx, version libcublas.so.12
+🔥 Loading base config: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try02_cuequivariance_test/base.yml
+✅ Config expanded and saved to /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try02_cuequivariance_test/config.yml
+🚀 Starting MACE training with /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try02_cuequivariance_test/config.yml
+2025-10-21 20:12:13.816 INFO: ===========VERIFYING SETTINGS===========
+2025-10-21 20:12:13.817 INFO: MACE version: 0.3.14
+2025-10-21 20:12:13.848 INFO: CUDA version: 11.8, CUDA device: 0
+2025-10-21 20:12:13.926 INFO: ===========LOADING INPUT DATA===========
+2025-10-21 20:12:13.926 INFO: Using heads: ['Default']
+2025-10-21 20:12:13.926 INFO: Using the key specifications to parse data:
+2025-10-21 20:12:13.926 INFO: Default: KeySpecification(info_keys={'energy': 'energy_xtb', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'total_charge', 'polarizability': 'polarizability', 'total_spin': 'total_spin'}, arrays_keys={'forces': 'forces_xtb', 'charges': 'REF_charges'})
+2025-10-21 20:12:13.926 INFO: =============    Processing head Default     ===========
+2025-10-21 20:12:14.278 INFO: Training set 1/1 [energy: 412, stress: 0, virials: 0, dipole components: 0, head: 412, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 412, charges: 0]
+2025-10-21 20:12:14.280 INFO: Total Training set [energy: 412, stress: 0, virials: 0, dipole components: 0, head: 412, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 412, charges: 0]
+2025-10-21 20:12:14.280 INFO: No validation set provided, splitting training data instead.
+2025-10-21 20:12:14.281 INFO: Using random 10% of training set for validation with indices saved in: ./valid_indices_123.txt
+2025-10-21 20:12:14.284 INFO: Random Split Training set [energy: 371, stress: 0, virials: 0, dipole components: 0, head: 371, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 371, charges: 0]
+2025-10-21 20:12:14.284 INFO: Random Split Validation set [energy: 41, stress: 0, virials: 0, dipole components: 0, head: 41, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 41, charges: 0]
+2025-10-21 20:12:14.621 INFO: Test set 1/1 [energy: 407, stress: 0, virials: 0, dipole components: 0, head: 407, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 407, charges: 0]
+2025-10-21 20:12:14.623 INFO: Total Test set [energy: 407, stress: 0, virials: 0, dipole components: 0, head: 407, elec_temp: 0, total_charge: 0, polarizability: 0, total_spin: 0, forces: 407, charges: 0]
+2025-10-21 20:12:14.623 INFO: Total number of configurations: train=371, valid=41, tests=[Default_Default: 407],
+2025-10-21 20:12:14.631 INFO: Atomic Numbers used: [np.int64(1), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(16)]
+2025-10-21 20:12:14.631 INFO: Isolated Atomic Energies (E0s) not in training file, using command line argument
+2025-10-21 20:12:14.631 INFO: Atomic Energies used (z: eV) for head Default: {1: -10.707211383396714, 6: -48.847445262804705, 7: -71.00681805517411, 8: -102.57117256025786, 9: -125.69864294466228, 16: -85.66881795502964}
+2025-10-21 20:12:14.631 INFO: Processing datasets for head 'Default'
+2025-10-21 20:12:14.953 INFO: Combining 1 list datasets for head 'Default'
+2025-10-21 20:12:14.988 INFO: Head 'Default' training dataset size: 371
+2025-10-21 20:12:14.989 INFO: Computing average number of neighbors
+2025-10-21 20:12:15.280 INFO: Average number of neighbors: 23.729617383089277
+2025-10-21 20:12:15.280 INFO: During training the following quantities will be reported: energy, forces
+2025-10-21 20:12:15.280 INFO: ===========MODEL DETAILS===========
+2025-10-21 20:12:15.446 INFO: Building model
+2025-10-21 20:12:15.446 INFO: Message passing with 64 channels and max_L=1 (64x0e+64x1o)
+2025-10-21 20:12:15.446 INFO: 2 layers, each with correlation order: 3 (body order: 4) and spherical harmonics up to: l=3
+2025-10-21 20:12:15.447 INFO: 8 radial and 5 basis functions
+2025-10-21 20:12:15.447 INFO: Radial cutoff: 4.5 A (total receptive field for each atom: 9.0 A)
+2025-10-21 20:12:15.447 INFO: Distance transform for radial basis functions: None
+2025-10-21 20:12:15.447 INFO: Hidden irreps: 64x0e+64x1o
+2025-10-21 20:12:16.707 INFO: Total number of parameters: 251088
+2025-10-21 20:12:16.707 INFO: 
+2025-10-21 20:12:16.707 INFO: ===========OPTIMIZER INFORMATION===========
+2025-10-21 20:12:16.707 INFO: Using ADAM as parameter optimizer
+2025-10-21 20:12:16.707 INFO: Batch size: 10
+2025-10-21 20:12:16.707 INFO: Number of gradient updates: 3710
+2025-10-21 20:12:16.707 INFO: Learning rate: 0.01, weight decay: 5e-07
+2025-10-21 20:12:16.707 INFO: WeightedEnergyForcesLoss(energy_weight=1.000, forces_weight=100.000)
+2025-10-21 20:12:16.707 INFO: Converting model to CUEQ for accelerated training
+2025-10-21 20:12:16.786 INFO: Creating new model with cuequivariance settings
+2025-10-21 20:12:48.522 INFO: Stage Two (after 75 epochs) with loss function: WeightedEnergyForcesLoss(energy_weight=1000.000, forces_weight=100.000), with energy weight : 1000.0, forces weight : 100.0 and learning rate : 0.001
+2025-10-21 20:12:54.238 INFO: Using gradient clipping with tolerance=10.000
+2025-10-21 20:12:54.238 INFO: 
+2025-10-21 20:12:54.238 INFO: ===========TRAINING===========
+2025-10-21 20:12:54.238 INFO: Started training, reporting errors on validation set
+2025-10-21 20:12:54.238 INFO: Loss metrics on validation set
+2025-10-21 20:13:09.716 INFO: Initial: head: Default, loss=0.27391590, RMSE_E_per_atom=  883.91 meV, RMSE_F=  138.74 meV / A

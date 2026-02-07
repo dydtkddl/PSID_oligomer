@@ -1,0 +1,10 @@
+python 00_md.py \
+  --data_path /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/00_bulkmake/packmol_cases/case_001/ionpairs.xyz \
+ --model_path  /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/02_Fitting/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model \
+  --output_md /home/yongsang/PSID_oligomer/02_MLFF/20251019_GFNTest/03_MACE_tutorial/03_MDwithMACE/01_LAMMPS_MD/00_md_cpu/mace_md.xyz \
+  --device cpu \
+  --num_threads 30 \
+  --temp 1200 \
+  --steps 2000 \
+  --interval 10 \
+  --log_file md_cpu_30threads.log

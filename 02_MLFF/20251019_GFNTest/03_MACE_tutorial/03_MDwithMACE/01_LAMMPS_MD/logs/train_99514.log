@@ -1,0 +1,18 @@
+[2025-10-22 15:13:56] === INITIALIZING ===
+[2025-10-22 15:13:56] [GPU] Using GPU: NVIDIA GeForce RTX 3090
+[2025-10-22 15:13:56] [LOAD] Loading structure: /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/00_bulkmake/packmol_cases/case_001/ionpairs.xyz
+[2025-10-22 15:13:56] [MODEL] Loading MACE model: /data/dydtkddhkdwk/20251021_MACE_FIT/20251021_try03_cuequivariance_test_with_Foundation_MACEOFF/MACE_OFF_models/mace_off_finetune_stagetwo_compiled.model
+Using head Default out of ['Default']
+Default dtype float32 does not match model dtype float64, converting models to float32.
+[2025-10-22 15:14:01] [MD] Langevin thermostat set (T=1200.0K, dt=1fs)
+[2025-10-22 15:14:01] [MD] Starting simulation...
+[2025-10-22 15:15:17] [MD] Step 50, E=-52.0073 eV/atom, T=1193.7K
+[2025-10-22 15:15:17] [GPU] Memory used: 6550 MB
+[2025-10-22 15:16:20] [MD] Step 100, E=-52.0095 eV/atom, T=1220.8K
+[2025-10-22 15:16:20] [GPU] Memory used: 6550 MB
+[2025-10-22 15:17:23] [MD] Step 150, E=-52.0096 eV/atom, T=1207.6K
+[2025-10-22 15:17:23] [GPU] Memory used: 6550 MB
+[2025-10-22 15:18:23] [MD] Step 200, E=-52.0089 eV/atom, T=1247.9K
+[2025-10-22 15:18:23] [GPU] Memory used: 6550 MB
+[2025-10-22 15:18:24] [MD] FINISHED in 4.38 min -> /data/dydtkddhkdwk/20251022_MACE_MD_LAMMPS/01_LAMMPS_MD/00_md_gpu/mace01_md.xyz
+[2025-10-22 15:18:24] [DONE] All tasks completed ✅
