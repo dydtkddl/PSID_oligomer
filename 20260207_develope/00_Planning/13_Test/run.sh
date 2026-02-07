@@ -1,7 +1,7 @@
 #!/bin/bash
 # BCMBP ReaxFF 테스트 자동 실행 스크립트
 
-LAMMPS="lmp"  # 또는 ~/downloads/lammps/build-cpu/lmp
+LAMMPS="/home/yongsang/downloads/lammps/build-reaxff/lmp"  # 또는 ~/downloads/lammps/build-cpu/lmp
 
 echo "=========================================="
 echo "BCMBP ReaxFF 테스트 자동 실행"
