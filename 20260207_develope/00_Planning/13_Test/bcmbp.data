@@ -1,7 +1,7 @@
 LAMMPS data file for BCMBP (C14H12Cl2) - ReaxFF compatible
 
 28 atoms
-3 atom types
+4 atom types
 
 -8.0 8.0 xlo xhi
 -4.0 4.0 ylo yhi
