@@ -16,7 +16,7 @@ read_data bcmbp.data
 # ReaxFF 설정 - 최신 LAMMPS 버전용
 # ===================================================================
 pair_style reaxff NULL safezone 3.0 mincap 150
-pair_coeff * * 11_CHOCl.lammps.ff C H Cl O
+pair_coeff * * 11_CHOCl.ff C H Cl O
 # 주의: bcmbp.data의 원자 타입 순서에 맞춰야 함
 # 일반적으로 C=1, H=2, Cl=3, O=4 순서
 
@@ -34,7 +34,7 @@ thermo_style custom step temp pe ke etotal press vol
 print "=========================================="
 print "BCMBP ReaxFF 호환성 테스트"
 print "분자식: C14H12Cl2 (28 atoms)"
-print "파라미터: 11_CHOCl.lammps.ff"
+print "파라미터: 11_CHOCl.ff"
 print "=========================================="
 
 # ===================================================================
@@ -99,7 +99,7 @@ write_data bcmbp_final.data
 
 print "=========================================="
 print "✅ BCMBP ReaxFF 테스트 완료!"
-print "파라미터: 11_CHOCl.lammps.ff"
+print "파라미터: 11_CHOCl.ff"
 print "시스템: BCMBP C14H12Cl2 (28 원자)"
 print "총 시뮬레이션: 6 ps"
 print "출력 파일:"
