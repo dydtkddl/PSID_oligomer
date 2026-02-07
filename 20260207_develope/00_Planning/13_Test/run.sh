@@ -49,7 +49,7 @@ echo "로그 파일: bcmbp_test.log"
 echo "실시간 확인: tail -f bcmbp_test.log (별도 터미널에서)"
 echo ""
 
-$LAMMPS -in test_bcmbp_reaxff.lmp -log bcmbp_test.log
+mpirun -np 10 $LAMMPS -in test_bcmbp_reaxff.lmp -log bcmbp_test.log
 
 # 5. 결과 확인
 echo ""
