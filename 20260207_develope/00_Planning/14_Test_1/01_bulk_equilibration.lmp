@@ -32,7 +32,7 @@ print "총 분자 수: ${total_mols}"
 
 # 3. ReaxFF 설정
 pair_style      reaxff NULL safezone 4.0 mincap 300
-pair_coeff      * * 11_CHOCl.lammps.ff C H Cl
+pair_coeff      * * 11_CHOCl.lammps.ff C H Cl O
 fix             qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
 
 neighbor        2.5 bin

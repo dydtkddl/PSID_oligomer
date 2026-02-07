@@ -18,7 +18,7 @@ read_data       bcmbp_bulk_equilibrated.data
 
 # ReaxFF 설정
 pair_style      reaxff NULL safezone 4.0 mincap 300
-pair_coeff      * * 11_CHOCl.lammps.ff C H Cl
+pair_coeff      * * 11_CHOCl.lammps.ff C H Cl O
 fix             qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
 
 neighbor        2.5 bin
@@ -31,7 +31,7 @@ thermo          500
 thermo_style    custom step temp press pe ke etotal
 
 # 화학 반응 분석 (ReaxFF 핵심 기능)
-fix             species all reaxff/species 100 500 500 species_thermal.out element C H Cl
+fix             species all reaxff/species 100 500 500 species_thermal.out element C H Cl O
 fix             bonds all reaxff/bonds 500 bonds_thermal.reax
 
 print ""
