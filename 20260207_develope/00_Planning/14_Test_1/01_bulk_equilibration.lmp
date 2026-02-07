@@ -18,7 +18,7 @@ print "=========================================="
 read_data       bcmbp.data
 
 # 시스템 크기 설정 (컴퓨터 성능에 따라 조정)
-variable        rep_size equal 4    # 4x4x4 = 64개 분자 (1,792 원자)
+variable        rep_size equal 5    # 
 replicate       ${rep_size} ${rep_size} ${rep_size}
 
 # 원자 겹침 방지

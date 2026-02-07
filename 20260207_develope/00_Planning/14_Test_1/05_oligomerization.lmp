@@ -1,0 +1,130 @@
+# ===================================================================
+# BCMBP 올리고머 형성 시뮬레이션
+# 전략: 단계적 가열 → 반응 유도 → 냉각 안정화
+# 목표: 단량체 → 2량체, 3량체, n량체 형성
+# ===================================================================
+
+units           real
+atom_style      full
+boundary        p p p
+
+print "=========================================="
+print "BCMBP 올리고머 형성 시뮬레이션"
+print "메커니즘: C-Cl 결합 파괴 → 라디칼 결합"
+print "=========================================="
+
+# 1. 평형 벌크 구조 로드
+read_data       bcmbp_bulk_equilibrated.data
+
+# 2. ReaxFF 설정
+pair_style      reaxff NULL safezone 4.0 mincap 300
+pair_coeff      * * 11_CHOCl.lammps.ff C H Cl
+fix             qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
+
+neighbor        2.5 bin
+neigh_modify    every 5 delay 0 check yes
+
+timestep        0.2  # 반응 시뮬레이션용 작은 타임스텝
+
+# 3. 화학 반응 분석 설정 (핵심!)
+fix             species all reaxff/species 100 1000 1000 species_oligo.out &
+                element C H Cl position 5000 5000
+fix             bonds all reaxff/bonds 1000 bonds_oligo.reax
+
+# 분자 크기 분석 (올리고머 추적용)
+compute         frag all fragment/atom
+compute         mol_size all chunk/atom c_frag
+compute         mol_count all property/chunk mol_size count
+
+# 4. 출력 설정
+thermo          1000
+thermo_style    custom step temp press pe ke etotal vol density
+
+# ===================================================================
+# 단계 1: C-Cl 결합 활성화 (300K → 600K, 10 ps)
+# ===================================================================
+print ""
+print "=== 단계 1: C-Cl 결합 활성화 (300K → 600K) ==="
+velocity        all create 300.0 123456 dist gaussian
+
+fix             heat1 all nvt temp 300.0 600.0 100.0
+dump            d1 all custom 2000 05_activation.lammpstrj id type xu yu zu q c_frag
+dump_modify     d1 sort id
+
+run             50000  # 10 ps
+undump          d1
+unfix           heat1
+
+# ===================================================================
+# 단계 2: 라디칼 형성 (600K → 1000K → 유지, 30 ps)
+# ===================================================================
+print ""
+print "=== 단계 2: 라디칼 형성 (600K → 1000K) ==="
+
+# 추가 가열
+fix             heat2 all nvt temp 600.0 1000.0 100.0
+run             25000  # 5 ps
+unfix           heat2
+
+# 고온 반응 구간 (1000K 유지)
+print "고온 반응 구간 (1000K, 25 ps)"
+fix             react all nvt temp 1000.0 1000.0 100.0
+dump            d2 all custom 1000 05_reaction.lammpstrj id type xu yu zu q c_frag
+dump_modify     d2 sort id
+
+run             125000  # 25 ps
+undump          d2
+unfix           react
+
+# ===================================================================
+# 단계 3: 올리고머 형성 (1000K → 500K, 25 ps)
+# ===================================================================
+print ""
+print "=== 단계 3: 올리고머 형성 (냉각, 1000K → 500K) ==="
+
+fix             cool1 all nvt temp 1000.0 500.0 100.0
+dump            d3 all custom 1000 05_oligomerization.lammpstrj id type xu yu zu q c_frag
+dump_modify     d3 sort id
+
+run             125000  # 25 ps
+undump          d3
+unfix           cool1
+
+# ===================================================================
+# 단계 4: 안정화 (500K → 300K, 10 ps)
+# ===================================================================
+print ""
+print "=== 단계 4: 안정화 (500K → 300K) ==="
+
+fix             cool2 all nvt temp 500.0 300.0 100.0
+run             50000  # 10 ps
+unfix           cool2
+
+# 최종 평형화
+fix             final all nvt temp 300.0 300.0 100.0
+run             25000  # 5 ps
+unfix           final
+
+# ===================================================================
+# 결과 저장
+# ===================================================================
+unfix           species
+unfix           bonds
+
+write_data      bcmbp_oligomer_final.data
+
+print ""
+print "=========================================="
+print "✅ 올리고머 형성 시뮬레이션 완료!"
+print "총 시뮬레이션 시간: 100 ps"
+print ""
+print "핵심 분석 파일:"
+print "  - species_oligo.out: 화학종 변화"
+print "  - bonds_oligo.reax: 결합 생성/파괴"
+print "  - 05_oligomerization.lammpstrj: 형성 과정"
+print ""
+print "분석 방법:"
+print "  1. species 파일에서 C14H12 → C28H24 → C42H36 변화 확인"
+print "  2. OVITO에서 분자 크기별 시각화"
+print "  3. HCl, Cl2 등 부산물 생성 여부 확인"
+print "=========================================="
