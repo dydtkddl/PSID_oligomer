@@ -1,5 +1,5 @@
 # ===================================================================
-# 11_CHOCl.lammps.ff ReaxFF 파라미터 호환성 테스트
+# BCMBP ReaxFF 호환성 테스트 + 완전한 Trajectory 시각화
 # 시스템: BCMBP (4,4'-bis(chloromethyl)-1,1'-biphenyl)
 # 분자식: C14H12Cl2 (28 원자)
 # ===================================================================
@@ -13,7 +13,7 @@ boundary p p p
 read_data bcmbp.data
 
 # ===================================================================
-# ReaxFF 설정 - 핵심 부분!
+# ReaxFF 설정
 # ===================================================================
 pair_style reaxff NULL safezone 3.0 mincap 150
 pair_coeff * * 11_CHOCl.lammps.ff C H O Cl
@@ -21,22 +21,58 @@ pair_coeff * * 11_CHOCl.lammps.ff C H O Cl
 # 전하 평형 (ReaxFF 필수)
 fix qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
 
-# 출력 설정
-thermo 50
-thermo_style custom step temp pe ke etotal press vol
+# ===================================================================
+# 상세 출력 설정
+# ===================================================================
+# 열역학 데이터 (매 10 스텝)
+thermo 10
+thermo_style custom step time temp pe ke etotal press vol density
+
+# 에너지 로그 파일 (Python 분석용)
+variable step equal step
+variable temp equal temp
+variable pe equal pe
+variable ke equal ke
+variable etot equal etotal
+variable press equal press
+
+fix energy_log all print 10 "${step} ${temp} ${pe} ${ke} ${etot} ${press}" &
+    file energy_vs_time.dat screen no title "# Step Temp(K) PE(kcal/mol) KE(kcal/mol) Etot(kcal/mol) Press(atm)"
 
 print "=========================================="
-print "BCMBP ReaxFF 호환성 테스트"
-print "분자식: C14H12Cl2 (28 atoms)"
-print "파라미터: 11_CHOCl.lammps.ff"
+print "BCMBP ReaxFF 완전 시각화 테스트 시작"
 print "=========================================="
+
+# ===================================================================
+# 다중 포맷 Trajectory 출력 설정
+# ===================================================================
+
+# 1. 다중 프레임 XYZ (범용 시각화용)
+dump dxyz all xyz 25 bcmbp_complete.xyz
+dump_modify dxyz element C H O Cl
+
+# 2. LAMMPS trajectory (VMD/OVITO 상세 분석용)
+dump dtrj all custom 25 bcmbp_complete.lammpstrj id type element x y z q vx vy vz fx fy fz
+dump_modify dtrj element C H O Cl sort id
+
+# 3. DCD 포맷 (VMD 최적화)
+dump ddcd all dcd 25 bcmbp_complete.dcd
+
+# 4. 원자별 에너지 추적
+compute atom_pe all pe/atom
+dump denergy all custom 100 atomic_energies.dat id type element x y z c_atom_pe
+dump_modify denergy element C H O Cl
 
 # ===================================================================
 # 테스트 1: 에너지 최소화
 # ===================================================================
-print "=== 에너지 최소화 시작 ==="
+print "=== [1/4] 에너지 최소화 시작 ==="
 minimize 1.0e-4 1.0e-6 1000 10000
 print "=== 에너지 최소화 완료 ==="
+
+# 최소화 구조 별도 저장
+write_data minimized.data
+write_dump all xyz minimized.xyz modify element C H O Cl
 
 # ===================================================================
 # 테스트 2: 300K 평형화 (3 ps)
@@ -47,57 +83,71 @@ timestep 0.25  # fs
 velocity all create 300.0 12345 dist gaussian
 fix nvt1 all nvt temp 300.0 300.0 100.0
 
-dump 1 all custom 100 bcmbp_300K.lammpstrj id type x y z q
-dump_modify 1 sort id
-
-print "=== 300K 평형화 시작 (3 ps) ==="
+print "=== [2/4] 300K 평형화 시작 (3 ps) ==="
 run 12000  # 3 ps
 print "=== 300K 평형화 완료 ==="
 
 unfix nvt1
-undump 1
+write_dump all xyz equilibrated_300K.xyz modify element C H O Cl
 
 # ===================================================================
-# 테스트 3: 고온 안정성 (800K, 2 ps)
-# BCMBP는 더 큰 분자이므로 800K 사용 (1000K 대신)
+# 테스트 3: 고온 안정성 (800K)
 # ===================================================================
-print "=== 가열 시작 (300K → 800K, 0.5 ps) ==="
-fix nvt2 all nvt temp 300.0 800.0 100.0  # 가열
+print "=== [3/4] 가열 시작 (300K → 800K, 0.5 ps) ==="
+fix nvt2 all nvt temp 300.0 800.0 100.0
 run 2000  # 0.5 ps 가열
+unfix nvt2
 print "=== 가열 완료 ==="
 
-unfix nvt2
+print "=== 800K 고온 테스트 시작 (2 ps) ==="
 fix nvt3 all nvt temp 800.0 800.0 100.0
 
-dump 2 all custom 100 bcmbp_800K.lammpstrj id type x y z q
-dump_modify 2 sort id
+# 결합 길이 모니터링
+compute bond_len all bond/local dist
+fix bond_output all ave/time 50 1 50 c_bond_len[*] file bond_lengths_800K.dat mode vector
 
-print "=== 800K 고온 테스트 시작 (2 ps) ==="
 run 8000  # 2 ps at 800K
 print "=== 800K 고온 테스트 완료 ==="
 
 unfix nvt3
-undump 2
+unfix bond_output
 
 # ===================================================================
-# 테스트 4: 냉각 및 안정화 (0.5 ps)
+# 테스트 4: 냉각 및 안정화
 # ===================================================================
-print "=== 냉각 시작 (800K → 300K, 0.5 ps) ==="
+print "=== [4/4] 냉각 시작 (800K → 300K, 0.5 ps) ==="
 fix nvt4 all nvt temp 800.0 300.0 100.0
 run 2000  # 0.5 ps 냉각
 unfix nvt4
 print "=== 냉각 완료 ==="
 
+# 모든 dump 종료
+undump dxyz
+undump dtrj  
+undump ddcd
+undump denergy
+
 # 최종 구조 저장
 write_data bcmbp_final.data
+write_dump all xyz bcmbp_final.xyz modify element C H O Cl
+
+# 에너지 로그 종료
+unfix energy_log
 
 print "=========================================="
-print "✅ BCMBP ReaxFF 테스트 완료!"
-print "파라미터: 11_CHOCl.lammps.ff"
-print "시스템: BCMBP C14H12Cl2 (28 원자)"
-print "총 시뮬레이션: 6 ps"
-print "출력 파일:"
-print "  - bcmbp_300K.lammpstrj (300K 평형화)"
-print "  - bcmbp_800K.lammpstrj (800K 고온)"
-print "  - bcmbp_final.data (최종 구조)"
+print "✅ BCMBP ReaxFF 완전 테스트 완료!"
+print "=========================================="
+print "📁 생성된 파일 목록:"
+print "  🎬 Trajectory 파일:"
+print "    - bcmbp_complete.xyz (다중 프레임 XYZ)"
+print "    - bcmbp_complete.lammpstrj (LAMMPS trajectory)"
+print "    - bcmbp_complete.dcd (VMD 최적화)"
+print "  📊 분석 데이터:"
+print "    - energy_vs_time.dat (에너지 시계열)"
+print "    - bond_lengths_800K.dat (결합 길이)"
+print "    - atomic_energies.dat (원자별 에너지)"
+print "  📋 구조 파일:"
+print "    - minimized.data/xyz (최소화 구조)"
+print "    - equilibrated_300K.xyz (300K 평형)"
+print "    - bcmbp_final.data/xyz (최종 구조)"
 print "=========================================="

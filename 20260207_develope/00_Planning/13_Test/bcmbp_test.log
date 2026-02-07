@@ -46,11 +46,11 @@ print "=========================================="
 ==========================================
 print "BCMBP ReaxFF νΈν™μ„± ν…μ¤νΈ"
 WARNING: Detected non-ASCII characters in input. Will try to continue by replacing with ASCII equivalents where known. (src/input.cpp:479)
-BCMBP ReaxFF Έ™„± …¤Έ
+BCMBP ReaxFF οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½
 print "λ¶„μμ‹: C14H12Cl2 (28 atoms)"
-¶„‹: C14H12Cl2 (28 atoms)
+οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½: C14H12Cl2 (28 atoms)
 print "νλΌλ―Έν„°: 11_CHOCl.lammps.ff"
-Ό―Έ„°: 11_CHOCl.lammps.ff
+οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½: 11_CHOCl.lammps.ff
 print "=========================================="
 ==========================================
 
@@ -58,7 +58,7 @@ print "=========================================="
 # ν…μ¤νΈ 1: μ—λ„μ§€ μµμ†ν™”
 # ===================================================================
 print "=== μ—λ„μ§€ μµμ†ν™” μ‹μ‘ ==="
-=== —„§€ µ†™” ‹‘ ===
+=== οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ ===
 minimize 1.0e-4 1.0e-6 1000 10000
 
 CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
@@ -148,7 +148,7 @@ Ave special neighs/atom = 0
 Neighbor list builds = 0
 Dangerous builds = 0
 print "=== μ—λ„μ§€ μµμ†ν™” μ™„λ£ ==="
-=== —„§€ µ†™” ™„£ ===
+=== οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ ===
 
 # ===================================================================
 # ν…μ¤νΈ 2: 300K ν‰ν•ν™” (3 ps)
@@ -163,7 +163,7 @@ dump 1 all custom 100 bcmbp_300K.lammpstrj id type x y z q
 dump_modify 1 sort id
 
 print "=== 300K ν‰ν•ν™” μ‹μ‘ (3 ps) ==="
-=== 300K ‰•™” ‹‘ (3 ps) ===
+=== 300K οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ (3 ps) ===
 run 12000  # 3 ps
 Per MPI rank memory allocation (min/avg/max) = 38.68 | 38.68 | 38.68 Mbytes
    Step          Temp          PotEng         KinEng         TotEng         Press          Volume    
@@ -437,7 +437,7 @@ Ave special neighs/atom = 0
 Neighbor list builds = 24
 Dangerous builds = 0
 print "=== 300K ν‰ν•ν™” μ™„λ£ ==="
-=== 300K ‰•™” ™„£ ===
+=== 300K οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ ===
 
 unfix nvt1
 undump 1
@@ -447,7 +447,7 @@ undump 1
 # BCMBPλ” λ” ν° λ¶„μμ΄λ―€λ΅ 800K μ‚¬μ© (1000K λ€μ‹ )
 # ===================================================================
 print "=== κ°€μ—΄ μ‹μ‘ (300K β†’ 800K, 0.5 ps) ==="
-=== °€—΄ ‹‘ (300K †’ 800K, 0.5 ps) ===
+=== οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ (300K οΏ½οΏ½ 800K, 0.5 ps) ===
 fix nvt2 all nvt temp 300.0 800.0 100.0  # κ°€μ—΄
 run 2000  # 0.5 ps κ°€μ—΄
 Per MPI rank memory allocation (min/avg/max) = 38.68 | 38.68 | 38.68 Mbytes
@@ -522,7 +522,7 @@ Ave special neighs/atom = 0
 Neighbor list builds = 5
 Dangerous builds = 0
 print "=== κ°€μ—΄ μ™„λ£ ==="
-=== °€—΄ ™„£ ===
+=== οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ ===
 
 unfix nvt2
 fix nvt3 all nvt temp 800.0 800.0 100.0
@@ -531,7 +531,7 @@ dump 2 all custom 100 bcmbp_800K.lammpstrj id type x y z q
 dump_modify 2 sort id
 
 print "=== 800K κ³ μ¨ ν…μ¤νΈ μ‹μ‘ (2 ps) ==="
-=== 800K ³ ¨ …¤Έ ‹‘ (2 ps) ===
+=== 800K οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ (2 ps) ===
 run 8000  # 2 ps at 800K
 Per MPI rank memory allocation (min/avg/max) = 38.68 | 38.68 | 38.68 Mbytes
    Step          Temp          PotEng         KinEng         TotEng         Press          Volume    
@@ -725,7 +725,7 @@ Ave special neighs/atom = 0
 Neighbor list builds = 35
 Dangerous builds = 0
 print "=== 800K κ³ μ¨ ν…μ¤νΈ μ™„λ£ ==="
-=== 800K ³ ¨ …¤Έ ™„£ ===
+=== 800K οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ ===
 
 unfix nvt3
 undump 2
@@ -734,7 +734,7 @@ undump 2
 # ν…μ¤νΈ 4: λƒ‰κ° λ° μ•μ •ν™” (0.5 ps)
 # ===================================================================
 print "=== λƒ‰κ° μ‹μ‘ (800K β†’ 300K, 0.5 ps) ==="
-=== ƒ‰° ‹‘ (800K †’ 300K, 0.5 ps) ===
+=== οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ (800K οΏ½οΏ½ 300K, 0.5 ps) ===
 fix nvt4 all nvt temp 800.0 300.0 100.0
 run 2000  # 0.5 ps λƒ‰κ°
 Per MPI rank memory allocation (min/avg/max) = 38.68 | 38.68 | 38.68 Mbytes
@@ -810,7 +810,7 @@ Neighbor list builds = 8
 Dangerous builds = 0
 unfix nvt4
 print "=== λƒ‰κ° μ™„λ£ ==="
-=== ƒ‰° ™„£ ===
+=== οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ ===
 
 # μµμΆ… κµ¬μ΅° μ €μ¥
 write_data bcmbp_final.data
@@ -819,21 +819,21 @@ System init for write_data ...
 print "=========================================="
 ==========================================
 print "β… BCMBP ReaxFF ν…μ¤νΈ μ™„λ£!"
-… BCMBP ReaxFF …¤Έ ™„£!
+οΏ½οΏ½ BCMBP ReaxFF οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½!
 print "νλΌλ―Έν„°: 11_CHOCl.lammps.ff"
-Ό―Έ„°: 11_CHOCl.lammps.ff
+οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½: 11_CHOCl.lammps.ff
 print "μ‹μ¤ν…: BCMBP C14H12Cl2 (28 μ›μ)"
-‹¤…: BCMBP C14H12Cl2 (28 ›)
+οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½: BCMBP C14H12Cl2 (28 οΏ½οΏ½οΏ½οΏ½)
 print "μ΄ μ‹λ®¬λ μ΄μ…: 6 ps"
-΄ ‹®¬ ΄…: 6 ps
+οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½: 6 ps
 print "μ¶λ ¥ νμΌ:"
-¶ ¥ Ό:
+οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½:
 print "  - bcmbp_300K.lammpstrj (300K ν‰ν•ν™”)"
-  - bcmbp_300K.lammpstrj (300K ‰•™”)
+  - bcmbp_300K.lammpstrj (300K οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½)
 print "  - bcmbp_800K.lammpstrj (800K κ³ μ¨)"
-  - bcmbp_800K.lammpstrj (800K ³ ¨)
+  - bcmbp_800K.lammpstrj (800K οΏ½οΏ½οΏ½οΏ½)
 print "  - bcmbp_final.data (μµμΆ… κµ¬μ΅°)"
-  - bcmbp_final.data (µΆ… µ¬΅°)
+  - bcmbp_final.data (οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½)
 print "=========================================="
 ==========================================
 Total wall time: 0:00:55
