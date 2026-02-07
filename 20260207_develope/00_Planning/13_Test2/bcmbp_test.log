@@ -1,0 +1,24 @@
+LAMMPS (10 Sep 2025)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+# ===================================================================
+# 11_CHOCl.ff ReaxFF 파라미터 호환성 테스트
+# 시스템: BCMBP (4,4'-bis(chloromethyl)-1,1'-biphenyl)
+# 분자식: C14H12Cl2 (28 원자)
+# ===================================================================
+
+# 기본 설정
+units real
+atom_style charge
+boundary p p p
+
+# 구조 읽기
+read_data bcmbp.data
+Reading data file ...
+  orthogonal box = (-8 -4 -2) to (8 4 2)
+  1 by 1 by 1 MPI processor grid
+WARNING: Atom style in data file full differs from currently defined atom style charge (src/read_data.cpp:727)
+  reading atoms ...
+ERROR: Incorrect format in Atoms section of data file: 1  1 1 0.0000 -4.52506  0.51622 -0.03357  # C
+For more information see https://docs.lammps.org/err0002 (src/atom.cpp:1099)
+Last input line: read_data bcmbp.data
