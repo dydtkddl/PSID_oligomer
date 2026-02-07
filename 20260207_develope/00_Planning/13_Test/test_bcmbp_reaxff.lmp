@@ -6,7 +6,7 @@
 
 # 기본 설정
 units real
-atom_style charge
+atom_style full
 boundary p p p
 
 # 구조 읽기
