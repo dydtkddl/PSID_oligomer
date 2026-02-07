@@ -7,6 +7,8 @@
 units           real
 atom_style      full
 boundary        p p p
+package         kokkos neigh half
+newton          on
 
 print "=========================================="
 print "열분해 반응 시뮬레이션"

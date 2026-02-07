@@ -2,23 +2,34 @@ LAMMPS (10 Sep 2025)
 OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
   using 1 OpenMP thread(s) per MPI task
 # ===================================================================
-# 11_CHOCl.ff ReaxFF 파라미터 호환성 테스트
+# BCMBP ReaxFF 테스트 - 완전 수정 버전
 # 시스템: BCMBP (4,4'-bis(chloromethyl)-1,1'-biphenyl)
 # 분자식: C14H12Cl2 (28 원자)
 # ===================================================================
 
-# 기본 설정
-units real
-atom_style charge
-boundary p p p
+# 1. 기본 설정
+units           real
+atom_style      full                    # [수정] bcmbp.data가 full 형식이므로 필수
+boundary        p p p
 
-# 구조 읽기
-read_data bcmbp.data
+# 2. 구조 읽기
+read_data       bcmbp.data
 Reading data file ...
   orthogonal box = (-8 -4 -2) to (8 4 2)
-  1 by 1 by 1 MPI processor grid
-WARNING: Atom style in data file full differs from currently defined atom style charge (src/read_data.cpp:727)
+  5 by 2 by 1 MPI processor grid
   reading atoms ...
-ERROR: Incorrect format in Atoms section of data file: 1  1 1 0.0000 -4.52506  0.51622 -0.03357  # C
-For more information see https://docs.lammps.org/err0002 (src/atom.cpp:1099)
-Last input line: read_data bcmbp.data
+  28 atoms
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     0 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     1 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.002 seconds
+
+# 3. ReaxFF 포스필드 설정 (2025 LAMMPS 문법)
+pair_style      reaxff NULL safezone 3.0 mincap 150    # [수정] reax/c → reaxff
+pair_coeff      * * 11_CHOCl.ff C H O Cl        # [수정] 정확한 파일명 사용
+ERROR on proc 0: 11_CHOCl.ff:48: Invalid force field file format:  expected 9 columns but found 8 (src/REAXFF/reaxff_ffield.cpp:590)

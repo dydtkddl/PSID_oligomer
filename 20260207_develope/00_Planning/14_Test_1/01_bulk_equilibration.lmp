@@ -8,6 +8,8 @@
 units           real
 atom_style      full
 boundary        p p p
+package         kokkos neigh half
+newton          on
 
 print "=========================================="
 print "BCMBP 벌크 시스템 구축"

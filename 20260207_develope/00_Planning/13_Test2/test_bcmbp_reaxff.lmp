@@ -14,7 +14,7 @@ read_data       bcmbp.data
 
 # 3. ReaxFF 포스필드 설정 (2025 LAMMPS 문법)
 pair_style      reaxff NULL safezone 3.0 mincap 150    # [수정] reax/c → reaxff
-pair_coeff      * * 11_CHOCl.lammps.ff C H O Cl        # [수정] 정확한 파일명 사용
+pair_coeff      * * 11_CHOCl.ff C H O Cl        # [수정] 정확한 파일명 사용
 
 # 4. 전하 평형화 (ReaxFF 필수)
 fix             qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff  # [수정] 최신 문법
@@ -30,7 +30,7 @@ thermo_style    custom step temp pe ke etotal press vol
 print "=========================================="
 print "BCMBP ReaxFF 호환성 테스트"
 print "분자식: C14H12Cl2 (28 atoms)"
-print "파라미터: 11_CHOCl.lammps.ff"
+print "파라미터: 11_CHOCl.ff"
 print "=========================================="
 
 # ===================================================================
@@ -94,7 +94,7 @@ write_data      bcmbp_final.data
 
 print "=========================================="
 print "✅ BCMBP ReaxFF 테스트 완료!"
-print "파라미터: 11_CHOCl.lammps.ff"
+print "파라미터: 11_CHOCl.ff"
 print "시스템: BCMBP C14H12Cl2 (28 원자)"
 print "총 시뮬레이션: 6 ps"
 print "출력 파일:"

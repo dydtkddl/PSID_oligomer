@@ -1,0 +1,188 @@
+LAMMPS (2 Aug 2023 - Update 3)
+KOKKOS mode with Kokkos version 3.7.2 is enabled (src/KOKKOS/kokkos.cpp:108)
+  will use up to 1 GPU(s) per node
+  using 1 OpenMP thread(s) per MPI task
+package kokkos
+# ===================================================================
+# BCMBP ë²Œí¬ ì‹œìŠ¤í…œ êµ¬ì¶• ë° NPT í‰í˜•í™”
+# ëª©í‘œ: ë‹¨ì¼ ë¶„ì â†’ ë²Œí¬ ì‹œìŠ¤í…œ â†’ NPT í‰í˜• êµ¬ì¡°
+# ê²°ê³¼: bcmbp_bulk_equilibrated.data (ëª¨ë“  í›„ì† ì—°êµ¬ì˜ ê¸°ë°˜)
+# ===================================================================
+
+# 1. ê¸°ë³¸ ì„¤ì •
+units           real
+atom_style      full
+boundary        p p p
+package         kokkos neigh half
+newton          on
+
+print "=========================================="
+==========================================
+print "BCMBP ë²Œí¬ ì‹œìŠ¤í…œ êµ¬ì¶•"
+WARNING: Detected non-ASCII characters in input. Will try to continue by replacing with ASCII equivalents where known. (src/input.cpp:463)
+BCMBP ²Œ¬ ‹œŠ¤…œ µ¬¶•
+print "ë‹¨ê³„: ë‹¨ì¼ë¶„ì â†’ ë²Œí¬ â†’ NPT í‰í˜•í™”"
+‹¨³„: ‹¨¼¶„ †’ ²Œ¬ †’ NPT ‰˜•™”
+print "=========================================="
+==========================================
+
+# 2. ì‹œìŠ¤í…œ êµ¬ì¶•
+read_data       bcmbp.data
+Reading data file ...
+  orthogonal box = (-8 -4 -2) to (8 4 2)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  28 atoms
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     0 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     1 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.009 seconds
+
+# ì‹œìŠ¤í…œ í¬ê¸° ì„¤ì • (ì»´í“¨í„° ì„±ëŠ¥ì— ë”°ë¼ ì¡°ì •)
+variable        rep_size equal 5    #
+replicate       ${rep_size} ${rep_size} ${rep_size}
+replicate       5 ${rep_size} ${rep_size}
+replicate       5 5 ${rep_size}
+replicate       5 5 5
+Replication is creating a 5x5x5 = 125 times larger system...
+  orthogonal box = (-8 -4 -2) to (72 36 18)
+  1 by 1 by 1 MPI processor grid
+  3500 atoms
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     0 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     1 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  replicate CPU = 0.006 seconds
+
+# ì›ì ê²¹ì¹¨ ë°©ì§€
+displace_atoms  all random 0.2 0.2 0.2 482749 units box
+Displacing atoms ...
+
+# ì‹œìŠ¤í…œ ì •ë³´
+variable        total_atoms equal atoms
+variable        total_mols equal ${total_atoms}/28
+variable        total_mols equal 3500/28
+print "ì´ ì›ì ìˆ˜: ${total_atoms}"
+´ › ˆ˜: 3500
+print "ì´ ë¶„ì ìˆ˜: ${total_mols}"
+´ ¶„ ˆ˜: 125
+
+# 3. ReaxFF ì„¤ì •
+pair_style      reaxff NULL safezone 4.0 mincap 300
+pair_coeff      * * 11_CHOCl.lammps.ff C H Cl O
+fix             qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
+
+neighbor        2.5 bin
+neigh_modify    every 10 delay 0 check yes
+
+# 4. ì¶œë ¥ ì„¤ì •
+thermo          1000
+thermo_style    custom step temp press vol density pe ke etotal cpu
+
+# 5. ì—ë„ˆì§€ ìµœì†Œí™”
+print ""
+
+print "=== ì—ë„ˆì§€ ìµœì†Œí™” ì‹œì‘ ==="
+=== —„ˆ§€ µœ†Œ™” ‹œ‘ ===
+minimize        1.0e-4 1.0e-6 2000 20000
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+
+- pair reaxff command: doi:10.1016/j.parco.2011.08.005
+
+@Article{Aktulga12,
+ author = {H. M. Aktulga and J. C. Fogarty and S. A. Pandit and A. Y. Grama},
+ title = {Parallel Reactive Molecular Dynamics: {N}umerical Methods and Algorithmic Techniques},
+ journal = {Parallel Computing},
+ year =    2012,
+ volume =  38,
+ number =  {4--5},
+ pages =   {245--259}
+}
+
+- fix qeq/reaxff command: doi:10.1016/j.parco.2011.08.005
+
+@Article{Aktulga12,
+ author = {H. M. Aktulga and J. C. Fogarty and S. A. Pandit and A. Y. Grama},
+ title = {Parallel Reactive Molecular Dynamics: {N}umerical Methods and Algorithmic Techniques},
+ journal = {Parallel Computing},
+ year =    2012,
+ volume =  38,
+ pages =   {245--259}
+}
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Switching to 'neigh_modify every 1 delay 0 check yes' setting during minimization
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12.5
+  ghost atom cutoff = 12.5
+  binsize = 12.5, bins = 7 4 2
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair reaxff/kk, perpetual
+      attributes: half, newton off, ghost, kokkos_device
+      pair build: half/bin/newtoff/ghost/kk/device
+      stencil: full/ghost/bin/3d
+      bin: kk/device
+  (2) fix qeq/reaxff/kk, perpetual
+      attributes: full, newton off, kokkos_device
+      pair build: full/bin/kk/device
+      stencil: full/bin/3d
+      bin: kk/device
+WARNING: Fix with atom-based arrays not compatible with sending data in Kokkos communication, switching to classic exchange/border communication (src/KOKKOS/comm_kokkos.cpp:666)
+WARNING: Fix with atom-based arrays not compatible with Kokkos sorting on device, switching to classic host sorting (src/KOKKOS/atom_kokkos.cpp:215)
+Per MPI rank memory allocation (min/avg/max) = 80.03 | 80.03 | 80.03 Mbytes
+   Step          Temp          Press          Volume        Density         PotEng         KinEng         TotEng          CPU      
+         0   0              27758.242      64000          0.81455921    -328718.13      0             -328718.13      0            
+        17   0             -7711.2025      64000          0.81455921    -390932.88      0             -390932.88      0.81867474   
+Loop time of 0.818696 on 1 procs for 17 steps with 3500 atoms
+
+99.9% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+     -328718.126868411  -390900.329743325  -390932.878350202
+  Force two-norm initial, final = 17869.159 1385.3728
+  Force max component initial, final = 2062.344 283.28198
+  Final line search alpha, max atom move = 0.00046381505 0.13139045
+  Iterations, force evaluations = 17 25
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.57827    | 0.57827    | 0.57827    |   0.0 | 70.63
+Bond    | 1.518e-06  | 1.518e-06  | 1.518e-06  |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.00065286 | 0.00065286 | 0.00065286 |   0.0 |  0.08
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0.22885    | 0.22885    | 0.22885    |   0.0 | 27.95
+Other   |            | 0.01092    |            |       |  1.33
+
+Nlocal:           3500 ave        3500 max        3500 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:          13582 ave       13582 max       13582 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    1.06399e+06 ave 1.06399e+06 max 1.06399e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:  1.58009e+06 ave 1.58009e+06 max 1.58009e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 1580088
+Ave neighs/atom = 451.45371
+Ave special neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
