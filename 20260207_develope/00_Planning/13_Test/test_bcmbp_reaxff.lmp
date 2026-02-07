@@ -1,5 +1,5 @@
 # ===================================================================
-# 11_CHOCl.ff ReaxFF 파라미터 호환성 테스트
+# 11_CHOCl.lammps.ff ReaxFF 파라미터 호환성 테스트
 # 시스템: BCMBP (4,4'-bis(chloromethyl)-1,1'-biphenyl)
 # 분자식: C14H12Cl2 (28 원자)
 # ===================================================================
@@ -16,7 +16,7 @@ read_data bcmbp.data
 # ReaxFF 설정 - 핵심 부분!
 # ===================================================================
 pair_style reaxff NULL safezone 3.0 mincap 150
-pair_coeff * * 11_CHOCl.ff C H O Cl
+pair_coeff * * 11_CHOCl.lammps.ff C H O Cl
 
 # 전하 평형 (ReaxFF 필수)
 fix qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
@@ -28,7 +28,7 @@ thermo_style custom step temp pe ke etotal press vol
 print "=========================================="
 print "BCMBP ReaxFF 호환성 테스트"
 print "분자식: C14H12Cl2 (28 atoms)"
-print "파라미터: 11_CHOCl.ff"
+print "파라미터: 11_CHOCl.lammps.ff"
 print "=========================================="
 
 # ===================================================================
@@ -93,7 +93,7 @@ write_data bcmbp_final.data
 
 print "=========================================="
 print "✅ BCMBP ReaxFF 테스트 완료!"
-print "파라미터: 11_CHOCl.ff"
+print "파라미터: 11_CHOCl.lammps.ff"
 print "시스템: BCMBP C14H12Cl2 (28 원자)"
 print "총 시뮬레이션: 6 ps"
 print "출력 파일:"

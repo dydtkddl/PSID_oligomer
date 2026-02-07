@@ -28,7 +28,7 @@ fi
 echo ""
 echo "=== 필수 파일 확인 ==="
 missing_files=0
-for file in test_bcmbp_reaxff.lmp bcmbp.data 11_CHOCl.ff; do
+for file in test_bcmbp_reaxff.lmp bcmbp.data 11_CHOCl.lammps.ff; do
     if [ -f "$file" ]; then
         echo "✅ $file"
     else
