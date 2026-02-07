@@ -17,12 +17,12 @@ read_data bcmbp.data
 # ===================================================================
 # pair_style reaxff NULL safezone 3.0 mincap 150
 # ReaxFF 포텐셜 스타일 지정
-pair_style reax/c NULL safezone 3.0 mincap 150
+pair_style reaxff NULL safezone 3.0 mincap 150
 pair_coeff * * 11_CHOCl.ff C H O Cl
 
 # 전하 평형 (ReaxFF 필수)
 # fix qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
-fix qeq all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+fix qeq all qeq/reax 1 0.0 10.0 1.0e-6 reaxff 
 # 출력 설정
 thermo 50
 thermo_style custom step temp pe ke etotal press vol
