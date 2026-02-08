@@ -1,0 +1,62 @@
+LAMMPS (10 Dec 2025 - Development - a42c671)
+KOKKOS mode with Kokkos version 5.0.2 is enabled
+  using double precision
+  using view layout = legacy
+  will use up to 1 GPU(s) per node
+  using 18 OpenMP thread(s) per MPI task
+package kokkos
+# ===================================================================
+# BCMBP 올리고머 형성 시뮬레이션
+# 전략: 단계적 가열 → 반응 유도 → 냉각 안정화
+# 목표: 단량체 → 2량체, 3량체, n량체 형성
+# ===================================================================
+
+units           real
+atom_style      full
+boundary        p p p
+package         kokkos neigh half
+newton          on
+
+print "=========================================="
+==========================================
+print "BCMBP 올리고머 형성 시뮬레이션"
+WARNING: Detected non-ASCII characters in input. Will try to continue by replacing with ASCII equivalents where known. (src/input.cpp:482)
+BCMBP �������� ���� ����������
+print "메커니즘: C-Cl 결합 파괴 → 라디칼 결합"
+��������: C-Cl ���� ���� �� ������ ����
+print "=========================================="
+==========================================
+
+# 1. 평형 벌크 구조 로드
+read_data       bcmbp_bulk_equilibrated.data
+Reading data file ...
+  orthogonal box = (-0.62579046 -0.31289523 -0.15644762) to (64.62579 32.312895 16.156448)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3500 atoms
+  reading velocities ...
+  3500 velocities
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     0 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     1 = max # of special neighbors
+  special bonds CPU = 0.002 seconds
+  read_data CPU = 0.608 seconds
+
+# 2. ReaxFF 설정
+pair_style      reaxff NULL safezone 4.0 mincap 300
+pair_coeff      * * 11_CHOCl.lammps.ff C H Cl O
+fix             qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
+
+neighbor        2.5 bin
+neigh_modify    every 5 delay 0 check yes
+
+timestep        0.2  # 반응 시뮬레이션용 작은 타임스텝
+
+# 3. 화학 반응 분석 설정 (핵심!)
+fix             species all reaxff/species 100 1000 1000 species_oligo.out                 element C H Cl O position 5000 5000
+ERROR: Incompatible fix reaxff/species nevery/nrepeat/nfreq settings (src/REAXFF/fix_reaxff_species.cpp:107)
+Last input line: fix species all reaxff/species 100 1000 1000 species_oligo.out element C H Cl O position 5000 5000

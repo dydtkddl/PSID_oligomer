@@ -1,167 +1,261 @@
-# **🎯 LAMMPS GPU+ReaxFF 완전 통합 설치 및 연구 패키지**
+# **14_LAMMPS_GPU구축.내로컬WSL.md**
 
-축하합니다! GPU 설치가 성공적으로 완료되었으니, 이제 **성공한 설치 과정을 기반으로 완전히 자동화된 설치 스크립트와 BCMBP 연구 패키지**를 구축하겠습니다.
+**환경: WSL2 + RTX 5090 (32GB) + Threadripper PRO 9965WX (48 스레드) + CUDA 13.1**
 
-## **📦 최종 통합 패키지 구성**
+---
 
-```text
-~/lammps-gpu-reaxff/           # 직관적인 디렉토리명
-├── source/                    # LAMMPS 소스코드
-├── build/                     # 빌드 파일
-└── install/                   # 설치된 실행파일
+## **🎯 시스템 환경 분석 및 구축 전략**
 
-~/bcmbp_research/              # 연구 전용 디렉토리
-├── 00_setup/                  # 입력 파일 (구조, 포스필드)
-├── 01_bulk_equilibration.lmp  # 벌크 평형화
-├── 02_oligomerization.lmp     # 올리고머 형성
-├── results/                   # 시뮬레이션 결과
-└── analysis/                  # 분석 결과
+### **📊 하드웨어 사양 (2026년 현재 최상위급)**
+
+```yaml
+GPU: NVIDIA GeForce RTX 5090
+  - VRAM: 32GB (Blackwell 아키텍처)
+  - CUDA Cores: ~16,000개 (추정)
+  - Compute Capability: 8.9 (sm_89)
+  - CUDA: 13.1, Driver: 591.44
+
+CPU: AMD Ryzen Threadripper PRO 9965WX
+  - 코어: 24 (48 하이퍼스레드)
+  - 기본 클럭: 3.2GHz, 부스트: 5.1GHz
+  - L3 캐시: 128MB
+
+메모리: 62GB RAM
+디스크: 20TB (18TB 여유)
+OS: Ubuntu 22.04.5 LTS (WSL2)
 ```
 
-## **🚀 완전 자동화 설치 스크립트**
+### **🤔 Docker vs Native WSL2 전략 분석**
 
-**파일명:** `install_lammps_gpu_complete.sh`
+| 구분                | Docker 방식              | Native WSL2 방식            |
+| ------------------- | ------------------------ | --------------------------- |
+| **성능**            | 98-99% (미미한 오버헤드) | 100% (직접 하드웨어 제어)   |
+| **설치 시간**       | 10분 (사전 빌드 이미지)  | 30-50분 (소스 컴파일)       |
+| **재현성**          | ⭐⭐⭐⭐⭐ 완벽          | ⭐⭐⭐ 환경 의존적          |
+| **RTX 5090 최적화** | ⭐⭐⭐ 일반적 최적화     | ⭐⭐⭐⭐⭐ 완전 맞춤 최적화 |
+| **개발 편의성**     | ⭐⭐⭐ 컨테이너 격리     | ⭐⭐⭐⭐⭐ 직접 접근        |
+| **멀티 버전**       | ⭐⭐⭐⭐⭐ 동시 실행     | ⭐⭐ 어려움                 |
+
+### **✅ 권장 전략: 상황별 선택**
+
+**1. 빠른 시작 및 프로토타이핑 → Docker 방식**
+**2. 최대 성능 및 장기 연구 → Native 방식**
+**3. 이상적 워크플로우: Docker로 시작 → Native로 확장**
+
+---
+
+## **🚀 방법 1: Docker 방식 (빠른 시작 - 10분 완료)**
+
+### **1-1. NVIDIA Container Toolkit 설치**
 
 ```bash
 #!/bin/bash
-# ===================================================================
-# LAMMPS GPU+ReaxFF 완전 통합 설치 스크립트
-# 검증된 성공 사례 기반: L4 GPU + CUDA 12.8 + Stable 2Aug2023
-# ===================================================================
+# install_nvidia_docker_wsl.sh
+
+echo "=== NVIDIA Container Toolkit 설치 (WSL2) ==="
+
+# Docker 설치 확인
+if ! command -v docker &> /dev/null; then
+    echo "Docker 설치 중..."
+    curl -fsSL https://get.docker.com -o get-docker.sh
+    sudo sh get-docker.sh
+    sudo usermod -aG docker $USER
+    echo "⚠️ 재로그인 후 계속하세요!"
+    exit 1
+fi
+
+# NVIDIA Container Toolkit 저장소 추가
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | \
+    sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
+
+curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \
+    sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
+    sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+
+# 설치
+sudo apt-get update
+sudo apt-get install -y nvidia-container-toolkit
+
+# Docker 데몬 설정
+sudo nvidia-ctk runtime configure --runtime=docker
+sudo systemctl restart docker
+
+# RTX 5090 테스트
+echo ""
+echo "=== RTX 5090 Docker 접근 테스트 ==="
+docker run --rm --gpus all nvidia/cuda:12.3.0-base-ubuntu22.04 nvidia-smi
+
+echo "✅ NVIDIA Container Toolkit 설치 완료!"
+```
+
+### **1-2. LAMMPS GPU 컨테이너 즉시 실행**
+
+```bash
+#!/bin/bash
+# run_lammps_docker_5090.sh - RTX 5090 최적화 실행
+
+# 작업 디렉토리 설정
+WORK_DIR="/mnt/d/[01]Lab_Activity/##자율제조과제/20260205_Develope"
+cd "$WORK_DIR"
+
+echo "=== LAMMPS GPU Docker 실행 (RTX 5090) ==="
+
+# 최신 LAMMPS GPU 이미지 사용
+docker run -it --rm \
+    --gpus all \
+    --name lammps-rtx5090 \
+    -v "$PWD:/workspace" \
+    --shm-size=16g \
+    -e CUDA_VISIBLE_DEVICES=0 \
+    lammps/lammps:stable_29Aug2024_ubuntu22.04_gpu \
+    bash -c "
+        cd /workspace
+        echo '=== RTX 5090 GPU 정보 ==='
+        nvidia-smi
+        echo ''
+        echo '=== LAMMPS 패키지 확인 ==='
+        lmp -help | grep 'KOKKOS\|REAXFF\|GPU'
+        echo ''
+        echo '🚀 LAMMPS 준비 완료! 다음 명령어로 실행:'
+        echo '   lmp -k on g 1 -sf kk -in input.lmp'
+        /bin/bash
+    "
+```
+
+### **1-3. Docker Compose 설정 (영구 사용)**
+
+```yaml
+# docker-compose.yml
+version: "3.8"
+
+services:
+  lammps-rtx5090:
+    image: lammps/lammps:stable_29Aug2024_ubuntu22.04_gpu
+    container_name: bcmbp-rtx5090
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - CUDA_VISIBLE_DEVICES=0
+      - OMP_NUM_THREADS=1
+    volumes:
+      - /mnt/d/[01]Lab_Activity/##자율제조과제/20260205_Develope:/workspace
+      - ./results:/results
+    working_dir: /workspace
+    shm_size: 16gb
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+```
+
+**실행:**
+
+```bash
+docker-compose run --rm lammps-rtx5090
+```
+
+---
+
+## **🔧 방법 2: Native WSL2 방식 (최대 성능 - RTX 5090 완전 활용)**
+
+### **2-1. CUDA Toolkit 13.1 설치 (WSL2 전용)**
+
+```bash
+#!/bin/bash
+# install_cuda_13_1_wsl.sh
+
+echo "=== CUDA Toolkit 13.1 WSL2 설치 ==="
+
+# 기존 CUDA 정리
+sudo apt-get --purge remove "*cublas*" "*cufft*" "*curand*" "*cusolver*" "*cusparse*" "*npp*" "*nvjpeg*" "cuda*" "nsight*" 2>/dev/null || true
+
+# WSL-Ubuntu CUDA 저장소 추가
+wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
+sudo apt-get update
+
+# CUDA Toolkit 13.1 설치 (최신 버전 확인 필요)
+sudo apt-get install -y cuda-toolkit-12-3  # 13.1이 없으면 12.3 사용
+
+# 환경 변수 설정
+cat >> ~/.bashrc << 'EOF'
+
+# CUDA 13.1 환경 설정 (RTX 5090)
+export CUDA_HOME=/usr/local/cuda-12.3
+export PATH=$CUDA_HOME/bin:$PATH
+export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+export CUDA_VISIBLE_DEVICES=0
+EOF
+
+source ~/.bashrc
+
+# 설치 확인
+echo ""
+echo "=== CUDA 설치 확인 ==="
+nvcc --version
+nvidia-smi
+
+echo "✅ CUDA Toolkit 설치 완료!"
+```
+
+### **2-2. LAMMPS RTX 5090 최적화 빌드**
+
+```bash
+#!/bin/bash
+# install_lammps_rtx5090_native.sh - RTX 5090 완전 최적화
 
 set -e
 
-# 색상 정의
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-CYAN='\033[0;36m'
-NC='\033[0m'
+echo "=========================================="
+echo "🚀 LAMMPS RTX 5090 Native 최적화 빌드"
+echo "=========================================="
 
-print_header() { echo -e "${CYAN}========================================${NC}"; echo -e "${CYAN}$1${NC}"; echo -e "${CYAN}========================================${NC}"; }
-print_status() { echo -e "${BLUE}[INFO]${NC} $1"; }
-print_success() { echo -e "${GREEN}[SUCCESS]${NC} $1"; }
-print_error() { echo -e "${RED}[ERROR]${NC} $1"; }
-print_warning() { echo -e "${YELLOW}[WARNING]${NC} $1"; }
+# 1. 시스템 패키지 설치
+sudo apt-get update
+sudo apt-get install -y \
+    build-essential cmake git \
+    libopenmpi-dev openmpi-bin \
+    libfftw3-dev libjpeg-dev libpng-dev \
+    python3 python3-pip
 
-# ===================================================================
-# 1. 설치 경로 설정
-# ===================================================================
-INSTALL_BASE="$HOME/lammps-gpu-reaxff"
+# 2. 설치 경로 설정
+INSTALL_BASE="$HOME/lammps-rtx5090-native"
 SOURCE_DIR="$INSTALL_BASE/source"
 BUILD_DIR="$INSTALL_BASE/build"
 INSTALL_DIR="$INSTALL_BASE/install"
-RESEARCH_DIR="$HOME/bcmbp_research"
 
-print_header "LAMMPS GPU+ReaxFF 통합 설치"
-print_status "설치 경로: $INSTALL_BASE"
-print_status "연구 경로: $RESEARCH_DIR"
-
-# 기존 설치 정리
+# 기존 설치 백업
 if [ -d "$INSTALL_BASE" ]; then
-    print_warning "기존 설치 발견. 정리 중..."
-    rm -rf "$INSTALL_BASE"
+    mv "$INSTALL_BASE" "${INSTALL_BASE}.backup_$(date +%Y%m%d_%H%M%S)"
 fi
 mkdir -p "$INSTALL_BASE"
 
-# ===================================================================
-# 2. 시스템 환경 검증
-# ===================================================================
-print_header "시스템 환경 검증"
-
-# CUDA 환경
-if [ -z "$CUDA_HOME" ]; then
-    export CUDA_HOME="/usr/local/cuda"
-fi
-
-NVCC_PATH="$CUDA_HOME/bin/nvcc"
-if [ ! -f "$NVCC_PATH" ]; then
-    print_error "NVCC를 찾을 수 없습니다: $NVCC_PATH"
-    exit 1
-fi
-
-CUDA_VERSION=$($NVCC_PATH --version | grep "release" | grep -oP '\d+\.\d+')
-print_success "CUDA $CUDA_VERSION @ $CUDA_HOME"
-
-# GPU 아키텍처 설정
-GPU_NAME=$(nvidia-smi --query-gpu=name --format=csv,noheader | head -1)
-COMPUTE_CAP=$(nvidia-smi --query-gpu=compute_cap --format=csv,noheader | head -1)
-GPU_MEM=$(nvidia-smi --query-gpu=memory.total --format=csv,noheader | head -1)
-
-case "$COMPUTE_CAP" in
-    "8.9")  KOKKOS_ARCH="ADA89"; GPU_ARCH="89";;
-    "8.6")  KOKKOS_ARCH="AMPERE86"; GPU_ARCH="86";;
-    "7.5")  KOKKOS_ARCH="TURING75"; GPU_ARCH="75";;
-    *)      KOKKOS_ARCH="AMPERE86"; GPU_ARCH="86";;
-esac
-
-print_success "GPU: $GPU_NAME ($COMPUTE_CAP) - $GPU_MEM"
-print_success "아키텍처: $KOKKOS_ARCH (sm_$GPU_ARCH)"
-
-# ===================================================================
-# 3. cuFFT 라이브러리 자동 탐지
-# ===================================================================
-print_status "cuFFT 라이브러리 탐지 중..."
-
-CUFFT_PATHS=(
-    "$CUDA_HOME/lib64/libcufft.so"
-    "/usr/local/cuda/lib64/libcufft.so"
-    "/usr/lib64/libcufft.so"
-)
-
-CUFFT_LIB=""
-for path in "${CUFFT_PATHS[@]}"; do
-    if [ -f "$path" ]; then
-        CUFFT_LIB="$path"
-        break
-    fi
-done
-
-if [ -z "$CUFFT_LIB" ]; then
-    print_error "cuFFT 라이브러리를 찾을 수 없습니다!"
-    exit 1
-fi
-print_success "cuFFT: $CUFFT_LIB"
-
-# ===================================================================
-# 4. LAMMPS 소스 다운로드
-# ===================================================================
-print_header "LAMMPS Stable 소스 다운로드"
-cd "$INSTALL_BASE"
-
+# 3. LAMMPS 최신 소스 다운로드
+echo "📥 LAMMPS 소스 다운로드..."
 git clone https://github.com/lammps/lammps.git "$SOURCE_DIR"
 cd "$SOURCE_DIR"
-
-# Stable 버전 체크아웃 (성공 검증된 버전)
-git fetch --all --tags
 git checkout stable_2Aug2023_update3
-print_success "LAMMPS Stable 2Aug2023_update3 체크아웃 완료"
 
-# ===================================================================
-# 5. CMake 설정 (성공 사례 기반)
-# ===================================================================
-print_header "CMake 설정"
+# 4. RTX 5090 최적화 CMake 설정
+echo "⚙️ RTX 5090 최적화 설정..."
 mkdir -p "$BUILD_DIR"
 cd "$BUILD_DIR"
 
+# RTX 5090 = Blackwell = sm_89 (compute capability 8.9)
 cmake "$SOURCE_DIR/cmake" \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX="$INSTALL_DIR" \
     -DCMAKE_CXX_STANDARD=17 \
-    -DCMAKE_CXX_STANDARD_REQUIRED=ON \
-    -DCMAKE_CUDA_COMPILER="$NVCC_PATH" \
-    -DCMAKE_CUDA_ARCHITECTURES="$GPU_ARCH" \
+    -DCMAKE_CUDA_COMPILER="$CUDA_HOME/bin/nvcc" \
+    -DCMAKE_CUDA_ARCHITECTURES=89 \
     -DBUILD_SHARED_LIBS=OFF \
     -DBUILD_MPI=ON \
     -DBUILD_OMP=ON \
     -DPKG_KOKKOS=ON \
     -DKokkos_ENABLE_CUDA=ON \
-    -DKokkos_ARCH_${KOKKOS_ARCH}=ON \
+    -DKokkos_ARCH_ADA89=ON \
     -DKokkos_ENABLE_SERIAL=ON \
-    -DPKG_GPU=ON \
-    -DGPU_API=cuda \
-    -DGPU_ARCH=sm_${GPU_ARCH} \
+    -DKokkos_ENABLE_OPENMP=ON \
     -DPKG_REAXFF=ON \
     -DPKG_MOLECULE=ON \
     -DPKG_KSPACE=ON \
@@ -169,462 +263,438 @@ cmake "$SOURCE_DIR/cmake" \
     -DPKG_MANYBODY=ON \
     -DPKG_QEQ=ON \
     -DPKG_MISC=ON \
-    -DCUFFT_LIBRARY="$CUFFT_LIB" \
-    -DCUFFT_INCLUDE_DIR="$CUDA_HOME/include" \
-    -DCUDAToolkit_ROOT="$CUDA_HOME" \
     2>&1 | tee cmake_config.log
 
 if [ ${PIPESTATUS[0]} -ne 0 ]; then
-    print_error "CMake 설정 실패!"
+    echo "❌ CMake 설정 실패!"
     exit 1
 fi
-print_success "CMake 설정 완료"
 
-# ===================================================================
-# 6. 컴파일 및 설치
-# ===================================================================
-print_header "컴파일 및 설치"
-NPROC=$(nproc)
-print_status "컴파일 시작 ($NPROC 코어, 20-40분 예상)"
-
+# 5. Threadripper PRO 48스레드 컴파일
+echo "🔨 컴파일 시작 (48 스레드)..."
 START_TIME=$(date +%s)
-make -j${NPROC} 2>&1 | tee compile.log
+
+make -j48 2>&1 | tee compile.log
 
 if [ ${PIPESTATUS[0]} -ne 0 ]; then
-    print_error "컴파일 실패!"
+    echo "❌ 컴파일 실패!"
     exit 1
 fi
 
 END_TIME=$(date +%s)
 COMPILE_TIME=$((END_TIME - START_TIME))
-print_success "컴파일 완료 (${COMPILE_TIME}초)"
 
+# 6. 설치
+echo "📦 설치 중..."
 make install
+
+# 7. 환경 설정
+cat >> ~/.bashrc << EOF
+
+# LAMMPS RTX 5090 Native 환경
+export LAMMPS_RTX5090="$INSTALL_DIR"
+export PATH="\$LAMMPS_RTX5090/bin:\$PATH"
+
+# RTX 5090 최적화 별칭
+alias lmp-5090="\$LAMMPS_RTX5090/bin/lmp -k on g 1 -sf kk"
+alias lmp-5090-omp="\$LAMMPS_RTX5090/bin/lmp -k on g 1 t 24 -sf kk"  # GPU + OpenMP 하이브리드
+EOF
+
+source ~/.bashrc
+
+# 8. 설치 검증
 LMP_BINARY="$INSTALL_DIR/bin/lmp"
-
 if [ ! -f "$LMP_BINARY" ]; then
-    print_error "실행파일 생성 실패!"
+    echo "❌ 설치 실패!"
     exit 1
 fi
-print_success "설치 완료: $LMP_BINARY"
 
-# ===================================================================
-# 7. 패키지 검증
-# ===================================================================
-print_header "패키지 검증"
+echo ""
+echo "=========================================="
+echo "🎉 RTX 5090 Native 빌드 완료!"
+echo "=========================================="
+echo "컴파일 시간: ${COMPILE_TIME}초"
+echo "실행파일: $LMP_BINARY"
+echo ""
+echo "🚀 사용법:"
+echo "  lmp-5090 -in input.lmp              # GPU 전용"
+echo "  lmp-5090-omp -in input.lmp          # GPU + OpenMP"
+echo ""
+echo "📊 패키지 확인:"
+$LMP_BINARY -help | grep "KOKKOS\|REAXFF\|GPU"
+```
 
-if $LMP_BINARY -help | grep -q "KOKKOS"; then
-    print_success "✓ KOKKOS (GPU 가속)"
+---
+
+## **🛡️ 안전 설치 및 검증 도구**
+
+### **3-1. RTX 5090 전용 안전 검증 스크립트**
+
+```bash
+#!/bin/bash
+# verify_rtx5090_setup.sh - RTX 5090 설정 검증
+
+echo "=== RTX 5090 LAMMPS 설정 검증 ==="
+
+# 1. GPU 하드웨어 확인
+echo "1. GPU 하드웨어 정보:"
+nvidia-smi --query-gpu=name,memory.total,compute_cap --format=csv,noheader
+
+# 2. CUDA 컴파일러 확인
+echo ""
+echo "2. CUDA 컴파일러:"
+nvcc --version | grep "release"
+
+# 3. LAMMPS 패키지 확인
+echo ""
+echo "3. LAMMPS 패키지:"
+if command -v lmp-5090 &> /dev/null; then
+    lmp-5090 -help | grep "KOKKOS\|REAXFF\|GPU"
 else
-    print_error "✗ KOKKOS 패키지 없음"
-    exit 1
+    echo "❌ lmp-5090 명령어를 찾을 수 없습니다."
 fi
 
-if $LMP_BINARY -help | grep -q "REAXFF"; then
-    print_success "✓ REAXFF (반응성 포스필드)"
-else
-    print_error "✗ REAXFF 패키지 없음"
-    exit 1
-fi
+# 4. GPU 메모리 테스트
+echo ""
+echo "4. GPU 메모리 상태:"
+nvidia-smi --query-gpu=memory.used,memory.total --format=csv,noheader
 
-# GPU 기능 테스트
-print_status "GPU 기능 테스트..."
+# 5. 간단한 GPU 연산 테스트
 cat > gpu_test.lmp << 'EOF'
 units real
 atom_style atomic
 boundary p p p
-region box block 0 10 0 10 0 10
+newton on
+package kokkos neigh half
+
+region box block 0 20 0 20 0 20
 create_box 1 box
-create_atoms 1 random 2000 12345 box
+create_atoms 1 random 10000 12345 box
 mass 1 12.0
+
 pair_style lj/cut/kk 2.5
 pair_coeff 1 1 0.1 3.0
+
 velocity all create 300.0 87287
 timestep 1.0
-run 10
-print "GPU_TEST_SUCCESS"
+
+run 100
+print "RTX_5090_TEST_SUCCESS"
 EOF
 
-$LMP_BINARY -k on g 1 -sf kk -in gpu_test.lmp -log gpu_test.log -screen none 2>/dev/null
-
-if grep -q "GPU_TEST_SUCCESS" gpu_test.log; then
-    print_success "✓ GPU 기능 테스트 통과"
+echo ""
+echo "5. GPU 연산 테스트 중..."
+if command -v lmp-5090 &> /dev/null; then
+    lmp-5090 -in gpu_test.lmp -log gpu_test.log -screen none 2>/dev/null
+    if grep -q "RTX_5090_TEST_SUCCESS" gpu_test.log; then
+        echo "✅ GPU 연산 테스트 통과!"
+    else
+        echo "❌ GPU 연산 테스트 실패"
+    fi
+    rm -f gpu_test.lmp gpu_test.log
 else
-    print_warning "△ GPU 테스트 실패 (CPU 모드 가능성)"
+    echo "⚠️ LAMMPS 실행파일 없음"
 fi
 
-# ===================================================================
-# 8. BCMBP 연구 패키지 설정
-# ===================================================================
-print_header "BCMBP 연구 패키지 설정"
+echo ""
+echo "=== 검증 완료 ==="
+```
 
-# 연구 디렉토리 생성
-if [ -d "$RESEARCH_DIR" ]; then
-    print_warning "기존 연구 디렉토리 발견"
-    read -p "덮어쓰시겠습니까? [y/N] " -n 1 -r
+### **3-2. RTX 5090 성능 벤치마크**
+
+```bash
+#!/bin/bash
+# benchmark_rtx5090.sh - RTX 5090 성능 벤치마크
+
+echo "=== RTX 5090 성능 벤치마크 ==="
+
+# BCMBP 시스템 기준 벤치마크
+cat > benchmark_5090.lmp << 'EOF'
+# RTX 5090 ReaxFF 벤치마크
+units real
+atom_style full
+boundary p p p
+newton on
+package kokkos neigh half
+
+read_data bcmbp.data
+# RTX 5090의 32GB VRAM을 활용한 대규모 시스템
+replicate 10 10 10  # 약 28,000 원자
+
+pair_style reaxff NULL safezone 6.0 mincap 500
+pair_coeff * * 11_CHOCl.lammps.ff C H Cl
+fix qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
+
+timestep 0.25
+thermo 100
+
+# 웜업
+run 1000
+
+# 벤치마크
+reset_timestep 0
+timer timeout 0
+run 10000
+
+print "RTX_5090_BENCHMARK_COMPLETE"
+EOF
+
+# 실행 및 성능 측정
+echo "🚀 RTX 5090 벤치마크 실행 중... (약 10-20분 소요)"
+START_TIME=$(date +%s)
+
+lmp-5090 -in benchmark_5090.lmp -log benchmark_5090.log
+
+END_TIME=$(date +%s)
+TOTAL_TIME=$((END_TIME - START_TIME))
+
+# 결과 분석
+if grep -q "RTX_5090_BENCHMARK_COMPLETE" benchmark_5090.log; then
+    LOOP_TIME=$(grep "Loop time" benchmark_5090.log | tail -1 | awk '{print $4}')
+    TIMESTEP_RATE=$(grep "timesteps/s" benchmark_5090.log | tail -1 | awk '{print $1}')
+
+    echo ""
+    echo "🎯 RTX 5090 벤치마크 결과:"
+    echo "  총 실행 시간: ${TOTAL_TIME}초"
+    echo "  Loop time: ${LOOP_TIME}초"
+    echo "  성능: ${TIMESTEP_RATE} timesteps/s"
+    echo "  시스템: ~28,000 원자 ReaxFF"
+else
+    echo "❌ 벤치마크 실패"
+fi
+
+# 정리
+rm -f benchmark_5090.lmp
+```
+
+---
+
+## **🎯 실전 사용 가이드**
+
+### **4-1. BCMBP 올리고머 RTX 5090 최적화 실행**
+
+```bash
+#!/bin/bash
+# run_bcmbp_rtx5090.sh - RTX 5090 최적화 BCMBP 시뮬레이션
+
+echo "=== BCMBP 올리고머 RTX 5090 실행 ==="
+
+# 작업 디렉토리 확인
+if [ ! -f "bcmbp.data" ] || [ ! -f "11_CHOCl.lammps.ff" ]; then
+    echo "❌ 필수 파일 없음: bcmbp.data, 11_CHOCl.lammps.ff"
+    exit 1
+fi
+
+# RTX 5090 최적화 입력 파일 생성
+cat > bcmbp_rtx5090_oligo.lmp << 'EOF'
+# BCMBP 올리고머 형성 (RTX 5090 32GB 활용)
+units real
+atom_style full
+boundary p p p
+newton on
+package kokkos neigh half
+
+print "=========================================="
+print "BCMBP 올리고머 RTX 5090 최적화"
+print "=========================================="
+
+read_data bcmbp.data
+# RTX 5090의 32GB VRAM 활용 - 대규모 시스템
+replicate 8 8 8  # 약 14,336 원자 (안전한 크기)
+
+pair_style reaxff NULL safezone 6.0 mincap 500
+pair_coeff * * 11_CHOCl.lammps.ff C H Cl
+fix qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
+
+# 화학종 분석
+fix species all reaxff/species 100 1000 1000 species_rtx5090.out element C H Cl
+fix bonds all reaxff/bonds 1000 bonds_rtx5090.reax
+
+timestep 0.2
+thermo 1000
+thermo_style custom step temp press pe ke etotal vol density
+
+# 단계 1: 활성화 (300K → 600K)
+print "=== 단계 1: C-Cl 활성화 ==="
+velocity all create 300.0 123456 dist gaussian
+fix heat1 all nvt temp 300.0 600.0 100.0
+run 50000
+unfix heat1
+
+# 단계 2: 반응 (600K → 1000K)
+print "=== 단계 2: 라디칼 반응 ==="
+fix heat2 all nvt temp 600.0 1000.0 100.0
+run 25000
+unfix heat2
+
+fix react all nvt temp 1000.0 1000.0 100.0
+dump d1 all custom 1000 rtx5090_reaction.lammpstrj id type xu yu zu q
+run 125000
+undump d1
+unfix react
+
+# 단계 3: 올리고머 형성 (냉각)
+print "=== 단계 3: 올리고머 형성 ==="
+fix cool1 all nvt temp 1000.0 500.0 100.0
+run 125000
+unfix cool1
+
+# 단계 4: 안정화
+print "=== 단계 4: 안정화 ==="
+fix cool2 all nvt temp 500.0 300.0 100.0
+run 75000
+unfix cool2
+
+unfix species
+unfix bonds
+write_data bcmbp_rtx5090_final.data
+
+print "=========================================="
+print "RTX 5090 올리고머 시뮬레이션 완료!"
+print "=========================================="
+EOF
+
+# GPU 메모리 사전 확인
+GPU_FREE=$(nvidia-smi --query-gpu=memory.free --format=csv,noheader,nounits | head -1)
+if [ "$GPU_FREE" -lt 10000 ]; then
+    echo "⚠️ GPU 메모리 부족: ${GPU_FREE}MB (권장 10GB+)"
+    read -p "계속하시겠습니까? [y/N] " -n 1 -r
     echo
-    if [[ $REPLY =~ ^[Yy]$ ]]; then
-        rm -rf "$RESEARCH_DIR"
-    else
-        print_status "기존 디렉토리 유지"
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+        exit 1
     fi
 fi
 
-if [ ! -d "$RESEARCH_DIR" ]; then
-    mkdir -p "$RESEARCH_DIR"/{00_setup,results,analysis}
-    cd "$RESEARCH_DIR"
+# 실행
+echo "🚀 RTX 5090 올리고머 시뮬레이션 시작..."
+echo "📊 GPU 모니터링: nvidia-smi -l 1 (별도 터미널)"
 
-    # BCMBP 구조 파일 생성
-    cat > 00_setup/bcmbp.data << 'EOF'
-LAMMPS data file for BCMBP (C14H12Cl2) - ReaxFF compatible
+START_TIME=$(date +%s)
+lmp-5090 -in bcmbp_rtx5090_oligo.lmp -log rtx5090_oligo.log
 
-28 atoms
-3 atom types
+END_TIME=$(date +%s)
+RUNTIME=$((END_TIME - START_TIME))
 
--8.0 8.0 xlo xhi
--4.0 4.0 ylo yhi
--2.0 2.0 zlo zhi
+echo ""
+echo "✅ 시뮬레이션 완료! (실행시간: ${RUNTIME}초)"
+echo ""
+echo "📁 생성된 파일:"
+ls -lh species_rtx5090.out rtx5090_reaction.lammpstrj bcmbp_rtx5090_final.data 2>/dev/null
+```
 
-Masses
+### **4-2. RTX 5090 실시간 모니터링**
 
-1 12.011  # C
-2 1.008   # H
-3 35.453  # Cl
-
-Atoms  # full
-
-1  1 1 0.0000 -4.52506  0.51622 -0.03357  # C
-2  1 1 0.0000 -3.01593  0.61787 -0.02469  # C
-3  1 1 0.0000 -2.32485  1.83873 -0.03147  # C
-4  1 1 0.0000 -0.92716  1.86840 -0.02266  # C
-5  1 1 0.0000 -0.15954  0.67765 -0.00669  # C
-6  1 1 0.0000 -0.87785 -0.54317 -0.00009  # C
-7  1 1 0.0000 -2.27468 -0.56751 -0.00892  # C
-8  1 1 0.0000  1.35828  0.70833  0.00285  # C
-9  1 1 0.0000  2.07729  1.92915 -0.00294  # C
-10 1 1 0.0000  3.47503  1.95600  0.00584  # C
-11 1 1 0.0000  4.21475  0.76405  0.02076  # C
-12 1 1 0.0000  2.12521 -0.48246  0.01795  # C
-13 1 1 0.0000  3.52189 -0.45033  0.02666  # C
-14 1 1 0.0000  5.72675  0.72348  0.03082  # C
-15 1 2 0.0000 -2.85071  2.78294 -0.04361  # H
-16 1 2 0.0000 -0.48095  2.84716 -0.02884  # H
-17 1 2 0.0000 -0.39371 -1.50363  0.01196  # H
-18 1 2 0.0000 -2.78336 -1.52443 -0.00338  # H
-19 1 2 0.0000  1.59199  2.88908 -0.01421  # H
-20 1 2 0.0000  3.96241  2.92069  0.00076  # H
-21 1 2 0.0000  4.06871 -1.38592  0.03814  # H
-22 1 2 0.0000  1.68017 -1.46171  0.02339  # H
-23 1 3 0.0000 -5.39534  2.07854 -0.05368  # Cl
-24 1 2 0.0000 -4.85480 -0.03895  0.86996  # H
-25 1 2 0.0000 -4.84307 -0.05560 -0.93089  # H
-26 1 3 0.0000  6.53335  2.31971  0.02239  # Cl
-27 1 2 0.0000  6.07885  0.16586 -0.86270  # H
-28 1 2 0.0000  6.06729  0.18120  0.93816  # H
-EOF
-
-    # 벌크 평형화 스크립트
-    cat > 01_bulk_equilibration.lmp << 'EOF'
-# ===================================================================
-# BCMBP 벌크 시스템 NPT 평형화
-# ===================================================================
-
-units           real
-atom_style      full
-boundary        p p p
-
-print "=========================================="
-print "BCMBP 벌크 평형화 (GPU 가속)"
-print "=========================================="
-
-read_data       00_setup/bcmbp.data
-replicate       4 4 4           # 1,792 원자 (GPU 효율 시작점)
-displace_atoms  all random 0.2 0.2 0.2 482749 units box
-
-pair_style      reaxff NULL safezone 4.0 mincap 300
-pair_coeff      * * 00_setup/11_CHOCl.lammps.ff C H Cl
-fix             qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
-
-neighbor        2.5 bin
-neigh_modify    every 10 delay 0 check yes
-
-thermo          1000
-thermo_style    custom step temp press vol density pe ke etotal
-
-print "=== 에너지 최소화 ==="
-minimize        1.0e-4 1.0e-6 2000 20000
-
-reset_timestep  0
-timestep        0.25
-velocity        all create 300.0 987654 dist gaussian
-
-print "=== NPT 평형화 (100 ps) ==="
-fix             npt1 all npt temp 300.0 300.0 100.0 iso 1.0 1.0 1000.0
-dump            eq all custom 2000 results/01_equilibration.lammpstrj id type xu yu zu q
-dump_modify     eq sort id
-
-run             400000
-
-variable        final_rho equal density
-print "최종 밀도: ${final_rho} g/cm³"
-
-undump          eq
-unfix           npt1
-write_data      results/bcmbp_bulk_equilibrated.data
-
-print "✅ 벌크 평형화 완료!"
-EOF
-
-    # 올리고머 형성 스크립트
-    cat > 02_oligomerization.lmp << 'EOF'
-# ===================================================================
-# BCMBP 올리고머 형성 시뮬레이션
-# ===================================================================
-
-units           real
-atom_style      full
-boundary        p p p
-
-print "=========================================="
-print "BCMBP 올리고머 형성 (GPU 가속)"
-print "=========================================="
-
-read_data       results/bcmbp_bulk_equilibrated.data
-
-pair_style      reaxff NULL safezone 4.0 mincap 300
-pair_coeff      * * 00_setup/11_CHOCl.lammps.ff C H Cl
-fix             qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
-
-fix             species all reaxff/species 100 1000 1000 results/species_oligo.out element C H Cl
-fix             bonds all reaxff/bonds 1000 results/bonds_oligo.reax
-
-timestep        0.2
-thermo          1000
-thermo_style    custom step temp press pe ke etotal
-
-print "=== 단계 1: C-Cl 활성화 (300K → 600K) ==="
-velocity        all create 300.0 123456 dist gaussian
-fix             heat1 all nvt temp 300.0 600.0 100.0
-run             50000
-unfix           heat1
-
-print "=== 단계 2: 라디칼 형성 (600K → 1000K) ==="
-fix             heat2 all nvt temp 600.0 1000.0 100.0
-run             25000
-unfix           heat2
-
-fix             react all nvt temp 1000.0 1000.0 100.0
-dump            d2 all custom 1000 results/02_reaction.lammpstrj id type xu yu zu q
-run             125000
-undump          d2
-unfix           react
-
-print "=== 단계 3: 올리고머 형성 (1000K → 500K) ==="
-fix             cool1 all nvt temp 1000.0 500.0 100.0
-run             125000
-unfix           cool1
-
-print "=== 단계 4: 안정화 (500K → 300K) ==="
-fix             cool2 all nvt temp 500.0 300.0 100.0
-run             75000
-unfix           cool2
-
-unfix           species
-unfix           bonds
-write_data      results/bcmbp_oligomer_final.data
-
-print "✅ 올리고머 형성 완료!"
-EOF
-
-    # 통합 실행 스크립트
-    cat > run_simulations.sh << 'RUNEOF'
+```bash
 #!/bin/bash
-echo "=== BCMBP 시뮬레이션 실행 ==="
-echo "1) 벌크 평형화"
-echo "2) 올리고머 형성"
-read -p "선택 (1-2): " choice
+# monitor_rtx5090.sh - RTX 5090 전용 모니터링
 
-case $choice in
-    1) lmp-gpu -in 01_bulk_equilibration.lmp -log results/bulk.log;;
-    2) lmp-gpu -in 02_oligomerization.lmp -log results/oligo.log;;
-    *) echo "잘못된 선택";;
-esac
-RUNEOF
-    chmod +x run_simulations.sh
+trap "tput cnorm; clear; exit" SIGINT SIGTERM
+tput civis
 
-    print_success "BCMBP 연구 패키지 설정 완료"
-fi
+while true; do
+    clear
+    echo "=========================================="
+    echo "🚀 RTX 5090 실시간 모니터링"
+    echo "시간: $(date '+%Y-%m-%d %H:%M:%S')"
+    echo "=========================================="
 
-# ===================================================================
-# 9. 환경 설정 업데이트
-# ===================================================================
-print_header "환경 설정"
+    # GPU 상세 정보
+    nvidia-smi --query-gpu=name,temperature.gpu,power.draw,power.limit,utilization.gpu,memory.used,memory.total \
+        --format=csv,noheader | \
+        awk -F', ' '{
+            printf "GPU 모델: %s\n", $1
+            printf "온도    : %s°C\n", $2
+            printf "전력    : %s / %s W\n", $3, $4
+            printf "사용률  : %s%%\n", $5
+            printf "메모리  : %s / %s\n", $6, $7
 
-# 기존 설정 정리
-sed -i '/LAMMPS_GPU_HOME/d' ~/.bashrc
-sed -i '/lmp-gpu/d' ~/.bashrc
-sed -i '/lmp-cpu/d' ~/.bashrc
-sed -i '/lmp-info/d' ~/.bashrc
-sed -i '/gpu-watch/d' ~/.bashrc
-sed -i '/gpu-status/d' ~/.bashrc
-sed -i '/cdlmp/d' ~/.bashrc
+            # 메모리 사용률 바 표시
+            split($6, used, " "); split($7, total, " ");
+            if (total[1] > 0) {
+                pct = (used[1] / total[1]) * 100;
+                printf "메모리바: [";
+                for(i=0;i<50;i++) {
+                    if(i < pct*50/100) printf "█"; else printf "░";
+                }
+                printf "] %.1f%%\n", pct;
+            }
+        }'
 
-# 새로운 환경 설정 추가
-cat >> ~/.bashrc << EOF
+    echo "=========================================="
+    echo "💡 팁: RTX 5090은 32GB VRAM으로 초대규모 시뮬레이션 가능"
+    echo "Ctrl+C로 종료"
 
-# ===================================================================
-# LAMMPS GPU+ReaxFF 환경 설정 ($(date +%Y-%m-%d))
-# ===================================================================
-export LAMMPS_GPU_HOME="$INSTALL_DIR"
-export PATH="\$LAMMPS_GPU_HOME/bin:\$PATH"
-
-# 실행 별칭
-alias lmp-gpu="\$LAMMPS_GPU_HOME/bin/lmp -k on g 1 -sf kk"
-alias lmp-cpu="\$LAMMPS_GPU_HOME/bin/lmp"
-alias lmp-info="\$LAMMPS_GPU_HOME/bin/lmp -help | grep 'KOKKOS\\|REAXFF\\|GPU'"
-
-# GPU 모니터링
-alias gpu-watch='watch -n 1 nvidia-smi'
-alias gpu-status='nvidia-smi --query-gpu=name,temperature.gpu,utilization.gpu,memory.used --format=csv'
-
-# 빠른 이동
-alias cdlmp='cd $INSTALL_BASE'
-alias cdbcmbp='cd $RESEARCH_DIR'
-EOF
-
-print_success "환경 설정 업데이트 완료"
-
-# ===================================================================
-# 10. 완료 메시지
-# ===================================================================
-print_header "설치 완료!"
-
-echo ""
-echo -e "${GREEN}🎉 LAMMPS GPU+ReaxFF 통합 설치 성공!${NC}"
-echo ""
-echo "📍 **설치 정보:**"
-echo "   LAMMPS 경로: $INSTALL_BASE"
-echo "   실행파일: $LMP_BINARY"
-echo "   연구 디렉토리: $RESEARCH_DIR"
-echo "   GPU: $GPU_NAME ($COMPUTE_CAP)"
-echo "   컴파일 시간: ${COMPILE_TIME}초"
-echo ""
-echo "🚀 **즉시 사용:**"
-echo "   1. source ~/.bashrc"
-echo "   2. cdbcmbp"
-echo "   3. ./run_simulations.sh"
-echo ""
-echo "📊 **GPU 모니터링:**"
-echo "   gpu-watch"
-echo ""
-echo "🔍 **설치 확인:**"
-echo "   lmp-info"
-echo ""
-
-# 정리
-rm -f gpu_test.lmp gpu_test.log
-
-print_success "모든 설치가 완료되었습니다!"
+    sleep 2
+done
 ```
 
-## **⚡ 설치 및 사용 방법**
+---
 
-### **1. 설치 실행**
+## **📊 최종 권장 워크플로우**
+
+### **단계별 구축 및 활용 전략**
 
 ```bash
-# 스크립트 생성 및 실행
-cat > ~/install_lammps_gpu_complete.sh << 'SCRIPT_END'
-# (위 전체 스크립트 복사)
-SCRIPT_END
+# ===================================================================
+# 1단계: 빠른 시작 (Docker - 10분)
+# ===================================================================
+# 즉시 테스트하고 싶은 경우
+sh install_nvidia_docker_wsl.sh
+sh run_lammps_docker_5090.sh
 
-chmod +x ~/install_lammps_gpu_complete.sh
+# ===================================================================
+# 2단계: 최대 성능 (Native - 1시간)
+# ===================================================================
+# 본격적인 연구용 환경 구축
+sh install_cuda_13_1_wsl.sh
+sh install_lammps_rtx5090_native.sh
 
-# 설치 실행 (20-40분 소요)
-~/install_lammps_gpu_complete.sh
+# ===================================================================
+# 3단계: 검증 및 벤치마크
+# ===================================================================
+sh verify_rtx5090_setup.sh
+sh benchmark_rtx5090.sh
 
-# 환경 적용
-source ~/.bashrc
+# ===================================================================
+# 4단계: 실전 연구
+# ===================================================================
+sh run_bcmbp_rtx5090.sh  # BCMBP 올리고머 연구
 ```
 
-### **2. 설치 확인**
+### **🎯 성능 예상치 (RTX 5090 기준)**
 
-```bash
-# 패키지 확인
-lmp-info
-# 출력 예상: KOKKOS, REAXFF, GPU
+| 시뮬레이션 종류   | 시스템 크기   | 예상 성능          | 메모리 사용 |
+| ----------------- | ------------- | ------------------ | ----------- |
+| **소규모 테스트** | ~1,000 원자   | 매우 빠름 (오버킬) | <1GB        |
+| **중간 연구**     | ~10,000 원자  | 10-20배 향상       | 3-5GB       |
+| **대규모 연구**   | ~50,000 원자  | 20-50배 향상       | 15-20GB     |
+| **초대규모**      | ~100,000 원자 | 극한 성능          | 25-30GB     |
 
-# 경로 확인
-which lmp-gpu
-# 출력: ~/lammps-gpu-reaxff/install/bin/lmp
+### **💡 RTX 5090 활용 팁**
 
-# GPU 상태 확인
-gpu-status
-```
+1. **메모리 여유 활용**: 32GB VRAM으로 일반적인 연구보다 5-10배 큰 시스템 가능
+2. **배치 시뮬레이션**: 여러 조건을 순차적으로 자동 실행
+3. **하이브리드 병렬화**: GPU + Threadripper의 48스레드 동시 활용
+4. **장기 시뮬레이션**: 높은 안정성으로 며칠간 연속 실행 가능
 
-### **3. BCMBP 시뮬레이션 실행**
+---
 
-```bash
-# 연구 디렉토리로 이동
-cdbcmbp
+## **🔍 결론 및 권장사항**
 
-# 포스필드 파일 복사 (필요시)
-cp ~/11_CHOCl.lammps.ff 00_setup/
+**RTX 5090 + Threadripper PRO 9965WX** 시스템은 현재 개인용 워크스테이션 중 최상위급입니다.
 
-# 시뮬레이션 실행
-./run_simulations.sh
-# 옵션 1 선택: 벌크 평형화
+### **✅ 최종 권장 전략**
 
-# GPU 모니터링 (별도 터미널)
-gpu-watch
-```
+1. **학습 및 테스트**: Docker 방식으로 빠른 시작
+2. **본격 연구**: Native WSL2 방식으로 최대 성능 활용
+3. **장기 운영**: 두 방식 모두 구축하여 상황별 선택 사용
 
-## **📊 성능 최적화 가이드**
+### **🚀 차별화 포인트**
 
-### **시스템 크기 조정**
+- **32GB VRAM**: 기존 연구의 5-10배 규모 시뮬레이션 가능
+- **48 스레드 CPU**: 전처리/후처리 및 하이브리드 병렬화 최적
+- **WSL2 환경**: Windows와 Linux의 장점 결합
 
-```lammps
-# 01_bulk_equilibration.lmp에서 조정
-replicate 3 3 3    # 756 원자 (소형, 테스트용)
-replicate 4 4 4    # 1,792 원자 (중형, 기본값)
-replicate 5 5 5    # 3,500 원자 (대형, L4 최적)
-```
+이 환경에서는 **분자동역학 시뮬레이션의 새로운 가능성**을 탐구할 수 있으며, 기존에 불가능했던 초대규모 시스템이나 장기간 시뮬레이션을 개인 워크스테이션에서 수행할 수 있습니다.
 
-### **GPU 메모리 최적화**
-
-```lammps
-# 메모리 부족 시 safezone 증가
-pair_style reaxff NULL safezone 6.0 mincap 500
-```
-
-## **🔧 문제 해결**
-
-### **환경 변수 문제**
-
-```bash
-source ~/.bashrc
-# 또는 새 터미널 열기
-```
-
-### **GPU 미사용 문제**
-
-```bash
-export CUDA_VISIBLE_DEVICES=0
-lmp-gpu -in input.lmp
-```
-
-### **메모리 부족**
-
-```bash
-# 시스템 크기 줄이기
-# replicate 값을 3 3 3 또는 2 2 2로 변경
-```
-
-## **📈 예상 성능 (L4 GPU 기준)**
-
-| 시뮬레이션        | 원자 수 | CPU 시간 | GPU 시간 | 속도 향상 |
-| ----------------- | ------- | -------- | -------- | --------- |
-| **벌크 평형화**   | 1,792   | 2시간    | 30분     | **4배**   |
-| **올리고머 형성** | 1,792   | 4시간    | 1시간    | **4배**   |
-| **대형 시스템**   | 3,500   | 8시간    | 1.5시간  | **5-6배** |
-
-이제 **완전히 통합되고 최적화된 LAMMPS GPU+ReaxFF 환경**에서 BCMBP 올리고머 연구를 본격적으로 시작할 수 있습니다! 🚀
+**Docker로 빠르게 시작하되, Native로 극한 성능을 추구하는 하이브리드 전략**이 RTX 5090의 잠재력을 최대한 활용하는 최적의 방법입니다. 🚀

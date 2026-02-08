@@ -1,0 +1,91 @@
+# ===================================================================
+# BCMBP 벌크 시스템 구축 및 NPT 평형화
+# 목표: 단일 분자 → 벌크 시스템 → NPT 평형 구조
+# 결과: bcmbp_bulk_equilibrated.data (모든 후속 연구의 기반)
+# ===================================================================
+
+# 1. 기본 설정
+units           real
+atom_style      full
+boundary        p p p
+package         kokkos neigh half
+newton          on
+
+print "=========================================="
+print "BCMBP 벌크 시스템 구축"
+print "단계: 단일분자 → 벌크 → NPT 평형화"
+print "=========================================="
+
+# 2. 시스템 구축
+read_data       bcmbp.data
+
+# 시스템 크기 설정 (컴퓨터 성능에 따라 조정)
+variable        rep_size equal 5    # 
+replicate       ${rep_size} ${rep_size} ${rep_size}
+
+# 원자 겹침 방지
+displace_atoms  all random 0.2 0.2 0.2 482749 units box
+
+# 시스템 정보
+variable        total_atoms equal atoms
+variable        total_mols equal ${total_atoms}/28
+print "총 원자 수: ${total_atoms}"
+print "총 분자 수: ${total_mols}"
+
+# 3. ReaxFF 설정
+pair_style      reaxff NULL safezone 4.0 mincap 300
+pair_coeff      * * 11_CHOCl.lammps.ff C H Cl O
+fix             qeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff
+
+neighbor        2.5 bin
+neigh_modify    every 10 delay 0 check yes
+
+# 4. 출력 설정
+thermo          1000
+thermo_style    custom step temp press vol density pe ke etotal cpu
+
+# 5. 에너지 최소화
+print ""
+print "=== 에너지 최소화 시작 ==="
+minimize        1.0e-4 1.0e-6 2000 20000
+write_data      bcmbp_minimized.data
+print "=== 에너지 최소화 완료 ==="
+
+# 6. NPT 평형화 (300K, 1 atm)
+reset_timestep  0
+timestep        0.25
+
+velocity        all create 300.0 987654 dist gaussian
+
+print ""
+print "=== NPT 평형화 시작 (300K, 1 atm, 100 ps) ==="
+fix             npt_eq all npt temp 300.0 300.0 100.0 iso 1.0 1.0 1000.0
+
+# PBC 문제 해결을 위한 언래핑 좌표 저장
+dump            eq all custom 2000 01_equilibration.lammpstrj id type xu yu zu q
+dump_modify     eq sort id
+
+run             400000  # 100 ps
+print "=== NPT 평형화 완료 ==="
+
+# 7. 결과 저장
+variable        final_density equal density
+variable        final_temp equal temp
+print ""
+print "최종 평형 상태:"
+print "  온도: ${final_temp} K"
+print "  밀도: ${final_density} g/cm³"
+
+undump          eq
+unfix           npt_eq
+
+write_data      bcmbp_bulk_equilibrated.data
+write_restart   bcmbp_bulk.restart
+
+print ""
+print "=========================================="
+print "✅ 벌크 평형화 완료!"
+print "핵심 출력 파일:"
+print "  - bcmbp_bulk_equilibrated.data (후속 연구 입력)"
+print "  - 01_equilibration.lammpstrj (평형화 과정)"
+print "=========================================="
